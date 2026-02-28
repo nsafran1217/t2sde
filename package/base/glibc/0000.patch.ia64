@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/glibc/0000.patch.ia64
-# Copyright (C) 2025 The T2 SDE Project
+# Copyright (C) 2025 - 2026 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0 or patched project license
 # --- T2-COPYRIGHT-END ---
 #
@@ -12,7 +12,7 @@
 # origin/release/2.42/master-epic: 25a85da089bf3cba49c38cf177ec97cbae171ae5
 
 diff --git a/INSTALL b/INSTALL
-index 1fd8d561b0..bc1bd3f972 100644
+index 4174c9661f..403b2c5703 100644
 --- a/INSTALL
 +++ b/INSTALL
 @@ -619,15 +619,17 @@ Specific advice for GNU/Linux systems
@@ -43,10 +43,10 @@ index 1fd8d561b0..bc1bd3f972 100644
  cross-compiling the GNU C Library, you need to specify
  'ARCH=ARCHITECTURE' in the 'make headers_install' command, where
 diff --git a/NEWS b/NEWS
-index f0b0e924a4..beaf84dc75 100644
+index 1f07633e57..d07eb70df2 100644
 --- a/NEWS
 +++ b/NEWS
-@@ -790,8 +790,6 @@ Deprecated and removed features, and other changes affecting compatibility:
+@@ -1022,8 +1022,6 @@ Deprecated and removed features, and other changes affecting compatibility:
    replacement library or its dependencies use dynamic TLS instead of
    initial-exec TLS.
  
@@ -106,7 +106,7 @@ index 414635f664..c1f3f86ab3 100644
  // Bug 21635: uc_mcontext has wrong type.
  xfail[powerpc32-linux]-element ucontext_t mcontext_t uc_mcontext
 diff --git a/elf/cache.c b/elf/cache.c
-index 89a6a1e49a..ab029d77cb 100644
+index a6dc85dc0f..967f12d320 100644
 --- a/elf/cache.c
 +++ b/elf/cache.c
 @@ -179,6 +179,9 @@ print_entry (const char *lib, int flag, uint64_t hwcap,
@@ -448,7 +448,7 @@ index 0000000000..575406ae44
 +  return addr;
 +}
 diff --git a/elf/dl-load.c b/elf/dl-load.c
-index 00b9da9ec7..787cb2ec42 100644
+index 7355eef8e7..5b23e20748 100644
 --- a/elf/dl-load.c
 +++ b/elf/dl-load.c
 @@ -756,7 +756,7 @@ _dl_init_paths (const char *llp, const char *source,
@@ -480,7 +480,7 @@ index 00b9da9ec7..787cb2ec42 100644
  
        /* Copy l_addr and l_ld to avoid a GDB warning with dlmopen().  */
        l->l_addr = l->l_real->l_addr;
-@@ -2054,7 +2054,7 @@ _dl_map_new_object (struct link_map *loader, const char *name,
+@@ -2059,7 +2059,7 @@ _dl_map_new_object (struct link_map *loader, const char *name,
  	      l = (loader
  		   ?: GL(dl_ns)[LM_ID_BASE]._ns_loaded
  # ifdef SHARED
@@ -529,10 +529,10 @@ index 0000000000..b0299fdb35
 +}
 +rtld_hidden_def (_dl_symbol_address)
 diff --git a/elf/dl-tls.c b/elf/dl-tls.c
-index a083a82933..d0c5840f3e 100644
+index 8cef809261..acd651634f 100644
 --- a/elf/dl-tls.c
 +++ b/elf/dl-tls.c
-@@ -740,6 +740,23 @@ rtld_hidden_def (_dl_deallocate_tls)
+@@ -748,6 +748,23 @@ rtld_hidden_def (_dl_deallocate_tls)
  
  
  #ifdef SHARED
@@ -556,7 +556,7 @@ index a083a82933..d0c5840f3e 100644
  
  /* Allocate one DTV entry.  */
  static struct dtv_pointer
-@@ -938,25 +955,25 @@ _dl_update_slotinfo (unsigned long int req_modid, size_t new_gen)
+@@ -946,25 +963,25 @@ _dl_update_slotinfo (unsigned long int req_modid, size_t new_gen)
  /* Adjust the TLS variable pointer using the TLS descriptor offset and
     the ABI-specific offset.  */
  static inline void *
@@ -586,7 +586,7 @@ index a083a82933..d0c5840f3e 100644
        struct dtv_slotinfo_list *listp = GL(dl_tls_dtv_slotinfo_list);
  
        while (idx >= listp->len)
-@@ -993,35 +1010,35 @@ tls_get_addr_tail (tls_index *ti, dtv_t *dtv, struct link_map *the_map)
+@@ -1001,35 +1018,35 @@ tls_get_addr_tail (tls_index *ti, dtv_t *dtv, struct link_map *the_map)
  #endif
  	  __rtld_lock_unlock_recursive (GL(dl_load_tls_lock));
  
@@ -632,7 +632,7 @@ index a083a82933..d0c5840f3e 100644
  }
  
  /* For all machines that have a non-macro version of __tls_get_addr, we
-@@ -1030,7 +1047,7 @@ update_get_addr (tls_index *ti, size_t gen)
+@@ -1038,7 +1055,7 @@ update_get_addr (tls_index *ti, size_t gen)
     in ld.so for __tls_get_addr.  */
  
  #ifndef __tls_get_addr
@@ -641,7 +641,7 @@ index a083a82933..d0c5840f3e 100644
  rtld_hidden_proto (__tls_get_addr)
  rtld_hidden_def (__tls_get_addr)
  #endif
-@@ -1038,7 +1055,7 @@ rtld_hidden_def (__tls_get_addr)
+@@ -1046,7 +1063,7 @@ rtld_hidden_def (__tls_get_addr)
  /* The generic dynamic and local dynamic model cannot be used in
     statically linked applications.  */
  void *
@@ -650,7 +650,7 @@ index a083a82933..d0c5840f3e 100644
  {
    dtv_t *dtv = THREAD_DTV ();
  
-@@ -1050,7 +1067,7 @@ __tls_get_addr (tls_index *ti)
+@@ -1058,7 +1075,7 @@ __tls_get_addr (tls_index *ti)
    if (__glibc_unlikely (dtv[0].counter != gen))
      {
        if (_dl_tls_allocate_active ()
@@ -659,7 +659,7 @@ index a083a82933..d0c5840f3e 100644
  	  /* This is a reentrant __tls_get_addr call, but we can
  	     satisfy it because it's an initially-loaded module ID.
  	     These TLS slotinfo slots do not change, so the
-@@ -1063,16 +1080,16 @@ __tls_get_addr (tls_index *ti)
+@@ -1071,16 +1088,16 @@ __tls_get_addr (tls_index *ti)
  	  /* Update DTV up to the global generation, see CONCURRENCY NOTES
  	     in _dl_update_slotinfo.  */
  	  gen = atomic_load_acquire (&GL(dl_tls_generation));
@@ -681,10 +681,10 @@ index a083a82933..d0c5840f3e 100644
  #endif /* SHARED */
  
 diff --git a/elf/rtld.c b/elf/rtld.c
-index 493f9696ea..60e7f852e1 100644
+index 29e7a4ddfa..11c0c48068 100644
 --- a/elf/rtld.c
 +++ b/elf/rtld.c
-@@ -379,8 +379,6 @@ struct rtld_global_ro _rtld_global_ro attribute_relro =
+@@ -378,8 +378,6 @@ struct rtld_global_ro _rtld_global_ro attribute_relro =
  extern struct rtld_global_ro _rtld_local_ro
      __attribute__ ((alias ("_rtld_global_ro"), visibility ("hidden")));
  
@@ -693,7 +693,7 @@ index 493f9696ea..60e7f852e1 100644
  
  static void dl_main (const ElfW(Phdr) *phdr, ElfW(Word) phnum,
  		     ElfW(Addr) *user_entry, ElfW(auxv_t) *auxv);
-@@ -467,23 +465,24 @@ _dl_start_final (void *arg, struct dl_start_final_info *info)
+@@ -466,23 +464,24 @@ _dl_start_final (void *arg, struct dl_start_final_info *info)
  
    /* Transfer data about ourselves to the permanent link_map structure.  */
  #ifndef DONT_USE_BOOTSTRAP_MAP
@@ -729,7 +729,7 @@ index 493f9696ea..60e7f852e1 100644
  # endif
  #endif
  
-@@ -510,7 +509,7 @@ _dl_start_final (void *arg, struct dl_start_final_info *info)
+@@ -509,7 +508,7 @@ _dl_start_final (void *arg, struct dl_start_final_info *info)
  }
  
  #ifdef DONT_USE_BOOTSTRAP_MAP
@@ -738,7 +738,7 @@ index 493f9696ea..60e7f852e1 100644
  #else
  # define bootstrap_map info.l
  #endif
-@@ -1018,8 +1017,8 @@ ERROR: audit interface '%s' requires version %d (maximum supported version %d);
+@@ -1017,8 +1016,8 @@ ERROR: audit interface '%s' requires version %d (maximum supported version %d);
  
    /* The dynamic linker link map is statically allocated, so the
       cookie in _dl_new_object has not happened.  */
@@ -749,7 +749,7 @@ index 493f9696ea..60e7f852e1 100644
  
    ++GLRO(dl_naudit);
  
-@@ -1046,7 +1045,7 @@ load_audit_modules (struct link_map *main_map, struct audit_list *audit_list)
+@@ -1045,7 +1044,7 @@ load_audit_modules (struct link_map *main_map, struct audit_list *audit_list)
    if (GLRO(dl_naudit) > 0)
      {
        _dl_audit_objopen (main_map, LM_ID_BASE);
@@ -758,7 +758,7 @@ index 493f9696ea..60e7f852e1 100644
      }
  }
  
-@@ -1056,7 +1055,7 @@ static void
+@@ -1055,7 +1054,7 @@ static void
  rtld_chain_load (struct link_map *main_map, char *argv0)
  {
    /* The dynamic loader run against itself.  */
@@ -767,7 +767,7 @@ index 493f9696ea..60e7f852e1 100644
    if (l_soname (main_map) != NULL
        && strcmp (rtld_soname, l_soname (main_map)) == 0)
      _dl_fatal_printf ("%s: loader cannot load itself\n", rtld_soname);
-@@ -1143,7 +1142,7 @@ rtld_setup_main_map (struct link_map *main_map)
+@@ -1142,7 +1141,7 @@ rtld_setup_main_map (struct link_map *main_map)
  	_dl_rtld_libname.name = ((const char *) main_map->l_addr
  				 + ph->p_vaddr);
  	/* _dl_rtld_libname.next = NULL;	Already zero.  */
@@ -776,7 +776,7 @@ index 493f9696ea..60e7f852e1 100644
  
  	has_interp = true;
  	break;
-@@ -1225,16 +1224,16 @@ rtld_setup_main_map (struct link_map *main_map)
+@@ -1224,16 +1223,16 @@ rtld_setup_main_map (struct link_map *main_map)
        = (char *) main_map->l_tls_initimage + main_map->l_addr;
    if (! main_map->l_map_end)
      main_map->l_map_end = ~0;
@@ -797,7 +797,45 @@ index 493f9696ea..60e7f852e1 100644
  
    return has_interp;
  }
-@@ -1346,7 +1345,7 @@ dl_main (const ElfW(Phdr) *phdr,
+@@ -1254,11 +1253,11 @@ rtld_setup_phdr (void)
+ 
+   const ElfW(Phdr) *rtld_phdr = (const void *) rtld_ehdr + rtld_ehdr->e_phoff;
+ 
+-  _dl_rtld_map.l_phdr = rtld_phdr;
+-  _dl_rtld_map.l_phnum = rtld_ehdr->e_phnum;
++  GL(dl_rtld_map).l_phdr = rtld_phdr;
++  GL(dl_rtld_map).l_phnum = rtld_ehdr->e_phnum;
+ 
+ 
+-  _dl_rtld_map.l_contiguous = 1;
++  GL(dl_rtld_map).l_contiguous = 1;
+   /* The linker may not have produced a contiguous object.  The kernel
+      will load the object with actual gaps (unlike the glibc loader
+      for shared objects, which always produces a contiguous mapping).
+@@ -1270,9 +1269,9 @@ rtld_setup_phdr (void)
+       if (ph->p_type == PT_LOAD)
+ 	{
+ 	  ElfW(Addr) mapstart = ph->p_vaddr & ~(GLRO(dl_pagesize) - 1);
+-	  if (_dl_rtld_map.l_contiguous && expected_load_address != 0
++	  if (GL(dl_rtld_map).l_contiguous && expected_load_address != 0
+ 	      && expected_load_address != mapstart)
+-	    _dl_rtld_map.l_contiguous = 0;
++	    GL(dl_rtld_map).l_contiguous = 0;
+ 	  ElfW(Addr) allocend = ph->p_vaddr + ph->p_memsz;
+ 	  /* The next expected address is the page following this load
+ 	     segment.  */
+@@ -1286,8 +1285,8 @@ rtld_setup_phdr (void)
+   while (cnt-- > 0)
+     if (rtld_phdr[cnt].p_type == PT_GNU_RELRO)
+       {
+-	_dl_rtld_map.l_relro_addr = rtld_phdr[cnt].p_vaddr;
+-	_dl_rtld_map.l_relro_size = rtld_phdr[cnt].p_memsz;
++	GL(dl_rtld_map).l_relro_addr = rtld_phdr[cnt].p_vaddr;
++	GL(dl_rtld_map).l_relro_size = rtld_phdr[cnt].p_memsz;
+ 	break;
+       }
+ }
+@@ -1399,7 +1398,7 @@ dl_main (const ElfW(Phdr) *phdr,
        char **orig_argv = _dl_argv;
  
        /* Note the place where the dynamic linker actually came from.  */
@@ -806,7 +844,7 @@ index 493f9696ea..60e7f852e1 100644
  
        while (_dl_argc > 1)
  	if (! strcmp (_dl_argv[1], "--list"))
-@@ -1630,22 +1629,22 @@ dl_main (const ElfW(Phdr) *phdr,
+@@ -1681,22 +1680,22 @@ dl_main (const ElfW(Phdr) *phdr,
    /* If the current libname is different from the SONAME, add the
       latter as well.  */
    {
@@ -834,7 +872,7 @@ index 493f9696ea..60e7f852e1 100644
  
    if (! rtld_is_main)
      {
-@@ -1675,7 +1674,7 @@ dl_main (const ElfW(Phdr) *phdr,
+@@ -1726,7 +1725,7 @@ dl_main (const ElfW(Phdr) *phdr,
        _exit (has_interp ? 0 : 2);
      }
  
@@ -843,7 +881,7 @@ index 493f9696ea..60e7f852e1 100644
    /* Set up the data structures for the system-supplied DSO early,
       so they can influence _dl_init_paths.  */
    setup_vdso (main_map, &first_preload);
-@@ -1688,20 +1687,20 @@ dl_main (const ElfW(Phdr) *phdr,
+@@ -1739,29 +1738,29 @@ dl_main (const ElfW(Phdr) *phdr,
    call_init_paths (&state);
  
    /* Initialize _r_debug_extended.  */
@@ -870,27 +908,7 @@ index 493f9696ea..60e7f852e1 100644
    ++GL(dl_ns)[LM_ID_BASE]._ns_nloaded;
    ++GL(dl_load_adds);
  
-@@ -1719,8 +1718,8 @@ dl_main (const ElfW(Phdr) *phdr,
- 
-   const ElfW(Phdr) *rtld_phdr = (const void *) rtld_ehdr + rtld_ehdr->e_phoff;
- 
--  _dl_rtld_map.l_phdr = rtld_phdr;
--  _dl_rtld_map.l_phnum = rtld_ehdr->e_phnum;
-+  GL(dl_rtld_map).l_phdr = rtld_phdr;
-+  GL(dl_rtld_map).l_phnum = rtld_ehdr->e_phnum;
- 
- 
-   /* PT_GNU_RELRO is usually the last phdr.  */
-@@ -1728,15 +1727,15 @@ dl_main (const ElfW(Phdr) *phdr,
-   while (cnt-- > 0)
-     if (rtld_phdr[cnt].p_type == PT_GNU_RELRO)
-       {
--	_dl_rtld_map.l_relro_addr = rtld_phdr[cnt].p_vaddr;
--	_dl_rtld_map.l_relro_size = rtld_phdr[cnt].p_memsz;
-+	GL(dl_rtld_map).l_relro_addr = rtld_phdr[cnt].p_vaddr;
-+	GL(dl_rtld_map).l_relro_size = rtld_phdr[cnt].p_memsz;
- 	break;
-       }
+   rtld_setup_phdr ();
  
    /* Add the dynamic linker to the TLS list if it also uses TLS.  */
 -  if (_dl_rtld_map.l_tls_blocksize != 0)
@@ -901,7 +919,7 @@ index 493f9696ea..60e7f852e1 100644
  
    audit_list_add_dynamic_tag (&state.audit_list, main_map, DT_AUDIT);
    audit_list_add_dynamic_tag (&state.audit_list, main_map, DT_DEPAUDIT);
-@@ -1929,9 +1928,9 @@ dl_main (const ElfW(Phdr) *phdr,
+@@ -1954,9 +1953,9 @@ dl_main (const ElfW(Phdr) *phdr,
      main_map->l_searchlist.r_list[--i]->l_global = 1;
  
    /* Remove _dl_rtld_map from the chain.  */
@@ -914,7 +932,7 @@ index 493f9696ea..60e7f852e1 100644
  
    for (i = 1; i < main_map->l_searchlist.r_nlist; ++i)
      if (is_rtld_link_map (main_map->l_searchlist.r_list[i]))
-@@ -1941,17 +1940,17 @@ dl_main (const ElfW(Phdr) *phdr,
+@@ -1966,17 +1965,17 @@ dl_main (const ElfW(Phdr) *phdr,
       symbol search order because gdb uses the chain's order as its
       symbol search order.  */
  
@@ -937,7 +955,7 @@ index 493f9696ea..60e7f852e1 100644
  #endif
      }
    else
-@@ -1960,14 +1959,14 @@ dl_main (const ElfW(Phdr) *phdr,
+@@ -1985,14 +1984,14 @@ dl_main (const ElfW(Phdr) *phdr,
         In this case it doesn't matter much where we put the
         interpreter object, so we just initialize the list pointer so
         that the assertion below holds.  */
@@ -958,7 +976,7 @@ index 493f9696ea..60e7f852e1 100644
      }
  
    /* Now let us see whether all libraries are available in the
-@@ -2109,7 +2108,7 @@ dl_main (const ElfW(Phdr) *phdr,
+@@ -2134,7 +2133,7 @@ dl_main (const ElfW(Phdr) *phdr,
  	      while (i-- > 0)
  		{
  		  struct link_map *l = main_map->l_initfini[i];
@@ -967,7 +985,7 @@ index 493f9696ea..60e7f852e1 100644
  		    {
  		      args.l = l;
  		      _dl_receive_error (print_unresolved, relocate_doit,
-@@ -2308,7 +2307,7 @@ dl_main (const ElfW(Phdr) *phdr,
+@@ -2333,7 +2332,7 @@ dl_main (const ElfW(Phdr) *phdr,
      {
        RTLD_TIMING_VAR (start);
        rtld_timer_start (&start);
@@ -976,7 +994,7 @@ index 493f9696ea..60e7f852e1 100644
        rtld_timer_accum (&relocate_time, start);
  
        __rtld_mutex_init ();
-@@ -2319,7 +2318,7 @@ dl_main (const ElfW(Phdr) *phdr,
+@@ -2344,7 +2343,7 @@ dl_main (const ElfW(Phdr) *phdr,
      }
  
    /* All ld.so initialization is complete.  Apply RELRO.  */
@@ -986,10 +1004,10 @@ index 493f9696ea..60e7f852e1 100644
    /* Relocation is complete.  Perform early libc initialization.  This
       is the initial libc, even if audit modules have been loaded with
 diff --git a/elf/setup-vdso.h b/elf/setup-vdso.h
-index 935d9e3baf..8347e3355b 100644
+index 0dba7072d5..bf7aee0642 100644
 --- a/elf/setup-vdso.h
 +++ b/elf/setup-vdso.h
-@@ -92,8 +92,8 @@ setup_vdso (struct link_map *main_map __attribute__ ((unused)),
+@@ -96,8 +96,8 @@ setup_vdso (struct link_map *main_map __attribute__ ((unused)),
        /* Rearrange the list so this DSO appears after rtld_map.  */
        assert (l->l_next == NULL);
        assert (l->l_prev == main_map);
@@ -1001,7 +1019,7 @@ index 935d9e3baf..8347e3355b 100644
  # else
        GL(dl_nns) = 1;
 diff --git a/gmon/tst-sprofil.c b/gmon/tst-sprofil.c
-index 55cf99abf4..a4827cbc03 100644
+index a52e5d9312..22e44388b0 100644
 --- a/gmon/tst-sprofil.c
 +++ b/gmon/tst-sprofil.c
 @@ -34,6 +34,7 @@ size_t taddr[] =
@@ -1013,7 +1031,7 @@ index 55cf99abf4..a4827cbc03 100644
      0x4000000000001000,	/* elf64/hppa */
      0x0000000100000000	/* Linux elf64/sparc */
 diff --git a/manual/install.texi b/manual/install.texi
-index 8f8f0a17b9..861d0371e5 100644
+index 073cda0530..e059fb1c34 100644
 --- a/manual/install.texi
 +++ b/manual/install.texi
 @@ -680,6 +680,8 @@ patches, although we try to avoid this.
@@ -1026,7 +1044,7 @@ index 8f8f0a17b9..861d0371e5 100644
  headers present in the kernel source directory are not suitable for
  direct use by @theglibc{}.  You do not need to use that kernel, just have
 diff --git a/manual/math.texi b/manual/math.texi
-index fbabf37b48..74ee6239a0 100644
+index fd7284953d..a98288bbce 100644
 --- a/manual/math.texi
 +++ b/manual/math.texi
 @@ -69,7 +69,7 @@ Support for @code{_Float@var{N}} or @code{_Float@var{N}x} types is
@@ -1038,8 +1056,65 @@ index fbabf37b48..74ee6239a0 100644
  aarch64, alpha, loongarch, mips64, riscv, s390 and sparc.
  
  @menu
+diff --git a/math/Versions b/math/Versions
+index d04ac92324..cdb48b7bb2 100644
+--- a/math/Versions
++++ b/math/Versions
+@@ -697,8 +697,6 @@ libm {
+     j0f;
+     j1f;
+     jnf;
+-    lgammaf;
+-    lgammaf_r;
+     log10f;
+     remainder;
+     remainderf;
+diff --git a/math/lgamma-compat.h b/math/lgamma-compat.h
+index e548127527..0f3bd152b3 100644
+--- a/math/lgamma-compat.h
++++ b/math/lgamma-compat.h
+@@ -34,17 +34,10 @@
+    old glibc.
+ 
+    Users of this file define USE_AS_COMPAT to 0 when building the main
+-   version of lgamma, 1 when building the compatibility version that
+-   handles signgam visibility, and 2 when building the compatibility
+-   that handles SVID support).  */
++   version of lgamma, 1 when building the compatibility version.  */
+ 
+-#if USE_AS_COMPAT <= 1
+ #define LGAMMA_OLD_VER GLIBC_2_0
+ #define LGAMMA_NEW_VER GLIBC_2_23
+-#elif USE_AS_COMPAT == 2
+-#define LGAMMA_OLD_VER    GLIBC_2_23
+-#define LGAMMA_NEW_VER    GLIBC_2_43
+-#endif
+ #define HAVE_LGAMMA_COMPAT SHLIB_COMPAT (libm, LGAMMA_OLD_VER, LGAMMA_NEW_VER)
+ 
+ /* Whether to build this version at all.  */
+@@ -52,10 +45,8 @@
+   (LIBM_SVID_COMPAT && (HAVE_LGAMMA_COMPAT || !USE_AS_COMPAT))
+ 
+ /* The name to use for this version.  */
+-#if USE_AS_COMPAT == 1
++#if USE_AS_COMPAT
+ # define LGFUNC(FUNC) FUNC ## _compat
+-#elif USE_AS_COMPAT == 2
+-# define LGFUNC(FUNC) FUNC ## _compat2
+ #else
+ # define LGFUNC(FUNC) FUNC
+ #endif
+@@ -63,7 +54,7 @@
+ /* If there is a compatibility version, gamma (not an ISO C function,
+    so never a problem for it to set signgam) points directly to it
+    rather than having separate versions.  */
+-#define GAMMA_ALIAS (USE_AS_COMPAT == 1 ? HAVE_LGAMMA_COMPAT : !HAVE_LGAMMA_COMPAT)
++#define GAMMA_ALIAS (USE_AS_COMPAT ? HAVE_LGAMMA_COMPAT : !HAVE_LGAMMA_COMPAT)
+ 
+ /* How to call the underlying lgamma_r function.  */
+ #define CALL_LGAMMA(TYPE, FUNC, ARG)			\
 diff --git a/math/libm-test-support.h b/math/libm-test-support.h
-index c1c25786ce..7c90444ff5 100644
+index 20093a1897..9caf0e2787 100644
 --- a/math/libm-test-support.h
 +++ b/math/libm-test-support.h
 @@ -128,7 +128,7 @@ extern const char doc[];
@@ -1051,11 +1126,62 @@ index c1c25786ce..7c90444ff5 100644
       && !__GNUC_PREREQ (7, 0))
  # define XFAIL_FLOAT128_PAYLOAD (TEST_COND_binary128 ? XFAIL_TEST : 0)
  #else
+diff --git a/math/w_lgammaf_compat2.c b/math/w_lgammaf_compat2.c
+index 3a942dbe04..5fc402260c 100644
+--- a/math/w_lgammaf_compat2.c
++++ b/math/w_lgammaf_compat2.c
+@@ -1,2 +1,2 @@
+-#define USE_AS_COMPAT 2
++#define USE_AS_COMPAT 0
+ #include <w_lgammaf_main.c>
+diff --git a/math/w_lgammaf_main.c b/math/w_lgammaf_main.c
+index 8d475d3a6c..22b7f8fc53 100644
+--- a/math/w_lgammaf_main.c
++++ b/math/w_lgammaf_main.c
+@@ -33,7 +33,12 @@ LGFUNC (__lgammaf) (float x)
+ 
+ 	return y;
+ }
+-compat_symbol (libm, LGFUNC (__lgammaf), lgammaf, LGAMMA_OLD_VER);
++# if USE_AS_COMPAT
++compat_symbol (libm, __lgammaf_compat, lgammaf, LGAMMA_OLD_VER);
++# else
++versioned_symbol (libm, __lgammaf, lgammaf, LGAMMA_NEW_VER);
++libm_alias_float_other (__lgamma, lgamma)
++# endif
+ # if GAMMA_ALIAS
+ strong_alias (LGFUNC (__lgammaf), __gammaf)
+ weak_alias (__gammaf, gammaf)
+diff --git a/math/w_lgammaf_r_compat.c b/math/w_lgammaf_r_compat.c
+index 524f9901d3..be01b6daac 100644
+--- a/math/w_lgammaf_r_compat.c
++++ b/math/w_lgammaf_r_compat.c
+@@ -20,12 +20,11 @@
+ #include <math_private.h>
+ #include <math-svid-compat.h>
+ #include <libm-alias-float.h>
+-#include <shlib-compat.h>
+ 
+ 
+ #if LIBM_SVID_COMPAT
+ float
+-__lgammaf_r_svidf(float x, int *signgamp)
++__lgammaf_r(float x, int *signgamp)
+ {
+ 	float y = __ieee754_lgammaf_r(x,signgamp);
+ 	if(__builtin_expect(!isfinite(y), 0)
+@@ -37,5 +36,5 @@ __lgammaf_r_svidf(float x, int *signgamp)
+ 
+ 	return y;
+ }
+-compat_symbol (libm, __lgammaf_r_svidf, lgammaf_r, GLIBC_2_0);
++libm_alias_float_r (__lgamma, lgamma, _r)
+ #endif
 diff --git a/nptl/allocatestack.c b/nptl/allocatestack.c
-index 800ca89720..384943c73c 100644
+index d3a9dbd3d2..98cb0d5a59 100644
 --- a/nptl/allocatestack.c
 +++ b/nptl/allocatestack.c
-@@ -179,7 +179,9 @@ __attribute ((always_inline))
+@@ -177,7 +177,9 @@ __attribute ((always_inline))
  guard_position (void *mem, size_t size, size_t guardsize, const struct pthread *pd,
  		size_t pagesize_m1)
  {
@@ -1066,16 +1192,16 @@ index 800ca89720..384943c73c 100644
    return mem;
  #elif _STACK_GROWS_UP
    return (char *) (((uintptr_t) pd - guardsize) & ~pagesize_m1);
-@@ -218,7 +220,7 @@ setup_stack_prot (char *mem, size_t size, struct pthread *pd,
+@@ -216,7 +218,7 @@ setup_stack_prot (char *mem, size_t size, struct pthread *pd,
      {
-       const int prot = stack_prot ();
+       const int prot = GL(dl_stack_prot_flags);
        char *guardend = guard + guardsize;
 -#if _STACK_GROWS_DOWN
 +#if _STACK_GROWS_DOWN && !defined(NEED_SEPARATE_REGISTER_STACK)
        /* As defined at guard_position, for architectures with downward stack
  	 the guard page is always at start of the allocated area.  */
        if (__mprotect (guardend, size - guardsize, prot) != 0)
-@@ -285,7 +287,7 @@ adjust_stack_prot (char *mem, size_t size, const struct pthread *pd,
+@@ -295,7 +297,7 @@ adjust_stack_prot (char *mem, size_t size, struct pthread *pd,
        if (pd->stack_mode == ALLOCATE_GUARD_MADV_GUARD)
  	{
  	  void *slack =
@@ -1084,16 +1210,16 @@ index 800ca89720..384943c73c 100644
  	    mem + guardsize;
  #else
  	    guard_position (mem, size, pd->guardsize, pd, pagesize_m1);
-@@ -295,7 +297,7 @@ adjust_stack_prot (char *mem, size_t size, const struct pthread *pd,
+@@ -305,7 +307,7 @@ adjust_stack_prot (char *mem, size_t size, struct pthread *pd,
        else if (pd->stack_mode == ALLOCATE_GUARD_PROT_NONE)
  	{
- 	  const int prot = stack_prot ();
+ 	  const int prot = GL(dl_stack_prot_flags);
 -#if _STACK_GROWS_DOWN
 +#if _STACK_GROWS_DOWN && !defined(NEED_SEPARATE_REGISTER_STACK)
  	  return __mprotect (mem + guardsize, slacksize, prot) == 0;
  #else
  	  char *new_guard = (char *)(((uintptr_t) pd - guardsize)
-@@ -320,7 +322,7 @@ advise_stack_range (void *mem, size_t size, uintptr_t pd, size_t guardsize)
+@@ -330,7 +332,7 @@ advise_stack_range (void *mem, size_t size, uintptr_t pd, size_t guardsize)
  {
    uintptr_t sp = (uintptr_t) CURRENT_STACK_FRAME;
    size_t pagesize_m1 = __getpagesize () - 1;
@@ -1102,7 +1228,7 @@ index 800ca89720..384943c73c 100644
    size_t freesize = (sp - (uintptr_t) mem) & ~pagesize_m1;
    assert (freesize < size);
    if (freesize > PTHREAD_STACK_MIN)
-@@ -655,7 +657,7 @@ name_stack_maps (struct pthread *pd, bool set)
+@@ -675,7 +677,7 @@ name_stack_maps (struct pthread *pd, bool set)
  {
    size_t adjust = pd->stack_mode == ALLOCATE_GUARD_PROT_NONE ?
      pd->guardsize : 0;
@@ -1112,7 +1238,7 @@ index 800ca89720..384943c73c 100644
  #else
    void *stack = pd->stackblock;
 diff --git a/nptl/perf.c b/nptl/perf.c
-index 5defd622ca..4ebbf87954 100644
+index 7ca4d9916c..08d10165a5 100644
 --- a/nptl/perf.c
 +++ b/nptl/perf.c
 @@ -708,6 +708,8 @@ clock_getcpuclockid (pid_t pid, clockid_t *clock_id)
@@ -1125,10 +1251,10 @@ index 5defd622ca..4ebbf87954 100644
  #error "HP_TIMING_NOW missing"
  #endif
 diff --git a/scripts/build-many-glibcs.py b/scripts/build-many-glibcs.py
-index 36b1044c28..c659f54e2a 100755
+index 9677705724..88f7b1fa7a 100755
 --- a/scripts/build-many-glibcs.py
 +++ b/scripts/build-many-glibcs.py
-@@ -232,6 +232,10 @@ class Context(object):
+@@ -262,6 +262,10 @@ class Context(object):
                          os_name='linux-gnu')
          self.add_config(arch='i686',
                          os_name='gnu')
@@ -1137,9 +1263,9 @@ index 36b1044c28..c659f54e2a 100755
 +                        first_gcc_cfg=['--with-system-libunwind'],
 +                        binutils_cfg=['--enable-obsolete'])
          self.add_config(arch='loongarch64',
-                         os_name='linux-gnu',
-                         variant='lp64d',
-@@ -1323,6 +1327,7 @@ def install_linux_headers(policy, cmdlist):
+                         os_name='linux-gnuf64',
+                         gcc_cfg=['--disable-multilib'])
+@@ -1368,6 +1372,7 @@ def install_linux_headers(policy, cmdlist):
                  'i586': 'x86',
                  'i686': 'x86',
                  'i786': 'x86',
@@ -1148,7 +1274,7 @@ index 36b1044c28..c659f54e2a 100755
                  'm68k': 'm68k',
                  'microblaze': 'microblaze',
 diff --git a/support/xclone.c b/support/xclone.c
-index 0bfd10ecf6..0239bbf0d3 100644
+index edfd3c4fd4..12659fe996 100644
 --- a/support/xclone.c
 +++ b/support/xclone.c
 @@ -27,11 +27,18 @@ xclone (int (*fn) (void *arg), void *arg, void *stack, size_t stack_size,
@@ -1224,7 +1350,7 @@ index 0000000000..71cfb62411
 +
 +#endif /* !dl_fptr_h */
 diff --git a/sysdeps/generic/ldconfig.h b/sysdeps/generic/ldconfig.h
-index 7bc8788647..5913e02f0d 100644
+index 5913bf40fc..52803426b9 100644
 --- a/sysdeps/generic/ldconfig.h
 +++ b/sysdeps/generic/ldconfig.h
 @@ -30,6 +30,7 @@
@@ -1236,10 +1362,10 @@ index 7bc8788647..5913e02f0d 100644
  #define FLAG_S390_LIB64			0x0400
  #define FLAG_POWERPC_LIB64		0x0500
 diff --git a/sysdeps/generic/ldsodefs.h b/sysdeps/generic/ldsodefs.h
-index 74025f1f93..16a48b57ed 100644
+index 0fcc14999c..d9e028da3f 100644
 --- a/sysdeps/generic/ldsodefs.h
 +++ b/sysdeps/generic/ldsodefs.h
-@@ -408,6 +408,14 @@ struct rtld_global
+@@ -395,6 +395,14 @@ struct rtld_global
    /* List of search directories.  */
    EXTERN struct r_search_path_elem *_dl_all_dirs;
  
@@ -1254,7 +1380,7 @@ index 74025f1f93..16a48b57ed 100644
    /* Get architecture specific definitions.  */
  #define PROCINFO_DECL
  #ifndef PROCINFO_CLASS
-@@ -1369,18 +1377,11 @@ rtld_active (void)
+@@ -1358,18 +1366,11 @@ rtld_active (void)
    return GLRO(dl_init_all_dirs) != NULL;
  }
  
@@ -1274,7 +1400,7 @@ index 74025f1f93..16a48b57ed 100644
  }
  
  static inline struct auditstate *
-@@ -1388,7 +1389,7 @@ link_map_audit_state (struct link_map *l, size_t index)
+@@ -1377,7 +1378,7 @@ link_map_audit_state (struct link_map *l, size_t index)
  {
    if (is_rtld_link_map (l))
      /* The auditstate array is stored separately.  */
@@ -1284,7 +1410,7 @@ index 74025f1f93..16a48b57ed 100644
      {
        /* The auditstate array follows the link map in memory.  */
 diff --git a/sysdeps/generic/unwind-dw2.c b/sysdeps/generic/unwind-dw2.c
-index f0ed7b3a96..f3ac24b017 100644
+index f2c695828e..00065ad772 100644
 --- a/sysdeps/generic/unwind-dw2.c
 +++ b/sysdeps/generic/unwind-dw2.c
 @@ -224,6 +224,7 @@ _Unwind_FindEnclosingFunction (void *pc)
@@ -1304,7 +1430,7 @@ index f0ed7b3a96..f3ac24b017 100644
  /* Extract any interesting information from the CIE for the translation
     unit F belongs to.  Return a pointer to the byte after the augmentation,
 diff --git a/sysdeps/generic/unwind.h b/sysdeps/generic/unwind.h
-index 4f159a1726..79e67082b6 100644
+index d47c6da43e..2af3b13e01 100644
 --- a/sysdeps/generic/unwind.h
 +++ b/sysdeps/generic/unwind.h
 @@ -33,7 +33,11 @@ extern "C" {
@@ -1350,7 +1476,7 @@ index 4f159a1726..79e67082b6 100644
  /* @@@ Given an address, return the entry point of the function that
     contains it.  */
 diff --git a/sysdeps/hppa/dl-fptr.h b/sysdeps/hppa/dl-fptr.h
-index 5f16c5b2b8..4d1b9dae0c 100644
+index 901c2097a9..0eff0ec70d 100644
 --- a/sysdeps/hppa/dl-fptr.h
 +++ b/sysdeps/hppa/dl-fptr.h
 @@ -19,28 +19,7 @@
@@ -1570,7 +1696,7 @@ index 0000000000..8f26f0fc2a
 +#define ABORT_INSTRUCTION asm ("break 0")
 diff --git a/sysdeps/ia64/atomic-machine.h b/sysdeps/ia64/atomic-machine.h
 new file mode 100644
-index 0000000000..0eb760a5e9
+index 0000000000..b9d85a27c4
 --- /dev/null
 +++ b/sysdeps/ia64/atomic-machine.h
 @@ -0,0 +1,96 @@
@@ -1593,7 +1719,7 @@ index 0000000000..0eb760a5e9
 +
 +#include <ia64intrin.h>
 +
-+#define __HAVE_64B_ATOMICS 1
++#define USE_64B_ATOMICS 1
 +#define USE_ATOMIC_COMPILER_BUILTINS 0
 +
 +/* XXX Is this actually correct?  */
@@ -3681,13 +3807,10 @@ index 0000000000..1faea6458d
 +    matherrf; matherrl;
 +  }
 +}
-diff --git a/sysdeps/ia64/fpu/branred.c b/sysdeps/ia64/fpu/branred.c
-new file mode 100644
-index 0000000000..1cc8931700
---- /dev/null
-+++ b/sysdeps/ia64/fpu/branred.c
-@@ -0,0 +1 @@
-+/* Not needed.  */
+diff --git a/sysdeps/ieee754/flt-32/w_lgammaf_r.c b/sysdeps/ia64/fpu/branred.c
+similarity index 100%
+rename from sysdeps/ieee754/flt-32/w_lgammaf_r.c
+rename to sysdeps/ia64/fpu/branred.c
 diff --git a/sysdeps/ia64/fpu/doasin.c b/sysdeps/ia64/fpu/doasin.c
 new file mode 100644
 index 0000000000..1cc8931700
@@ -53047,10 +53170,10 @@ index 0000000000..a037342768
 +.global __libm_error_support#
 diff --git a/sysdeps/ia64/fpu/fclrexcpt.c b/sysdeps/ia64/fpu/fclrexcpt.c
 new file mode 100644
-index 0000000000..3d64dd4afb
+index 0000000000..b40609fbd5
 --- /dev/null
 +++ b/sysdeps/ia64/fpu/fclrexcpt.c
-@@ -0,0 +1,37 @@
+@@ -0,0 +1,39 @@
 +/* Clear given exceptions in current floating-point environment.
 +   Copyright (C) 1997-2024 Free Software Foundation, Inc.
 +   This file is part of the GNU C Library.
@@ -53072,7 +53195,7 @@ index 0000000000..3d64dd4afb
 +#include <fenv.h>
 +
 +int
-+feclearexcept (int excepts)
++__feclearexcept (int excepts)
 +{
 +  fenv_t fpsr;
 +
@@ -53087,6 +53210,8 @@ index 0000000000..3d64dd4afb
 +  /* success */
 +  return 0;
 +}
++weak_alias (__feclearexcept, feclearexcept)
++libm_hidden_def (__feclearexcept)
 +libm_hidden_def (feclearexcept)
 diff --git a/sysdeps/ia64/fpu/fedisblxcpt.c b/sysdeps/ia64/fpu/fedisblxcpt.c
 new file mode 100644
@@ -53754,10 +53879,10 @@ index 0000000000..148f9fa64b
 +}
 diff --git a/sysdeps/ia64/fpu/ftestexcept.c b/sysdeps/ia64/fpu/ftestexcept.c
 new file mode 100644
-index 0000000000..ae542070c8
+index 0000000000..690dc6a037
 --- /dev/null
 +++ b/sysdeps/ia64/fpu/ftestexcept.c
-@@ -0,0 +1,31 @@
+@@ -0,0 +1,33 @@
 +/* Test exception in current environment.
 +   Copyright (C) 1997-2024 Free Software Foundation, Inc.
 +   This file is part of the GNU C Library.
@@ -53779,7 +53904,7 @@ index 0000000000..ae542070c8
 +#include <fenv.h>
 +
 +int
-+fetestexcept (int excepts)
++__fetestexcept (int excepts)
 +{
 +  fenv_t fpsr;
 +
@@ -53788,6 +53913,8 @@ index 0000000000..ae542070c8
 +
 +  return (fpsr >> 13) & excepts & FE_ALL_EXCEPT;
 +}
++libm_hidden_def (__fetestexcept)
++weak_alias (__fetestexcept, fetestexcept)
 +libm_hidden_def (fetestexcept)
 diff --git a/sysdeps/ia64/fpu/gen_import_file_list b/sysdeps/ia64/fpu/gen_import_file_list
 new file mode 100644
@@ -98214,7 +98341,7 @@ index 0000000000..113330d830
 +libm_alias_ldouble_other (cbrt, cbrt)
 diff --git a/sysdeps/ia64/fpu/s_ceil.S b/sysdeps/ia64/fpu/s_ceil.S
 new file mode 100644
-index 0000000000..641f291121
+index 0000000000..1353a55cfc
 --- /dev/null
 +++ b/sysdeps/ia64/fpu/s_ceil.S
 @@ -0,0 +1,224 @@
@@ -98441,10 +98568,10 @@ index 0000000000..641f291121
 +;;
 +
 +GLOBAL_LIBM_END(ceil)
-+libm_alias_double_other (ceil, ceil)
++libm_alias_double (ceil, __ceil)
 diff --git a/sysdeps/ia64/fpu/s_ceilf.S b/sysdeps/ia64/fpu/s_ceilf.S
 new file mode 100644
-index 0000000000..84a95696bf
+index 0000000000..56ad8dcb07
 --- /dev/null
 +++ b/sysdeps/ia64/fpu/s_ceilf.S
 @@ -0,0 +1,224 @@
@@ -98671,10 +98798,10 @@ index 0000000000..84a95696bf
 +;;
 +
 +GLOBAL_LIBM_END(ceilf)
-+libm_alias_float_other (ceil, ceil)
++libm_alias_float (ceil, __ceil)
 diff --git a/sysdeps/ia64/fpu/s_ceill.S b/sysdeps/ia64/fpu/s_ceill.S
 new file mode 100644
-index 0000000000..582f7493a8
+index 0000000000..46532561cd
 --- /dev/null
 +++ b/sysdeps/ia64/fpu/s_ceill.S
 @@ -0,0 +1,224 @@
@@ -98901,7 +99028,7 @@ index 0000000000..582f7493a8
 +;;
 +
 +GLOBAL_LIBM_END(ceill)
-+libm_alias_ldouble_other (ceil, ceil)
++libm_alias_ldouble (ceil, __ceil)
 diff --git a/sysdeps/ia64/fpu/s_cos.S b/sysdeps/ia64/fpu/s_cos.S
 new file mode 100644
 index 0000000000..c473f88131
@@ -137557,7 +137684,7 @@ index 0000000000..2edc3a38e5
 +.global __libm_pi_by_2_reduce#
 diff --git a/sysdeps/ia64/fpu/s_trunc.S b/sysdeps/ia64/fpu/s_trunc.S
 new file mode 100644
-index 0000000000..81add71f65
+index 0000000000..1909c4bf11
 --- /dev/null
 +++ b/sysdeps/ia64/fpu/s_trunc.S
 @@ -0,0 +1,166 @@
@@ -137726,10 +137853,10 @@ index 0000000000..81add71f65
 +;;
 +
 +GLOBAL_LIBM_END(trunc)
-+libm_alias_double_other (trunc, trunc)
++libm_alias_double (trunc, __trunc)
 diff --git a/sysdeps/ia64/fpu/s_truncf.S b/sysdeps/ia64/fpu/s_truncf.S
 new file mode 100644
-index 0000000000..7e084cbd32
+index 0000000000..e01d8b1c0e
 --- /dev/null
 +++ b/sysdeps/ia64/fpu/s_truncf.S
 @@ -0,0 +1,166 @@
@@ -137898,10 +138025,10 @@ index 0000000000..7e084cbd32
 +;;
 +
 +GLOBAL_LIBM_END(truncf)
-+libm_alias_float_other (trunc, trunc)
++libm_alias_float (trunc, __trunc)
 diff --git a/sysdeps/ia64/fpu/s_truncl.S b/sysdeps/ia64/fpu/s_truncl.S
 new file mode 100644
-index 0000000000..6fb44df643
+index 0000000000..e1d5d8ef27
 --- /dev/null
 +++ b/sysdeps/ia64/fpu/s_truncl.S
 @@ -0,0 +1,166 @@
@@ -138070,7 +138197,7 @@ index 0000000000..6fb44df643
 +;;
 +
 +GLOBAL_LIBM_END(truncl)
-+libm_alias_ldouble_other (trunc, trunc)
++libm_alias_ldouble (trunc, __trunc)
 diff --git a/sysdeps/ia64/fpu/sfp-machine.h b/sysdeps/ia64/fpu/sfp-machine.h
 new file mode 100644
 index 0000000000..edba1e1d60
@@ -150179,7 +150306,7 @@ index 0000000000..390729327a
 +  ({ uintptr_t x; asm ("adds %0 = -16, r13;; ld8 %0 = [%0]" : "=r" (x)); x; })
 diff --git a/sysdeps/ia64/stackinfo.h b/sysdeps/ia64/stackinfo.h
 new file mode 100644
-index 0000000000..8e253f3fc7
+index 0000000000..84ceec6216
 --- /dev/null
 +++ b/sysdeps/ia64/stackinfo.h
 @@ -0,0 +1,33 @@
@@ -150213,7 +150340,7 @@ index 0000000000..8e253f3fc7
 +#define _STACK_GROWS_DOWN	1
 +
 +/* Default to a non-executable stack.  */
-+#define DEFAULT_STACK_PERMS (PF_R|PF_W)
++#define DEFAULT_STACK_PROT_PERMS (PROT_READ|PROT_WRITE)
 +
 +#endif	/* stackinfo.h */
 diff --git a/sysdeps/ia64/start.S b/sysdeps/ia64/start.S
@@ -151269,8 +151396,139 @@ index 0000000000..7a226b3858
 +{
 +  return UNWIND_LINK_PTR (link (), _Unwind_GetBSP) (context);
 +}
+diff --git a/sysdeps/ieee754/flt-32/e_lgammaf_r.c b/sysdeps/ieee754/flt-32/e_lgammaf_r.c
+index 2fb4784b59..059afa86c6 100644
+--- a/sysdeps/ieee754/flt-32/e_lgammaf_r.c
++++ b/sysdeps/ieee754/flt-32/e_lgammaf_r.c
+@@ -36,8 +36,6 @@ SOFTWARE.
+ #include <math.h>
+ #include <libm-alias-finite.h>
+ #include <limits.h>
+-#include <libm-alias-float.h>
+-#include <math-svid-compat.h>
+ #include <math-narrow-eval.h>
+ #include "math_config.h"
+ 
+@@ -110,7 +108,7 @@ as_ln (double x)
+ }
+ 
+ float
+-__lgammaf_r (float x, int *signgamp)
++__ieee754_lgammaf_r (float x, int *signgamp)
+ {
+   static const struct
+   {
+@@ -163,7 +161,7 @@ __lgammaf_r (float x, int *signgamp)
+       if (x <= 0.0f)
+ 	{
+ 	  *signgamp = asuint (x) >> 31 ? -1 : 1;
+-	  return __math_divzerof (0);
++	  return 1.0f / 0.0f;
+ 	}
+       if (x == 1.0f || x == 2.0f)
+ 	{
+@@ -208,11 +206,10 @@ __lgammaf_r (float x, int *signgamp)
+       if (ax > 0x1.afc1ap+1f)
+ 	{
+ 	  if (__glibc_unlikely (x > 0x1.895f1cp+121f))
+-	    return __math_oflowf (0);
+-
++	    return math_narrow_eval (0x1p127f * 0x1p127f);
+ 	  /* |x|>=2**23, must be -integer */
+ 	  if (__glibc_unlikely (x < 0.0f && ax > 0x1p+23f))
+-	    return __math_divzerof (0);
++	    return ax / 0.0f;
+ 	  double lz = as_ln (z);
+ 	  f = (z - 0.5) * (lz - 1) + 0x1.acfe390c97d69p-2;
+ 	  if (ax < 0x1.0p+20f)
+@@ -274,7 +271,7 @@ __lgammaf_r (float x, int *signgamp)
+ 	    {
+ 	      int ni = floorf (-2 * x);
+ 	      if ((ni & 1) == 0 && ni == -2 * x)
+-		return __math_divzerof (0);
++		return 1.0f / 0.0f;
+ 	    }
+ 	  const double c0 = 0x1.3cc0e6a0106b3p+2;
+ 	  static const double rd[] =
+@@ -366,13 +363,4 @@ __lgammaf_r (float x, int *signgamp)
+     }
+   return r;
+ }
+-strong_alias (__lgammaf_r, __ieee754_lgammaf_r)
+-libm_alias_finite (__lgammaf_r, __lgammaf_r)
+-#if LIBM_SVID_COMPAT
+-versioned_symbol (libm, __lgammaf_r, lgammaf_r, GLIBC_2_43);
+-# if __HAVE_FLOAT32 && !__HAVE_DISTINCT_FLOAT32
+-weak_alias (__lgammaf_r, lgammaf32_r)
+-# endif
+-#else
+-libm_alias_float_r (__lgamma, lgamma, _r)
+-#endif
++libm_alias_finite (__ieee754_lgammaf_r, __lgammaf_r)
+diff --git a/sysdeps/ieee754/flt-32/w_lgammaf.c b/sysdeps/ieee754/flt-32/w_lgammaf.c
+deleted file mode 100644
+index 5fc9b46866..0000000000
+--- a/sysdeps/ieee754/flt-32/w_lgammaf.c
++++ /dev/null
+@@ -1,17 +0,0 @@
+-#include <math-svid-compat.h>
+-#include <math.h>
+-#include <libm-alias-float.h>
+-
+-float
+-__lgammaf (float x)
+-{
+-  return __lgammaf_r (x, &__signgam);
+-}
+-#if LIBM_SVID_COMPAT
+-versioned_symbol (libm, __lgammaf, lgammaf, GLIBC_2_43);
+-libm_alias_float_other (__lgamma, lgamma)
+-#else
+-libm_alias_float (__lgamma, lgamma)
+-strong_alias (__lgammaf, __gammaf)
+-weak_alias (__gammaf, gammaf)
+-#endif
+diff --git a/sysdeps/mach/hurd/i386/libm.abilist b/sysdeps/mach/hurd/i386/libm.abilist
+index a1b21698f6..5425d61fd2 100644
+--- a/sysdeps/mach/hurd/i386/libm.abilist
++++ b/sysdeps/mach/hurd/i386/libm.abilist
+@@ -1344,8 +1344,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/aarch64/libm.abilist b/sysdeps/unix/sysv/linux/aarch64/libm.abilist
+index 23c1817085..5045c53bd2 100644
+--- a/sysdeps/unix/sysv/linux/aarch64/libm.abilist
++++ b/sysdeps/unix/sysv/linux/aarch64/libm.abilist
+@@ -1310,8 +1310,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/alpha/libm.abilist b/sysdeps/unix/sysv/linux/alpha/libm.abilist
+index eaffa43b6c..4dc331c14e 100644
+--- a/sysdeps/unix/sysv/linux/alpha/libm.abilist
++++ b/sysdeps/unix/sysv/linux/alpha/libm.abilist
+@@ -1469,8 +1469,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
 diff --git a/sysdeps/unix/sysv/linux/arch-fork.h b/sysdeps/unix/sysv/linux/arch-fork.h
-index 1886630c90..8b0b93e646 100644
+index f7864aab40..5c4f55d69b 100644
 --- a/sysdeps/unix/sysv/linux/arch-fork.h
 +++ b/sysdeps/unix/sysv/linux/arch-fork.h
 @@ -46,6 +46,8 @@ arch_fork (void *ctid)
@@ -151282,8 +151540,34 @@ index 1886630c90..8b0b93e646 100644
  #elif defined(__ASSUME_CLONE_DEFAULT)
    ret = INLINE_SYSCALL_CALL (clone, flags, 0, NULL, ctid, 0);
  #else
+diff --git a/sysdeps/unix/sysv/linux/arm/be/libm.abilist b/sysdeps/unix/sysv/linux/arm/be/libm.abilist
+index 6f2f3282d8..3e9085ee8e 100644
+--- a/sysdeps/unix/sysv/linux/arm/be/libm.abilist
++++ b/sysdeps/unix/sysv/linux/arm/be/libm.abilist
+@@ -971,8 +971,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/arm/le/libm.abilist b/sysdeps/unix/sysv/linux/arm/le/libm.abilist
+index 6f2f3282d8..3e9085ee8e 100644
+--- a/sysdeps/unix/sysv/linux/arm/le/libm.abilist
++++ b/sysdeps/unix/sysv/linux/arm/le/libm.abilist
+@@ -971,8 +971,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
 diff --git a/sysdeps/unix/sysv/linux/clone-internal.c b/sysdeps/unix/sysv/linux/clone-internal.c
-index 9a1f27d017..17273f063e 100644
+index edb0a4b7cd..b336f46c27 100644
 --- a/sysdeps/unix/sysv/linux/clone-internal.c
 +++ b/sysdeps/unix/sysv/linux/clone-internal.c
 @@ -54,17 +54,25 @@ __clone_internal_fallback (struct clone_args *cl_args,
@@ -151318,7 +151602,7 @@ index 9a1f27d017..17273f063e 100644
  }
  
 diff --git a/sysdeps/unix/sysv/linux/fstatat64.c b/sysdeps/unix/sysv/linux/fstatat64.c
-index 931a593b93..ffb09683f8 100644
+index efa5eb871b..d0db955339 100644
 --- a/sysdeps/unix/sysv/linux/fstatat64.c
 +++ b/sysdeps/unix/sysv/linux/fstatat64.c
 @@ -86,7 +86,7 @@ fstatat64_time64_stat (int fd, const char *file, struct __stat64_t64 *buf,
@@ -151331,7 +151615,7 @@ index 931a593b93..ffb09683f8 100644
    r = INTERNAL_SYSCALL_CALL (newfstatat, fd, file, buf, flag);
  # elif defined __NR_fstatat64
 diff --git a/sysdeps/unix/sysv/linux/fxstat64.c b/sysdeps/unix/sysv/linux/fxstat64.c
-index 5e8cbb9f58..1b6f67850c 100644
+index 5d6e4f0028..6b14b07863 100644
 --- a/sysdeps/unix/sysv/linux/fxstat64.c
 +++ b/sysdeps/unix/sysv/linux/fxstat64.c
 @@ -45,7 +45,7 @@ ___fxstat64 (int vers, int fd, struct stat64 *buf)
@@ -151344,7 +151628,7 @@ index 5e8cbb9f58..1b6f67850c 100644
    if (vers == _STAT_VER_KERNEL || vers == _STAT_VER_LINUX)
      return INLINE_SYSCALL_CALL (fstat, fd, buf);
 diff --git a/sysdeps/unix/sysv/linux/fxstatat64.c b/sysdeps/unix/sysv/linux/fxstatat64.c
-index 864509268b..14cc5cdb78 100644
+index 7ab322f37b..b5f59af8de 100644
 --- a/sysdeps/unix/sysv/linux/fxstatat64.c
 +++ b/sysdeps/unix/sysv/linux/fxstatat64.c
 @@ -35,7 +35,7 @@ __fxstatat64 (int vers, int fd, const char *file, struct stat64 *st, int flag)
@@ -151356,6 +151640,32 @@ index 864509268b..14cc5cdb78 100644
       x86_64.  */
    if (vers == _STAT_VER_KERNEL || vers == _STAT_VER_LINUX)
      return INLINE_SYSCALL_CALL (newfstatat, fd, file, st, flag);
+diff --git a/sysdeps/unix/sysv/linux/hppa/libm.abilist b/sysdeps/unix/sysv/linux/hppa/libm.abilist
+index a2d8a6bcba..50ec515f97 100644
+--- a/sysdeps/unix/sysv/linux/hppa/libm.abilist
++++ b/sysdeps/unix/sysv/linux/hppa/libm.abilist
+@@ -971,8 +971,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/i386/libm.abilist b/sysdeps/unix/sysv/linux/i386/libm.abilist
+index 4369ca51bb..93dae6ed0e 100644
+--- a/sysdeps/unix/sysv/linux/i386/libm.abilist
++++ b/sysdeps/unix/sysv/linux/i386/libm.abilist
+@@ -1351,8 +1351,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
 diff --git a/sysdeps/unix/sysv/linux/ia64/Implies b/sysdeps/unix/sysv/linux/ia64/Implies
 new file mode 100644
 index 0000000000..9762539f9c
@@ -160505,7 +160815,7 @@ index 0000000000..f24ab4a9ee
 +#define _MKNOD_VER_LINUX	0
 +#define _MKNOD_VER		_MKNOD_VER_LINUX
 diff --git a/sysdeps/unix/sysv/linux/kernel-features.h b/sysdeps/unix/sysv/linux/kernel-features.h
-index a49a9159cf..2e88b0f82e 100644
+index 01c865e2d5..fd0be6d741 100644
 --- a/sysdeps/unix/sysv/linux/kernel-features.h
 +++ b/sysdeps/unix/sysv/linux/kernel-features.h
 @@ -46,7 +46,7 @@
@@ -160535,7 +160845,7 @@ index a49a9159cf..2e88b0f82e 100644
  
  #define __ASSUME_CLONE_DEFAULT 1
 diff --git a/sysdeps/unix/sysv/linux/lxstat64.c b/sysdeps/unix/sysv/linux/lxstat64.c
-index aee1efbae3..c431803c21 100644
+index 22b0bedbf1..3bf02bee90 100644
 --- a/sysdeps/unix/sysv/linux/lxstat64.c
 +++ b/sysdeps/unix/sysv/linux/lxstat64.c
 @@ -45,7 +45,7 @@ ___lxstat64 (int vers, const char *name, struct stat64 *buf)
@@ -160547,8 +160857,216 @@ index aee1efbae3..c431803c21 100644
    if (vers == _STAT_VER_KERNEL || vers == _STAT_VER_LINUX)
      return INLINE_SYSCALL_CALL (lstat, name, buf);
  # elif defined __NR_newfstatat
+diff --git a/sysdeps/unix/sysv/linux/m68k/coldfire/libm.abilist b/sysdeps/unix/sysv/linux/m68k/coldfire/libm.abilist
+index 6f2f3282d8..3e9085ee8e 100644
+--- a/sysdeps/unix/sysv/linux/m68k/coldfire/libm.abilist
++++ b/sysdeps/unix/sysv/linux/m68k/coldfire/libm.abilist
+@@ -971,8 +971,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/m68k/m680x0/libm.abilist b/sysdeps/unix/sysv/linux/m68k/m680x0/libm.abilist
+index cc4d60009f..84b797cd16 100644
+--- a/sysdeps/unix/sysv/linux/m68k/m680x0/libm.abilist
++++ b/sysdeps/unix/sysv/linux/m68k/m680x0/libm.abilist
+@@ -1004,8 +1004,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+ GLIBC_2.43 sqrtf F
+diff --git a/sysdeps/unix/sysv/linux/microblaze/be/libm.abilist b/sysdeps/unix/sysv/linux/microblaze/be/libm.abilist
+index b864d6b242..1d6f541f78 100644
+--- a/sysdeps/unix/sysv/linux/microblaze/be/libm.abilist
++++ b/sysdeps/unix/sysv/linux/microblaze/be/libm.abilist
+@@ -971,8 +971,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/microblaze/le/libm.abilist b/sysdeps/unix/sysv/linux/microblaze/le/libm.abilist
+index b864d6b242..1d6f541f78 100644
+--- a/sysdeps/unix/sysv/linux/microblaze/le/libm.abilist
++++ b/sysdeps/unix/sysv/linux/microblaze/le/libm.abilist
+@@ -971,8 +971,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/mips/mips32/libm.abilist b/sysdeps/unix/sysv/linux/mips/mips32/libm.abilist
+index cba91a3c60..6440347a6d 100644
+--- a/sysdeps/unix/sysv/linux/mips/mips32/libm.abilist
++++ b/sysdeps/unix/sysv/linux/mips/mips32/libm.abilist
+@@ -971,8 +971,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/mips/mips64/libm.abilist b/sysdeps/unix/sysv/linux/mips/mips64/libm.abilist
+index d5dd941186..2109a7c3c0 100644
+--- a/sysdeps/unix/sysv/linux/mips/mips64/libm.abilist
++++ b/sysdeps/unix/sysv/linux/mips/mips64/libm.abilist
+@@ -1310,8 +1310,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/powerpc/powerpc32/fpu/libm.abilist b/sysdeps/unix/sysv/linux/powerpc/powerpc32/fpu/libm.abilist
+index fcde397e30..5b8e9082af 100644
+--- a/sysdeps/unix/sysv/linux/powerpc/powerpc32/fpu/libm.abilist
++++ b/sysdeps/unix/sysv/linux/powerpc/powerpc32/fpu/libm.abilist
+@@ -1118,8 +1118,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/powerpc/powerpc32/nofpu/libm.abilist b/sysdeps/unix/sysv/linux/powerpc/powerpc32/nofpu/libm.abilist
+index c5af9a8ee8..9385425c54 100644
+--- a/sysdeps/unix/sysv/linux/powerpc/powerpc32/nofpu/libm.abilist
++++ b/sysdeps/unix/sysv/linux/powerpc/powerpc32/nofpu/libm.abilist
+@@ -1117,8 +1117,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/powerpc/powerpc64/be/libm.abilist b/sysdeps/unix/sysv/linux/powerpc/powerpc64/be/libm.abilist
+index 456135f1b7..c9442c5f70 100644
+--- a/sysdeps/unix/sysv/linux/powerpc/powerpc64/be/libm.abilist
++++ b/sysdeps/unix/sysv/linux/powerpc/powerpc64/be/libm.abilist
+@@ -1111,8 +1111,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/powerpc/powerpc64/le/libm.abilist b/sysdeps/unix/sysv/linux/powerpc/powerpc64/le/libm.abilist
+index 2347726e1c..4f33f6e36c 100644
+--- a/sysdeps/unix/sysv/linux/powerpc/powerpc64/le/libm.abilist
++++ b/sysdeps/unix/sysv/linux/powerpc/powerpc64/le/libm.abilist
+@@ -1503,8 +1503,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/s390/s390-32/libm.abilist b/sysdeps/unix/sysv/linux/s390/s390-32/libm.abilist
+index a3458a17f4..ee0842dbdc 100644
+--- a/sysdeps/unix/sysv/linux/s390/s390-32/libm.abilist
++++ b/sysdeps/unix/sysv/linux/s390/s390-32/libm.abilist
+@@ -1413,8 +1413,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/s390/s390-64/libm.abilist b/sysdeps/unix/sysv/linux/s390/s390-64/libm.abilist
+index 8a2d012dbd..475e6f2669 100644
+--- a/sysdeps/unix/sysv/linux/s390/s390-64/libm.abilist
++++ b/sysdeps/unix/sysv/linux/s390/s390-64/libm.abilist
+@@ -1413,8 +1413,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/sh/be/libm.abilist b/sysdeps/unix/sysv/linux/sh/be/libm.abilist
+index d458c8721d..f06a929250 100644
+--- a/sysdeps/unix/sysv/linux/sh/be/libm.abilist
++++ b/sysdeps/unix/sysv/linux/sh/be/libm.abilist
+@@ -971,8 +971,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/sh/le/libm.abilist b/sysdeps/unix/sysv/linux/sh/le/libm.abilist
+index d458c8721d..f06a929250 100644
+--- a/sysdeps/unix/sysv/linux/sh/le/libm.abilist
++++ b/sysdeps/unix/sysv/linux/sh/le/libm.abilist
+@@ -971,8 +971,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/sparc/sparc32/libm.abilist b/sysdeps/unix/sysv/linux/sparc/sparc32/libm.abilist
+index cac2d2e914..54c28f550b 100644
+--- a/sysdeps/unix/sysv/linux/sparc/sparc32/libm.abilist
++++ b/sysdeps/unix/sysv/linux/sparc/sparc32/libm.abilist
+@@ -1420,8 +1420,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/sparc/sparc64/libm.abilist b/sysdeps/unix/sysv/linux/sparc/sparc64/libm.abilist
+index 22c8949912..10f8f8855a 100644
+--- a/sysdeps/unix/sysv/linux/sparc/sparc64/libm.abilist
++++ b/sysdeps/unix/sysv/linux/sparc/sparc64/libm.abilist
+@@ -1310,8 +1310,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
 diff --git a/sysdeps/unix/sysv/linux/tst-align-clone-internal.c b/sysdeps/unix/sysv/linux/tst-align-clone-internal.c
-index 87531128bd..9d56fd3fd1 100644
+index 33ce5d0f28..8e1f6de449 100644
 --- a/sysdeps/unix/sysv/linux/tst-align-clone-internal.c
 +++ b/sysdeps/unix/sysv/linux/tst-align-clone-internal.c
 @@ -44,7 +44,11 @@ do_test (void)
@@ -160565,7 +161083,7 @@ index 87531128bd..9d56fd3fd1 100644
    struct clone_args clone_args =
      {
 diff --git a/sysdeps/unix/sysv/linux/tst-align-clone.c b/sysdeps/unix/sysv/linux/tst-align-clone.c
-index d85375af4f..a59ac4ea5e 100644
+index 459ac74008..12f098f1a0 100644
 --- a/sysdeps/unix/sysv/linux/tst-align-clone.c
 +++ b/sysdeps/unix/sysv/linux/tst-align-clone.c
 @@ -48,13 +48,21 @@ do_test (void)
@@ -160595,7 +161113,7 @@ index d85375af4f..a59ac4ea5e 100644
    if (p == -1)
      {
 diff --git a/sysdeps/unix/sysv/linux/tst-clone.c b/sysdeps/unix/sysv/linux/tst-clone.c
-index 3e7a233aeb..2ea9bdc263 100644
+index 2326e3f411..bfe1747ff1 100644
 --- a/sysdeps/unix/sysv/linux/tst-clone.c
 +++ b/sysdeps/unix/sysv/linux/tst-clone.c
 @@ -27,6 +27,11 @@
@@ -160623,7 +161141,7 @@ index 3e7a233aeb..2ea9bdc263 100644
    /* Check that clone does not clobber call-saved registers.  */
    TEST_VERIFY (a == v && b == v && c == v && d == v && e == v && f == v
 diff --git a/sysdeps/unix/sysv/linux/tst-clone2-internal.c b/sysdeps/unix/sysv/linux/tst-clone2-internal.c
-index 12f7218acd..d7e2c8fdda 100644
+index bedebc7633..fa41d63281 100644
 --- a/sysdeps/unix/sysv/linux/tst-clone2-internal.c
 +++ b/sysdeps/unix/sysv/linux/tst-clone2-internal.c
 @@ -70,7 +70,11 @@ do_test (void)
@@ -160640,7 +161158,7 @@ index 12f7218acd..d7e2c8fdda 100644
    struct clone_args clone_args =
      {
 diff --git a/sysdeps/unix/sysv/linux/tst-clone2.c b/sysdeps/unix/sysv/linux/tst-clone2.c
-index 02cd539cda..6661703a0a 100644
+index 52fcbccacd..9db67d6b94 100644
 --- a/sysdeps/unix/sysv/linux/tst-clone2.c
 +++ b/sysdeps/unix/sysv/linux/tst-clone2.c
 @@ -71,6 +71,13 @@ do_test (void)
@@ -160666,7 +161184,7 @@ index 02cd539cda..6661703a0a 100644
  
    close (pipefd[1]);
 diff --git a/sysdeps/unix/sysv/linux/tst-clone3.c b/sysdeps/unix/sysv/linux/tst-clone3.c
-index 98d56d50ff..16811e348e 100644
+index 9b41e84ee6..adce339b8c 100644
 --- a/sysdeps/unix/sysv/linux/tst-clone3.c
 +++ b/sysdeps/unix/sysv/linux/tst-clone3.c
 @@ -78,6 +78,13 @@ do_test (void)
@@ -160692,7 +161210,7 @@ index 98d56d50ff..16811e348e 100644
    if (tid == -1)
      FAIL_EXIT1 ("clone failed: %m");
 diff --git a/sysdeps/unix/sysv/linux/tst-getpid1-internal.c b/sysdeps/unix/sysv/linux/tst-getpid1-internal.c
-index 55bd615b6f..58053da3bf 100644
+index 4f8e115cb4..8279315aca 100644
 --- a/sysdeps/unix/sysv/linux/tst-getpid1-internal.c
 +++ b/sysdeps/unix/sysv/linux/tst-getpid1-internal.c
 @@ -60,7 +60,11 @@ do_test (void)
@@ -160735,7 +161253,7 @@ index 9067fd425b..253ebf2e15 100644
      {
        printf("clone failed: %m\n");
 diff --git a/sysdeps/unix/sysv/linux/tst-misalign-clone.c b/sysdeps/unix/sysv/linux/tst-misalign-clone.c
-index a653933d85..8fc887578a 100644
+index 947669a95a..e26e544351 100644
 --- a/sysdeps/unix/sysv/linux/tst-misalign-clone.c
 +++ b/sysdeps/unix/sysv/linux/tst-misalign-clone.c
 @@ -50,18 +50,29 @@ do_test (void)
@@ -160772,8 +161290,34 @@ index a653933d85..8fc887578a 100644
  #endif
  
    /* Clone must not fail.  */
+diff --git a/sysdeps/unix/sysv/linux/x86_64/64/libm.abilist b/sysdeps/unix/sysv/linux/x86_64/64/libm.abilist
+index b18629845e..1f0ef63bcd 100644
+--- a/sysdeps/unix/sysv/linux/x86_64/64/libm.abilist
++++ b/sysdeps/unix/sysv/linux/x86_64/64/libm.abilist
+@@ -1343,8 +1343,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
+diff --git a/sysdeps/unix/sysv/linux/x86_64/x32/libm.abilist b/sysdeps/unix/sysv/linux/x86_64/x32/libm.abilist
+index 02e991c07f..22ebd7ea4c 100644
+--- a/sysdeps/unix/sysv/linux/x86_64/x32/libm.abilist
++++ b/sysdeps/unix/sysv/linux/x86_64/x32/libm.abilist
+@@ -1343,8 +1343,6 @@ GLIBC_2.43 fromfpxl F
+ GLIBC_2.43 j0f F
+ GLIBC_2.43 j1f F
+ GLIBC_2.43 jnf F
+-GLIBC_2.43 lgammaf F
+-GLIBC_2.43 lgammaf_r F
+ GLIBC_2.43 log10f F
+ GLIBC_2.43 remainder F
+ GLIBC_2.43 remainderf F
 diff --git a/sysdeps/unix/sysv/linux/xstat64.c b/sysdeps/unix/sysv/linux/xstat64.c
-index 153a01c703..7144848e74 100644
+index 8baa8214bc..c1f2042809 100644
 --- a/sysdeps/unix/sysv/linux/xstat64.c
 +++ b/sysdeps/unix/sysv/linux/xstat64.c
 @@ -45,7 +45,7 @@ ___xstat64 (int vers, const char *name, struct stat64 *buf)
@@ -160786,7 +161330,7 @@ index 153a01c703..7144848e74 100644
      return INLINE_SYSCALL_CALL (stat, name, buf);
  # elif defined __NR_newfstatat
 diff --git a/sysdeps/x86/readelflib.c b/sysdeps/x86/readelflib.c
-index acb25d710b..8dd16dc585 100644
+index 20fec9af1c..6e0f40fc04 100644
 --- a/sysdeps/x86/readelflib.c
 +++ b/sysdeps/x86/readelflib.c
 @@ -41,11 +41,24 @@ process_elf_file (const char *file_name, const char *lib, int *flag,
@@ -160806,7 +161350,7 @@ index acb25d710b..8dd16dc585 100644
      case EM_386:
        if (elf_header->e_ident[EI_CLASS] == ELFCLASS32)
  	break;
-       /* Fall through.  */
+       [[fallthrough]];
      default:
 +#ifndef __x86_64__
 +failed:
