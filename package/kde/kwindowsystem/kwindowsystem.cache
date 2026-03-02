@@ -1,14 +1,14 @@
-[TIMESTAMP] 1768847886 Mon Jan 19 19:38:06 2026
-[BUILDTIME] 65 (9)
-[SIZE] 1.09 MB, 201 files
+[TIMESTAMP] 1758019581 Tue Sep 16 12:46:21 2025
+[BUILDTIME] 155 (9)
+[SIZE] 0.93 MB, 164 files
 
+[DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
 [DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
 [DEP] extra-cmake-modules
-[DEP] findutils
 [DEP] freetype
 [DEP] gawk
 [DEP] grep
@@ -22,13 +22,13 @@
 [DEP] qt6base
 [DEP] qt6declarative
 [DEP] qt6tools
-[DEP] qt6translations
+[DEP] qt6wayland
 [DEP] sed
 [DEP] tar
-[DEP] util-linux
 [DEP] vulkan-headers
 [DEP] wayland
 [DEP] wayland-protocols
 [DEP] xcb-util-keysyms
+[DEP] xcb-util-wm
 [DEP] xorgproto
 [DEP] xz

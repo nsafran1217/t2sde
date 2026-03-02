@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---.
 [COPY] t2/package/*/spirv-headers/spirv-headers.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---.
 
@@ -16,10 +16,10 @@
 [C] extra/base
 [F] CROSS OBJDIR
 
-[V] 1.4.341.0
+[V] 1.4.321.0
 [L] GPL3
 [S] Stable
 [P] X ?----5---9 100.000
 
 [CV-GROUP] vulkan
-[D] 7ff8d416aa9c4f0e84af60e50f86f97213143dc149632eda1152a5a1 spirv-headers-1.4.341.0.tar.gz https://github.com/KhronosGroup/SPIRV-Headers/archive/vulkan-sdk-1.4.341.0/
+[D] 75c1a28f7d8c3027cdc7e9fa70b738615f5587d674a197301a011b1a spirv-headers-1.4.321.0.tar.gz https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.4.321.0/

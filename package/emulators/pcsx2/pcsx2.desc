@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/pcsx2/pcsx2.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -12,22 +12,23 @@
 [T] states and PS2 system memory. This allows you to play PS2 games on your PC,
 [T] with many additional features and benefits.
 
-[U] https://pcsx2.net/
+[U] https://pcsx2.net/download.html
 
 [A] PCSX2 Team
 [M] Dash
 
 [C] extra/emulator
 [F] OBJDIR NO-LTO
-[R] + arm64 x86 x86-64
 
 [E] opt jack
 
 [L] GPL
 [S] Beta
-[V] 2.6.3
+[V] 2.4.0
 
-[D] 306ac7608f4399794878f5c98d404a9cde95f8f169be0ad83dfe9801 pcsx2-2.6.3.tar.gz git+https://github.com/PCSX2/pcsx2 v2.6.3
+[D] 132e182ac57c1c29aff42a1ef36572d17e3c240c106525f1497127ab pcsx2-2.4.0.tar.gz git+https://github.com/PCSX2/pcsx2 v2.4.0
+
+CC=clang CXX=clang++
 
 var_append cmakeopt ' ' '-DPACKAGE_MODE=ON \
 			 -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON \

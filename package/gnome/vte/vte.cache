@@ -24,6 +24,7 @@
 [OPT] gtk
 [DEP] gtk+
 [DEP] harfbuzz
+[DEP] iat
 [DEP] icu4c
 [DEP] libx11
 [DEP] libxml
@@ -41,6 +42,7 @@
 [DEP] simdutf
 [OPT] systemd
 [DEP] tar
+[DEP] tbb
 [OPT] vala
 [DEP] wayland
 [DEP] xorgproto

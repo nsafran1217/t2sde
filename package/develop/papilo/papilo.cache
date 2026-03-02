@@ -18,4 +18,5 @@
 [DEP] sed
 [DEP] soplex
 [DEP] tar
+[DEP] tbb
 [DEP] zlib

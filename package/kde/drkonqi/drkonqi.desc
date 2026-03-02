@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/drkonqi/drkonqi.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -16,16 +16,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [E] add chai pygdbmi
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 162.900
 
 [CV-GROUP] kde-plasma
-[D] 7480dcc9d64de696859f21edbfef805bed3558723906a3c7e455ee4a drkonqi-6.6.1.tar.bz2 https://invent.kde.org/plasma/drkonqi/-/archive/v6.6.1/
+[D] 9ab8aa13cc232bb34070b1569bbe4989419901fdff15a923d821d55c drkonqi-6.4.5.tar.bz2 https://invent.kde.org/plasma/drkonqi/-/archive/v6.4.5/
 
 . $base/package/*/*/kde-conf.in
 pkginstalled systemd || var_append cmakeopt ' ' -DWITH_SYSTEMD=OFF

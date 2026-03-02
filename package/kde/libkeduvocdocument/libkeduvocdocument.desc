@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/libkeduvocdocument/libkeduvocdocument.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,14 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
+[V] 25.08.1
 [P] X -----5---9 162.900
 
-[CV-GROUP] kde-gear
-[D] ceb054c69171b5e87003de946ed6749d8b6629943da1e13894b73589 libkeduvocdocument-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
-
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] a3ddae5faa1087705462708e90f6b207e1248702c2a3dbe7570cbe1d libkeduvocdocument-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/anomy-mailtools/anomy-mailtools.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -34,6 +34,7 @@
 [L] GPL
 [S] Stable
 [V] 1.76
+[P] X -----5---9 114.600
 
 [D] ad25d8c15e8205290eeb08bcbc40c3cd33b846ab72b59e2681756644 anomy-sanitizer-1.76.tar.gz http://mailtools.anomy.net/dist/
 
@@ -75,5 +76,5 @@ anomy_custmain() {
 	EOT
 }
 runmake=0
-hook_add postmake 5 anomy_custmain
+hook_add postmake 5 "anomy_custmain"
 createdocs=0

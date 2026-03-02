@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/syslog-ng/syslog-ng.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -27,12 +27,15 @@
 
 [L] OpenSource
 [S] Stable
-[V] 4.11.0
+[V] 4.10.0
+[P] X -----5---9 186.900
 
-[D] f59b4b04b0b2a1b81313c6f0a136c0cdf516adf444a1873341131478 syslog-ng-4.11.0.tar.gz https://github.com/balabit/syslog-ng/releases/download/syslog-ng-4.11.0/syslog-ng-4.11.0.tar.gz
+[D] c254c86390a8e9dd28d9bdd4b3e52de6982c9593be8e12c31e1020bb syslog-ng-4.10.0.tar.gz https://github.com/balabit/syslog-ng/releases/download/syslog-ng-4.10.0/syslog-ng-4.10.0.tar.gz
 
-[ "$SDECFG_STATIC" == 1 ] &&
-	var_append confopt ' ' --enable-static-linking ||
+if [ "$SDECFG_STATIC" == "1" ]; then
+	var_append confopt ' ' --enable-static-linking
+else
 	var_append confopt ' ' --enable-dynamic-linking
+fi
 
 hook_add postmake 5 'cp -v $confdir/etc_syslog-ng.conf $root/etc/syslog-ng.conf'

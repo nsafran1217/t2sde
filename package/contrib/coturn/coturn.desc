@@ -1,23 +1,23 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/coturn/coturn.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Free open source implementation of TURN and STUN Server
 
-[T] coturn is a free open source implementation of TURN and STUN Server. The
-[T] TURN Server is a VoIP media traffic NAT traversal server and gateway.
+[T] Free open source implementation of TURN and STUN Server.
 
 [U] https://github.com/coturn/coturn
 
-[A] Citrix Systems
-[M] The T2 Project <t2@t2-project.org>
+[A] Coturn Authors
+[M] T2 Project <t2@t2-project.org>
 
-[C] extra/network
+[C] extra/base
 
+[V] 4.7.0
 [L] BSD
 [S] Stable
-[V] 4.9.0
+[P] X -----5---9 700.000
 
-[D] bdfbc945f0ce4677c47a2185820e116cf4765253c2941cd05e93d205 coturn-4.9.0.tar.gz https://github.com/coturn/coturn/archive/4.9.0/
+[D] 31a1a7912c875e50ed757f2ce16e8699565976227129a7382514c603 coturn-4.7.0.tar.gz https://github.com/coturn/coturn/archive/4.7.0/

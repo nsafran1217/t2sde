@@ -22,3 +22,4 @@
 [DEP] scikit-build-core
 [DEP] sed
 [DEP] tar
+[DEP] tbb

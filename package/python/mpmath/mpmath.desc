@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/mpmath/mpmath.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,7 +18,7 @@
 
 [L] BSD
 [S] Stable
-[V] 1.4.0b4
+[V] 1.4.0b1
 [P] X -----5---9 110.000
 
-[D] a89967fbcfb72c8373ce0e16c0cf55adc5738a246d280751d2d94aa4 mpmath-1.4.0b4.tar.gz https://github.com/mpmath/mpmath/archive/1.4.0b4/
+[D] cde28d231c87031fc9a62d66c6a9a808eee3f82ddd80e7002a2c6e1a mpmath-1.4.0b1.tar.gz https://github.com/mpmath/mpmath/archive/1.4.0b1/

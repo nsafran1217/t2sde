@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/oxygen/oxygen.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,14 +14,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 162.420
 
 [CV-GROUP] kde-plasma
-[D] a583b83e8662f9bfa7963d1ec156ae9127804a695878507f3e3951a8 oxygen-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] 0371c14df96035c19fed754c142e65ed08f12e26022d9e2831ba1700 oxygen-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in
-pkginstalled qt5base || var_append cmakeopt ' ' -DBUILD_QT5=OFF

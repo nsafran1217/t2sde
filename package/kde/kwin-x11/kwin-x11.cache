@@ -1,6 +1,6 @@
-[TIMESTAMP] 1770548364 Sun Feb  8 11:59:24 2026
-[BUILDTIME] 1950 (9)
-[SIZE] 26.55 MB, 1692 files
+[TIMESTAMP] 1750174694 Tue Jun 17 17:38:14 2025
+[BUILDTIME] 2300 (9)
+[SIZE] 25.56 MB, 1612 files
 
 [DEP] bash
 [DEP] binutils
@@ -8,7 +8,7 @@
 [DEP] coreutils
 [DEP] diffutils
 [OPT] docbook-xml
-[DEP] docbook-xsl
+[OPT] docbook-xsl
 [DEP] epoxy
 [DEP] extra-cmake-modules
 [DEP] freetype
@@ -31,12 +31,12 @@
 [DEP] ki18n
 [DEP] kidletime
 [DEP] knewstuff
-[DEP] knighttime
 [DEP] knotifications
 [DEP] kpackage
 [DEP] kscreenlocker
 [DEP] kservice
 [DEP] ksvg
+[DEP] kwayland
 [DEP] kwidgetsaddons
 [DEP] kwindowsystem
 [DEP] kxmlgui
@@ -60,15 +60,17 @@
 [DEP] plasma-wayland-protocols
 [DEP] procps
 [DEP] python
+[DEP] qt65compat
 [DEP] qt6base
 [DEP] qt6declarative
 [DEP] qt6sensors
 [DEP] qt6svg
 [DEP] qt6tools
+[DEP] qt6wayland
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] udev
-[DEP] util-linux
 [DEP] vulkan-headers
 [DEP] wayland
 [DEP] wayland-protocols

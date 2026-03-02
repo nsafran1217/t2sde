@@ -6,6 +6,7 @@
 [DEP] coreutils
 [DEP] diffutils
 [DEP] findutils
+[DEP] git
 [DEP] go
 [DEP] grep
 [DEP] gzip

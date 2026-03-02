@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/cloudflared/cloudflared.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -21,11 +21,11 @@
 [C] extra/base
 [F] CROSS
 
-[V] 2026.2.0
+[V] 2025.9.1
 [L] APL
 [S] Stable
 
-[D] 125c62732ac8f9c5021f6aa46570c4e0345fb3a36896b38c2096ba82 cloudflared-2026.2.0.tar.gz https://github.com/cloudflare/cloudflared/archive/2026.2.0/
+[D] cd634b3299811c34b129bd3cbc57076f2d970b51923e8753e69ea8cc cloudflared-2025.9.1.tar.gz https://github.com/cloudflare/cloudflared/archive/2025.9.1/
 
 rungo=0
-var_append makeinstopt ' ' VERSION=$desc_V
+var_append makeopt ' ' cloudflared

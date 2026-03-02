@@ -1,0 +1,49 @@
+[TIMESTAMP] 1758298046 Fri Sep 19 18:07:26 2025
+[BUILDTIME] 1950 (9)
+[SIZE] 479.89 MB, 22598 files
+
+[DEP] bash
+[DEP] binutils
+[DEP] bison
+[DEP] boost
+[DEP] bzip2
+[DEP] cmake
+[DEP] coreutils
+[DEP] curl
+[DEP] diffutils
+[DEP] fmt
+[DEP] gawk
+[DEP] grep
+[DEP] groff
+[DEP] gzip
+[DEP] krb5
+[DEP] libaio
+[DEP] libedit
+[DEP] libevent
+[DEP] libstemmer
+[OPT] liburing
+[DEP] libxcrypt
+[DEP] libxml
+[DEP] linux-header
+[DEP] lz4
+[DEP] lzo
+[DEP] make
+[DEP] ncurses
+[DEP] numactl
+[OPT] openjdk
+[DEP] openssl
+[DEP] pam
+[DEP] pcre2
+[DEP] perl
+[DEP] pkgconfig
+[DEP] pyparsing
+[DEP] python
+[DEP] readline
+[DEP] sed
+[OPT] snappy
+[DEP] systemtap
+[DEP] tar
+[OPT] unixodbc
+[DEP] xz
+[DEP] zlib
+[DEP] zstd

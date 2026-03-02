@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/qalculate-gtk/qalculate-gtk.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -20,6 +20,8 @@
 
 [L] GPL
 [S] Stable
-[V] 5.9.0
+[V] 5.7.0
 
-[D] 4a15134fa9c182a09d5f30ea712dab2897cda4ffdec3be46f7c8138b qalculate-gtk-5.9.0.tar.gz https://github.com/Qalculate/qalculate-gtk/releases/download/v5.9.0/
+[D] d6c6413607bcf110abe1f38e6faf3024c3ae9d86f083e098a3b4f605 qalculate-gtk-5.7.0.tar.gz https://github.com/Qalculate/qalculate-gtk/archive/refs/tags/v5.7.0/
+
+autogen=1

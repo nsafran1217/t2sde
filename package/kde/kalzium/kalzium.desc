@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kalzium/kalzium.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -17,13 +17,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] ccbc774a819d973f8972928ef7e2651df9f1586b021e310706ddebc3 kalzium-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.900
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 7402afca1e2c3eef1ecd8cd4e94d0639d9c6fee2ce74bedad2372fc9 kalzium-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

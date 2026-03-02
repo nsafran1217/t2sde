@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/terraform-ls/terraform-ls.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,10 +18,10 @@
 
 [L] MPL
 [S] Beta
-[V] 0.38.4
-
-[D] 45a5b71ebc5bb308026c462c3aa5e87a1a084c5ff55b2cf47711625f terraform-ls-v0.38.4.tar.gz https://github.com/hashicorp/terraform-ls/archive/v0.38.4/
+[V] 0.38.0
 
 export CGO_ENABLED=0
 goconfopt=" "
 hook_add postmake 5 'install -m 755 terraform-ls $root$bindir'
+
+[D] d53a2eb8d86e8ff541b7abeadbae6221b840cd7ed2edf3387ea49bdf terraform-ls-v0.38.0.tar.gz https://github.com/hashicorp/terraform-ls/archive/v0.38.0/

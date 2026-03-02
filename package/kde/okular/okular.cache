@@ -1,6 +1,6 @@
-[TIMESTAMP] 1767786497 Wed Jan  7 12:48:17 2026
-[BUILDTIME] 520 (9)
-[SIZE] 19.59 MB, 1445 files
+[TIMESTAMP] 1745532041 Fri Apr 25 00:00:41 2025
+[BUILDTIME] 560 (9)
+[SIZE] 19.68 MB, 1456 files
 
 [DEP] bash
 [DEP] binutils
@@ -8,13 +8,13 @@
 [DEP] coreutils
 [OPT] cups
 [DEP] diffutils
-[OPT] discount
-[OPT] djvulibre
+[DEP] discount
+[DEP] djvulibre
 [DEP] docbook-xml
 [DEP] docbook-xsl
-[OPT] ebook-tools
+[DEP] ebook-tools
 [DEP] extra-cmake-modules
-[OPT] freetype
+[DEP] freetype
 [DEP] gawk
 [DEP] gettext
 [DEP] grep
@@ -26,39 +26,42 @@
 [DEP] kconfigwidgets
 [DEP] kcoreaddons
 [DEP] kcrash
-[OPT] kdegraphics-mobipocket
-[OPT] kdoctools
+[DEP] kdoctools
 [DEP] ki18n
 [DEP] kiconthemes
 [DEP] kio
+[DEP] kitemviews
 [DEP] kjobwidgets
 [DEP] kparts
+[DEP] kpty
 [DEP] kservice
 [DEP] ktextwidgets
-[OPT] kwallet
+[DEP] kwallet
 [DEP] kwidgetsaddons
 [DEP] kwindowsystem
 [DEP] kxmlgui
-[OPT] libkexiv2
+[DEP] libkexiv2
 [DEP] libspectre
-[OPT] libtiff
+[DEP] libtiff
 [DEP] libxcb
 [DEP] libxml
 [DEP] linux-header
 [DEP] make
-[OPT] phonon
+[DEP] phonon
 [DEP] pkgconfig
-[OPT] poppler
+[DEP] plasma-activities
+[DEP] poppler
 [DEP] procps
-[OPT] purpose
+[DEP] purpose
 [DEP] python
 [DEP] qt6base
-[OPT] qt6declarative
-[OPT] qt6speech
-[OPT] qt6svg
+[DEP] qt6declarative
+[DEP] qt6speech
+[DEP] qt6svg
 [DEP] sed
 [DEP] sonnet
 [DEP] tar
+[DEP] tbb
 [DEP] threadweaver
 [DEP] vulkan-headers
 [DEP] xz

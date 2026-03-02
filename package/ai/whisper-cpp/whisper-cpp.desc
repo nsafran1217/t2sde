@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/whisper-cpp/whisper-cpp.desc
-[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,10 +18,11 @@
 [F] OBJDIR
 
 [L] MIT
-[V] 1.8.3
+[V] 1.7.6
 [S] Stable
+[P] X -----5---9 700.000
 
-[D] 938741f28b839e7f0d7f816e178604e4ac07e8acee96be52b1551883 whisper-cpp-1.8.3.tar.gz https://github.com/ggerganov/whisper.cpp/archive/refs/tags/v1.8.3/
+[D] c1670fd39793f725b15bc3edb450bceeafa248caebeebc0428eef1c3 whisper-cpp-1.7.6.tar.gz https://github.com/ggerganov/whisper.cpp/archive/refs/tags/v1.7.6/
 
 [ $prefix_auto = 1 ] && prefix=opt/whisper-cpp && set_confopt
 #hook_add postmake 5 "cp -rfv {bin,examples,../models,../grammars,../samples,../scripts} $root/$prefix/"

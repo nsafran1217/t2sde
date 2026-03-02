@@ -8,6 +8,7 @@
 [DEP] coreutils
 [DEP] diffutils
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] gzip
 [DEP] openssl

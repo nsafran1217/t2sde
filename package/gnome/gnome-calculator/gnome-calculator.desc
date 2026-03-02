@@ -17,9 +17,10 @@
 
 [L] LGPL
 [S] Stable
-[V] 49.2
-
-[CV-URL] https://download.gnome.org/sources/gnome-calculator/cache.json
-[D] 8f19202967289532fdb5f8d2a2718373057fec77714856853aab3d4a gnome-calculator-49.2.tar.xz https://download.gnome.org/sources/gnome-calculator/49/
+[V] 49.0
+[P] X -----5---9 200.100
 
 . $base/package/*/*/gnome-conf.in
+
+[CV-URL] https://download.gnome.org/sources/gnome-calculator/cache.json
+[D] 6086bf51f47c74b2c9d91034f2036102aa385edb81af6fbbbed597a3 gnome-calculator-49.0.tar.xz https://download.gnome.org/sources/gnome-calculator/49/

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/skanpage/skanpage.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -16,15 +16,15 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
+[V] 25.08.1
+[P] X -----5---9 200.300
 
 [CV-GROUP] kde-gear
-[D] c0bc707d9b8205ffd462d010e3361b1fe7fe7db734db5461dc8c0e9c skanpage-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
-
-var_append GCC_WRAPPER_APPEND ' ' "$(pkg-config --libs libarchive libcurl)"
+[D] 5a5cc5be9fab904daf8d551fa1e2a1006566ed2d34812bf5ab3d3737 skanpage-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/
 
 . $base/package/*/*/kde-conf.in
+
+var_append GCC_WRAPPER_APPEND ' ' "$(pkg-config --libs libarchive libcurl)"

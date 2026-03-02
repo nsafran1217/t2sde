@@ -19,3 +19,4 @@
 [DEP] rocgdb
 [DEP] sed
 [DEP] tar
+[DEP] tbb

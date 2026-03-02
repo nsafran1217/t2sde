@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/iproute2/iproute2.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -31,16 +31,13 @@
 
 [L] GPL
 [S] Stable
-[V] 6.19.0
+[V] 6.16.0
 [P] X -----5---9 190.000
 
-[D] 0d7750779ac0f8d6b1d10db7ff61064b5e2eae68a7ce402ef851d3c8 iproute2-6.19.0.tar.xz http://www.kernel.org/pub/linux/utils/net/iproute2/
+[D] 9ccb562932f6fd97128b5bffb7333741ccbe39a0b055cc74cffe317b iproute2-6.16.0.tar.xz http://www.kernel.org/pub/linux/utils/net/iproute2/
 
-if [ $prefix_auto = 1 ]; then
-	prefix=
-	set_confopt
-fi
-
+prefix=
+set_confopt
 cleanconfopt=0
 
 hook_add preconf 5 "sed -i s/gcc/$CC/ configure"
@@ -55,4 +52,4 @@ ipr2_pm() {
 	cp $base/package/*/iproute2/dumpnetcfg.sh $root$sbindir/dumpnetcfg
 	chmod +x $root$sbindir/dumpnetcfg
 }
-hook_add postmake 5 ipr2_pm
+hook_add postmake 5 "ipr2_pm"

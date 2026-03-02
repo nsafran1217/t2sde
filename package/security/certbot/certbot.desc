@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/certbot/certbot.desc
-[COPY] Copyright (C) 2015 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2015 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -17,23 +17,12 @@
 
 [C] extra/security
 
-[E] add acme
-[E] add parsedatetime
-[E] add python-configobj
-[E] add python-cryptography
-[E] add python-josepy
-[E] add pyrequests
-[E] add pyidna
-[E] add python-pyopenssl
-[E] add pyrfc3339
-[E] add python-configargparse
-[E] add pydistro
-
 [L] APL
 [S] Stable
-[V] 5.3.1
-
-[D] 32fb7e6d6c3e1010f5d1126dfb6f34cc648e980e633317b37744bcda certbot-5.3.1.tar.gz https://github.com/certbot/certbot/archive/v5.3.1/
+[V] 5.0.0
+[P] X -----5---9 104.600
 
 runmake=0
 hook_add preconf 5 "cd $pkg"
+
+[D] c18fa3964ecbf9d3523e7a29ead30442f2422fc006b70b2428b2654d certbot-5.0.0.tar.gz https://github.com/certbot/certbot/archive/v5.0.0/

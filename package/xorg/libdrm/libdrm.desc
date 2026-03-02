@@ -4,13 +4,9 @@
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] Low-level user-space library for the DRM/KMS subsystem
+[I] Userspace interface to kernel DRM services
 
-[T] Libdrm provides a thin user-space interface to the Linux DRM/KMS subsystem,
-[T] enabling modesetting, buffer management, and low-level GPU access for
-[T] drivers and graphics stacks like Mesa, Wayland, and Xorg. It comes with
-[T] small test and demo programs, like modeprint and modetesti, for exercising
-[T] DRM and KMS functionality.
+[T] The userspace interface library to kernel DRM services.
 
 [U] http://people.freedesktop.org/~ajax/libdrm/
 
@@ -25,13 +21,12 @@
 
 [L] OpenSource
 [S] Stable
-[V] 2.4.131
+[V] 2.4.125
 [P] X -----5---9 112.445
 
-[D] d662d7c171102321109f3d7433684e8dfeab97502b22b167c2d21ff8 libdrm-2.4.131.tar.xz https://dri.freedesktop.org/libdrm/
+[D] 9f21b9b1a12b12ce8a9ac0af6f641bb8d642b98815d3c7061f677425 libdrm-2.4.125.tar.xz https://dri.freedesktop.org/libdrm/
 
 var_append GCC_WRAPPER_REMOVE ' ' -Werror=undef
-# only default for 64-bit "x86", needs atomics
-[ $arch = sparc ] || var_append mesonopt ' ' -Dintel=enabled
-
-var_append mesonopt ' ' -Dinstall-test-programs=true
+# only default for 64-bit "x86"
+var_append mesonopt ' ' -Dintel=enabled
+[ $arch = sparc ] && var_append mesonopt ' ' '-Dintel=disabled -Damdgpu=disabled -Dnouveau=disabled -Dradeon=disabled'

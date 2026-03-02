@@ -10,6 +10,7 @@
 [DEP] docbook-xsl
 [DEP] gawk
 [DEP] gettext
+[DEP] git
 [DEP] glib
 [DEP] gobject-introspection
 [DEP] grep

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/cgal/cgal.desc
-[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2010 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -23,8 +23,8 @@
 
 [L] LGPL QPL
 [S] Stable
-[V] 6.1.1
+[V] 6.0.2
 [P] X -----5---9 144.700
 
 [CV-URL] https://www.cgal.org/releases.html
-[D] a0084569774753d7fb035d2505a1e33f49179d9441324fa55e5f2a40 CGAL-6.1.1.tar.xz https://github.com/CGAL/cgal/releases/download/v6.1.1/
+[D] e69c04852a07dfda936c725fc82f04bb9ce6c4311613eec64912b971 CGAL-6.0.2.tar.xz https://github.com/CGAL/cgal/releases/download/v6.0.2/

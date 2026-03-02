@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/libheif/libheif.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,14 +19,13 @@
 [F] CROSS
 
 [E] opt doxygen
-[E] opt libde265
 [E] opt libwebp
 
 [L] LGPL
 [S] Stable
-[V] 1.21.2
-[P] X -----5---9 130.301
+[V] 1.20.2
+[P] X -----5---9 124.600
 
-[D] e9d7d120d672644e56fe74fba37d27c23f894c32e6419b39b241c22d libheif-1.21.2.tar.gz https://github.com/strukturag/libheif/releases/download/v1.21.2/
+[D] d9064d17500e3185674b63c7e2d6fc66f625f93783ef9d66869291a9 libheif-1.20.2.tar.gz https://github.com/strukturag/libheif/releases/download/v1.20.2/
 
 var_append confopt ' ' --disable-go

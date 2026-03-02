@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/klettres/klettres.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -16,15 +16,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 5b89e3ce5ff6983095977ba8635f60de2ce4f049987076025e1d12ee klettres-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.420
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] fd172e00bfd44dc5c0ecec1f12b6785b0ce1376d6e841b7bbb4d122d klettres-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

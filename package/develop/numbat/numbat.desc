@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/numbat/numbat.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -15,13 +15,13 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/development
-[F] CROSS NO-LTO.gcc
+[F] CROSS
 
 [L] APL
 [S] Stable
-[V] 1.23.0
+[V] 1.16.0
 
-[D] 8be45e04d93d07260be8ace4af81763a887e0c9b9a46edc5b4a78fa7 numbat-1.23.0.tar.gz https://github.com/sharkdp/numbat/archive/v1.23.0/
+[D] 8d65454029a203d54b83058ebc82ce904c8dfe9859c533b591d537f5 numbat-1.16.0.tar.gz https://github.com/sharkdp/numbat/archive/v1.16.0/
 
 cargoinstopt=
 atstage cross && hook_add postmake 5 "install target/${arch_target}/*/numbat $root$bindir"

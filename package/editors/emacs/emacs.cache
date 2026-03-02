@@ -39,6 +39,7 @@
 [DEP] libxml
 [DEP] linux-header
 [DEP] make
+[OPT] openssh
 [DEP] pango
 [DEP] sed
 [OPT] sqlite

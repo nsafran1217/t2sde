@@ -1,12 +1,12 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/cosmic-session/cosmic-session.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] Session manager for the COSMIC desktop environment
+[I] cosmic-session
 
-[T] Session manager for the COSMIC desktop environment.
+[T] cosmic-session.
 
 [U] https://github.com/pop-os/cosmic-session/
 
@@ -17,12 +17,10 @@
 [F] CROSS
 
 [L] GPL3
-[S] Stable
-[V] 1.0.8
+[S] Beta
+[V] 1.0.0-beta.1.1
 
 [CV-GROUP] cosmic-desktop
-[D] e9376f444c6a5d7fe9f9ba5c414b88309413ca67adeb3e2be82bc6fe cosmic-session-epoch-1.0.8.tar.gz https://github.com/pop-os/cosmic-session/archive/epoch-1.0.8/
+[D] e4579eaf7be26e0de0b39df08b88130f7265df5b641d579d6ba1ef04 cosmic-session-epoch-1.0.0-beta.1.1.tar.gz https://github.com/pop-os/cosmic-session/archive/epoch-1.0.0-beta.1.1/
 
 . $base/package/cosmic/*/cosmic-conf.in
-hook_add postmake 5 'cp -vf data/cosmic.desktop $root$datadir/xsessions/'
-hook_add postmake 5 'cp -vf data/start-cosmic $root$bindir/'

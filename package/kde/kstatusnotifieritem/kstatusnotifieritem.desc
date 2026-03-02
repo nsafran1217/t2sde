@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kstatusnotifieritem/kstatusnotifieritem.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,14 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
-[P] X -----5---9 162.905
+[V] 6.18.0
+[P] X -----5---9 162.900
 
 [CV-GROUP] kde-frameworks
-[D] b4bef97af9d63d48a64f6a8be9a7730ae78e0afc8c18cd613d8a7ffa kstatusnotifieritem-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] e6874a8e47f26c1bc5d6869a61932f682f3e073070e575d123606e92 kstatusnotifieritem-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

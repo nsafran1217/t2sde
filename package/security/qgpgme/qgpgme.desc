@@ -15,8 +15,6 @@
 [C] extra/crypto
 [F] CROSS
 
-[E] opt doxygen
-
 [L] GPL
 [S] Stable
 [V] 2.0.0

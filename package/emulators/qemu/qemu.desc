@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/qemu/qemu.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -22,10 +22,10 @@
 
 [L] GPL
 [S] Stable
-[V] 10.2.1
+[V] 10.1.0
 
+[E] add acl
 [E] add packaging
-[E] opt capstone
 [E] opt jack
 [E] opt fuse
 [E] opt glusterfs
@@ -35,7 +35,6 @@
 [E] opt libiscsi
 [E] opt libslirp
 [E] opt numactl
-[E] opt ndctl
 [E] opt pipewire
 [E] opt pulseaudio
 [E] opt spice-protocol libspice
@@ -44,7 +43,7 @@
 [E] opt vte
 
 [CV-URL] http://www.qemu.org/
-[D] 90cf6a5a57f457a785078827481bc8a8fc89a20b3eaabb09927c9788 qemu-10.2.1.tar.xz https://wiki.qemu.org/download/
+[D] afa6aeddb1e3da31562693051dd445cacc5ef65a8fecb7e1ee7a7f82 qemu-10.1.0.tar.xz https://wiki.qemu.org/download/
 
 runmeson=0
 

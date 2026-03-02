@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/mailcommon/mailcommon.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,14 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-[P] X -----5---9 300.015
-
-[CV-GROUP] kde-gear
-[D] cbbb94cfd7bae73417b4f77de1976b2646c3a05e5c832d1b343e6c0d mailcommon-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.900
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 6f7626866edee74f0565001a2bc20b2efd3b09e7d6ebdbb85446bebd mailcommon-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

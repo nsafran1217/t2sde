@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kmail/kmail.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,16 +15,15 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] add kdepim-runtime
-[E] opt kdoctools docbook-xml
+[E] opt kdoctools
+[E] opt docbook-xml
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 2e4c0f182b9bf21f00c837b2523d6d69ddf87f44fe5ddcd02e0d258d kmail-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 400.420
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 723d93093c2efc5644368039c5962a3e7244adccb31eb24b40240c2b kmail-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

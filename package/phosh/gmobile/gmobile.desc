@@ -6,7 +6,7 @@
 
 [I] Functions useful in mobile related, glib based projects
 
-[T] gmobile carries some helpers for glib based environments on mobile devices.
+[T] Functions useful in mobile related, glib based projects.
 
 [U] https://phosh.mobi/
 
@@ -18,6 +18,6 @@
 
 [L] GPL3
 [S] Beta
-[V] 0.6.0
+[V] 0.4.0
 
-[D] 33d71b20a4c3a6f3fad8d8af37f755e2f62411a89f1da97fd66d9e10 gmobile-v0.6.0.tar.bz2 https://gitlab.gnome.org/World/Phosh/gmobile/-/archive/v0.6.0/
+[D] 4157a0f69f5df8fe164c55577739fc8e3df9435756964bb76272a9be gmobile-v0.4.0.tar.bz2 https://gitlab.gnome.org/World/Phosh/gmobile/-/archive/v0.4.0/

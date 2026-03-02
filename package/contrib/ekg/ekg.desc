@@ -10,7 +10,7 @@
 [T] This package is a experimental client for gadu-gadu instant messaging
 [T] system. Gadu-gadu is the most popular instant messaging system in poland.
 
-[U] http://ekg.chmurka.net/
+[U] http://dev.null.pl/ekg/
 
 [A] ekg group <ekg-devel@list.ziew.org>
 [M] The T2 Project <t2@t2-project.org>
@@ -19,6 +19,6 @@
 
 [L] GPL
 [S] Stable
-[V] 1.7
+[V] 1.6
 
-[D] 2a3ca50bbf229e226f6a26d63f32f618f7108acc834fca4c9931845f ekg-1.7.tar.gz http://ekg.chmurka.net/archive/
+[D] 0361a768cffad4047d710f755eb833a8d454cc2f3de59d745b40ef34 ekg-1.6.tar.gz http://dev.null.pl/ekg/

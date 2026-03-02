@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/dansguardian/dansguardian.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -27,6 +27,7 @@
 [L] GPL
 [S] Stable
 [V] 2.12.0.3
+[P] X -----5---9 150.500
 
 [D] cfe950578d8fb951b04bb84e26726f16fc1f5877450c7afc539f32f6 dansguardian-2.12.0.3.tar.bz2 https://downloads.sourceforge.net/dansguardian/files/
 
@@ -53,7 +54,7 @@ exec $ClamScan $ScanOptions "$@"
 EOR
 		chmod 755 $root/$prefix/lib/DGVirus/clamav-wrapper
 	}
-	hook_add postmake 3 dg_clamav
+	hook_add postmake 3 "dg_clamav"
 fi
 
 [ $arch = x86-64 ] &&

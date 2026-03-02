@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/strace/strace.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -26,9 +26,9 @@
 
 [L] BSD
 [S] Stable
-[V] 6.19
+[V] 6.16
 
-[D] ab6d4c7fb0cd2a8470252293dcccdcf3a9c15bff2029ffe29b297324 strace-6.19.tar.xz https://github.com/strace/strace/releases/download/v6.19/
+[D] b592d011033f9c57fb0e4f6f37cc706d96459815f72cd7dc15a9d67b strace-6.16.tar.xz https://github.com/strace/strace/releases/download/v6.16/
 
 [ "$SDECFG_LIBC" != "glibc" -o $arch = "arm64" ] && var_append confopt ' ' --enable-mpers=no
 atstage native && export CC_FOR_BUILD=$CC

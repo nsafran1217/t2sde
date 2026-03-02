@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/plasma-browser-integration/plasma-browser-integration.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,13 +14,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 162.420
 
 [CV-GROUP] kde-plasma
-[D] b0889463f223e085b2e9507e467d107cb184a53744dc53d983cb6e08 plasma-browser-integration-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] 06321d8a364f82570ebb1357663c80b8f83bdf971356638dade9bda2 plasma-browser-integration-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

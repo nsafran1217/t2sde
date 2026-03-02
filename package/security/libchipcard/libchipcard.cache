@@ -16,4 +16,5 @@
 [DEP] pcsc-lite
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] zlib

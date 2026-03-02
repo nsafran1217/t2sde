@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/xv/xv.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -23,6 +23,6 @@
 
 [L] Commercial
 [S] Stable
-[V] 6.2.0
+[V] 6.0.4
 
-[D] 0e542ca3749cff81372c1e7f33f9ec3b996c9ccca888d85c1ef43bcf xv-6.2.0.tar.gz https://github.com/jasper-software/xv/archive/v6.2.0/
+[D] 45251111805cada5f2b5a48f8379871e2003b90cfc2d386c6e6cdfaf xv-6.0.4.tar.gz https://github.com/jasper-software/xv/archive/v6.0.4/

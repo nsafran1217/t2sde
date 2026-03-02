@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/python-gradio/python-gradio.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -61,10 +61,10 @@
 
 [L] APL
 [S] Stable
-[V] 6.8.0
+[V] 5.47.2
 [P] X -----5---9 160.500
 
-[D] ebae46123ad756fe2a3fee56298f2cdca9bf5565cf774ced809161b7 gradio-6.8.0.tar.gz https://github.com/gradio-app/gradio/archive/gradio@6.8.0/
+[D] 031a0de1915553bb8e530c1791b578b3d05e85ab57eddebc54b53359 gradio-5.47.2.tar.gz https://github.com/gradio-app/gradio/archive/gradio@5.47.2/
 
 # missing to generate and install frontend - i cheated that part
 hook_add postdoc 6 "cd client/python; gpep517 build-wheel --wheel-dir .dist --output-fd 3 3>&1 >&2; python -m installer .dist/*.whl"

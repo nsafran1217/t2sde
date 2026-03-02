@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/calindori/calindori.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -15,14 +15,15 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/desktop/kde
-[F] CROSS OBJDIR
+[F] CROSS
 
 [L] GPL
 [S] Beta
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 566140909bc04ac6ece765625243f1c1288d89ee443aece418df6a5d calindori-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 400.000
 
 . $base/package/*/*/kde-conf.in
 var_append cmakeopt ' ' -DQT_MAJOR_VERSION=6
+
+[CV-GROUP] kde-gear
+[D] 2af1b5fa6ccb67ae80acc0a16d6faae53588a55a4af7c7df84ad84bc calindori-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

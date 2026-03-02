@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kollision/kollision.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] A simple ball dodging game
 
-[T] Kollision is a casual game where you need to throw your ball and avoid the
+[T] Kollision is a casual game where you need to throw your ball and avoid the 
 [T] others balls on the table as long as possible.
 
 [U] https://apps.kde.org/kollision/
@@ -16,15 +16,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 1861d2e2295c3db66321dfaa39fedc3f8953ec22985f763e31c263eb kollision-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 179.300
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] a13b5e37a82010ef5f5ea0fe5b20e51284d1c510af45619dd40b84e8 kollision-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---.
 [COPY] t2/package/*/skalibs/skalibs.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---.
 
@@ -15,9 +15,9 @@
 
 [C] extra/base
 
-[V] 2.14.5.1
+[V] 2.14.4.0
 [L] ISC
 [S] Stable
 [P] X -----5---9 700.000
 
-[D] 9fcb55e6f0048d62a0b9bd11ad5ae8d72a22a4648070b1d903bad72d skalibs-2.14.5.1.tar.gz https://skarnet.org/software/skalibs/
+[D] 0fb2f8c7dc9ffc1ea050517a7bffec2b1232539b3b31f8251cf1d37b skalibs-2.14.4.0.tar.gz https://skarnet.org/software/skalibs/

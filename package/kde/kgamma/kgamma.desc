@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kgamma/kgamma.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,15 +14,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 179.300
 
 [CV-GROUP] kde-plasma
-[D] e6654ef1b7379498cffdfc9f487dd05f8e65a61b6c0bfb771194fbff kgamma-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] 18c4f35686ff44b478c5ae45d428ddff367a70d8eef74b797ba59a16 kgamma-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

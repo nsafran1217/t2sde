@@ -26,9 +26,9 @@
 
 [L] GPL
 [S] Stable
-[V] 2.22
+[V] 2.20
 
-[D] aad00934ea633864ed2abb96f6260f72cdd71c2020a28eb57d92a8c5 lesspipe-2.22.tar.gz https://github.com/wofr06/lesspipe/archive/v2.22/
+[D] 93cc38f826edde7822680884f0cd683c09eb95cf11dd244ddc7d851a lesspipe-2.20.tar.gz https://github.com/wofr06/lesspipe/archive/v2.20/
 
 var_append confopt ' ' --yes
 var_append makeinstopt ' ' PREFIX=$root/$prefix # no DESTDIR

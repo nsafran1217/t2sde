@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/level-zero/level-zero.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -17,8 +17,8 @@
 [C] extra/development
 [F] NO-LTO
 
-[V] 1.28.2
+[V] 1.24.3
 [L] MIT
 [S] Stable
 
-[D] 741b453ca60e1ab221054a66b9ea9562403d3cc1a2d99f9179ec9d8c level-zero-1.28.2.tar.gz https://github.com/oneapi-src/level-zero/archive/v1.28.2/
+[D] faf7b8f64f464b356dd9f909b1b4a45f999571eb9ea76b2f87834787 level-zero-1.24.3.tar.gz https://github.com/oneapi-src/level-zero/archive/v1.24.3/

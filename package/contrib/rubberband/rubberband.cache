@@ -11,7 +11,7 @@
 [DEP] diffutils
 [DEP] gawk
 [DEP] grep
-[OPT] ladspa
+[DEP] ladspa
 [DEP] libsndfile
 [DEP] linux-header
 [DEP] lv2

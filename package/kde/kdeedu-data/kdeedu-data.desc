@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kdeedu-data/kdeedu-data.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,13 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] cf6bd309e75e50b3e09456a4f143a3b87891543461582c87561d7b41 kdeedu-data-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.420
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 808112a6fa4c16f9a6b2ab0d5e8db77399bdb62bf1b62774d77cd873 kdeedu-data-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

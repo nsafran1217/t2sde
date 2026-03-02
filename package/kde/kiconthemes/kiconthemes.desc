@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kiconthemes/kiconthemes.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] KDE Frameworks integration module with icon themes
+[I] KDE Frameworks 5 Tier 3 integration module with icon themes
 
-[T] KDE Frameworks integration module with icon themes.
+[T] KDE Frameworks 5 Tier 3 integration module with icon themes.
 
 [U] https://www.kde.org
 
@@ -15,14 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
+[V] 6.18.0
 [P] X -----5---9 162.915
 
 [CV-GROUP] kde-frameworks
-[D] 8a9c4c280cb905eddbe648b169eccafe0beb0462c927e0d5938add87 kiconthemes-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] e443484d35c3f6181ca206897728a8d5a8f84cc865af60e64b752780 kiconthemes-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

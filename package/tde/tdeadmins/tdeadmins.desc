@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/tdeadmins/tdeadmins.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -19,9 +19,10 @@
 
 [L] GPL
 [S] Stable
-[V] 14.1.5
-
-[CV-GROUP] tde
-[D] cd979bd9b14898fbbf32241deff3e884f6941e7cb47f4d0660ace830 tdeadmin-trinity-14.1.5.tar.xz https://mirror.ppa.trinitydesktop.org/trinity/releases/R14.1.5/main/core/
+[V] 14.1.4
+[P] X -----5---9 400.000
 
 . $base/package/*/*/tde-conf.in
+
+[CV-GROUP] tde
+[D] 323d2141bf35c8ee04f8498fa1798d90c2470c59463f6f81c155e8cf tdeadmin-trinity-14.1.4.tar.xz https://mirror.ppa.trinitydesktop.org/trinity/releases/R14.1.4/main/core/

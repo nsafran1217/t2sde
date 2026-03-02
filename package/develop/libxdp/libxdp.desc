@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/libxdp/libxdp.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -26,11 +26,11 @@
 
 [L] BSD
 [S] Stable
-[V] 1.6.2
+[V] 1.5.6
 [P] X -----5---9 139.000
 
-[D] 27b3c044b1a0870f259469bd85559421668cb85e01717d43fa26e40a libxdp-1.6.2.tar.gz https://github.com/xdp-project/xdp-tools/archive/v1.6.2/
-
-hook_add premake 5 ./configure
+hook_add premake 5 "./configure"
 var_append makeopt ' ' libxdp
 var_remove_regex GCC_WRAPPER_INSERT ' ' '-march=.*'
+
+[D] f7765e5de68ccc0b579b6260b1f95797f37bbb4b74ba83c82fd0e3c5 libxdp-1.5.6.tar.gz https://github.com/xdp-project/xdp-tools/archive/v1.5.6/

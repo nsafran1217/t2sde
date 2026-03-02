@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/openimageio/openimageio.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -24,7 +24,7 @@
 
 [L] APL
 [S] Stable
-[V] 3.1.10.0
+[V] 3.0.10.1
 [P] X -----5---9 300.900
 
-[D] 534c94b9bd9557aeeeedafd9f3bd78bde68cff30647a21828a9786b0 openimageio-v3.1.10.0.tar.gz https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/v3.1.10.0/
+[D] ba7a7e715dd9057460bbf5543c93436e5d9a2409e05c51d5ff2adec8 openimageio-v3.0.10.1.tar.gz https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/v3.0.10.1/

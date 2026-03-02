@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kimap/kimap.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -17,14 +17,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-[P] X -----5---9 162.920
-
-[CV-GROUP] kde-gear
-[D] 540def6ad9a15b25d0c9d78b54a925f9b1622e57778bcd2d45391320 kimap-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.900
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] a31c427cd4d6e937e9600b5d745e90d5481e401f8f6bedb31db00cdd kimap-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

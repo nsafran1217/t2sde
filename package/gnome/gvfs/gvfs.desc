@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/gvfs/gvfs.desc
-[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2008 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,13 +18,13 @@
 
 [L] LGPL
 [S] Stable
-[V] 1.59.1
+[V] 1.58.0
 [P] X -----5---9 142.400
 
-[CV-URL] https://download.gnome.org/sources/gvfs/cache.json
-[D] 7d5f786b4ab2e45859a1c2d3fc62150d365583a3b02c7e6976863f3b gvfs-1.59.1.tar.xz https://download.gnome.org/sources/gvfs/1.59/
-
 . $base/package/*/*/gnome-conf.in
+
+[CV-URL] https://download.gnome.org/sources/gvfs/cache.json
+[D] c9450c932b641b07c5fda4faff3eb1851f4aedfadcbede943c54a677 gvfs-1.58.0.tar.xz https://download.gnome.org/sources/gvfs/1.58/
 
 if ! pkginstalled systemd; then
 	var_append mesonopt ' ' -Dsystemduserunitdir=no
@@ -37,7 +37,7 @@ pkginstalled libcdio-paranoia || var_append mesonopt ' ' -Dcdda=False
 pkginstalled gcr || var_append mesonopt ' ' -Dgcr=False
 pkginstalled libarchive || var_append mesonopt ' ' -Darchive=False
 pkginstalled libbluray || var_append mesonopt ' ' -Dbluray=False
-pkginstalled libimobiledevice libplist || var_append mesonopt ' ' -Dafc=False
+pkginstalled libimobiledevice && pkginstalled libplist || var_append mesonopt ' ' -Dafc=False
 pkginstalled libmtp || var_append mesonopt ' ' -Dmtp=False
 pkginstalled libnfs || var_append mesonopt ' ' -Dnfs=False
 pkginstalled libsoup3 || var_append mesonopt ' ' -Dhttp=False

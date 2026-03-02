@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/rust-src/rust-src.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,14 +18,14 @@
 [F] CROSS
 [R] - alpha arc avr32 blackfin cris hppa hppa64 ia64 m68k microblaze nios2 openrisc superh
 
-[L] APL MIT
+[L] MIT APL
 [S] Stable
-[V] 1.93.1
+[V] 1.90.0
 [P] X -1---5---9 130.000
 
 [CV-GROUP] rust
 [CV-URL] https://forge.rust-lang.org/infra/other-installation-methods.html
-[D] 9b3711e1a30b4f91a0889f01fa1f07a40b704cc907fbbcf921d593cf rust-src-1.93.1.tar.gz https://static.rust-lang.org/dist/
+[D] e706d13961341f3a6420f58107d38f852f1a9b33f6c01eeab51aaeb3 rust-src-1.90.0.tar.gz https://static.rust-lang.org/dist/
 
 autoextract=0
 runcargo=0

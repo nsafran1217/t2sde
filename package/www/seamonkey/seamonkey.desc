@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/seamonkey/seamonkey.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -27,13 +27,13 @@
 
 [L] MPL
 [S] Stable
-[V] 2.53.23
+[V] 2.53.21
 [P] X -----5---9 500.000
 
-[CV-URL] http://www.seamonkey-project.org/releases/
-[D] fb95df422cedb251b84ef2c19a2a5fbb056c878cbde47ed64e15a05e seamonkey-2.53.23.source.tar.xz https://archive.seamonkey-project.org/releases/2.53.23/source/
-
 . $base/package/*/*/mozilla-conf.in
+
+[CV-URL] http://www.seamonkey-project.org/releases/
+[D] f138cbd128a73a0a1d9391d39aaa07360b9ae51dc176c0f5a679e712 seamonkey-2.53.21.source.tar.xz https://archive.seamonkey-project.org/releases/2.53.21/source/
 
 export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=system
 
@@ -92,8 +92,8 @@ mozilla_postinstall() {
 	done
 }
 
-hook_add preconf  4 mozilla_config
-#hook_add postmake 8 mozilla_postinstall
+hook_add preconf  4 'mozilla_config'
+#hook_add postmake 8 'mozilla_postinstall'
 
 # disable ver and libdir hacks
 mozilla_ver() {

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/setuptools/setuptools.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -28,10 +28,10 @@
 
 [L] MIT
 [S] Stable
-[V] 82.0.0
+[V] 80.9.0
 [P] X ?----5---9 109.006
 
-[CV-URL] https://pypi.org/project/setuptools/#history
-[D] fe47037cdf40d1c3c40cbbf8a307aaa583539dd8053661d6da7c1130 setuptools-82.0.0.tar.gz https://pypi.io/packages/source/s/setuptools/
-
 hook_add preconf 5 "sed -i -e '/tag_build = .post/d' -e '/tag_date = 1/d' setup.cfg"
+
+[CV-URL] https://pypi.org/project/setuptools/#history
+[D] e0909b74a4e2948cd54119d04fb2b8b522d6409838dfb11461e3f0c6 setuptools-80.9.0.tar.gz https://pypi.io/packages/source/s/setuptools/

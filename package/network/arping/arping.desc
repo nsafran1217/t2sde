@@ -15,10 +15,9 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/network
-[F] CROSS
 
 [L] GPL
 [S] Stable
-[V] 2.28
+[V] 2.26
 
-[D] a0fe6e529d6ef8d380847a538808e466e5ccf002efaa2593bed028d1 arping-2.28.tar.gz http://www.habets.pp.se/synscan/files/
+[D] 869bfc541f9ca107cbf5e64a9c99aaffa5c5909d58e4f4e6e9a55f4b arping-2.26.tar.gz http://www.habets.pp.se/synscan/files/

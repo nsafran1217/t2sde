@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/pytorch-audio/pytorch-audio.desc
-[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2009 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -20,10 +20,10 @@
 
 [L] BSD
 [S] Stable
-[V] 2.10.0
+[V] 2.8.0
 [P] X -----5---9 310.000
-
-[D] 2a86d296b9c2d9da80fa6d89301625ede5ce0e22b2b03d72bdb1a5bd pytorch-audio-v2.10.0.tar.gz https://github.com/pytorch/audio/archive/refs/tags/v2.10.0/
 
 var_append cmakeopt ' ' -DCMAKE_PREFIX_PATH=$libdir/python3.12/site-packages/torch/share/cmake/Torch/
 pkginstalled ffmpeg && var_append cmakeopt ' ' -DUSE_FFMPEG=ON
+
+[D] 4b5f05401760a9c908c4309a686b0a3f944735f4a144da67ba02f14d pytorch-audio-v2.8.0.tar.gz https://github.com/pytorch/audio/archive/refs/tags/v2.8.0/

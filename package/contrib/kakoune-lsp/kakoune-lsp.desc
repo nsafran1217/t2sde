@@ -18,6 +18,6 @@
 
 [L] UNL
 [S] Stable
-[V] 19.0.1
+[V] 18.2.0
 
-[D] 91b363028cdc66befd19f2705405b228c4fb8196fcbf880132940f1f kakoune-lsp-19.0.1.tar.gz https://github.com/kakoune-lsp/kakoune-lsp/archive/v19.0.1/
+[D] 9273d421f6dd49b0c10534b872072eaad0f33e5e36e2cc295065d5fb kakoune-lsp-18.2.0.tar.gz https://github.com/kakoune-lsp/kakoune-lsp/archive/v18.2.0/

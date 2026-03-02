@@ -1,7 +1,8 @@
-[TIMESTAMP] 1770493389 Sat Feb  7 20:43:09 2026
-[BUILDTIME] 45 (9)
-[SIZE] 0.92 MB, 86 files
+[TIMESTAMP] 1757930686 Mon Sep 15 12:04:46 2025
+[BUILDTIME] 40 (9)
+[SIZE] 0.90 MB, 84 files
 
+[DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
 [DEP] bzip2
@@ -12,15 +13,15 @@
 [DEP] gawk
 [DEP] grep
 [DEP] linux-header
+[DEP] lzip
 [DEP] make
 [DEP] openssl
 [DEP] pkgconfig
 [DEP] qt6base
 [DEP] qt6tools
-[DEP] qt6translations
 [DEP] sed
 [DEP] tar
-[DEP] util-linux
+[DEP] xorgproto
 [DEP] xz
 [DEP] zlib
 [DEP] zstd

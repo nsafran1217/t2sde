@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/ktorrent/ktorrent.desc
-[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2007 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,16 +19,15 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/network
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml
+[E] opt kdoctools
+[E] opt docbook-xml
 
 [L] GPL
 [S] Beta
-[V] 25.12.2
+[V] 25.08.1
+
+. $base/package/*/*/kde-conf.in
 
 [CV-URL] http://ktorrent.pwsp.net/index.php?page=downloads
 [CV-GROUP] kde-gear
-[D] d0407f337edf0b9a406b30fc554a1ccdce5835aa4380e58cc5ec954f ktorrent-25.12.2.tar.gz https://github.com/KDE/ktorrent/archive/v25.12.2/
-
-. $base/package/*/*/kde-conf.in
+[D] ac71120b9ac5a9afa9d15e6a10e875979cf55738a6e05b39a863165d ktorrent-25.08.1.tar.gz https://github.com/KDE/ktorrent/archive/v25.08.1/

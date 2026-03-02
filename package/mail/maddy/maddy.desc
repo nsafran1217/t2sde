@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/maddy/maddy.desc
-[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2023 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -23,17 +23,17 @@
 
 [L] GPL3
 [S] Stable
-[V] 0.8.2
-
-[D] 055a1d79b32ca2b2593d4469fbba1a359bffedbf593abd1f94969bb7 maddy-0.8.2.tar.gz https://github.com/foxcpp/maddy/archive/v0.8.2/
+[V] 0.8.1
 
 . $base/package/*/*/go-conf.in
+
+[D] 189585a84774281b1186e91a2630125ba359c0667be1be9deb8c2140 maddy-0.8.1.tar.gz https://github.com/foxcpp/maddy/archive/v0.8.1/
 
 var_append goconfopt ' ' "-v -o bin/$pkg ./cmd/maddy"
 
 hook_add inmake 5 "scdoc <docs/man/maddy.1.scd >maddy.1"
 
-hook_add postmake 5 maddy_pm
+hook_add postmake 5 "maddy_pm"
 maddy_pm() {
 	install -Dm755 bin/maddy $root$bindir
 	install -Dm644 maddy.conf $root$sysconfdir/$pkg/$pkg.conf

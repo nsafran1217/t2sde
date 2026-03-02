@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/avahi-tqt/avahi-tqt.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -18,9 +18,10 @@
 
 [L] LGPL
 [S] Stable
-[V] 14.1.5
-
-[CV-GROUP] tde
-[D] cff4a8c376bd2dc31b6492327f48b640f9e9d09cb6652e8912d1add6 avahi-tqt-trinity-14.1.5.tar.xz https://mirror.ppa.trinitydesktop.org/trinity/releases/R14.1.5/main/dependencies/
+[V] 14.1.4
+[P] X -----5---9 200.900
 
 . $base/package/*/*/tde-conf.in
+
+[CV-GROUP] tde
+[D] b0e4a01e10612204d7a35f873c7c73ad724f0a3eef972effcf24c834 avahi-tqt-trinity-14.1.4.tar.xz https://mirror.ppa.trinitydesktop.org/trinity/releases/R14.1.4/main/dependencies/

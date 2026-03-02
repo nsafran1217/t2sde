@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/ksshaskpass/ksshaskpass.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -15,13 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 162.900
 
 [CV-GROUP] kde-plasma
-[D] c17dbd15c4d2de35cd8bdfa2e62512093e33f6aa1c4951e1c198a229 ksshaskpass-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] 4696b87b2b39c0d5e5c4d0914a4153e20ffa626363f9918bf1362275 ksshaskpass-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

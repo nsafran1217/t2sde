@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/at-spi2-core/at-spi2-core.desc
-[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2013 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,10 +19,11 @@
 
 [L] LGPL
 [S] Beta
-[V] 2.59.1
+[V] 2.58.0
 [P] X -----5---9 127.790
 
-[CV-URL] http://ftp.gnome.org/pub/gnome/sources/at-spi2-core/cache.json
-[D] c69ed12464ddad29041a748aa322b699acc392747e0c975fbebc31fa at-spi2-core-2.59.1.tar.xz http://ftp.gnome.org/pub/gnome/sources/at-spi2-core/2.59/
-
 . $base/package/*/*/gnome-conf.in
+
+[CV-URL] http://ftp.gnome.org/pub/gnome/sources/at-spi2-core/cache.json
+
+[D] c60a0d8bd9fc14265c3c7f838a5a1d9d04b6c36391036161edd5cdd3 at-spi2-core-2.58.0.tar.xz http://ftp.gnome.org/pub/gnome/sources/at-spi2-core/2.58/

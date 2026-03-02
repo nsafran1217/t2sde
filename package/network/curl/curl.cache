@@ -10,6 +10,7 @@
 [DEP] findutils
 [DEP] gawk
 [DEP] grep
+[DEP] gsasl
 [OPT] libgsasl
 [OPT] libidn
 [DEP] libidn2

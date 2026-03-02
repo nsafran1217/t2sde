@@ -20,6 +20,7 @@
 [DEP] qt5gamepad
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] vulkan-headers
 [DEP] xz
 [DEP] zlib

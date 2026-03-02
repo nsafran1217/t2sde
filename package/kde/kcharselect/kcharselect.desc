@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kcharselect/kcharselect.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,15 +15,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 3b4c40a0b2b2732ea1067cff7c91459617848ea8816e1f04f22ac442 kcharselect-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.900
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 69664f0c6a231f1f094cf6eb98e1fab3a5ac03f078ecfa0ed45f7703 kcharselect-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

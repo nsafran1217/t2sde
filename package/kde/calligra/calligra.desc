@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/calligra/calligra.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -23,18 +23,15 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt cups
-[E] opt okular
-[E] opt qt6webengine
+[F] OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 33c4932dd5ce743e4d6497833ea4e5694ef797d47c36db1d977ffed3 calligra-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 179.200
 
 . $base/package/*/*/kde-conf.in
 var_append CXX_WRAPPER_APPEND ' ' "-I$root/$(pkgprefix includedir fontconfig)"
+
+[CV-GROUP] kde-gear
+[D] 690138053b6108744e16839e0c46e2911a2b8ff08db04552fe08a21c calligra-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/incus/incus.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -17,15 +17,13 @@
 [C] extra/tool
 [F] CROSS
 
-[E] add lxc raft
-
-[L] APL
+[L] MIT
 [S] Stable
-[V] 6.22.0
+[V] 6.17.0
 
-[D] 95b925cc2922cc87f51ee34023e6a07f2e018da274ad279a275bea43 incus-6.22.0.tar.gz https://github.com/lxc/incus/archive/v6.22.0/
+[D] f86c36bd8f1f0641dfb139d5253d6837638b37f4918c4a76a8df98d1 incus-6.17.0.tar.gz https://github.com/lxc/incus/archive/v6.17.0/
 
 . $base/package/*/*/go-conf.in
-rungo=0 makeinstopt=
+rungo=0
 export CGO_ENABLED=1
 var_remove GCC_WRAPPER_REMOVE ' ' '-gdwarf*'

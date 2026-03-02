@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/dpkg/dpkg.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -25,13 +25,12 @@
 [C] extra/tool
 [F] NOPARALLEL
 
-[E] opt zlib-ng
-
 [L] GPL
 [S] Stable
-[V] 1.23.5
-
-[D] f91d0ec2b61cf52d06cd18ff8febcbb544a9671a4ee85a88f5e27d61 dpkg_1.23.5.tar.xz http://ftp.debian.org/debian/pool/main/d/dpkg/
+[V] 1.22.21
+[P] X -----5---9 116.000
 
 confopt="$confopt --without-sgml-doc --without-start-stop-daemon"
+#don't install perl modules in vendor_perl dir
 hook_add premake 5 "sed -i 's:perl5\/vendor_perl:perl5:' scripts/Makefile"
+[D] 51577f4f47cc66251edeb220b44a0234689d4bc4f994ab234d8b2ced dpkg_1.22.21.tar.xz http://ftp.debian.org/debian/pool/main/d/dpkg/

@@ -1,12 +1,13 @@
-[TIMESTAMP] 1770549118 Sun Feb  8 12:11:58 2026
-[BUILDTIME] 45 (9)
-[SIZE] 1.99 MB, 162 files
 
+[TIMESTAMP] 1718821790 Wed Jun 19 20:29:50 2024
+[BUILDTIME] 12 (9)
+[SIZE] 1.91 MB, 145 files
+
+[DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
 [DEP] cmake
 [DEP] coreutils
-[DEP] cups
 [DEP] diffutils
 [OPT] docbook-xml
 [OPT] docbook-xsl
@@ -22,6 +23,8 @@
 [DEP] kconfigwidgets
 [DEP] kcoreaddons
 [DEP] kcrash
+[DEP] kde-cli-tools
+[DEP] kdepim-runtime
 [OPT] kdoctools
 [DEP] kguiaddons
 [DEP] ki18n
@@ -31,7 +34,6 @@
 [DEP] kontactinterface
 [DEP] kparts
 [DEP] kservice
-[DEP] ktextaddons
 [DEP] kwidgetsaddons
 [DEP] kxmlgui
 [DEP] libkdepim
@@ -41,11 +43,11 @@
 [DEP] pimcommon
 [DEP] pkgconfig
 [DEP] procps
-[DEP] python
 [DEP] qt6base
+[DEP] qt6declarative
 [DEP] qt6webengine
 [DEP] sed
 [DEP] tar
-[DEP] util-linux
+[DEP] tbb
 [DEP] vulkan-headers
 [DEP] xz

@@ -1,11 +1,11 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kparts/kparts.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] KDE Frameworks solution for KParts
+[I] KDE Frameworks 5 Tier 3 solution for KParts
 
 [T] This library implements the framework for KDE parts, which are elaborate
 [T] widgets with a user-interface defined in terms of actions (menu items,
@@ -17,15 +17,15 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
+[V] 6.18.0
 [P] X -----5---9 162.918
 
 [CV-GROUP] kde-frameworks
-[D] f449282c3aa61be32813f036774e1e884be4a803d35e7b1aa27b9b9b kparts-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] eb7e5495300f5528db18f2d6146ee74386f73175969343f0c8a6b895 kparts-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
+
+hook_add postmake 5 "ln -sfv $libdir/plugins/kf6 $root/$(pkgprefix qt6base)/plugins/"
 
 . $base/package/*/*/kde-conf.in
-[ "$prefix" != usr ] && hook_add postmake 5 "ln -sfv $libdir/plugins/kf6 $root/$(pkgprefix qt6base)/${libdir##*/}/qt6/plugins/"

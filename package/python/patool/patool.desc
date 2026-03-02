@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/patool/patool.desc
-[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -16,10 +16,8 @@
 
 [C] extra/tool
 
-[E] add setuptools-reproducible
-
 [L] GPL3
 [S] Stable
-[V] 4.0.4
+[V] 4.0.1
 
-[D] 635a25b323f8b3700d24ff0d946c34232cd9036dd89152c1849bc4b0 patool-4.0.4.tar.gz https://files.pythonhosted.org/packages/source/p/patool/
+[D] 92068a5dd25ba8f5c8d3bfc36ac3d75949bd5c6bb3d04f0f8f30f48b patool-4.0.1.tar.gz https://files.pythonhosted.org/packages/93/c7/f9d5c6f9c51433d95399e40c9dd214f2b44bdcb79cbbd86028f55535725e/

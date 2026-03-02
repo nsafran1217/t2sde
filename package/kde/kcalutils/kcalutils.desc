@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kcalutils/kcalutils.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] The KDE calendar utility library
 
-[T] This library provides a set of utility functions that help applications
+[T] This library provides a set of utility functions that help applications 
 [T] access and use calendar data via the KCalendarCore library.
 
 [U] https://www.kde.org
@@ -16,14 +16,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-[P] X -----5---9 200.900
-
-[CV-GROUP] kde-gear
-[D] b61a24d55b70eba297ba4b536d5f26a4f3d5bfb06d7baa82b15c6e0d kcalutils-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.900
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 191a6e9bf8fa5d0adeb4fea77c7630aceb37b0243f7ca709314da4ae kcalutils-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

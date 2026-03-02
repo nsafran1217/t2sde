@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/ksvg/ksvg.desc
-[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2023 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -17,14 +17,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
-[P] X -----5---9 200.015
+[V] 6.18.0
+[P] X -----5---9 162.915
 
 [CV-GROUP] kde-frameworks
-[D] 77e40bf8e52ddbb3805e8a17bdc33f121d330a06c62344e11548ae03 ksvg-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] ffa25c3b2e8a81387d3724d55d25b092ac3a2c9722b85402d9168188 ksvg-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

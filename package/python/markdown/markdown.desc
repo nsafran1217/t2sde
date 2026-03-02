@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/markdown/markdown.desc
-[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2020 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,7 +18,7 @@
 [L] BSD
 
 [S] Stable
-[V] 3.10.2
+[V] 3.9
 [P] X -----5---9 136.800
 
-[D] 8b0bf0da52e77f4b28fede2ecaaf1f3d3f08dd11a482d96adacc645b markdown-3.10.2.tar.gz https://files.pythonhosted.org/packages/source/m/markdown/
+[D] 8fc79dad364973e901e58c44b2642ad857e0cf423645f64e093bd1dc markdown-3.9.tar.gz https://files.pythonhosted.org/packages/source/m/markdown/

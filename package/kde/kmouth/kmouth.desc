@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kmouth/kmouth.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Speech Synthesizer Frontend
 
-[T] KMouth is a program which enables persons that cannot speak to let their
+[T] KMouth is a program which enables persons that cannot speak to let their 
 [T] computer speak, e.g. mute people or people who have lost their voice.
 
 [U] https://apps.kde.org/kmouth/
@@ -16,15 +16,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] bdc6d48589d043cdabf049a8f1bdb6a053409d58ded2478dffeb08e3 kmouth-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 200.400
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 8bdf442dc3a38ab5c1ff94a8789611f633f01360f73f6c20d7c7b258 kmouth-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

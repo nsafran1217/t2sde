@@ -1,8 +1,7 @@
-[TIMESTAMP] 1772182598 Fri Feb 27 09:56:38 2026
-[BUILDTIME] 580 (9)
-[SIZE] 151.00 MB, 420 files
+[TIMESTAMP] 1758643748 Tue Sep 23 18:09:08 2025
+[BUILDTIME] 790 (9)
+[SIZE] 269.25 MB, 425 files
 
-[OPT] asciidoctor
 [DEP] bash
 [OPT] bcg729
 [DEP] binutils
@@ -19,7 +18,6 @@
 [DEP] glib
 [DEP] gnutls
 [DEP] grep
-[OPT] krb5
 [DEP] libcap
 [DEP] libgcrypt
 [DEP] libglvnd
@@ -40,7 +38,6 @@
 [OPT] minizip-ng
 [OPT] nghttp2
 [OPT] nghttp3
-[OPT] opencore-amr
 [DEP] pcre2
 [DEP] perl
 [DEP] pkgconfig
@@ -49,7 +46,6 @@
 [DEP] qt6base
 [OPT] qt6multimedia
 [DEP] qt6tools
-[OPT] ruby
 [DEP] sbc
 [DEP] sed
 [OPT] snappy
@@ -57,9 +53,7 @@
 [OPT] speex
 [DEP] speexdsp
 [DEP] tar
-[DEP] util-linux
-[OPT] xxhash
+[DEP] vulkan-headers
 [DEP] xz
 [DEP] zlib
-[OPT] zlib-ng
 [DEP] zstd

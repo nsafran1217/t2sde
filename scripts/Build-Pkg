@@ -2,7 +2,7 @@
 #
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/scripts/Build-Pkg
-# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 2004 - 2025 The T2 SDE Project
 # Copyright (C) 1998 - 2003 ROCK Linux Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
@@ -284,7 +284,7 @@ if ! type -p $md5sum > /dev/null; then
 fi
 
 if [ $this_is_the_2nd_run = 0 ]; then
-	[ $stagelevel -gt 2 ] && [ "$SDECFG_HOMEBREW" = 0 ] && . /etc/profile
+	[ $stagelevel -gt 2 ] && . /etc/profile
 	options="-this_is_the_2nd_run $options $pkg=$xpkg"
 	if [ "$SDECFG_CREATE_CACHE" = 1 ]; then
 		mkdir -p $root/var/adm/cache
@@ -371,12 +371,11 @@ var_append flistrfilter '|' ".*\.cmd_wrapper.sh\..*:	.*"
 # indirectly referenced .so
 var_append flistrfilter '|' ".*:	.*/lib.*\.so.*"
 # everything configure tries randomly e.g. even bin/mt(-st)
-#var_append flistrfilter '|' ".*configure.*:	.*"
+var_append flistrfilter '|' ".*configure.*:	.*"
 var_append flistrfilter '|' ".*doxygen\..*dot.*:	.*"
 var_append flistrfilter '|' ".*cmake\.open:	.*/(bin|sbin)"
 var_append flistrfilter '|' ".*cmake\..*:	.*/lib.*/.*\.cmake"
 var_append flistrfilter '|' ".*qmake\..*:	.*/mkspecs/.*\.p.*"
-var_append flistrfilter '|' ".*qmlcachegen\..*:	.*"
 var_append flistrfilter '|' ".*:	.*/gettext/its/.*.loc"
 var_append flistrfilter '|' ".*python.*:	.*/bin/(git|hg)"
 var_append flistrfilter '|' ".*python.*:	.*python.*/site-packages/mercurial/.*"
@@ -411,16 +410,6 @@ var_append flistdel '|' ".*/gio/modules/giomodule.cache|.*/schemas/gschemas.comp
 var_append flistdel '|' ".*/share/icons/.*/icon-theme.cache|.*/share/applications/mimeinfo.cache"
 var_append flistdel '|' ".*/lib.*gdk-pixbuf-.*/loaders.cache"
 
-# filter log files and caches touched by sideload builds on Debian GNU/Hurd
-# note: this is a workaround until fl_wrapper is implemented for Hurd
-var_append flistdel '|' "var/cache/ldconfig/aux-cache"
-var_append flistdel '|' "var/log/auth.log"
-var_append flistdel '|' "var/log/messages"
-var_append flistdel '|' "var/log/syslog"
-var_append flistdel '|' "var/log/daemon.log"
-var_append flistdel '|' "var/lib/dhcp/*"
-var_append flistdel '|' "var/log/wtmp.db"
-
 flistvalid="$base|/tmp|/var/backups|/proc|/dev"
 foodirlist="bindir sbindir libdir datadir includedir sysconfdir localstatedir docdir"
 
@@ -444,61 +433,7 @@ fi
 
 targetdir="$base/target/$target"
 
-if [ "$SDECFG_TMPFS_MAX_SIZE" != 0 ]; then
-	x="$(match_source_file -p)"
-	[ "$x" ] && x="$(du -cm $x | tail -1 | cut -f 1)"
-	[ "$x" ] || x=0
-	[ "$x" -gt "${SDECFG_TMPFS_MAX_SIZE:-0}" ] && SDECFG_TMPFS=0
-fi
-
-if [ $clear_src = 1 ]; then
-	if [ "$SDECFG_TMPFS" = 1 ]; then
-		mount -n -o remount,exec,$SDECFG_TMPFS_OPT /tmp
-		mkdir -p /tmp/${builddir##*/}
-		mount -n --bind /tmp/${builddir##*/} $builddir
-	fi
-fi
-
-if [ $update = 1 -a ! -f $xroot/var/adm/md5sums/$xpkg ]; then
-	#echo_warning "Ignoring update mode since package isn't installed already."
-	update=0
-fi
-if [ $update = 1 ]; then
-	(
-		cd $xroot/
-		$md5sum --check var/adm/md5sums/$xpkg 2>&1 < /dev/null |
-			grep ': FAILED$' | cut -f1 -d:
-	) > $builddir/backup_files.txt
-	if [ -s $builddir/backup_files.txt ]; then
-		echo_status "Creating backup of old package data."
-		mkdir -p $xroot/var/adm/backup; chmod 700 $xroot/var/adm/backup
-		backup_tar="$xroot/var/adm/backup/$(date '+%Y%m%d%H%M%S')_$xpkg.tar.gz"
-		(cd $xroot/; tar --no-recursion -czf - -T $builddir/`
-			`backup_files.txt || true) > $backup_tar
-	else
-		update=0
-	fi
-fi
-
 detect_patchfiles
-
-# Erase positional parameters to prevent unintended parameter
-# passing. We do not want to pass the current positional parameters
-# to the loaded script.
-set --
-
-# define new abort function for errors while building
-#
-abort() {
-	[ "$*" ] && echo "$*"; echo "--- BUILD ERROR ---"
-	rm -vf $root/var/adm/logs/$stagelevel-$xpkg.log
-	false
-}
-
-{
-	trap 'echo "Got SIGINT (Ctrl-C). Aborting build."; exit 1' INT
-	exec < /dev/null
-
 
 if [ $stagelevel -gt 2 ]; then
 	for pc_file in $xroot/var/adm/parse-config/*; do
@@ -518,6 +453,11 @@ if ! hasflag NOPARALLEL; then
 	var_append makeopt ' ' -j${SDECFG_PARALLEL:-1}
 	var_append makeinstopt ' ' -j${SDECFG_PARALLEL:-1}
 fi
+
+# Erase positional parameters to prevent unintended parameter
+# passing. We do not want to pass the current positional parameters
+# to the loaded script.
+set --
 
 # include package pre config - if any
 if [ -f $base/build/$SDECFG_ID/TOOLCHAIN/$toolsdir/lib/pkg_${pkg}_pre.conf ]; then
@@ -581,14 +521,53 @@ fi
 #
 if hasflag NOPARALLEL || [ "$SDECFG_PARALLEL" -le 1 ]; then
 	hasflag NOPARALLEL && [ "$SDECFG_PARALLEL" -gt 1 ] &&
-		echo 'Parallel build disabled for this package'
-	#echo "Building in ${builddir##*/}"
-#else
-	#echo "Building in ${builddir##*/}, with $SDECFG_PARALLEL threads"
+		echo_warning 'Parallel build disabled for this package'
+	echo_status "Building in ${builddir##*/}"
+else
+	echo_status "Building in ${builddir##*/}, with $SDECFG_PARALLEL threads"
+fi
+
+if [ "$SDECFG_TMPFS_MAX_SIZE" != 0 ]; then
+	x="$(match_source_file -p)"
+	[ "$x" ] && x="$(du -cm $x | tail -1 | cut -f 1)"
+	[ "$x" ] || x=0
+	[ "$x" -gt "${SDECFG_TMPFS_MAX_SIZE:-0}" ] && SDECFG_TMPFS=0
+fi
+
+if [ $clear_src = 1 ]; then
+	if [ "$SDECFG_TMPFS" = 1 ]; then
+		mount -n -o remount,exec,$SDECFG_TMPFS_OPT /tmp
+		mkdir -p /tmp/${builddir##*/}
+		mount -n --bind /tmp/${builddir##*/} $builddir
+	fi
 fi
 
 export TMPDIR="$builddir/tmp"
 mkdir -p "$TMPDIR"
+
+if [ $update = 1 -a ! -f $xroot/var/adm/md5sums/$xpkg ]; then
+	#echo_warning "Ignoring update mode since package isn't installed already."
+	update=0
+fi
+
+if [ $update = 1 ]; then
+	echo_status "Creating backup of old package data."
+	(
+		cd $xroot/
+		$md5sum --check var/adm/md5sums/$xpkg 2>&1 < /dev/null |
+			grep ': FAILED$' | cut -f1 -d:
+	) > $builddir/backup_files.txt
+	if [ -s $builddir/backup_files.txt ]; then
+		mkdir -p "$xroot/var/adm/backup"
+		chmod 700 "$xroot/var/adm/backup"
+		backup_tar="$xroot/var/adm/backup/$(
+			date '+%Y%m%d%H%M%S')_$xpkg.tar.bz2"
+		(cd $xroot/; tar --no-recursion -cf - -T $builddir/`
+			`backup_files.txt || true) | bzip2 > $backup_tar
+	else
+		update=0
+	fi
+fi
 
 if [ "$SDECFG_FLIST" = "flwrapper" ]; then
 	rm -f $builddir/fl_wrapper.{rlog,wlog}
@@ -599,6 +578,18 @@ elif [ "$SDECFG_FLIST" = "find" ]; then
 fi
 
 hook_eval prepare
+
+# define new abort function for errors while building
+#
+abort() {
+	[ "$*" ] && echo "$*"; echo "--- BUILD ERROR ---"
+	rm -vf $root/var/adm/logs/$stagelevel-$xpkg.log
+	false
+}
+
+{
+	trap 'echo "Got SIGINT (Ctrl-C). Aborting build."; exit 1' INT
+	exec < /dev/null
 
 	# Makes debugging build problems easier
 	#
@@ -696,15 +687,13 @@ hook_eval prepare
 	hook_eval postinstall
 
 	echo "Creating file list and doing final adaptions ... "
+	#
 	cd $xroot/
 	[ -s "var/adm/parse-config/$xpkg" ] &&
 		echo "var/adm/parse-config/$xpkg" >> $builddir/flist.txt
 	for x in var/adm/{flists,md5sums,packages,descs,dependencies}/$xpkg; do
-		touch $x; echo $x >> $builddir/flist.txt
+		touch $x; echo "$x" >> $builddir/flist.txt
 	done
-	[ "$SDECFG_CREATE_CACHE" = 1 ] &&
-		touch var/adm/cache/$xpkg && echo var/adm/cache/$xpkg >> $builddir/flist.txt
-
 	#
 	if [ "$SDECFG_FLIST" = "strace" ]; then
 		sleep 1; kill -INT $strace_pid; sleep 1
@@ -879,7 +868,7 @@ hook_eval prepare
 	#
 	srccksum=$(pkgchksum $base/package/*/$pkg)
 	cat > var/adm/packages/$xpkg << EOT
-Package Name and Version: $xpkg $ver${extraver:+ $extraver}
+Package Name and Version: $xpkg $ver $extraver
 Package Size: `getdu $root/ < var/adm/flists/$xpkg`, `
 				wc -l < var/adm/flists/$xpkg | tr -d ' '` files
 T2 Package Source Checksum: $srccksum
@@ -991,9 +980,10 @@ EOT
 	fi
 
 } 2>&1 | {
+
 	trap '' INT
 
-	#echo_status "Writing output to \$root/var/adm/logs/$stagelevel-$xpkg.out"
+	echo_status "Writing output to \$root/var/adm/logs/$stagelevel-$xpkg.out"
 
 	if [ "$SDECFG_VERBOSE" = 1 -o "$verbose" = 1 ]; then
 		tee $root/var/adm/logs/$stagelevel-$xpkg.out |
@@ -1013,13 +1003,11 @@ if [ $update = 1 ]; then
 		[ -f $xroot/$fn ] && mv $xroot/$fn $xroot/$fn.new
 	done < $builddir/backup_files.txt
 
-	tar -C $xroot/ -xzpf $backup_tar
+	tar --use-compress-program=bzip2 -C $xroot/ -xpf $backup_tar
 
 	while read fn; do
 		cmp -s $fn $fn.new && rm -f $fn.new
 	done < $builddir/backup_files.txt
-
-	rm -f $backup_tar
 fi
 
 cd $base

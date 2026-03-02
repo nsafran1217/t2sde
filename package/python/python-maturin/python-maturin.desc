@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/python-maturin/python-maturin.desc
-[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -21,10 +21,10 @@
 
 [L] MIT
 [S] Stable
-[V] 1.12.2
+[V] 1.9.4
 [P] X -----5---9 110.260
 
-[D] cd82cfdbfefa718ef569944db3ab30032712a31f0f3f06206640b811 maturin-1.12.2.tar.gz https://github.com/PyO3/maturin/archive/refs/tags/v1.12.2/
+[D] e7916542c13c3e45ce667ebcf8a4ab97d3f174e63beb575d80a9b893 maturin-1.9.4.tar.gz https://github.com/PyO3/maturin/archive/refs/tags/v1.9.4/
 
 var_append GCC_WRAPPER_APPEND ' ' -c?:-lbz2
 var_append GCC_WRAPPER_APPEND ' ' '-c?:-lzstd'

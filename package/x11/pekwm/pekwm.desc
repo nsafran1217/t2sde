@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/pekwm/pekwm.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -25,9 +25,9 @@
 
 [L] GPL
 [S] Stable
-[V] 0.4.3
+[V] 0.3.2
 
-[D] fc6a92513770db9ca8c2f78a0dd48ae0390c5fd39439cd840f80a4b4 pekwm-0.4.3.tar.gz https://www.pekwm.se/pekwm/uv/
+[D] a76e0c0bc8defec48ae1c10b68ac9f76fe03055739697cd31f2ce257 pekwm-0.3.2.tar.gz https://github.com/pekwm/pekwm/archive/refs/tags/release-0.3.2/
 
 hook_add prepatch 3 "rm -f configure Makefile"
 hook_add postinstall 3 "register_wm pekwm 'pek window manager' $bindir/pekwm"

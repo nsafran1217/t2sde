@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---.
 [COPY] t2/package/*/prosody/prosody.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---.
 
@@ -16,8 +16,9 @@
 [C] extra/base
 [F] CROSS
 
-[V] 13.0.4
+[V] 13.0.2
 [L] MIT
 [S] Stable
+[P] X -----5---9 700.000
 
-[D] 189b277525086eb43f33667d58cfb9641a5bce2da05d41ba0ed013b7 prosody-13.0.4.tar.gz https://prosody.im/downloads/source/
+[D] 6a31eb3bac456707892db6fbe4636d0ac84c9263ae3a45fb575fe254 prosody-13.0.2.tar.gz https://prosody.im/downloads/source/

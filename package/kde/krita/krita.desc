@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/krita/krita.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,13 +14,11 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/graphic extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.0.0-beta1
+[V] 5.2.13
 
-[D] 77a01ce41131d2dc1ea90a0b03126ac2399c46ce27125b871e4ac38d krita-6.0.0-beta1.tar.xz https://download.kde.org/unstable/krita/6.0.0-beta1/
+[D] 47d4b2339ba2f575e05804819b717455554ea11695dd7b56f49f1bb5 krita-5.2.13.tar.xz https://download.kde.org/stable/krita/5.2.13/
 
 . $base/package/*/*/kde-conf.in
-var_append cmakeopt ' ' -DBUILD_WITH_QT6=ON

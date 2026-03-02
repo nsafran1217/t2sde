@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/tt-kmod/tt-kmod.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,6 +19,6 @@
 
 [L] GPL
 [S] Stable
-[V] 2.7.0
+[V] 2.4.1
 
-[D] 85d1171d119df4182bb9dbe70c048aa68487323e9c1731bf82b7c756 ttkmd-2.7.0.tar.gz https://github.com/tenstorrent/tt-kmd/archive/refs/tags/
+[D] e5d7272afd6e2721ca6b5dfc9beda7bf3f5844cf3e0c15c419dc0b9e ttkmd-2.4.1.tar.gz https://github.com/tenstorrent/tt-kmd/archive/refs/tags/

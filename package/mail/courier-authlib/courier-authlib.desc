@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/courier-authlib/courier-authlib.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -25,7 +25,7 @@
 
 [L] GPL
 [S] Stable
-[V] 0.72.7
+[V] 0.72.4
 [P] X -----5---9 160.000
 
-[D] ddb1ed2ea0ead4f43ac6cae7c3c56b21dff38447380714a3fda8a42d courier-authlib-0.72.7.tar.bz2 http://dl.sourceforge.net/sourceforge/courier/
+[D] 7d3b8fa3b8a85f22c21b84c60762c80aac65fd01a13bb1120e8ebdcb courier-authlib-0.72.4.tar.bz2 http://dl.sourceforge.net/sourceforge/courier/

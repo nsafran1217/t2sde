@@ -27,17 +27,17 @@
 
 [L] GPL
 [S] Stable
-[V] 1.5.0
-[P] O
+[V] 1.2.6
+[P] O -----5---9 209.500
 
-[D] dd6ea6b3f4a266bbc9b1c770b04cce87f1c7cc64b22642d85a6ea398 rsbac-admin-1.5.0.tar.xz https://download.rsbac.org/code/1.5.0/
-[D] 3494848042 rsbac-common-1.2.6.tar.bz2 http://download.rsbac.org/code/1.2.6/
-[D] 3231970242 patch-linux-2.6.16-rsbac-1.2.6.diff.bz2 http://download.rsbac.org/patches/1.2.6/2.6.16/
-
-pkg_rsbac_lx="\(1\|.*-2\.6\)"
+pkg_rsbac_lx24="\(1\|.*-2\.4\)"
+pkg_rsbac_lx26="\(1\|.*-2\.6\)"
 pkg_rsbac_patches=""
 
-hook_add prepatch 5 "tar -v $taropt `match_source_file -p rsbac-common-v${ver}` rsbac/help"
+[D] 607394927 rsbac-admin-1.2.6.tar.bz2 http://download.rsbac.org/code/1.2.6/
+[D] 3494848042 rsbac-common-1.2.6.tar.bz2 http://download.rsbac.org/code/1.2.6/
+[D] 544655559 patch-linux-2.4.32-rsbac-1.2.6.diff.bz2 http://download.rsbac.org/patches/1.2.6/2.4.32/
+[D] 3231970242 patch-linux-2.6.16-rsbac-1.2.6.diff.bz2 http://download.rsbac.org/patches/1.2.6/2.6.16/
 
 var_append confopt ' ' --enable-contrib
 var_append confopt ' ' --with-kerneldir=/usr
@@ -50,3 +50,4 @@ fi
 
 var_append makeopt     ' ' HELPPATH=../rsbac/help
 var_append makeinstopt ' ' HELPPATH=../rsbac/help
+hook_add prepatch 5 "tar -v $taropt `match_source_file -p rsbac-common-v${ver}` rsbac/help"

@@ -1,24 +1,24 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/borgmatic/borgmatic.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Simple, configuration-driven backup software for servers and workstations
 
-[T] borgmatic is a simple, configuration-driven backup software for servers and
-[T] workstations.
+[T] Simple, configuration-driven backup software for servers and workstations.
 
 [U] https://torsion.org/borgmatic/
 
 [A] Borgmatic Authors
-[M] The T2 Project <t2@t2-project.org>
+[M] T2 Project <t2@t2-project.org>
 
-[C] extra/tool
+[C] extra/base
 [F] CROSS
 
+[V] 2.0.8
 [L] GPL3
 [S] Stable
-[V] 2.1.2
+[P] X -----5---9 700.000
 
-[D] 0542b219baaaa5e9c5499e66fc900395ccfbec1a0fca087d4ac1e9ac borgmatic-2.1.2.tar.gz !https://projects.torsion.org/borgmatic-collective/borgmatic/archive/2.1.2.tar.gz
+[D] b975af7b8efa65f231f33a4ed2b07b0560765195825461dab6b1726e borgmatic-2.0.8.tar.gz !https://projects.torsion.org/borgmatic-collective/borgmatic/archive/2.0.8.tar.gz

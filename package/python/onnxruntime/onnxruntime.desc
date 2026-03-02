@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/onnxruntime/onnxruntime.desc
-[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -25,10 +25,10 @@
 
 [L] MIT
 [S] Stable
-[V] 1.24.1
+[V] 1.22.2
 [P] X -----5---9 129.700
 
-[D] a8acbd298a0954919306508cd350aec538345e5412ade69189c891ca onnxruntime-v1.24.1.tar.gz git+https://github.com/microsoft/onnxruntime v1.24.1
+[D] 8fc81aed585d7307a2bd3b3d4cf3c3c88d200cd4a80c1cc33d5a6426 onnxruntime-v1.22.2.tar.gz git+https://github.com/microsoft/onnxruntime v1.22.2
 
 var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 

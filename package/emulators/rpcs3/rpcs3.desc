@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/rpcs3/rpcs3.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,21 +19,15 @@
 [F] OBJDIR
 [R] + arm64 x86-64
 
-[E] opt doxygen
-[E] opt jack
-
 [L] GPL
 [S] Beta
-[V] 0.0.39
-
-[D] 5ac24a622e42d8e4420c03a103bde4d27c7c6e418c3313ee1efafced rpcs3-v0.0.39.tar.gz git+https://github.com/RPCS3/rpcs3 v0.0.39
+[V] 0.0.37
 
 var_append cmakeopt ' ' -DUSE_SYSTEM_FLATBUFFERS=TRUE
 var_append cmakeopt ' ' '-DUSE_SYSTEM_CURL=TRUE -Wno-dev' # -DUSE_SYSTEM_WOLFSSL=TRUE
 var_append cmakeopt ' ' '-DUSE_SYSTEM_LIBPNG=TRUE -DUSE_SYSTEM_PUGIXML=TRUE -DUSE_SYSTEM_LIBUSB=TRUE'
+var_append cmakeopt ' ' '-DQt6_DIR="$(pkgprefix libdir qt6base)/cmake"'
+var_append GCC_WRAPPER_APPEND ' ' "-I$root`pkgprefix includedir glu`"
 var_append cmakeopt ' ' -DUSE_SYSTEM_FFMPEG=ON
-var_append cmakeopt ' ' -DQt6_DIR=$(pkgprefix libdir qt6base)/cmake
-var_append GCC_WRAPPER_APPEND ' ' -I$root$(pkgprefix includedir glu)
-pkginstalled opencv &&
-	var_append GCC_WRAPPER_APPEND ' ' -I$root$(pkgprefix includedir opencv)/opencv4 &&
-	var_append GCC_WRAPPER_REMOVE ' ' '-Werror=old-style-cast'
+
+[D] 3d11f1480596af4292a51e2d05376f03e1d7cbec5464bb965ffdc474 rpcs3-v0.0.37.tar.gz git+https://github.com/RPCS3/rpcs3 v0.0.37

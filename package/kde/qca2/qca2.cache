@@ -4,7 +4,7 @@
 
 [DEP] bash
 [DEP] binutils
-[OPT] botan
+[DEP] botan
 [DEP] cmake
 [DEP] coreutils
 [OPT] cyrus-sasl2
@@ -12,7 +12,6 @@
 [OPT] doxygen
 [DEP] gawk
 [DEP] grep
-[DEP] kconfig
 [DEP] libgcrypt
 [DEP] libgpg-error
 [DEP] linux-header
@@ -25,4 +24,5 @@
 [DEP] qt6base
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xz

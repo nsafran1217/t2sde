@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/soplex/soplex.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -10,17 +10,20 @@
 [T] (LPs) based on an advanced implementation of the primal and dual revised
 [T] simplex algorithm.
 
-[U] https://soplex.zib.de/
+[U] https://soplex.zib.de/index.php
 
 [A] SCIP Project
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/development
-[F] CROSS OBJDIR
+[F] CROSS
 
 [L] APL
 [S] Stable
-[V] 8.0.1
+[V] 7.1.5
 [P] X -----5---9 152.000
 
-[D] ab17f2d1293b1d854d6b49302bca9d600672e524f28c3b5d07620870 soplex-8.0.1.tgz https://soplex.zib.de/download/release/
+[CV-TR] s/\.//
+[D] 30262ba4328cbb755feb69c25f46ecca6c2e1182f8013b073e6db27d soplex-715.tar.gz https://github.com/scipopt/soplex/archive/release-715/
+
+hook_add preconf 5 "rm -vf Makefile"

@@ -20,7 +20,7 @@
 
 [L] Artistic
 [S] Stable
-[V] 12.3.2
+[V] 12.2.0
 [P] X -----5---9 142.810
 
-[D] 3269b67e799406cd7c8ac1aca5d138b07cb935caaea7dd61329d1d5f qpdf-12.3.2.tar.gz https://github.com/qpdf/qpdf/releases/download/v12.3.2/
+[D] bab81a3f95f52003234795bfa2a261b4d6c78a5f287ab6d838ecab07 qpdf-12.2.0.tar.gz https://github.com/qpdf/qpdf/releases/download/v12.2.0/

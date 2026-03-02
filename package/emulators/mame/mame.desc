@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/mame/mame.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,10 +18,10 @@
 
 [L] GPL
 [S] Stable
-[V] 0.286
+[V] 0.281
 
 [CV-TR] s/\.//
-[D] 09cfeff4ac4e32befa6cf0c59bb7f7e066d2cc669354a06b5c43b676 mame0286.tar.gz https://github.com/mamedev/mame/archive/
+[D] eff9d3da1fde4f91fa9d6c787a590e98e06978211fb6b857e9bd90f7 mame0281.tar.gz https://github.com/mamedev/mame/archive/
 
 var_append makeopt ' ' "MY_CPU=`echo $arch | arch2uname | sed s/x86_64/amd64/`"
 var_append GCC_WRAPPER_INSERT ' ' "`pkg-config x11 --cflags --libs-only-L`"

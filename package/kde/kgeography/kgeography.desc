@@ -1,14 +1,14 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kgeography/kgeography.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Geography Trainer
 
-[T] KGeography is a geography learning tool, which allows you to learn about
-[T] the political divisions of some countries (divisions, capitals of those
+[T] KGeography is a geography learning tool, which allows you to learn about 
+[T] the political divisions of some countries (divisions, capitals of those 
 [T] divisions and their associated flags if there are some).
 
 [U] https://apps.kde.org/kgeography/
@@ -17,15 +17,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 6c6264cbb01b9339499f984f96cef9480562be5a17d28bee35fcdc3b kgeography-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 200.400
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 27bac0d0299a7a91ce6d890b8ac65a146a6deb015d7e23212ca7da49 kgeography-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

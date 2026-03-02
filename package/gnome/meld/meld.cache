@@ -4,6 +4,7 @@
 
 [DEP] bash
 [DEP] coreutils
+[DEP] cython
 [DEP] diffutils
 [DEP] file
 [DEP] gawk

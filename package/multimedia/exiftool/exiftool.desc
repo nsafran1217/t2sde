@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/exiftool/exiftool.desc
-[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,7 +19,7 @@
 
 [L] GPL
 [S] Stable
-[V] 13.52
+[V] 13.37
 [P] X -----5---9 160.000
 
-[D] 7268a120753e888ad6e234d9d300110ffbea3d96ffe8a3c1f44fe84f Image-ExifTool-13.52.tar.gz https://exiftool.org/
+[D] 514fc9e9e5629b96784e72fc2edcf7c152fff8be2176e927d5ed4888 Image-ExifTool-13.37.tar.gz https://exiftool.org/

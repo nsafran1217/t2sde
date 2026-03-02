@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/readline/readline.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -24,20 +24,19 @@
 
 [L] GPL
 [S] Stable
-[V] 8.3.3
+[V] 8.3.1
 [P] X --2--5---9 104.100
 
 [CV-TR] s/-0*/./
 [CV-FLAGS] NO-AUTO
 [D] f8d6382d953b261a48ed0380e785d52183a0b5a2b061c5a6a26f1f0b readline-8.3.tar.gz https://ftp.gnu.org/gnu/readline/
 [D] be621f7d56a1b8d0c8be51a6fbb5ef62018f40c20d2bc81bc23357b2 readline83-001 https://ftp.gnu.org/gnu/readline/readline-8.3-patches/
-[D] 221abe8342feb6f5d0314c8f9eec66fcda7c7cd822baa6452ee32a9f readline83-002 https://ftp.gnu.org/gnu/readline/readline-8.3-patches/
-[D] 0139032a4d3a756718b0b8579d2cb0c8682bd0ef292da4458da5a9a9 readline83-003 https://ftp.gnu.org/gnu/readline/readline-8.3-patches/
 
 var_remove confopt ' ' --disable-shared
 var_remove confopt ' ' --disable-static
+hook_add postmake 5 "cp -rv examples/ $root$docdir"
 
-pkginstalled ncurses && var_append makeopt ' ' SHLIB_LIBS=-lncursesw
+pkginstalled ncurses && var_append makeopt ' ' SHLIB_LIBS=-lncurses
 #pkginstalled ncurses && var_append confopt ' ' --with-curses
 atstage cross && hook_add preconf 5 "echo 'bash_cv_wcwidth_broken=yes' >> config.cache"
 
@@ -50,6 +49,4 @@ pkg_readline_preconf() {
 	# remove borked termcap dependency that messes up pkg-config
 	sed -i '/TERMCAP_PKG_CONFIG_LIB/d' readline.pc.in
 }
-hook_add preconf 5 pkg_readline_preconf
-
-hook_add postmake 5 "cp -rv examples/ $root$docdir"
+hook_add preconf 5 "pkg_readline_preconf"

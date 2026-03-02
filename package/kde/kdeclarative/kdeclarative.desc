@@ -1,11 +1,11 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kdeclarative/kdeclarative.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] KDE Frameworks addon for Qt declarative
+[I] KDE Frameworks 5 Tier 3 addon for Qt declarative
 
 [T] KDeclarative provides integration of QML and KDE work spaces.
 
@@ -15,14 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
-[P] X -----5---9 162.930
+[V] 6.18.0
+[P] X -----5---9 162.900
 
 [CV-GROUP] kde-frameworks
-[D] 69216302f3dcf30ed1f793d13eaecb8e64b8d66fc779426ea3cef140 kdeclarative-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] 677d4fadbd282e9afc060f444a373410229b5dba5950b2e17887365c kdeclarative-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

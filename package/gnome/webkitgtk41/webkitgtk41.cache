@@ -61,6 +61,7 @@
 [DEP] sqlite
 [OPT] sysprof
 [DEP] tar
+[DEP] tbb
 [DEP] unifdef
 [DEP] wayland
 [DEP] wayland-protocols

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kdiff3/kdiff3.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,15 +18,12 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/development extra/editor
-[F] CROSS OBJDIR
-
-[E] opt cups
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Beta
 [V] 1.12.3
 
 [D] c6cd16030056b4e1b50b6d74ff5651046830b5c269061c3eaae24049 kdiff3-1.12.3.tar.xz https://download.kde.org/stable/kdiff3/
-
-. $base/package/*/*/kde-conf.in

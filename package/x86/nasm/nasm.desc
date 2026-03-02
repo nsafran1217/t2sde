@@ -25,10 +25,10 @@
 
 [L] GPL
 [S] Stable
-[V] 3.01
+[V] 2.16.03
 [P] X 0----5---9 103.200
 
-[CV-URL] https://www.nasm.us/pub/nasm/snapshots/latest/
-[D] ce824fb3ee71e2f83ed464087720144a334bb88aa6404f412d950bc2 nasm-3.01.tar.xz http://www.nasm.us/pub/nasm/releasebuilds/3.01/
-
 atstage cross && var_append makeinstopt ' ' INSTALLROOT=$root
+
+[CV-URL] https://www.nasm.us/pub/nasm/snapshots/latest/
+[D] 0923899ae9fb25b0eaf5d4b9d8c36e24277fe7ba2aa9966ea551c279 nasm-2.16.03.tar.xz http://www.nasm.us/pub/nasm/releasebuilds/2.16.03/

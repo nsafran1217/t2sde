@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/cyme/cyme.desc
-[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2014 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,6 +19,6 @@
 
 [L] GPL3
 [S] Stable
-[V] 2.2.11
+[V] 2.2.6
 
-[D] c7ed51eab1cff1e6331acd0f1f8b584104032aa46f469eb616b9be92 cyme-2.2.11.tar.gz https://github.com/tuna-f1sh/cyme/archive/refs/tags/v2.2.11/
+[D] d44f73234772622d77019b3781cfb61707d38c99d43cda15e3f5972e cyme-2.2.6.tar.gz https://github.com/tuna-f1sh/cyme/archive/refs/tags/v2.2.6/

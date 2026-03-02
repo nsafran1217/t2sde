@@ -1,18 +1,17 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/muffin/muffin.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] The window management library for the Cinnamon desktop
 
-[T] The window management library for the Cinnamon desktop (libmuffin) and its
-[T] sample WM binary (muffin). Muffin is a fork of Mutter, specifically adapted
-[T] to work as the window manager for the Cinnamon desktop environment.
+[T] The window management library for the Cinnamon desktop (libmuffin)
+[T] and its sample WM binary (muffin).
 
 [U] https://github.com/linuxmint/muffin
 
-[A] Linux Mint Team
+[A] linuxmint
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/desktop/cinnamon
@@ -20,7 +19,7 @@
 
 [L] GPL
 [S] Stable
-[V] 6.6.3
+[V] 6.4.1
 [P] X -----5---9 400.000
 
-[D] 3e65f254873746c89a920e4489001363c199b4dc1033ad21beee213c muffin-6.6.3.tar.gz https://github.com/linuxmint/muffin/archive/6.6.3/
+[D] 0e864c1ba663f6d5db264d56409a422a18512485c70117f2fbdb98e9 muffin-6.4.1.tar.gz https://github.com/linuxmint/muffin/archive/6.4.1/

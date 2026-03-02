@@ -11,6 +11,7 @@
 [OPT] doxygen
 [DEP] findutils
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] libedit
 [DEP] libxml

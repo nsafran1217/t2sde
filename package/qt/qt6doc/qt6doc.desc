@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/qt6doc/qt6doc.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -15,13 +15,15 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/development
-[F] CROSS OBJDIR
+[F] CROSS NO-LTO.gcc
 
 [L] LGPL
 [S] Stable
-[V] 6.10.2
+[V] 6.9.2
+[P] X -----5---9 127.000
+
+[ $prefix_auto = 1 ] && prefix=$(pkgprefix qt6base) && set_confopt
+atstage cross && var_append cmakeopt ' ' "-DQT_HOST_PATH=$root/$(pkgprefix qt6base)"
 
 [CV-GROUP] qt6
-[D] 7622bcd0734ad6c1a5ee4ced074c098039cc09d4f073f54f9af8b115 qtdoc-everywhere-src-6.10.2.tar.xz http://download.qt.io/official_releases/qt/6.10/6.10.2/submodules/
-
-. $base/package/*/*/qt6-conf.in
+[D] cb1ce69c59bb2b03b2966b3b92efededaac923a593b54d456fab7de9 qtdoc-everywhere-src-6.9.2.tar.xz http://download.qt.io/official_releases/qt/6.9/6.9.2/submodules/

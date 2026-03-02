@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kdecoration/kdecoration.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -17,14 +17,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
 [P] X -----5---9 162.900
 
 [CV-GROUP] kde-plasma
-[D] 9a3349c632cbb3958772079f82d06e7a071923b176642c223f5680ca kdecoration-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] 64b4869c9b3dcf15b667e1d3a2ccc82f64bbf19b2484e6f66c80dbdf kdecoration-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

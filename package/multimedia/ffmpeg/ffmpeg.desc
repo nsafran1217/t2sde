@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/ffmpeg/ffmpeg.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -22,23 +22,24 @@
 # TODO: needs nasm || yasm on x86*
 [E] opt nasm yasm
 [E] opt libogg
-[E] opt libvdpau
 [E] opt libdc1394 libraw1394
 
 [L] LGPL
 [S] Stable
-[V] 8.0.1
+[V] 8.0
 [P] X -----5---9 152.700
 
-[D] 6340bad497a474cbf345a24ab1147c6a7a22f3d747298732cb541cda ffmpeg-8.0.1.tar.xz https://ffmpeg.org/releases/
+[D] 9c32209acd01ca5241fb6fc3769c5ae04dcc0aa158d4ac39c35fd85f ffmpeg-8.0.tar.xz https://ffmpeg.org/releases/
 
 hook_add preconf 5 'export TMPDIR="$(mktemp -d -p $PWD)"'
 
 var_append confopt ' ' --disable-doc
 
-atstage cross &&
-	var_append confopt ' ' "--enable-cross-compile --cross-prefix=${arch_target}- \
-		--arch=$SDECFG_ARCH --target-os=$SDECFG_KERNEL --pkg-config=pkg-config"
+# use our (cross) toolchain for configure, too :-/
+var_append confopt ' ' "--cc=$CC --cxx=$CXX --ranlib=$RANLIB --host-cc=$CC"
+var_append confopt ' ' --disable-stripping
+
+atstage cross && var_append confopt ' ' --enable-cross-compile
 
 # select architecture, for cross compilation
 var_append confopt ' ' "--arch=`echo $arch | arch2uname`"
@@ -60,7 +61,7 @@ var_append confopt ' ' --enable-pthreads
 # disks support
 pkginstalled xvid && var_append confopt ' ' --enable-libxvid
 pkginstalled libbluray && var_append confopt ' ' --enable-libbluray
-pkginstalled libcdio && var_append confopt ' ' --enable-libcdio
+pkginstalled libcdio-paranoia && var_append confopt ' ' --enable-libcdio
 pkginstalled libcdio-paranoia && var_append confopt ' ' --enable-gpl
 
 # codec: av1
@@ -71,13 +72,13 @@ pkginstalled svt-av1 && var_append confopt ' ' --enable-libsvtav1
 
 # various codecs
 pkginstalled x264 && var_append confopt ' ' '--enable-libx264 --enable-gpl'
-pkginstalled x265 && var_append confopt ' ' '--enable-libx265 --enable-gpl'
+pkginstalled x265 && var_append confopt ' ' --enable-libx265
 pkginstalled libvpx && var_append confopt ' ' --enable-libvpx
 pkginstalled libtheora && var_append confopt ' ' --enable-libtheora
 
 # hardware acceleration
 var_append confopt ' ' --disable-vulkan
-pkginstalled libvpl intel-onevpl && var_append confopt ' ' --enable-libvpl
+pkginstalled libvpl && pkginstalled intel-onevpl && var_append confopt ' ' --enable-libvpl
 pkginstalled nvidia-vaapi-driver || var_append confopt ' ' --disable-vdpau
 
 # window system
@@ -113,14 +114,13 @@ pkginstalled pulseaudio && var_append confopt ' ' --enable-libpulse
 # Imlib2 support
 if pkginstalled imlib2; then
 	pkgprefix -t imlib2
-	var_append confopt ' ' "--extra-cflags=-I$root$(pkgprefix includedir imlib2)"
-	var_append confopt ' ' "--extra-ldflags=-L$root$(pkgprefix libdir imlib2)"
+	var_append confopt ' ' "--extra-cflags=-I$root/$(pkgprefix includedir imlib2)"
+	var_append confopt ' ' "--extra-ldflags=-L$root/$(pkgprefix libdir imlib2)"
 fi
 
 # Ogg Vorbis support
 pkginstalled libvorbis && var_append confopt ' ' --enable-libvorbis
 
 var_append makeopt ' ' LD=$CC
-var_append makeinstopt ' ' LD=$CC
 var_remove_regex makeopt ' ' 'STRIP=.*'
 var_remove_regex makeopt ' ' 'AS=.*'

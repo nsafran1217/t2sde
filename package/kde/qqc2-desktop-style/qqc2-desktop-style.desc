@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/qqc2-desktop-style/qqc2-desktop-style.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,14 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
+[V] 6.18.0
 [P] X -----5---9 200.200
 
 [CV-GROUP] kde-frameworks
-[D] aee6a14270fb20035122cb6359a132e348ec433bc6de9fc476ee4f71 qqc2-desktop-style-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] 53a840b371de3687ab39153a981ee5881d4a5519dffeecbda4b3ed66 qqc2-desktop-style-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

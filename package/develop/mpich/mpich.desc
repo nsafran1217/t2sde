@@ -20,8 +20,8 @@
 
 [L] OpenSource
 [S] Stable
-[V] 5.0.0b1
+[V] 4.3.1
 
-[D] 9c68220f72ab6ab98ad9a13718f9f4bfba9b073859a77c0ec4651bc4 mpich-5.0.0b1.tar.gz https://www.mpich.org/static/downloads/5.0.0b1/
+[D] 009e531645828d2d7dbdf72a0c5bc6b89b6a72a06182fe3be4245656 mpich-4.3.1.tar.gz https://www.mpich.org/static/downloads/4.3.1/
 
 var_append GCC_WRAPPER_APPEND ' ' -std=gnu17

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/icu4c/icu4c.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -26,12 +26,12 @@
 
 [L] OpenSource
 [S] Stable
-[V] 78.2
+[V] 77-1
 [P] X 0----5---9 112.200
 
-[D] 92f45ebbb5f53c990af52a014a33ee5305c87338336d8ee100ea4fd6 icu4c-78.2-sources.tgz https://github.com/unicode-org/icu/releases/download/release-78.2/
+[D] 3088176d1d8603e70ff00e30e72457832709aab06173b596915e22ba icu4c-77-1-src.tar.gz https://github.com/unicode-org/icu/archive/release-77-1/
 
-srcdir="icu/source"
+srcdir="*/icu4c/source"
 
 ICU_TEMP_FOLDER=$base/build/$SDECFG_ID/TOOLCHAIN/cross
 
@@ -49,7 +49,7 @@ ICU_TEMP_FOLDER=$base/build/$SDECFG_ID/TOOLCHAIN/cross
 icu4c_hotfix_endianess() {
 	grep -qa U_IS_BIG_ENDIAN.*1 && host_bigendian=yes || host_bigendian=no
 	[ $arch_bigendian != $host_bigendian ] &&
-		hook_add postmake 3 icu4c_hotfix_endianess_rebuild
+		hook_add postmake 3 "icu4c_hotfix_endianess_rebuild"
 	:
 }
 
@@ -67,8 +67,8 @@ icu4c_postmake() {
 
 if atstage toolchain; then
 	makeinstopt=
-	hook_add premake 5 icu4c_hotfix_endianess
-	hook_add postmake 5 icu4c_postmake
+	hook_add premake 5 "icu4c_hotfix_endianess"
+	hook_add postmake 5 "icu4c_postmake"
 elif atstage cross; then
 	createarchcache=1
 	var_append confopt ' ' --with-cross-build=$ICU_TEMP_FOLDER

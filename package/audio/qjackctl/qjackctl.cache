@@ -9,6 +9,7 @@
 [DEP] coreutils
 [DEP] diffutils
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] gzip
 [DEP] jack
@@ -19,4 +20,5 @@
 [DEP] qt6tools
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] vulkan-headers

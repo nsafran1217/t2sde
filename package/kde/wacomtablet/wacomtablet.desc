@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/wacomtablet/wacomtablet.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -15,15 +15,15 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/desktop/kde
-[F] CROSS OBJDIR
-
 [E] opt kdoctools
+[F] CROSS
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 400.000
 
 [CV-GROUP] kde-plasma
-[D] 694ab3a93c0d63d7e07375b255b88835d09bf151346259fe044d6966 wacomtablet-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] da89c802b936a7e6d9655aef744dac89c8cce21ef2ae03efdee52d6a wacomtablet-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

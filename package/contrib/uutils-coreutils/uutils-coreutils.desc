@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/uutils-coreutils/uutils-coreutils.desc
-[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,9 +19,9 @@
 
 [L] MIT
 [S] Beta
-[V] 0.6.0
+[V] 0.2.2
 
-[D] 2f7bc28ba215ae0a93af7de6e55fbf56c6d7448e266333c70c8bf87a uutils-coreutils-0.6.0.tar.gz https://github.com/uutils/coreutils/archive/refs/tags/0.6.0/
+[D] f840c59a7d6482f39c958f0876ff0876b1c5c7d170a0c18a6a236730 uutils-coreutils-0.2.2.tar.gz https://github.com/uutils/coreutils/archive/refs/tags/0.2.2/
 
 prefix=opt/$pkg/
 

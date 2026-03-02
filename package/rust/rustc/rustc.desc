@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/rustc/rustc.desc
-[COPY] Copyright (C) 2017 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2017 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -17,14 +17,14 @@
 [F] CROSS NO-LTO LATOMIC.mips LATOMIC.sparc LATOMIC.x86
 [R] - alpha arc avr32 blackfin cris hppa hppa64 ia64 m68k microblaze nios2 openrisc superh
 
-[L] APL MIT
+[L] MIT APL
 [S] Stable
-[V] 1.93.1
+[V] 1.90.0
 [P] X -12------9 127.350
 
 [CV-GROUP] rust
 [CV-URL] https://forge.rust-lang.org/infra/other-installation-methods.html
-[D] e6e3370d25b1239e3afce40be30ee76d28478a614ac8bab7325d7c54 rustc-1.93.1-src.tar.xz https://static.rust-lang.org/dist/
+[D] 3fdb254b8e3d7f28e900d885525099c2ee9be83ce843eb796a2fbf14 rustc-1.90.0-src.tar.xz https://static.rust-lang.org/dist/
 
 if [ $stagelevel -gt 1 ] && [ $prefix_auto = 1 ]; then
 	prefix=opt/rust # TODO: maybe a config option
@@ -90,7 +90,6 @@ case $arch in
 	arm) var_insert targets ';' 'ARM' ;;
 	arm64) var_insert targets ';' 'AArch64' ;;
 	mips*) var_insert targets ';' 'Mips' ;;
-	m68k*) var_insert targets ';' 'M68k' ;;
 	sparc*) var_insert targets ';' 'Sparc' ;;
 	powerpc*) var_insert targets ';' 'PowerPC' ;;
 	riscv*) var_insert targets ';' 'RISCV' ;;
@@ -132,7 +131,7 @@ rust_version=$(rustc -vV 2>/dev/null | sed -n 's/release: \(.*\)/\1/p')
 
 [ "$rust_version" != "$ver" ] &&
 case "$rust_version" in
-    1.9[12].*)
+    1.8[678].*)
 	: ;;
     *)
 	rust_version= ;;
@@ -142,7 +141,7 @@ export BOOTSTRAP_SKIP_TARGET_SANITY=1
 if [ "$rust_version" ]; then
 	var_append confopt ' ' --enable-local-rust
 else
-	echo "No compatible rustc, Rust will download binaries to bootstrap"
+	echo_warning "No compatible rustc, Rust will download binaries to bootstrap"
 fi
 
 var_append confopt ' ' --release-channel=stable
@@ -160,18 +159,18 @@ fi
 
 if atstage native; then
     var_append confopt ' ' "--llvm-config=$(which llvm-config) --host=${rust_target}" # -t2-
-    hook_add premake 5 rustc_config
+    hook_add premake 5 "rustc_config"
 else
     var_append confopt ' ' --llvm-config=$sysroot/TOOLCHAIN/cross/bin/llvm-config
     var_append confopt ' ' "--build=${arch_build}" # -unknown-
-    hook_add premake 5 rustc_config_cross
+    hook_add premake 5 "rustc_config_cross"
 
     # rustc specific pseudo toolchain
     if [ $stagelevel -eq 1 ]; then
 	var_append confopt ' ' "--host=${arch_build}" # -unknown-
 	confopt="${confopt/--tools=/--tools=cargo}" # TODO: fix to work again?
 
-	hook_add postmake 5 cargo_config
+	hook_add postmake 5 "cargo_config"
     else
 	var_append confopt ' ' "--host=${rust_target}" # -t2-
     fi
@@ -189,6 +188,3 @@ hook_add postmake 5 "./x.py install"
 
 # hotfix armv6 linking /srv/t2/build/armv6-25.4-generic-arm-gnueabi-armv6-cross-linux/TOOLCHAIN/cross/lib/libz.so
 var_append GCC_WRAPPER_FILTER '|' "sed s,$sysroot/TOOLCHAIN/cross/lib,$root/$libdir,"
-
-# cross target-spec-json-schema.json sysroot
-var_append confopt ' ' --sysconfdir=$root/$sysconfdir

@@ -13,3 +13,4 @@
 [DEP] ncurses
 [DEP] sed
 [DEP] tar
+[DEP] tbb

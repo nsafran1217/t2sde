@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/gradle/gradle.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -25,10 +25,10 @@
 
 [L] APL
 [S] Stable
-[V] 9.5.0-M5
+[V] 9.2.0-M2
 [P] X -----5---9 400.050
 
-[D] d2acecf278849ea3a4ed8e7b27de510899be713d8d1f790cc779a4d1 gradle-v9.5.0-M5.tar.gz https://github.com/gradle/gradle/archive/v9.5.0-M5/
+[D] dc9143f1d70d476f3b1e50885f537137018c97c9ec8e7d0337c14c8a gradle-v9.2.0-M2.tar.gz https://github.com/gradle/gradle/archive/v9.2.0-M2/
 
 . $base/package/*/*/java-common-conf.in
 

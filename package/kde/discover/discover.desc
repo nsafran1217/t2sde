@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/discover/discover.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -16,13 +16,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 162.900
 
 [CV-GROUP] kde-plasma
-[D] 10b1cf826d6abb0ff573eec2b025459062046126e27f50cfccbc4134 discover-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] 9a389cbab125811c0f68e3094b3d216c302db24d1c88b0fd9ee917fd discover-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/zathura-pdf-poppler/zathura-pdf-poppler.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,7 +18,7 @@
 
 [L] ZLIB
 [S] Stable
-[V] 2026.02.03
+[V] 0.3.3
 [P] X -----5---9 400.000
 
-[D] 8b5bdb9fe38c3c89cd4910853632955edd70e9d5f85e35e2d0fef3be zathura-pdf-poppler-2026.02.03.tar.xz https://pwmt.org/projects/zathura-pdf-poppler/download/
+[D] 3de49faddfe752e4603694b538eb96d51e987be85000631d6ce9709d zathura-pdf-poppler-0.3.3.tar.xz https://pwmt.org/projects/zathura-pdf-poppler/download/

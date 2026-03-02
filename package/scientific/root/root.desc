@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/root/root.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -30,13 +30,12 @@
 [C] extra/scientific
 [F] OBJDIR
 
-[E] opt ftgl libglvnd glew glu
-
 [L] Free-to-use
 [S] Beta
-[V] 6.38.02
+[V] 6.36.04
+[P] X -----5---9 221.300
 
-[D] 1ae957f044b4b8f24d32822b6b729f8c2feb479da051bf9a2c19c8e7 root_v6.38.02.source.tar.gz https://root.cern/download/
+[D] 95b081790f4283772fd5e90ec0bbb391ab7421995222b71aecde3811 root_v6.36.04.source.tar.gz https://root.cern/download/
 
 if [ $prefix_auto = 1 ]; then
 	prefix="opt/root"

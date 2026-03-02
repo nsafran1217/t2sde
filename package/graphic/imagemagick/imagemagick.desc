@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/imagemagick/imagemagick.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -23,7 +23,6 @@
 
 [E] opt djvulibre
 [E] opt graphviz
-[E] opt ghostscript
 [E] opt lcms2
 [E] opt libheif
 [E] opt libjpeg
@@ -38,11 +37,11 @@
 
 [L] OpenSource
 [S] Stable
-[V] 7.1.2-13
+[V] 7.1.2-3
 [P] X -----5---9 150.900
 
 [CV-URL] https://imagemagick.org/archive/
-[D] 4e4ec2b6835973b53f3a122f4f96c4d3778f974ce8c1f89ef810e435 ImageMagick-7.1.2-13.tar.xz https://imagemagick.org/archive/
+[D] 4b9d0572cec22291fb6d9f28cf7fcc71b5f3a100bdde2bc432b7262a ImageMagick-7.1.2-3.tar.xz https://imagemagick.org/archive/
 
 libtool_remove_la() {
 	:

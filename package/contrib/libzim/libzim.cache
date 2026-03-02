@@ -18,6 +18,7 @@
 [DEP] python
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xapian-core
 [DEP] xz
 [DEP] zstd

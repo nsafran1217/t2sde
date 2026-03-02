@@ -1,12 +1,12 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/cosmic-edit/cosmic-edit.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] Text Editor application for the COSMIC desktop environment
+[I] cosmic-edit
 
-[T] Text Editor application for the COSMIC desktop environment.
+[T] cosmic-edit.
 
 [U] https://github.com/pop-os/cosmic-edit/
 
@@ -14,13 +14,13 @@
 [M] NoTag <notag@t2sde.org>
 
 [C] extra/tool
-[F] CROSS NO-LTO
+[F] CROSS
 
 [L] GPL3
-[S] Stable
-[V] 1.0.8
+[S] Beta
+[V] 1.0.0-beta.1.1
 
 [CV-GROUP] cosmic-desktop
-[D] c781ffa4cab7d26ba8e15cce6c8ad1c2471917fa2c48cb8aaed8b624 cosmic-edit-epoch-1.0.8.tar.gz https://github.com/pop-os/cosmic-edit/archive/epoch-1.0.8/
+[D] 3b52bd75da619e3da643ea943c7caab8c0ec1a1d4f6b936b698adfe1 cosmic-edit-epoch-1.0.0-beta.1.1.tar.gz https://github.com/pop-os/cosmic-edit/archive/epoch-1.0.0-beta.1.1/
 
 . $base/package/cosmic/*/cosmic-conf.in

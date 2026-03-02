@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/yakuake/yakuake.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -17,13 +17,12 @@
 [A] Rene Rebe <rene@exactcode.de>
 
 [C] extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 740769676d4c0e8f30a32df26fe6dc9e0d230f4dbb78021ca00137fa yakuake-25.12.2.tar.xz http://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 49bef5a9250f6f2d004274c523c75cacc5af8e1a0b8a3e64a1e0f7f3 yakuake-25.08.1.tar.xz http://download.kde.org/stable/release-service/25.08.1/src/

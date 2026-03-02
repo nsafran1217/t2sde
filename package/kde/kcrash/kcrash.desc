@@ -1,11 +1,11 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kcrash/kcrash.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] KDE Frameworks addon for handling application crashes
+[I] KDE Frameworks 5 Tier 2 addon for handling application crashes
 
 [T] KCrash provides support for intercepting and handling application crashes.
 
@@ -15,15 +15,14 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
+[V] 6.18.0
 [P] X -----5---9 162.900
 
 [CV-GROUP] kde-frameworks
-[D] aa0b42c07a692446d9284201fbbd7ded7211897ee3ec42e3a2d82637 kcrash-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] fd29c6137652413144d944dbfc8ddc8be7cc9c1fa57cba8a8b4ab3ed kcrash-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 var_append CXX_WRAPPER_APPEND ' ' "-I$root/$(pkgprefix includedir libxcb)"
 

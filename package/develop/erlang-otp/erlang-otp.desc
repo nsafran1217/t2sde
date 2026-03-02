@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/erlang-otp/erlang-otp.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -17,14 +17,14 @@
 [M] Sebastian Czech <t2_@arcor.de>
 
 [C] extra/development
-[F] CROSS
+[F] NOPARALLEL CROSS
 
 [L] OpenSource
 [S] Stable
-[V] 28.3.3
+[V] 28.1
 
-[D] 803b8fd34debd80f00209d0accfc4109c27cf19a0bec6822721d7628 otp_src_28.3.3.tar.gz https://github.com/erlang/otp/releases/download/OTP-28.3.3/
-[D] b3a0d520dcba684168b3524d892b605036400a8814237dee4a871365 otp_doc_man_28.3.3.tar.gz https://github.com/erlang/otp/releases/download/OTP-28.3.3/
+[D] e33ff0601dffc0df1bc6d2213cd40f6231841900984d88a847cf77ff otp_src_28.1.tar.gz https://github.com/erlang/otp/releases/download/OTP-28.1/
+[D] edc9d1c84d51cfe254ce83c69415c5a37a756ec862111d207bf43eda otp_doc_man_28.1.tar.gz https://github.com/erlang/otp/releases/download/OTP-28.1/
 
 var_append confopt ' ' "--enable-smp-support --without-javac"
 pkginstalled openssl && var_append confopt ' ' --with-ssl
@@ -41,4 +41,4 @@ install_manpages() {
     tar $taropt `match_source_file -p otp_doc_man_` -C $root$libdir/erlang/
 }
 
-hook_add postinstall 3 install_manpages
+hook_add postinstall 3 "install_manpages"

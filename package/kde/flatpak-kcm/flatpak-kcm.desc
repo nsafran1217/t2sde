@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/flatpak-kcm/flatpak-kcm.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -15,13 +15,14 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/library
-[F] CROSS OBJDIR
+[F] CROSS
 
 [L] GPL
 [S] Beta
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 400.000
 
 [CV-GROUP] kde-plasma
-[D] 9f75dc59aab586cde5a489f922b999d112edb753e438aba94cf22186 flatpak-kcm-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] ae221033e9369af7b7885bb96a6dc0b8ddae6e167bdb5d590e41f99d flatpak-kcm-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

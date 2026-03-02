@@ -16,5 +16,6 @@
 [DEP] make
 [DEP] openssl
 [DEP] sed
+[DEP] tbb
 [DEP] unzip
 [DEP] zlib

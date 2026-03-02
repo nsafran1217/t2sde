@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kpublictransport/kpublictransport.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -15,14 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
+[V] 25.08.1
 [P] X -----5---9 162.900
 
-[CV-GROUP] kde-gear
-[D] bdc6bd10d4c1d7512d5dc6916d98480f4d32cb359e47e38fecbff20a kpublictransport-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
-
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 4c23728e7811d46b2b386aa4072e3ea41336ef29d81264388781d8c3 kpublictransport-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

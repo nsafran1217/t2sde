@@ -1,39 +1,22 @@
-[TIMESTAMP] 1765189677 Mon Dec  8 11:27:57 2025
-[BUILDTIME] 65 (9)
-[SIZE] 2.35 MB, 87 files
 
-[DEP] appstream
-[DEP] bash
+[TIMESTAMP] 1616622414 Wed Mar 24 22:46:54 2021
+[BUILDTIME] 100 (9) ERROR
+[SIZE] 0.01 MB, 6 files
+
+[DEP] 00-dirtree
 [DEP] binutils
-[DEP] blueprint-compiler
-[DEP] cairo
+[DEP] cmake
 [DEP] coreutils
-[DEP] d-spy
 [DEP] diffutils
-[DEP] evolution-data-server
+[DEP] findutils
 [DEP] gawk
-[DEP] gdk-pixbuf
-[DEP] geoclue
-[DEP] gettext
-[OPT] glib
-[DEP] gnome-shell
-[DEP] gobject-introspection
-[DEP] graphene
+[DEP] glib
 [DEP] grep
-[DEP] gtk
-[DEP] harfbuzz
-[DEP] json-glib
-[DEP] libadwaita
-[DEP] libgweather
+[DEP] gsettings-desktop-schemas
+[DEP] imagemagick
 [DEP] libical
-[DEP] libsoup3
-[DEP] libxml
 [DEP] linux-header
+[DEP] make
 [DEP] meson
-[DEP] ninja
-[DEP] openssl
-[DEP] pango
-[DEP] python
 [DEP] sed
 [DEP] tar
-[DEP] xz

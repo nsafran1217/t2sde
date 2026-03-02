@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/firefox/firefox.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -17,14 +17,14 @@
 
 [C] extra/office
 [F] CROSS NO-LIBTOOL-FIX CUSTOM-LTO LATOMIC.x86 LATOMIC.sparc LATOMIC.sparc64
-[R] - alpha hppa hppa64 ia64 m68k riscv
+[R] - alpha hppa hppa64 ia64 riscv
 
 [L] MPL
 [S] Stable
-[V] 148.0
+[V] 143.0.1
 [P] X -----5---9 202.000
 
-[D] 4a82355ba76196083846235d41cc15371b3204bff4ac60997f628e4c firefox-148.0.source.tar.xz https://ftp.mozilla.org/pub/firefox/releases/148.0/source/
+[D] b900f3c3ca651caa434b90b8462614ae03cc38ee0093d2a5dfb40ae2 firefox-143.0.1.source.tar.xz https://ftp.mozilla.org/pub/firefox/releases/143.0.1/source/
 
 . $base/package/*/*/mozilla-conf.in
 
@@ -77,13 +77,9 @@ pkginstalled icu4c && echo "ac_add_options --with-system-icu" >> .mozconfig
 pkginstalled pulseaudio || echo "ac_add_options --disable-pulseaudio" >> .mozconfig
 pkginstalled alsa-lib && echo "ac_add_options --enable-alsa" >> .mozconfig
 pkginstalled libevent && echo "ac_add_options --with-system-libevent" >> .mozconfig
-
-	# currently little-endian only
-	if [ $arch_bigendian != yes ] && pkginstalled wasi-libc; then
-		echo "ac_add_options --with-wasi-sysroot=$root/$(pkgprefix wasi-libc)" >> .mozconfig
-	else
-		echo "ac_add_options --without-wasm-sandboxed-libraries" >> .mozconfig
-	fi
+pkginstalled wasi-libc &&
+	echo "ac_add_options --with-wasi-sysroot=$root/$(pkgprefix wasi-libc)" >> .mozconfig ||
+	echo "ac_add_options --without-wasm-sandboxed-libraries" >> .mozconfig
 
 	[ "$SDECFG_DEFAULT_CC" = clang ] &&
 		var_append GCC_WRAPPER_APPEND ' ' "-c?:-fuse-ld=lld" &&
@@ -93,6 +89,7 @@ pkginstalled libevent && echo "ac_add_options --with-system-libevent" >> .mozcon
 		var_append patchfiles ' ' $confdir/hotfix-ppc-not-power8.diff
 
 	# jit and sandbox?
+	#echo "ac_add_options --disable-sandbox" >> .mozconfig
 	case "$arch" in
 	x86)
 		# jit needs sse on x86
@@ -104,14 +101,11 @@ pkginstalled libevent && echo "ac_add_options --with-system-libevent" >> .mozcon
 	arm)
 		[[ $arch_machine = armv[678]* ]] || echo "ac_add_options --disable-jit" >> .mozconfig
 		;;
-	arm64|loongarch64|riscv64|x86-64)
-		# no jit yet for x32 ABI variants
-		if [ "$SDECFG_X8664_X32" = 1 -o "$SDECFG_MIPS64_N32" = 1 ]; then
-			echo "ac_add_options --disable-jit" >> .mozconfig
-		fi
-		;;
+	arm64|riscv64|x86-64)
+		: ;;
+
 	*)
-		echo "ac_add_options --disable-jit" >> .mozconfig ;;
+		echo "ac_add_options --disable-jit --disable-webrtc" >> .mozconfig ;;
 	esac
 }
 
@@ -120,23 +114,14 @@ GCC_WRAPPER_INSERT="${GCC_WRAPPER_INSERT/-march=/--target=wasm32-wasi?:-march=}"
 GCC_WRAPPER_INSERT="${GCC_WRAPPER_INSERT/-mcpu=/--target=wasm32-wasi?:-mcpu=}"
 GCC_WRAPPER_INSERT="${GCC_WRAPPER_INSERT/-mtune=/--target=wasm32-wasi?:-mtune=}"
 GCC_WRAPPER_INSERT="${GCC_WRAPPER_INSERT/-mfpu=/--target=wasm32-wasi?:-mfpu=}"
-GCC_WRAPPER_INSERT="${GCC_WRAPPER_INSERT/-c?:-pie/--target=wasm32-wasi?:-c?:-pie}"
 
 hook_add prepatch 5 "cargo_clear_cksum third_party/rust/*/.cargo-checksum.json"
 hook_add postpatch 5 "rust_update_arch_target third_party/rust/*/no_atomic*.rs"
 
-hook_add prepatch 4 firefox_config
-hook_add preconf 2 mozilla_branding
+hook_add prepatch 4 "firefox_config"
+hook_add preconf 2 "mozilla_branding"
 
 # disable legacy component registration
 mozilla_register() {
 	:
 }
-
-firefox_postmake() {
-    for size in 16 22 24 32 48 64 128 256; do
-	install browser/branding/official/default$size.png -t \
-		$root/usr/share/icons/hicolor/${size}x$size/apps/firefox.png
-    done
-}
-hook_add postmake 6 firefox_postmake

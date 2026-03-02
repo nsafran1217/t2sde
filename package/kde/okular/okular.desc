@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/okular/okular.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -17,34 +17,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [E] opt cups
-[E] opt kdegraphics-mobipocket
-[E] opt qt6svg
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 07e5fc7956e21126f190deae6f8f42895dfb514f3d747c61c5397662 okular-25.12.2.tar.xz http://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 500.000
 
 . $base/package/*/*/kde-conf.in
+hook_add postmake 5 "ln -sfv $libdir/plugins/okular_generators $root/$(pkgprefix qt6base)/plugins/"
 
-SKIP_DEPS=
-pkginstalled discount || var_append SKIP_DEPS ';' Discount
-pkginstalled djvulibre || var_append SKIP_DEPS ';' DjVuLibre
-pkginstalled kdoctools || var_append SKIP_DEPS ';' KF6DocTools
-pkginstalled ebook-tools || var_append SKIP_DEPS ';' EPub
-pkginstalled kwallet || var_append SKIP_DEPS ';' KF6Wallet
-pkginstalled qt6declarative || var_append SKIP_DEPS ';' Qt6Qml
-pkginstalled purpose || var_append SKIP_DEPS ';' KF6Purpose
-pkginstalled qt6speech || var_append SKIP_DEPS ';' Qt6TextToSpeech
-pkginstalled phonon || var_append SKIP_DEPS ';' Phonon4Qt6
-pkginstalled poppler || var_append SKIP_DEPS ';' Poppler
-pkginstalled freetype || var_append SKIP_DEPS ';' Freetype
-pkginstalled libtiff || var_append SKIP_DEPS ';' TIFF
-pkginstalled libkexiv2 || var_append SKIP_DEPS ';' KExiv2Qt6
-
-var_append cmakeopt ' ' "-DFORCE_NOT_REQUIRED_DEPENDENCIES='$SKIP_DEPS'"
+[CV-GROUP] kde-gear
+[D] f2063c5fd197f510138b3e07d1c7854ca3b1bef62b6f58df78c27cc4 okular-25.08.1.tar.xz http://download.kde.org/stable/release-service/25.08.1/src/

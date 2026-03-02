@@ -19,8 +19,8 @@
 [E] opt doxygen
 
 [L] MIT
-[V] 0.8.3
+[V] 0.7.10
 [S] Stable
 [P] X -----5---9 700.000
 
-[D] ade84f1118c8128967c1ddf4d85d59354c214f296a1b18034b9bf910 libeconf-0.8.3.tar.gz https://github.com/openSUSE/libeconf/archive/refs/tags/v0.8.3/
+[D] 89ee93d92d136557bf89d7450238adbe9526882fbee1bf1bf636ff3f libeconf-0.7.10.tar.gz https://github.com/openSUSE/libeconf/archive/refs/tags/v0.7.10/

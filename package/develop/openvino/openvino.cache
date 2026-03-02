@@ -11,6 +11,7 @@
 [DEP] diffutils
 [OPT] doxygen
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] gzip
 [DEP] libedit
@@ -28,5 +29,6 @@
 [DEP] setuptools
 [DEP] sysfiles
 [DEP] tar
+[DEP] tbb
 [DEP] wget
 [DEP] zlib

@@ -1,12 +1,12 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/cosmic-comp/cosmic-comp.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] Compositor for the COSMIC desktop environment
+[I] cosmic-comp
 
-[T] Compositor for the COSMIC desktop environment.
+[T] cosmic-comp.
 
 [U] https://github.com/pop-os/cosmic-comp/
 
@@ -17,10 +17,10 @@
 [F] CROSS
 
 [L] GPL3
-[S] Stable
-[V] 1.0.8
+[S] Beta
+[V] 1.0.0-beta.1.1
 
 [CV-GROUP] cosmic-desktop
-[D] d296410132d85b2b0735901d096b773e94a719d21be2b902f509150b cosmic-comp-epoch-1.0.8.tar.gz https://github.com/pop-os/cosmic-comp/archive/epoch-1.0.8/
+[D] da2a1df81092ebe7f371727156aec812bc5f16476bf5c14b5277f16e cosmic-comp-epoch-1.0.0-beta.1.1.tar.gz https://github.com/pop-os/cosmic-comp/archive/epoch-1.0.0-beta.1.1/
 
 . $base/package/cosmic/*/cosmic-conf.in

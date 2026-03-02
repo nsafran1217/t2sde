@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/plasma-systemmonitor/plasma-systemmonitor.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,16 +14,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt ksystemstats
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
 [P] X -----5---9 200.300
 
 [CV-GROUP] kde-plasma
-[D] 5c5ce731c88c3d161a4b7c1775f6f3619674b125e3438b23923f7019 plasma-systemmonitor-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] 96a2236d558f0fc37708491f2c768b5b910e0b51cab2e0a0fa51e8b9 plasma-systemmonitor-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

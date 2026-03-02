@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/ksanecore/ksanecore.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,14 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
+[V] 25.08.1
 [P] X -----5---9 200.300
 
-[CV-GROUP] kde-gear
-[D] 7d0cdbd48a345a23103b1b981ce657f169defd979baf6829a4318687 ksanecore-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
-
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] dd7dc0445d91af507f4ca6c204faedb4d3b5621974feeae18b87580e ksanecore-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

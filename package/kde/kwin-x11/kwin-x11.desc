@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/kwin-x11/kwin-x11.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -14,23 +14,17 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
-[E] opt kdoctools docbook-xml
+[E] opt kdoctools
+[E] opt docbook-xml
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 200.300
 
 [CV-GROUP] kde-plasma
-[D] fe3562430e42cd30fc9fdd873fa96e5d65db355df0551e113a8096a1 kwin-x11-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] 2b57132e37722ba5aecac79e578ae674f3cb56ec5c986c0d1050700a kwin-x11-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in
 var_append GCC_WRAPPER_APPEND ' ' -I$root$(pkgprefix includedir epoxy)
-
-if atstage cross; then
-	# TODO: make its cmake build it
-	hook_add preconf 5 'g++ -fPIC -o qtwaylandscanner ../src/wayland/tools/qtwaylandscanner.cpp \
-		$(PKG_CONFIG_PATH="$SYSPKG_CONFIG_PATH" pkg-config Qt6Core --cflags --libs)'
-	var_append cmakeopt ' ' '-DQTWAYLANDSCANNER_KDE_EXECUTABLE=$PWD/qtwaylandscanner'
-fi

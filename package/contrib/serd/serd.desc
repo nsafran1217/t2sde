@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---.
 [COPY] t2/package/*/serd/serd.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---.
 
@@ -16,9 +16,9 @@
 [C] extra/base
 [F] CROSS
 
-[V] 0.32.8
+[V] 0.32.4
 [L] ISC
 [S] Stable
 [P] X -----5---9 179.440
 
-[D] e7f2d8e1bad80c0e82cad679b73a3aa3b00b2b274389a8b079cc586d serd-0.32.8.tar.xz https://download.drobilla.net/
+[D] 5afff58ec8a56b09e6466d1d64c9490365d2bf56e67a392a4876f1bc serd-0.32.4.tar.xz https://download.drobilla.net/

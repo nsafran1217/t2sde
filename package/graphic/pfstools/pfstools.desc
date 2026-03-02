@@ -30,8 +30,6 @@
 [C] extra/graphic
 [F] FPIC CROSS
 
-[E] opt octave
-
 [L] GPL
 [S] Stable
 [V] 2.2.0

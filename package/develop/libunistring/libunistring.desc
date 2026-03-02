@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/libunistring/libunistring.desc
-[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2010 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,9 +18,7 @@
 
 [L] GPL
 [S] Stable
-[V] 1.4.2
+[V] 1.4
 [P] X -----5---9 107.590
 
-[D] c84257b0fee5b5888f04ecbd79b8597885adc84eae7cdcd8d1b81dbf libunistring-1.4.2.tar.xz http://ftp.gnu.org/gnu/libunistring/
-
-var_append GCC_WRAPPER_APPEND ' ' -std=gnu17
+[D] 7d684b2e5ebf4a6479ed1e2b0b2a18f1bed65c802b84fd710171e95d libunistring-1.4.tar.xz http://ftp.gnu.org/gnu/libunistring/

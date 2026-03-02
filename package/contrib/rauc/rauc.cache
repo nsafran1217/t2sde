@@ -18,6 +18,7 @@
 [DEP] ninja
 [DEP] openssl
 [DEP] sed
+[DEP] subversion
 [DEP] tar
 [DEP] util-linux
 [DEP] xz

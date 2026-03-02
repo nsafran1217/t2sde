@@ -6,6 +6,7 @@
 [DEP] coreutils
 [DEP] diffutils
 [DEP] gawk
+[DEP] git
 [OPT] glib
 [DEP] grep
 [DEP] gzip

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/gst-libav/gst-libav.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -20,8 +20,8 @@
 
 [L] LGPL
 [S] Beta
-[V] 1.28.1
+[V] 1.26.6
 
 [CV-GROUP] gst
 [CV-FLAGS] ODD-UNSTABLE
-[D] 260cce77845cae39b87eb5b1be88e52e9c83f8a80d2ce2e8689feebc gst-libav-1.28.1.tar.xz http://gstreamer.freedesktop.org/src/gst-libav/
+[D] b5e012a71aa79994515aa801c05bd124db384ce456b54ace71065c51 gst-libav-1.26.6.tar.xz http://gstreamer.freedesktop.org/src/gst-libav/

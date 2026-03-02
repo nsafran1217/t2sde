@@ -8,6 +8,7 @@
 [DEP] findutils
 [DEP] gawk
 [DEP] gettext
+[DEP] git
 [DEP] go
 [DEP] grep
 [DEP] gzip

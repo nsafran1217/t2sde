@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kajongg/kajongg.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -17,17 +17,14 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] add constantly
-[E] add libkmahjongg
-[E] add twisted
+[E] opt kdoctools
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] a50779d0328b7377acd3723d3a6ec547ad50492fac3c0e2898a65a5d kajongg-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 179.300
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] eea56fc6701293693e6ca70f16dd152ca6c5883fdcf6062a6cba8d73 kajongg-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

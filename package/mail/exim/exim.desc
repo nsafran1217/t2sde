@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/exim/exim.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -28,9 +28,9 @@
 
 [L] GPL
 [S] Stable
-[V] 4.99.1
+[V] 4.98.2
 
-[D] 58e4aeed589fbbb89a82cc6b67ade0b1b26a5f3a8eaa442dd2428d07 exim-4.99.1.tar.xz http://ftp.exim.org/pub/exim/exim4/
+[D] 0746509269a774f9f8cdd95a61e7b05fe20aa059edef3350ee4973b8 exim-4.98.2.tar.xz http://ftp.exim.org/pub/exim/exim4/
 
 var_append makeopt ' ' 'AR=$AR\ cq'
 var_append makeinstopt ' ' INSTALL_CP=install
@@ -72,7 +72,7 @@ EOT
 		echo "SUPPORT_PAM=yes" >> Local/Makefile &&
 		var_append GCC_WRAPPER_APPEND ' ' '-c?:-lpam'
 }
-hook_add preconf 3 exim_pc
+hook_add preconf 3 "exim_pc"
 
 exim_pm(){
 	ln -sfv $bindir/exim $root$bindir/mail_exim
@@ -80,4 +80,4 @@ exim_pm(){
 	ln -sfv $bindir/exim $root$bindir/mailq_exim
 	install_setmailer exim
 }
-hook_add postmake 3 exim_pm
+hook_add postmake 3 "exim_pm"

@@ -1,6 +1,6 @@
-[TIMESTAMP] 1760541260 Wed Oct 15 17:14:20 2025
-[BUILDTIME] 1250 (9)
-[SIZE] 38.20 MB, 812 files
+[TIMESTAMP] 1744754893 Wed Apr 16 00:08:13 2025
+[BUILDTIME] 1400 (9)
+[SIZE] 36.34 MB, 811 files
 
 [DEP] bash
 [DEP] binutils
@@ -8,7 +8,6 @@
 [DEP] cmake
 [DEP] coreutils
 [DEP] curl
-[OPT] cyrus-sasl2
 [DEP] diffutils
 [DEP] fontconfig
 [DEP] freetype
@@ -25,10 +24,7 @@
 [DEP] libjpeg
 [DEP] libpng
 [DEP] librsvg
-[OPT] librvg
-[DEP] libsdl
 [DEP] libtiff
-[OPT] libvncserver
 [DEP] libx11
 [DEP] libxinerama
 [DEP] libxml
@@ -37,8 +33,9 @@
 [DEP] linux-header
 [DEP] make
 [DEP] pkgconfig
-[OPT] poppler
+[DEP] poppler
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xorgproto
 [DEP] zlib

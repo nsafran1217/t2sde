@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/baloo/baloo.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -17,14 +17,14 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
+[F] OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
-[P] X -----5---9 162.920
+[V] 6.18.0
+[P] X -----5---9 162.900
 
 [CV-GROUP] kde-frameworks
-[D] dd1e7d3697909333d90d927c27e8dfad8bc4d35547fc5b0a75232e14 baloo-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] 0c99c845b96ad44e8599b0bd29cf4daa1726254c0e3408a409d984a9 baloo-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

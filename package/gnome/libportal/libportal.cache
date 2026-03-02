@@ -1,16 +1,22 @@
-[TIMESTAMP] 1765395566 Wed Dec 10 20:39:26 2025
-[BUILDTIME] 14 (9)
-[SIZE] 3.80 MB, 298 files
+[TIMESTAMP] 1758298634 Fri Sep 19 18:17:14 2025
+[BUILDTIME] 12 (9)
+[SIZE] 3.81 MB, 299 files
 
+[DEP] 00-dirtree
 [DEP] at-spi2-core
 [DEP] bash
 [DEP] binutils
 [DEP] cairo
+[DEP] cmake
 [DEP] coreutils
+[DEP] curl
 [DEP] diffutils
+[DEP] encodings
+[DEP] font-util
+[DEP] fontconfig
+[DEP] frotz
 [DEP] gawk
 [DEP] gdk-pixbuf
-[DEP] gi-docgen
 [DEP] glib
 [DEP] gobject-introspection
 [DEP] graphene
@@ -24,7 +30,9 @@
 [DEP] linux-header
 [DEP] markupsafe
 [DEP] meson
+[DEP] nagios
 [DEP] ninja
+[DEP] openimageio
 [DEP] openssl
 [DEP] pango
 [DEP] pkgconfig

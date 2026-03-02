@@ -26,8 +26,9 @@
 
 [L] GPL
 [S] Stable
-[V] 4.5.2
-
-[D] f879720c40c087cb5a07cc9bfb2dc670b83b0c2529ed30c219a20c24 R-4.5.2.tar.gz http://cran.r-project.org/src/base/R-4/
+[V] 4.5.1
 
 var_append confopt ' ' "LDFLAGS=-L$root/$prefix/X11R7/${libdir##*/}"
+var_append GCC_WRAPPER_APPEND ' ' -std=gnu99
+
+[D] a494663c7b786e6c870aefcddeec0f4aa1401c226deda97975cee79a R-4.5.1.tar.gz http://cran.r-project.org/src/base/R-4/

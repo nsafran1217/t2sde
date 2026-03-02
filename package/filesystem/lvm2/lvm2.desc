@@ -23,21 +23,15 @@
 [C] base/system extra/filesystem
 [F] CROSS NO-LTO.clang
 
-[E] opt systemd
-[E] opt xfsprogs
-
 [L] GPL
 [S] Stable
-[V] 2.03.38
-[P] X --2--5---9 179.000
+[V] 2.03.35
+[P] X --2--5---9 184.000
 
-[D] 12ab512ddfe70548ac5d0f6f89c10900515177074edfabf8faf02071 LVM2.2.03.38.tgz http://sourceware.org/pub/lvm2/
+[D] cfe27afbb3091f38d63d8186f325f03b2d1179f4da48c8e7bf759b66 LVM2.2.03.35.tgz http://sourceware.org/pub/lvm2/
 
-if [ $prefix_auto = 1 ]; then
-	prefix=
-	set_confopt
-fi
-
+prefix=
+set_confopt
 var_append flistroot ' ' 'libexec' # TODO: maybe always allow?
 
 var_append confopt ' ' --enable-pkgconfig

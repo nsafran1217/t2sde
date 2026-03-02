@@ -1,16 +1,19 @@
-[TIMESTAMP] 1762703440 Sun Nov  9 16:50:40 2025
-[BUILDTIME] 125 (9)
-[SIZE] 7.21 MB, 129 files
+[TIMESTAMP] 1752509084 Mon Jul 14 18:04:44 2025
+[BUILDTIME] 120 (9)
+[SIZE] 7.12 MB, 129 files
 
+[DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
 [DEP] bison
 [DEP] clang
 [DEP] cmake
 [DEP] coreutils
+[DEP] curl
 [DEP] diffutils
 [DEP] flex
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] gzip
 [DEP] ilmbase
@@ -20,12 +23,15 @@
 [DEP] m4
 [DEP] make
 [DEP] openimageio
+[DEP] openssl
+[DEP] pkgconfig
 [DEP] pugixml
 [DEP] pybind
 [DEP] python
 [OPT] qt6base
-[OPT] robin-map
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] vulkan-headers
+[DEP] xorgproto
 [DEP] zlib

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/plymouth-kcm/plymouth-kcm.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,13 +14,14 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
+[F] OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 200.300
 
 [CV-GROUP] kde-plasma
-[D] 85ec25e56b20e9451517b0d1eda046a0eee6f6f84f5088b9dbf63632 plymouth-kcm-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] ec71be7df6a9fa79874b5ff98fd04a28ecd76c12ff89762c4fb51257 plymouth-kcm-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

@@ -1,8 +1,7 @@
-[TIMESTAMP] 1768841802 Mon Jan 19 17:56:42 2026
-[BUILDTIME] 12 (9)
-[SIZE] 2.41 MB, 154 files
+[TIMESTAMP] 1737565567 Wed Jan 22 18:06:07 2025
+[BUILDTIME] 6 (9)
+[SIZE] 2.54 MB, 153 files
 
-[DEP] automake
 [DEP] bash
 [DEP] binutils
 [DEP] coreutils
@@ -13,8 +12,6 @@
 [DEP] libogg
 [DEP] linux-header
 [DEP] make
-[DEP] pkgconfig
 [DEP] sed
 [DEP] tar
-[DEP] util-linux
 [DEP] xz

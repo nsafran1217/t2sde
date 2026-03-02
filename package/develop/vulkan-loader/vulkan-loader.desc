@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/vulkan-loader/vulkan-loader.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,15 +19,15 @@
 
 [L] OpenSource
 [S] Stable
-[V] 1.4.340
+[V] 1.4.321.0
 [P] X -----5---9 127.440
 
 [CV-FLAGS] NO-PREFIX
 [CV-GROUP] vulkan
-[D] a183a660427643c09a31eb79d1623454c79cb97e25b200af1e9de9da Vulkan-Loader-1.4.340.tar.gz https://github.com/KhronosGroup/Vulkan-Loader/archive/v1.4.340/
+[D] b3003f4e64a1053a0c0c637b142e2a8c67959ab8faa134c306d07416 Vulkan-Loader-1.4.321.0.tar.gz https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/vulkan-sdk-1.4.321.0/
 
 pkginstalled wayland-protocols || var_append cmakeopt ' ' -DBUILD_WSI_WAYLAND_SUPPORT=OFF
-pkginstalled libx11 || var_append cmakeopt ' ' -DBUILD_WSI_XLIB_SUPPORT=OFF
+pkginstalled xorg-server || var_append cmakeopt ' ' -DBUILD_WSI_XLIB_SUPPORT=OFF
 pkginstalled libxcb || var_append cmakeopt ' ' -DBUILD_WSI_XCB_SUPPORT=OFF
 
 var_append cmakeopt ' ' -DLOADER_CODEGEN=ON

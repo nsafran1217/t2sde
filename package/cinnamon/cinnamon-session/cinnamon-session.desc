@@ -1,25 +1,23 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/cinnamon-session/cinnamon-session.desc
-[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] The Cinnamon session manager
 
-[T] cinnamon-session is the session manager for the Cinnamon Desktop. It starts
-[T] up the desktop environment, loads saved sessions or provides a default
-[T] session for the user.
+[T] The Cinnamon session manager.
 
 [U] https://github.com/linuxmint/cinnamon-session
 
-[A] Linux Mint Team
+[A] linuxmint
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/desktop/cinnamon
 
 [L] GPL
 [S] Stable
-[V] 6.6.3
+[V] 6.4.2
 [P] X -----5---9 400.000
 
-[D] bb2330206236fcb2197abb2bcdeafee6f6890e934da577276b2cac09 cinnamon-session-6.6.3.tar.gz https://github.com/linuxmint/cinnamon-session/archive/refs/tags/6.6.3/
+[D] 458f9c287e5f14bd04598273532ab138b6f3bb6078f9a6dcdc99ba77 cinnamon-session-6.4.2.tar.gz https://github.com/linuxmint/cinnamon-session/archive/refs/tags/6.4.2/

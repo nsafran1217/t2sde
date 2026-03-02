@@ -10,6 +10,7 @@
 [DEP] dbus
 [DEP] diffutils
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] gzip
 [OPT] jack
@@ -23,4 +24,5 @@
 [OPT] qt5base
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] zlib

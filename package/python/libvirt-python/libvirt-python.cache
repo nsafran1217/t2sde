@@ -4,9 +4,11 @@
 
 [DEP] bash
 [DEP] coreutils
+[DEP] cython
 [DEP] diffutils
 [DEP] findutils
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] gzip
 [DEP] libvirt

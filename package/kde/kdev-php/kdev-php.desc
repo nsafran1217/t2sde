@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kdev-php/kdev-php.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,13 +14,14 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/desktop/kde
-[F] CROSS OBJDIR
+[F] CROSS
 
 [L] GPL
 [S] Beta
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 3b6bcd7873a863eed8cfa913c420ea7cc4c6f9c913cb704b57ae4455 kdev-php-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 400.000
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] bfe316c3b9a6b0a14822d52700dd64b0b07407709369325d0e953cfe kdev-php-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

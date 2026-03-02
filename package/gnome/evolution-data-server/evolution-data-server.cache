@@ -42,6 +42,7 @@
 [DEP] sed
 [DEP] sqlite
 [DEP] tar
+[DEP] tbb
 [DEP] util-linux
 [DEP] xz
 [DEP] zlib

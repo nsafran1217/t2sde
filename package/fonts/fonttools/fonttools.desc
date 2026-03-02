@@ -22,7 +22,7 @@
 
 [L] MIT
 [S] Stable
-[V] 4.61.1
+[V] 4.60.0
 [P] X -----5---9 400.750
 
-[D] 2e774c126ce4f5688a7d8a944ab6cf5ef34c05cc2c743c3a5740ceab fonttools-4.61.1.tar.gz https://files.pythonhosted.org/packages/source/f/fonttools/
+[D] 0a992dc6590ae016648548d770f82229f49230e6e85834da47287f03 fonttools-4.60.0.tar.gz https://files.pythonhosted.org/packages/source/f/fonttools/

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/zed/zed.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -20,12 +20,11 @@
 
 [L] AGPL GPL3
 [S] Beta
-[V] 0.225.10
+[V] 0.205.6
 
-[D] b62debfc89b8c6e24b3fa340fb344bee19013dd390e730727ff3f642 zed-0.225.10.tar.gz https://github.com/zed-industries/zed/archive/refs/tags/v0.225.10/
+[D] 69cd9c209cfb204ddf67cb0bdbff78e46ae0a94b2b638cde5116663e zed-0.205.6.tar.gz https://github.com/zed-industries/zed/archive/refs/tags/v0.205.6/
 
 cargoinstopt=
 var_append GCC_WRAPPER_APPEND ' ' "-c?:-L$root`pkgprefix libdir libxcb`"
-var_append GCC_WRAPPER_APPEND ' ' */jitterentropy-base.c?-O0:
 atstage cross && hook_add postmake 5 "install target/${arch_target}/*/zed $root$bindir"
 atstage native && hook_add postmake 5 "install target/*/zed $root$bindir"

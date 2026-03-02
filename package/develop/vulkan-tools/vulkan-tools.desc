@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/vulkan-tools/vulkan-tools.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -20,10 +20,10 @@
 
 [L] APL
 [S] Stable
-[V] 1.4.340
+[V] 1.4.321.0
 
 [CV-GROUP] vulkan
-[D] 3b31fb7cce368e3857dbcceb51c3d2089ba4abb58f43bc5fa517930e Vulkan-Tools-1.4.340.tar.gz https://github.com/KhronosGroup/Vulkan-Tools/archive/v1.4.340/
+[D] 920e5440a9b8d49a8f8c079e0366d6831dd5f3eab44d337e46c81253 Vulkan-Tools-1.4.321.0.tar.gz https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/vulkan-sdk-1.4.321.0/
 
 var_append cmakeopt ' ' -DGLSLANG_INSTALL_DIR=/$prefix
 var_append cmakeopt ' ' "-DVulkanHeaders_INCLUDE_DIR=$root$(pkgprefix includedir vulkan-headers)/vulkan"

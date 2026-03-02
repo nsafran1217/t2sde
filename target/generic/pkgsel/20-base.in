@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/target/generic/pkgsel/20-base.in
-# Copyright (C) 2004 - 2026 The T2 SDE Project
+# Copyright (C) 2004 - 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -60,14 +60,13 @@ X kmod
 X nghttp2
 X iputils
 #X netkit-telnet
-#X netcat
+X netcat
 X net-tools
 X tcp_wrappers
 X rpcbind
 X rpcsvc-proto
 X libtirpc
 X nfs-utils
-X ed
 X vim
 X openssh
 X wireguard-tools
@@ -82,7 +81,6 @@ X sysstat
 X psmisc
 X hwdata
 X pciutils
-X sharutils
 X libusb
 X usbutils
 X pcmciautils
@@ -91,6 +89,7 @@ X shadow
 X strace
 X sysfsutils
 X sysklogd
+X sysvinit
 X udev
 X watchdog
 #X perl-gettext
@@ -121,6 +120,7 @@ X aboot
 X numactl
 X powerpc-utils
 X hfsutils
+X milo
 X grub2
 X elftoaout
 X silo

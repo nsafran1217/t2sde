@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kwindowsystem/kwindowsystem.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] KDE Frameworks integration module with classes for windows management
+[I] KDE Frameworks 5 Tier 1 integration module with classes for windows management
 
-[T] KDE Frameworks integration module with classes for windows management.
+[T] KDE Frameworks 5 Tier 1 integration module with classes for windows management.
 
 [U] https://invent.kde.org/frameworks/kwindowsystem
 
@@ -15,14 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
+[V] 6.18.0
 [P] X -----5---9 162.900
 
 [CV-GROUP] kde-frameworks
-[D] 72a5ea9856245e6748c4196ff946f32f32e908c1105210e54cf6f62e kwindowsystem-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] be19aaa39d20083d3cbaf18d90ef473fd6fac00b32d8fc33cc9fbfc3 kwindowsystem-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

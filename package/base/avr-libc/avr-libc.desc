@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/avr-libc/avr-libc.desc
-[COPY] Copyright (C) 2017 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2017 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,14 +14,13 @@
 [A] Marek Michalkiewicz
 [M] Rene Rebe <rene@t2-project.org>
 
-[C] extra/base
 [F] CROSS LIBC
+[C] extra/base
+
 [R] + avr
 
 [L] BSD
 [S] Stable
-[V] 2.3.1
-[P] X -1---5---9 101.700
+[V] 2.2.1
 
-[CV-TR] s/\./_/
-[D] 55c4bc2c7890c8bb65f8a2765aa973e81fdb3d701fc3dca0b3748236 avr-libc-2.3.1.tar.bz2 https://github.com/avrdudes/avr-libc/releases/download/avr-libc-2_3_1-release/
+[D] 59b28c528868345b6d7637342bfe2ac859a21bde8190ad4ab5885cfd avr-libc-2.2.1.tar.bz2 https://github.com/avrdudes/avr-libc/releases/download/avr-libc-2_2_1-release/

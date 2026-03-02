@@ -16,8 +16,8 @@
 [C] extra/base
 [F] NO-LTO.gcc
 
-[V] 1.24.2
+[V] 1.23.0
 [L] ISC
 [S] Stable
 
-[D] ef1a6a88c4c098e77dd871c6d7dc2ed0c04ff71b389af97ba8d8d25d starship-1.24.2.tar.gz https://github.com/starship/starship/archive/v1.24.2/
+[D] ba0118b77545e084be915669a48783261f9723e0d6b1e030270e0f88 starship-1.23.0.tar.gz https://github.com/starship/starship/archive/v1.23.0/

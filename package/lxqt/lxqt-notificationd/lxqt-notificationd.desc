@@ -6,23 +6,22 @@
 
 [I] LXQt notification daemon
 
-[T] lxqt-notificationd is LXQt's implementation of a daemon according to the
-[T] Desktop Notifications Specification.
+[T] LXQt notification daemon.
 
 [U] https://github.com/lxqt/lxqt-notificationd
 
 [A] Lxqt-notificationd Authors
-[M] The T2 Project <t2@t2-project.org>
+[M] T2 Project <t2@t2-project.org>
 
 [C] extra/base
 [F] OBJDIR
 
+[V] 2.2.0
 [L] LGPL
 [S] Stable
-[V] 2.3.1
-
-[CV-GROUP] lxqt
-[D] 71f7fc3da844cda929bbe52a24fcdfae9de61c593073880e31e07556 lxqt-notificationd-2.3.1.tar.xz https://github.com/lxqt/lxqt-notificationd/releases/download/2.3.1/
 
 var_append GCC_WRAPPER_APPEND ' ' -I$(pkgprefix includedir kwindowsystem)
 var_append GCC_WRAPPER_APPEND ' ' -L$(pkgprefix libdir layer-shell-qt)
+
+[CV-GROUP] lxqt
+[D] 10ae62a1c11fc4d070c61e1c655a4b315de757f0ec39c8965ec0ebca lxqt-notificationd-2.2.0.tar.xz https://github.com/lxqt/lxqt-notificationd/releases/download/2.2.0/

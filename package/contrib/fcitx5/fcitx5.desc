@@ -16,12 +16,10 @@
 [C] extra/library
 [F] CROSS
 
-[E] opt systemd
-
 [L] LGPL
 [S] Stable
-[V] 5.1.17
+[V] 5.1.14
 
-[D] be6226f96d7d4aff9c846420281f9a1fa7897ed46815a49f0b341894 fcitx5-5.1.17.tar.gz https://github.com/fcitx/fcitx5/archive/5.1.17/
+[D] a93b42c39276c04839e03dca7aa8123c4253c5d5c79b459078ec2f94 fcitx5-5.1.14.tar.gz https://github.com/fcitx/fcitx5/archive/5.1.14/
 
 var_append GCC_WRAPPER_APPEND ' ' -I$(pkgprefix includedir libxcb)

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/hyprpaper/hyprpaper.desc
-[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2023 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -21,6 +21,6 @@
 
 [L] BSD
 [S] Beta
-[V] 0.8.3
+[V] 0.7.5
 
-[D] 93c839964e07a8ab574517178d2ee3dfdfa0f2501d6ce8c5233c133d hyprpaper-v0.8.3.tar.gz https://github.com/hyprwm/hyprpaper/archive/v0.8.3/
+[D] 1bb582562c65167a23bde132cb146443c239df1668758e1273feca0f hyprpaper-v0.7.5.tar.gz !https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.7.5.tar.gz

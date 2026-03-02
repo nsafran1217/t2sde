@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/dwm/dwm.desc
-[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2007 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -23,8 +23,8 @@
 
 [L] MIT
 [S] Stable
-[V] 6.8
-
-[D] 2bce7df1fe9b17902f264da0d3fd2b8602e77532631cf979d9616daf dwm-6.8.tar.gz https://dl.suckless.org/dwm/
+[V] 6.6
 
 hook_add postinstall 3 "register_wm dwm Dwm $bindir/dwm"
+
+[D] b9577c50a8d0027ad4ac68538776759a9c47f2f18dfd517ccd3f95ef dwm-6.6.tar.gz https://dl.suckless.org/dwm/

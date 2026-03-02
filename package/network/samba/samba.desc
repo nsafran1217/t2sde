@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/samba/samba.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -34,10 +34,10 @@
 
 [L] GPL
 [S] Stable
-[V] 4.23.6
+[V] 4.23.1
 [P] X -----5---9 200.500
 
-[D] c73d5f0fab2a270347fa074f76bba0c19ad53b36e461bf9a7f6d79ec samba-4.23.6.tar.gz https://download.samba.org/pub/samba/stable/
+[D] b66a4e5e4b66faacc32b61f3bc5017705bc9cc4d7483b574fa38ec0c samba-4.23.1.tar.gz https://download.samba.org/pub/samba/stable/
 
 if [ $prefix_auto = 1 ]; then
 	if [ "$SDECFG_PKG_SAMBA_CORE_PREFIX" ]; then
@@ -108,7 +108,7 @@ EOS
 	# xinetd integration readme
 	sed "s,D_sbindir,$sbindir," < $confdir/README.xinetd > $root$docdir/README.xinetd
 }
-#hook_add postmake 3 samba_pm
+#hook_add postmake 3 "samba_pm"
 
 # install examples
 hook_add postmake 5 "cp -vRf examples $root$docdir/"

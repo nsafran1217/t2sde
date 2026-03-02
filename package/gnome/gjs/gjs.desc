@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/gjs/gjs.desc
-[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2014 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,13 +18,10 @@
 
 [L] GPL
 [S] Stable
-[V] 1.87.2
+[V] 1.86.0
 [P] X -----5---9 151.799
 
 [CV-URL] https://download.gnome.org/sources/gjs/cache.json
-[D] 327866a058bec4567dd7f69573394fd67080dafb5668d3c7855421d5 gjs-1.87.2.tar.xz https://download.gnome.org/sources/gjs/1.87/
+[D] e6140d604ac90be8c326884bc6103327e5c54fc097e0d1f23caa2957 gjs-1.86.0.tar.xz https://download.gnome.org/sources/gjs/1.86/
 
 . $base/package/*/*/gnome-conf.in
-jsver=$(pkgprefix ver mozjs)
-var_append GCC_WRAPPER_APPEND ' ' -DXP_UNIX=1
-var_append GCC_WRAPPER_APPEND ' ' -I$root/$(pkgprefix includedir mozjs)/mozjs-${jsver%%.*}/js

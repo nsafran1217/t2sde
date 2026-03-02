@@ -1,12 +1,12 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/cosmic-files/cosmic-files.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] File manager for the COSMIC desktop environment
+[I] cosmic-files
 
-[T] File manager for the COSMIC desktop environment.
+[T] cosmic-files.
 
 [U] https://github.com/pop-os/cosmic-files/
 
@@ -14,13 +14,13 @@
 [M] NoTag <notag@t2sde.org>
 
 [C] extra/tool
-[F] CROSS NO-LTO
+[F] CROSS
 
 [L] GPL3
-[S] Stable
-[V] 1.0.8
+[S] Beta
+[V] 1.0.0-beta.1.1
 
 [CV-GROUP] cosmic-desktop
-[D] 415c36663d5c56ac7a63db0f508b8b0d1f565399e16f84fe12d3355e cosmic-files-epoch-1.0.8.tar.gz https://github.com/pop-os/cosmic-files/archive/epoch-1.0.8/
+[D] 74df81f419ad4bc1830574f55c7924846e023437b432cc1c9a1b982d cosmic-files-epoch-1.0.0-beta.1.1.tar.gz https://github.com/pop-os/cosmic-files/archive/epoch-1.0.0-beta.1.1/
 
 . $base/package/cosmic/*/cosmic-conf.in

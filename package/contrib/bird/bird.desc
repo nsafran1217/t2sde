@@ -6,20 +6,18 @@
 
 [I] BIRD Internet Routing Daemon
 
-[T] BIRD is a dynamic IP routing daemon with full support of most modern
-[T] routing protocols, easy to use configuration interface and powerful route
-[T] filtering language.
+[T] BIRD Internet Routing Daemon.
 
 [U] https://bird.nic.cz/
 
 [A] Bird Authors
-[M] The T2 Project <t2@t2-project.org>
+[M] T2 Project <t2@t2-project.org>
 
-[C] extra/network
+[C] extra/base
 [F] CROSS
 
+[V] 3.1.4
 [L] GPL
 [S] Stable
-[V] 3.2.0
 
-[D] 7f96433ca9044a836f3c7123c5c4bf8552fcfbba1eabac1e76333793 bird-3.2.0.tar.gz https://bird.nic.cz/download/
+[D] 0a5831e770d36e698dacf6215c18c8986936dc0ae5781b05cd1618d0 bird-3.1.4.tar.gz https://bird.nic.cz/download/

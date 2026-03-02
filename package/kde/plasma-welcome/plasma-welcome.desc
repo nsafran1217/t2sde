@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/plasma-welcome/plasma-welcome.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,13 +14,14 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/desktop/kde
-[F] CROSS OBJDIR
+[F] CROSS
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 400.000
 
 [CV-GROUP] kde-plasma
-[D] 3e23cb29ddeed8da8b860925d1dcb26e262e0d986411f248c8248db9 plasma-welcome-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] af8a0b1a9fcf24fba81934d5b9d70d7e33c13ed46a0b88021cc9fa63 plasma-welcome-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

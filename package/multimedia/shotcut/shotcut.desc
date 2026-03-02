@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/shotcut/shotcut.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,6 +19,6 @@
 
 [L] GPL3
 [S] Stable
-[V] 26.2.26
+[V] 25.08.16
 
-[D] e252151a6ea6bb63aa70b07e23f1e12ee62f429488e2fde30a395983 shotcut-26.2.26.tar.gz https://github.com/mltframework/shotcut/archive/v26.2.26/
+[D] 749f5103e11130fef72855494fb2d0ad234779c4f5a82c615eda584d shotcut-25.08.16.tar.gz https://github.com/mltframework/shotcut/archive/v25.08.16/

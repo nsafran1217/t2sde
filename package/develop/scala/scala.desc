@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/scala/scala.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,6 +19,6 @@
 
 [L] GPL
 [S] Stable
-[V] 3.8.1
+[V] 3.7.3
 
-[D] ce8537bee25129a3bc264adcc815a5760899482ef1b6f53a291c6d7a scala3-3.8.1.tar.gz https://github.com/scala/scala3/archive/refs/tags/3.8.1/
+[D] 14f3d1c2644d503de861df07e7f6e590eb920aae750a25245970384d scala3-3.7.3.tar.gz https://github.com/scala/scala3/archive/refs/tags/3.7.3/

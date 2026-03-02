@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/pyqt5-sip/pyqt5-sip.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,7 +18,7 @@
 
 [L] BSD
 [S] Stable
-[V] 12.18.0
+[V] 12.17.0
 [P] X -----5---9 210.000
 
-[D] f6f417d48df909ebb22e3e4ec0aeebda261dc2b1a8ce169234e8eab7 pyqt5_sip-12.18.0.tar.gz https://pypi.python.org/packages/source/P/PyQt5-sip/
+[D] bdc1d7f2c20df8ac3e4dae0f51d3d813732e4a91b467794a662d0775 pyqt5_sip-12.17.0.tar.gz https://pypi.python.org/packages/source/P/PyQt5-sip/

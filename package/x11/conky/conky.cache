@@ -12,6 +12,7 @@
 [DEP] fontconfig
 [DEP] freetype
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] gzip
 [DEP] imlib2
@@ -30,4 +31,5 @@
 [DEP] pkgconfig
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xorgproto

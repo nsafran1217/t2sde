@@ -22,10 +22,10 @@
 
 [L] BSD
 [S] Stable
-[V] 21.1.8
+[V] 20.1.8
 
 [CV-GROUP] llvmorg
-[D] 6a318120796a3ccef52f9f3520251688d02e0eef20f4c670b54b41ce bolt-21.1.8.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/
+[D] 9219e62dc3c9b72d992687bbdb62b454d086179e8044bfa8401581e9 bolt-20.1.8.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/
 
 if atstage toolchain; then
 	var_append cmakeopt ' ' -DLLVM_DEFAULT_TARGET_TRIPLE=$arch_target

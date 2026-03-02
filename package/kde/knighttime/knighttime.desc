@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/knighttime/knighttime.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -16,14 +16,12 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
-[P] X -----5---9 200.290
+[V] 6.4.90
 
 [CV-GROUP] kde-plasma
-[D] d6f886ba9af428914a00e5b310768b41877d161379f4c7aa8bba0a37 knighttime-v6.6.1.tar.gz https://invent.kde.org/plasma/knighttime/-/archive/v6.6.1/
+[D] 10a36445561ef73273a147ac04c845ff5ee0d898175573be9cd26e0d knighttime-v6.4.90.tar.gz https://invent.kde.org/plasma/knighttime/-/archive/v6.4.90/
 
 . $base/package/*/*/kde-conf.in

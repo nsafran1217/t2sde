@@ -6,7 +6,7 @@
 [DEP] binutils
 [DEP] coreutils
 [DEP] diffutils
-[OPT] docutils
+[DEP] docutils
 [DEP] fuse
 [DEP] gawk
 [DEP] glib

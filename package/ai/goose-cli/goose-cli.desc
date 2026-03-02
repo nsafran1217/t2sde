@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/goose-cli/goose-cli.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -22,9 +22,9 @@
 
 [L] APL
 [S] Stable
-[V] 1.26.0
+[V] 1.9.0
 
-[D] 04e3fd3776d28c44e6b6bccedd33371e4cc2345c49af859fa1f551bc goose-1.26.0.tar.gz https://github.com/block/goose/archive/v1.26.0/
+[D] ce67916d507082d950fba4ed82f5e7c01ffe921b6127b888a562e4ff goose-1.9.0.tar.gz https://github.com/block/goose/archive/v1.9.0/
 
 [ $prefix_auto = 1 ] && prefix="opt/goose" && set_confopt
 

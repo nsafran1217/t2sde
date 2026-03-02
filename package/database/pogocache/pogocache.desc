@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/pogocache/pogocache.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -19,6 +19,6 @@
 
 [L] AGPL
 [S] Stable
-[V] 1.3.1
+[V] 1.2.0
 
-[D] 2cdb691c1b5ba260a9838b4d3c39124f807f960f3762ce27e96b2b16 pogocache-1.3.1.tar.gz https://github.com/tidwall/pogocache/archive/1.3.1/
+[D] b04aec780bd32b16777bccf14157543c4f8ccbfb0d02d193d4149dbf pogocache-1.2.0.tar.gz https://github.com/tidwall/pogocache/archive/1.2.0/

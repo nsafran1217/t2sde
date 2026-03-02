@@ -15,10 +15,10 @@
 
 [C] extra/base
 
-[V] 4.5.2
+[V] 4.4.1
 [L] MIT
 [S] Stable
 
-[D] 92da1484a9797bf917afc333143c8324cfcd58e43934b7c859ad2987 libwebsockets-4.5.2.tar.gz https://github.com/warmcat/libwebsockets/archive/v4.5.2/
+[D] a16ce91572bb685d874c730116e782da085424f195b8518e2012c781 libwebsockets-4.4.1.tar.gz https://github.com/warmcat/libwebsockets/archive/v4.4.1/
 
 pkginstalled libuv && var_append cmakeopt ' ' -DLWS_WITH_LIBUV=ON

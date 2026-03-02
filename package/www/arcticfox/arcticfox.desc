@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/arcticfox/arcticfox.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -22,9 +22,9 @@
 
 [L] MPL
 [S] Stable
-[V] 47.0
+[V] 46.2
 
-[D] 4b7dce90321dbf981bde8622af2b803ccf74a06b8160f667d2c76bf3 arcticfox-47.0.tar.gz https://github.com/rmottola/Arctic-Fox/archive/refs/tags/v47.0/
+[D] beda4bf2a299d608dc2e49d2b33051ae066be1653d6905b78f35bf65 arcticfox-46.2.tar.gz https://github.com/rmottola/Arctic-Fox/archive/refs/tags/v46.2/
 
 #[ $prefix_auto = 1 ] && prefix=opt/arcticfox && set_confopt
 
@@ -95,6 +95,6 @@ EOT
 	pkginstalled pulseaudio || echo "ac_add_options --disable-pulseaudio" >> .mozconfig
 	pkginstalled alsa-lib && echo "ac_add_options --enable-alsa" >> .mozconfig
 }
-hook_add preconf 4 arcticfox_config
+hook_add preconf 4 "arcticfox_config"
 
 pkginstalled icu4c && var_append GCC_WRAPPER_APPEND ' ' -licui18n?-licuuc

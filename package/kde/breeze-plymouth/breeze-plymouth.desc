@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/breeze-plymouth/breeze-plymouth.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,13 +14,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 162.420
 
 [CV-GROUP] kde-plasma
-[D] 1c9270d97521e8abc04ab24be6f17d8ecf04b34288cbc2daa2da1f44 breeze-plymouth-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] 429f18f6d04c7fc77c798feda085848557c9efd413f2e21420ed00b5 breeze-plymouth-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

@@ -22,7 +22,6 @@
 [DEP] hyprlang
 [DEP] hyprutils
 [DEP] hyprwayland-scanner
-[DEP] hyprwire
 [DEP] libdrm
 [DEP] libglvnd
 [DEP] libinput
@@ -32,7 +31,6 @@
 [DEP] linux-header
 [DEP] make
 [DEP] mesa
-[DEP] muparser
 [DEP] pango
 [DEP] pixman
 [DEP] pkgconfig

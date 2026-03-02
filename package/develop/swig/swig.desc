@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/swig/swig.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -24,15 +24,9 @@
 [F] CROSS
 [C] extra/development
 
-[E] opt perl
-[E] opt php
-[E] opt python
-[E] opt ruby
-[E] opt tcl
-
 [L] BSD
 [S] Stable
-[V] 4.4.1
+[V] 4.3.1
 [P] X -----5---9 184.800
 
-[D] 0be1581bfcd943d15fc4cab431202bc00fe218f601d4d9647402b462 swig-4.4.1.tar.gz https://downloads.sourceforge.net/swig/
+[D] 935725f3ffb8b6e30cf1d7f92610e79561d7239d3dc6be748cd58fb5 swig-4.3.1.tar.gz https://downloads.sourceforge.net/swig/

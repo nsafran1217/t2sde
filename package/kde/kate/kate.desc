@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kate/kate.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -18,16 +18,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
+[V] 25.08.1
 [P] X -----5---9 500.000
 
-[CV-GROUP] kde-gear
-[D] 457743d4bfbe7e1e676763a91b9deec6ee2bf0c8dc41a382bcbfd3e4 kate-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
-
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] dac9a292e107915cf8edf40d1b3b1246cd2b4b73e9b1011be41d2b72 kate-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/xorgproto/xorgproto.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,13 +18,13 @@
 
 [L] OpenSource
 [S] Stable
-[V] 2025.1
+[V] 2024.1
 [P] X -----5---9 109.600
-
-[D] 8e9bd44ee0d84df8aed7157c47dc905fbfa84fbefb12ba8e4471adce xorgproto-2025.1.tar.xz https://www.x.org/releases/individual/proto/
 
 . package/*/*/modular-x-conf.in
 runconf=0
+
+[D] c0b242e33d4b5362e5d2ea7ff2f3e2cbf0b6a39835275eef512e8059 xorgproto-2024.1.tar.xz https://www.x.org/releases/individual/proto/
 
 x_dirtree() {
 	# TODO: only if $prefix != usr

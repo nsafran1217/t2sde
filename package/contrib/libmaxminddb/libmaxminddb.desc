@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/libmaxminddb/libmaxminddb.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,11 +14,11 @@
 [M] T2 Project <t2@t2-project.org>
 
 [C] extra/base
-[F] CROSS NO-LTO.clang
+[F] CROSS
 
-[V] 1.13.2
+[V] 1.12.2
 [L] APL
 [S] Stable
 [P] X -----5---9 700.000
 
-[D] ef875d5203ec49b8ce1e530de488e03e3f1a6e67a0f53df303740c6a libmaxminddb-1.13.2.tar.gz https://github.com/maxmind/libmaxminddb/releases/download/1.13.2/
+[D] 3dba6842571d56d81fa1051e68c89808251d069c1cba8388002bde89 libmaxminddb-1.12.2.tar.gz https://github.com/maxmind/libmaxminddb/releases/download/1.12.2/

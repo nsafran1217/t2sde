@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/extra-cmake-modules/extra-cmake-modules.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,12 +15,12 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/development extra/desktop/kde
-[F] CROSS OBJDIR
+[F] FPIC CROSS
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
-[P] X ?----5---9 130.100
+[V] 6.18.0
+[P] X -----5---9 130.100
 
 [CV-GROUP] kde-frameworks
-[D] 3585a56f0e1a458b424fc0ce738b10dbe56b7422e8a261d6823c7852 extra-cmake-modules-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] b11d6e374720eca9bc21e57004b9fe0cb86a4817a4e60f38dd4b1697 extra-cmake-modules-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/

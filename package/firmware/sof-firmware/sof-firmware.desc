@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/sof-firmware/sof-firmware.desc
-[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,9 +18,10 @@
 
 [L] BSD
 [S] Stable
-[V] 2025.12.2
+[V] 2025.05.1
+[P] X -----5---9 124.500
 
-[D] e540bf13bb3328c84eadaed4f5fed5657da114cce38eb6e3e73028e3 sof-bin-2025.12.2.tar.gz https://github.com/thesofproject/sof-bin/releases/download/v2025.12.2/
+[D] 45172658188784885b23b0df58de459d0c8b6562c97146c3d8235874 sof-bin-2025.05.1.tar.gz https://github.com/thesofproject/sof-bin/releases/download/v2025.05.1/
 
 runmake=0
 

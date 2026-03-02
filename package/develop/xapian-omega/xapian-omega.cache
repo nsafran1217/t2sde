@@ -17,6 +17,7 @@
 [DEP] pcre2
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xapian-core
 [DEP] xz
 [DEP] zlib

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/filesystemstorage/filesystemstorage.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -22,7 +22,8 @@
 
 [S] Stable
 [V] 2.0rc1
-
-[D] 16df04b95ccd9840851bd95ddeb925ebf7d9c858a7798a2c375d4ad4 FileSystemStorage-2.0rc1.tar.gz http://dl.sourceforge.net/ingeniweb/
+[P] X -----5---9 300.300
 
 . $base/package/*/zope/zope-conf.in
+
+[D] 16df04b95ccd9840851bd95ddeb925ebf7d9c858a7798a2c375d4ad4 FileSystemStorage-2.0rc1.tar.gz http://dl.sourceforge.net/ingeniweb/

@@ -22,11 +22,11 @@
 
 [L] BSD MIT
 [S] Stable
-[V] 21.1.8
+[V] 20.1.8
 [P] X ?----5---9 127.400
 
 [CV-GROUP] llvmorg
-[D] 8009064f949a7fabba1de6d1a3e9721fd71451a9dd9909e0143d3962 libclc-21.1.8.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/
+[D] a6df414a672d4c011c3e050ce97d34ab9b56b686bdd774a47d144115 libclc-20.1.8.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/
 
 if atstage toolchain; then
     var_append cmakeopt ' ' -DLIBCLC_TARGETS_TO_BUILD=

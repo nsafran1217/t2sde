@@ -22,21 +22,20 @@
 
 [E] opt cups
 [E] opt double-conversion
-[E] opt krb5
-[E] opt mariadb
 [E] opt unixodbc
 [E] opt sqlite2
+[E] opt mariadb
 
 [L] LGPL
 [S] Stable
 [V] 5.15.14
-[P] X -----5---9 139.000
+[P] X -----5---9 130.000
 
 [CV-GROUP] qt5
 [D] e20c285edb0e7112ed334b0520b846f0326a23212beb3c064f57e989 qtbase-everywhere-opensource-src-5.15.14.tar.xz http://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/
 
-runconf=0 createdocs=0
-. $base/package/*/*/qt5-conf.in
+prefix="${SDECFG_PKG_QT5_PREFIX:-opt/qt5}"
+set_confopt
 
 #var_append GCC_WRAPPER_REMOVE ' ' '-Wl,-rpath,\$ORIGIN/../lib'
 
@@ -51,46 +50,59 @@ qt_preconf() {
 hook_add preconf 5 qt_preconf
 
 # Qt only supports some selected options ...
-confopt="-prefix /$prefix -bindir $bindir -libdir $libdir \
--no-pch -system-zlib -system-libpng -system-libjpeg -nomake tests \
--nomake examples -no-avx -release -opensource -confirm-license \
--skip qtwebengine"
+confopt="-prefix /$prefix -bindir $bindir -libdir $libdir
+	 -no-pch -system-zlib -system-libpng -system-libjpeg -nomake tests
+	 -nomake examples -no-avx -release -opensource -confirm-license
+	 -skip qtwebengine"
 
 if atstage cross; then
-	var_append confopt ' ' "-device linux-generic-g++ -device-option CROSS_COMPILE=$arch_target- -sysroot $sysroot"
-	var_remove_regex makeopt ' ' 'CC=.*'
-	var_remove_regex makeopt ' ' 'CXX=.*'
-	var_remove_regex makeopt ' ' 'AR=.*'
-	var_remove_regex makeopt ' ' 'AS=.*'
-	var_remove_regex makeopt ' ' 'LD=.*'
-	var_remove_regex makeopt ' ' 'RANLIB=.*'
+	 var_append confopt ' ' "-device linux-generic-g++ -device-option CROSS_COMPILE=$arch_target- -sysroot $sysroot"
+	 var_remove_regex makeopt ' ' 'CC=.*'
+	 var_remove_regex makeopt ' ' 'CXX=.*'
+	 var_remove_regex makeopt ' ' 'AR=.*'
+	 var_remove_regex makeopt ' ' 'AS=.*'
+	 var_remove_regex makeopt ' ' 'LD=.*'
+	 var_remove_regex makeopt ' ' 'RANLIB=.*'
 fi
 
 # Guide to locate fontconfig header files
 var_append CXX_WRAPPER_APPEND ' ' "-I$root/$(pkgprefix includedir fontconfig)"
+var_append CXX_WRAPPER_APPEND ' ' "-L$root/$(pkgprefix libdir libxcb)"
 
 [[ $libdir = *lib64* ]] && var_append confopt ' ' '-platform linux-g++-64'
 
-[ "$SDECFG_PKG_QT5_EXCEPTION" = "0" ] && var_append confopt ' ' -no-g++-exceptions
-[ "$SDECFG_PKG_QT5_STL" = "0" ] && var_append confopt ' ' -no-stl
-[ "$SDECFG_PKG_QT5_QVFB" = "1" ] && var_append confopt ' ' -qvfb
+[ "$SDECFG_PKG_QT5_EXCEPTION" = "0" ] &&
+	var_append confopt ' ' -no-g++-exceptions
+[ "$SDECFG_PKG_QT5_STL" = "0" ] &&
+	var_append confopt ' ' -no-stl
+[ "$SDECFG_PKG_QT5_QVFB" = "1" ] &&
+	var_append confopt ' ' -qvfb
 
 if pkginstalled mysql; then
 	pkgprefix -t mysql
 	var_append confopt ' ' -plugin-sql-mysql
+	for x in CXX GCC; do
+		var_append ${x}_WRAPPER_APPEND ' ' "-L$(pkgprefix libdir mysql)/mysql"
+	done
 
-	var_append GCC_WRAPPER_APPEND ' ' "-L$(pkgprefix libdir mysql)/mysql"
-	var_append GCC_WRAPPER_APPEND ' ' "-I$(pkgprefix includedir mysql)/mysql"
-	var_append GCC_WRAPPER_APPEND ' ' "-I$(pkgprefix includedir mysql)"
+	for x in CXX GCC CPP; do
+		var_append ${x}_WRAPPER_APPEND ' ' "-I$(pkgprefix includedir mysql)/mysql"
+		var_append ${x}_WRAPPER_APPEND ' ' "-I$(pkgprefix includedir mysql)"
+	done
 fi
 
 if pkginstalled postgresql; then
 	pkgprefix -t postgresql
 	var_append confopt ' ' -plugin-sql-psql
 
-	var_append GCC_WRAPPER_APPEND ' ' "-L$(pkgprefix libdir postgresql)"
-	var_append GCC_WRAPPER_APPEND ' ' "-I$(pkgprefix includedir postgresql)/server"
-	var_append GCC_WRAPPER_APPEND ' ' "-I$(pkgprefix includedir postgresql)"
+	for x in CXX GCC; do
+		var_append ${x}_WRAPPER_APPEND ' ' "-L$(pkgprefix libdir postgresql)"
+	done
+
+	for x in CXX GCC CPP; do
+		var_append ${x}_WRAPPER_APPEND ' ' "-I$(pkgprefix includedir postgresql)/server"
+		var_append ${x}_WRAPPER_APPEND ' ' "-I$(pkgprefix includedir postgresql)"
+	done
 fi
 
 qt_qvfb() {
@@ -119,6 +131,9 @@ export QT5DIR # QTDIR
 EOT
 }
 hook_add postmake 5 qt_postmake
+
+runconf=0
+createdocs=0
 
 # we do not want running applications crash due cp'ing the new shared object over the old one
 var_append makeinstopt ' ' INSTALL_FILE=install

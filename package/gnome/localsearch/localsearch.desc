@@ -7,11 +7,8 @@
 
 [I] Offers a series of D-Bus services to index filesystem resources
 
-[T] Previously known as tracker-miners, is the indexer and search engine that
-[T] powers the desktop search for core GNOME components. It stores data about
-[T] user files structured by the Nepomuk definitions, features a tightly
-[T] sandboxed metadata extractor, and provides facilities to alter file
-[T] metadata.
+[T] LocalSearch is the indexer and search engine that powers desktop search
+[T] for core GNOME components.
 
 [U] https://gitlab.gnome.org/GNOME/localsearch
 
@@ -22,10 +19,11 @@
 
 [L] GPL
 [S] Stable
-[V] 3.10.2
+[V] 3.10.0
+[P] X -----5---9 190.800
 
 [CV-URL] https://download.gnome.org/sources/localsearch/cache.json
-[D] 8241baefba5b45d958ac03da8d31fbfd7be8e03be02ce6c0726172fa localsearch-3.10.2.tar.xz https://download.gnome.org/sources/localsearch/3.10/
+[D] bae1c170e69e1afc574d2c0fe25c99ff689a358850e9e30f3014073a localsearch-3.10.0.tar.xz https://download.gnome.org/sources/localsearch/3.10/
 
 . $base/package/*/*/gnome-conf.in
 pkginstalled systemd || var_append mesonopt ' ' -Dsystemd_user_services=false

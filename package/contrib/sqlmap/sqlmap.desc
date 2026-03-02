@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---.
 [COPY] t2/package/*/sqlmap/sqlmap.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---.
 
@@ -18,8 +18,8 @@
 [C] extra/base
 [F] CROSS
 
-[V] 1.10.2
+[V] 1.9.9
 [L] GPL
 [S] Stable
 
-[D] 48c5796f653ee6c79c24daa8755ad138434a29d95607e498a2a7660f sqlmap-1.10.2.tar.gz https://pypi.python.org/packages/source/s/sqlmap/
+[D] d595c15ea041fb2c59ae601f9b3b4a0f68ac6fc44cd26df17656f2fa sqlmap-1.9.9.tar.gz https://pypi.python.org/packages/source/s/sqlmap/

@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kguiaddons/kguiaddons.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] KDE Frameworks addon with various classes on top of QtGui
+[I] KDE Frameworks 5 Tier 1 addon with various classes on top of QtGui
 
-[T] The KDE GUI addons provide utilities for graphical user interfaces in the
+[T] The KDE GUI addons provide utilities for graphical user interfaces in the 
 [T] areas of colors, fonts, text, images, keyboard input.
 
 [U] https://www.kde.org
@@ -16,14 +16,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
+[V] 6.18.0
 [P] X -----5---9 162.888
 
 [CV-GROUP] kde-frameworks
-[D] cf9e6b79ed0dce0f3fb47a9845cbf2a76bcac3b5768102cd8cbd68ed kguiaddons-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] 3231bd5f988614c9baf00f5e49c815ef5ea465c22b6257ab09e8876e kguiaddons-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

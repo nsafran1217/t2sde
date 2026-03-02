@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/uclibc/uclibc.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -24,17 +24,17 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [F] CROSS NOPARALLEL LIBC NO-LTO.gcc
-[C] base/library
+[C] extra/base
 
 [R] - avr sparc64 mips64
 [K] + linux
 
 [L] LGPL
 [S] Stable
-[V] 1.0.56
+[V] 1.0.54
 [P] O 01---5---9 101.700
 
-[D] bbe19ac7ed3d7e3d1ef55d26c02094725a1de2922fe7f66cf556d5a0 uClibc-ng-1.0.56.tar.xz https://downloads.uclibc-ng.org/releases/1.0.56/
+[D] a085f56aacb3186d205f9ec72ff03b352fb25ebad8618b805d0ffc46 uClibc-ng-1.0.54.tar.xz https://downloads.uclibc-ng.org/releases/1.0.54/
 
 . $base/package/*/uclibc/functions.in
 
@@ -187,9 +187,8 @@ default_config() {
 	echo "X UCLIBC_HAS_FLOATS"
 
 	# many packages, too:
-	#echo "X UCLIBC_HAS_LIBINTL"	# stubs only, but udev
+	#echo "X UCLIBC_HAS_LIBINTL"	# stubs only :-/
 	echo "X UCLIBC_HAS_LIBICONV"
-	echo "X UCLIBC_BUILD_ALL_LOCALE"
 
 	# Large file support
 	echo "X UCLIBC_HAS_LFS"
@@ -210,7 +209,7 @@ default_config() {
 }
 
 if [ "$SDECFG_DISABLE_NLS" = "0" ]; then
-	hook_add preconf 5 uclibc_preparelocale
+	hook_add preconf 5 'uclibc_preparelocale'
 fi
 
 uclibc_preconf() {
@@ -220,7 +219,7 @@ uclibc_preconf() {
 	fi
 	default_config > $builddir/.config
 }
-hook_add preconf 3 uclibc_preconf
+hook_add preconf 3 "uclibc_preconf"
 
 uclibc_stage0() {
 	hook_eval preconf
@@ -245,7 +244,7 @@ uclibc_main() {
 		eval $MAKE $makeopt locale_headers
 	fi
 	eval $MAKE $makeopt all
-	
+		
 	# remove symlinks to avoid shares (install_dev)
 	rm -vf include/{asm,asm-*,linux}
 
@@ -267,6 +266,6 @@ else
 	custmain=uclibc_main
 fi
 hook_add postdoc 5 'cp -v .config $root$docdir/'
-hook_add postinstall 5 uclibc_ldsoconf
+hook_add postinstall 5 'uclibc_ldsoconf'
 makeinstopt="$makeopt"
 runconf=0

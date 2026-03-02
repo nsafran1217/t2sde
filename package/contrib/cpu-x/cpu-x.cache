@@ -38,4 +38,5 @@
 [DEP] procps
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] vulkan-headers

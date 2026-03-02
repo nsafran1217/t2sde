@@ -1,40 +1,58 @@
-[TIMESTAMP] 1759918268 Wed Oct  8 12:11:08 2025
-[BUILDTIME] 200 (9)
-[SIZE] 39.14 MB, 1122 files
 
-[DEP] bash
+[TIMESTAMP] 1280269720 Tue Jul 27 22:28:40 2010
+[BUILDTIME] 60 (5)
+[SIZE] 13.91 MB, 813 files
+
+[DEP] 00-dirtree
+[DEP] libedit
+[DEP] alsa-lib
+[DEP] at-spi2-core
 [DEP] binutils
+[DEP] cairo
 [DEP] coreutils
 [DEP] curl
 [DEP] diffutils
 [DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
 [DEP] gawk
+[DEP] glib
+[DEP] glitz
 [DEP] grep
 [DEP] gsm
+[DEP] gtk+
+[DEP] gtk+12
 [DEP] gzip
-[DEP] jansson
+[DEP] xorgproto
 [DEP] libcap
-[DEP] libedit
-[DEP] libical
 [DEP] libogg
+[DEP] libpng
+[DEP] libpthread-stubs
+[DEP] libtool
+[DEP] libusb
 [DEP] libvorbis
-[DEP] libxcrypt
-[DEP] libxml
-[DEP] libxslt
+[DEP] libx11
+[DEP] libxau
+[DEP] libxcb
+[DEP] libxrender
 [DEP] linux-header
-[DEP] lua
 [DEP] make
-[DEP] neon
+[DEP] ncurses
 [DEP] net-snmp
+[DEP] newt
 [DEP] openssl
-[DEP] portaudio
+[DEP] pango
+[DEP] pixman
+[DEP] pkgconfig
+[DEP] popt
 [DEP] postgresql
+[DEP] xorgproto
 [DEP] sed
+[DEP] slang
 [OPT] speex
-[DEP] speexdsp
-[DEP] sqlite
+[DEP] sqlite2
+[DEP] sysfiles
 [DEP] tar
-[DEP] unixodbc
-[DEP] uriparser
-[DEP] util-linux
+[DEP] xcb-util
+[DEP] xorgproto
 [DEP] zlib

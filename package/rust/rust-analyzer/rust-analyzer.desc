@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/rust-analyzer/rust-analyzer.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -16,11 +16,11 @@
 [C] base/tool
 [F] CROSS
 
-[L] APL MIT
+[L] APL
 [S] Stable
-[V] 2026-02-23
+[V] 2025-08-25
 
-[D] 2f814bc4a0a2e75094b42d1dfe769d003a13fd7d9fc515a9e03fbce5 rust-analyzer-2026-02-23.tar.gz https://github.com/rust-lang/rust-analyzer/archive/2026-02-23/
+[D] bbdf8eb62cdfdf51d34d67e01decc4c7bdaa711764f5f2e3a4b2c074 rust-analyzer-2025-08-25.tar.gz https://github.com/rust-lang/rust-analyzer/archive/2025-08-25/
 
 cargoinstopt=
 hook_add postmake 5 'install target/release/rust-analyzer $root$bindir'

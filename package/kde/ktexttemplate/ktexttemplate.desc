@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/ktexttemplate/ktexttemplate.desc
-[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2023 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -15,14 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
+[V] 6.18.0
 [P] X -----5---9 162.920
 
 [CV-GROUP] kde-frameworks
-[D] 1ba30e49d5df1788c5741ce1f7a2fbb1ceacdfd9818b745755643f4c ktexttemplate-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] 9b2edd238ca63a78e381978f6de1bf0be70a82cf7b20cb7f403f722f ktexttemplate-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

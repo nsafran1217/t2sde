@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/phosh-tour/phosh-tour.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -18,6 +18,6 @@
 
 [L] GPL3
 [S] Beta
-[V] 0.53.0
+[V] 0.47.0
 
-[D] 1268f1b2767b13411c5a83e0ad7f155d41306fc3d5cb5121aed66c43 phosh-tour-v0.53.0.tar.gz https://gitlab.gnome.org/World/Phosh/phosh-tour/-/archive/v0.53.0/
+[D] 1d8aaaf84c7d78a4662a79d0082c3372946c7cd890cacecec54c0604 phosh-tour-v0.47.0.tar.gz https://gitlab.gnome.org/World/Phosh/phosh-tour/-/archive/v0.47.0/

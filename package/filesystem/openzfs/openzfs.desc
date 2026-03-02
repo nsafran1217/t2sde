@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/openzfs/openzfs.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -21,6 +21,7 @@
 
 [L] CDDL
 [S] Stable
-[V] 2.4.1
+[V] 2.3.4
+[P] X -----5---9 189.600
 
-[D] 136a261d529cafd2968958f346d06e3461b4b2d762ef0749cea8b6f2 zfs-2.4.1.tar.gz https://github.com/openzfs/zfs/releases/download/zfs-2.4.1/
+[D] 43cbae210dc326b86e8fcf78b5d4450e21e37e006c3f40b77899f4cd zfs-2.3.4.tar.gz https://github.com/openzfs/zfs/releases/download/zfs-2.3.4/

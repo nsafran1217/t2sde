@@ -21,9 +21,9 @@
 
 [L] GPL
 [S] Stable
-[V] 5.14
+[V] 5.12
 [P] X -----5---9 207.600
 
-[D] d94996e5440219180504e6d83c3089f9bb9a78defaaea5f7635a176e gnucash-5.14.tar.bz2 http://dl.sourceforge.net/sourceforge/gnucash/
-
 . $base/package/*/*/gnome-conf.in
+
+[D] e9d8c463fffa380ab0c2f3a79408cb30b46214a4caf42e0ad4353cd6 gnucash-5.12.tar.bz2 http://dl.sourceforge.net/sourceforge/gnucash/

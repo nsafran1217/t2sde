@@ -18,6 +18,7 @@
 [DEP] freetype
 [DEP] gawk
 [DEP] gettext
+[DEP] git
 [DEP] graphviz
 [DEP] grep
 [DEP] gtest

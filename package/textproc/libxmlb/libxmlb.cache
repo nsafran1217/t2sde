@@ -1,6 +1,6 @@
-[TIMESTAMP] 1762363236 Wed Nov  5 18:20:36 2025
-[BUILDTIME] 10 (9)
-[SIZE] 1.44 MB, 80 files
+[TIMESTAMP] 1757535102 Wed Sep 10 22:11:42 2025
+[BUILDTIME] 8 (5)
+[SIZE] 1.11 MB, 78 files
 
 [DEP] bash
 [DEP] binutils
@@ -8,19 +8,20 @@
 [DEP] diffutils
 [OPT] docbook-xml
 [OPT] docbook-xsl
+[DEP] findutils
 [DEP] gawk
 [DEP] glib
-[OPT] gobject-introspection
 [DEP] grep
 [OPT] gtk-doc
 [DEP] gzip
+[DEP] libxslt
 [DEP] linux-header
 [DEP] meson
 [DEP] ninja
 [DEP] openssl
+[DEP] pkgconfig
 [DEP] python
 [DEP] sed
-[DEP] setuptools
 [DEP] tar
 [DEP] xz
 [DEP] zstd

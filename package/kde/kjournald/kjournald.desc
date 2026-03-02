@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kjournald/kjournald.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -16,13 +16,14 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/desktop/kde
-[F] CROSS OBJDIR
+[F] CROSS
 
 [L] GPL
 [S] Beta
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] c4c69ae4ab8cece35068e395497e5d7ac39198d63aebc010cbfb66af kjournald-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 400.000
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 49f23f3601aaaefa06865e77877c9e8861cc2bbc7a325da1ac54e729 kjournald-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

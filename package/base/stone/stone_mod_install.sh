@@ -29,7 +29,7 @@ case $platform in
 	ppc*)
 		# TODO: prep, ps3, opal, ...
 		case "$platform2" in
-		    CHRP|PowerMac|pSeries|PS3)
+		    CHRP|PowerMac|PS3)
 				platform="$platform-$platform2" ;;
 		    *)		platform= ;;
 		esac
@@ -288,32 +288,27 @@ disk_partition() {
 	local typ=$2
 
 	# sizes in MB
-	local size=$(($(blockdev --getsz $dev) / 2048))
-	local si=0 # start-index
-
-	# free space, index and size, extract si from prev part, as parted prints 1 for all free
-	local fsize=$(parted -sm $dev "unit s print free" | grep '^[0-9]' | grep free -B 1 | tail -2)
-	if [ ! "$fsize" ]; then
-		fsize=0
-	else
-		si=${fsize%%:*} fsize=${fsize%s:*} # split
-		fsize=$((${fsize##*:} / 2048))
-	fi
+	local size=$(($(blockdev --getsz $dev) / 2 / 1024))
+	si=0
+	for p in $dev[0-9]*; do
+		[ -e $p ] || continue
+		size=$((size - $(blockdev --getsz $p) / 2 / 1024))
+		# determine last used partition, too
+		local i=${p#$dev}
+		[ $i -gt $si ] && si=$i
+	done
 
 	local cmd="gui_menu part 'Partition $dev bootable for this platform?'"
+
 	cmd="$cmd 'Erasing all data' 'si=0'"
-	# TODO: check platform is efi and type is GPT?
-	[ $si -gt 0 -a $fsize -gt 4096 ] &&
-		cmd="$cmd 'Adding partitions in free space' 'si=$si; size=$fsize'"
+	# TODO: check patform is efi and type is GPT?
+	[ $si -gt 0 -a $size -gt 4096 ] &&
+		cmd="$cmd 'Adding partitions in free space' si=$si"
 
 	eval $cmd || return
 
 	# if re-partition: reset size to all
-	[ "$si" = 0 ] && size=$(($(blockdev --getsz $dev) / 2048))
-
-	# how much of free space to use?
-	gui_input "How many megabytes to allocate for the installation:" "$size" _size
-	[ "$_size" -lt "$size" ] && size=$_size
+	[ "$si" = 0 ] && size=$(($(blockdev --getsz $dev) / 2 / 1024))
 
 	# swap based on RAM for suspend-to-disk
 	local swap=$(($(sed -n 's/MemTotal: *\([0-9]*\).*/\1/p' /proc/meminfo) / 1024 * 3 / 4))
@@ -333,10 +328,11 @@ disk_partition() {
 
 	case $platform in
 	    alpha)
-		fdisk="parted -sf"
+		fdisk="parted -f"
 		fs+=("${dev}2 $any /")
 		fs+=("${dev}1 ext3 /boot")
 		script+=("mklabel bsd
+y
 mkpart 2048s ${boot}m
 mkpart ${boot}m $(($size - $boot - $_swap))m")
 
@@ -386,53 +382,36 @@ size=$((size - _swap))m, type=83")
 		# TODO: typ, luks, lvm, ...
 		fs+=("${dev}2 $any /")
 		script+=("label:dos
-size=4m, type=41, bootable
+size=4m, type=41
 size=$((size - _swap))m, type=83")
 
 		[ $_swap != 0 ] &&
 		    script+=("type=82") fs+=("${dev}3 swap")
 		;;
 	    ppc*PowerMac)
-		fdisk="parted -sf"
-		# precisely partition in sectors
-		local lasts
-		# reformat with fresh Apple partition?
-		if [ $si = 0 ]; then
-			si=1 # Apple partition
-			lasts=64
-			script+=("mklabel mac")
-		else
-			lasts=$(parted -ms $dev "unit s print free" | cut -d : -f 2 | tail -1)
-			lasts=${lasts%s} 
-		fi
-
-		local ends=$((lasts + 4096*2 - 1))
-		script+=("mkpart bootstrap ${lasts}s ${ends}s")
-		script+=("toggle $((++si)) boot")
-		lasts=$((++ends))
-	
-		ends=$((lasts + (size - 4 - _swap) * 2048 - 1))
-		script+=("mkpart linux ${lasts}s ${ends}s") fs+=("${dev}$((++si)) $any /")
-		lasts=$((++ends))
+		fdisk="parted -f"
+		fs+=("${dev}3 $any /")
+		script+=("mklabel mac
+y
+mkpart bootstrap 1m 4m
+toggle 2 boot
+mkpart linux 4m $(($size - $_swap))m")
 
 		[ $_swap != 0 ] &&
-		    ends=$((lasts + _swap * 2048 - 1))  &&
-		    script+=("mkpart swap ${lasts}s ${ends}s") fs+=("${dev}$((++si)) swap")
-set +x
+		    script+=("mkpart swap $(($size - $_swap))m 100%") fs+=("${dev}4 swap")
 		;;
-	    sparc*-gpt|ppc*pSeries)
+	    sparc*-gpt)
 		script+=("label:gpt")
-		[[ $platform = sparc* ]] &&
-		  script+=("size=2m, type=biosboot, bootable") ||
-		  script+=("size=4m, type=PowerPCPRePboot, bootable")
+		script+=("size=2m, type=biosboot")
 		script+=("size=$((size - _swap))m, type=linux")
-		fs+=("${dev}$((si + 2)) $any /")
+		fs+=("${dev}$((si + 1)) $any /")
 
 		[ $_swap != 0 ] &&
-		    script+=("type=swap") fs+=("${dev}$((si + 3)) swap")
+		    script+=("type=swap") fs+=("${dev}$((si + 2)) swap")
 		;;
 	    sparc*)
 		# TODO: silo vs grub2 have different requirements
+		# TODO: support sun4v-gpt
 		script+=("label:sun
 size=$((boot))m, type=83
 type=82
@@ -473,17 +452,11 @@ start=0, type=W")
 		wipefs --all $dev
 		dd if=/dev/zero of=$dev seek=1 count=1 # mostly for Apple PowerPac parts
 	else
-		if [[ "$fdisk" != parted* ]]; then
-			fdisk="$fdisk -a"
-			script=("${script[@]:1}") # removed 1st "label:*"
-		fi
+		fdisk="$fdisk -a"
+		script=("${script[@]:1}") # removed 1st "label:*"
 	fi
 
-	if [[ "$fdisk" != parted* ]]; then
-		join $'\n' "${script[@]}" | $fdisk $dev
-	else
-		$fdisk $dev -- $(join ' ' "${script[@]}")
-	fi
+	join $'\n' "${script[@]}" | $fdisk $dev
 
 	# postscript fixup, due less than stellar sfdisk
 	for cmd in "${postscript[@]}"; do
@@ -637,7 +610,7 @@ disk_add() {
 		cmd="$cmd 'Warning: formated w/ unsupported sector size ($lbs)!' ''"
 
 	# TODO: maybe better /sys/block/$1/$1* ?
-	for x in $(cd /dev; ls -v $1[0-9p]* 2> /dev/null); do
+	for x in $(cd /dev; ls $1[0-9p]* 2> /dev/null); do
 		part_add $x
 		found=1
 	done

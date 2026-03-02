@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kfourinline/kfourinline.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] A four-in-a-row game
 
-[T] KFourInLine is a board game for two players based on the Connect-Four game.
+[T] KFourInLine is a board game for two players based on the Connect-Four game. 
 [T] The players try to build up a row of four pieces using different strategies.
 
 [U] https://apps.kde.org/kfourinline/
@@ -16,15 +16,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 81f8d52e04e70c5316257bbc752e56cd2efe038b704903e23eb421ff kfourinline-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 179.300
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] faafd8fcf60f2c399ae8debe416c32ae868c2a0331d7d2022f381ee6 kfourinline-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

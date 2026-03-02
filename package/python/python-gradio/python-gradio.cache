@@ -20,10 +20,10 @@
 [DEP] fastapi
 [DEP] ffmpy
 [DEP] python-altair
-[DEP] python-httpx
+[DEP] httpx
 [DEP] aiofiles
 [DEP] anyio
-[DEP] python-safehttpx
+[DEP] safehttpx
 [DEP] pillow
 [DEP] markupsafe
 [DEP] jinja2

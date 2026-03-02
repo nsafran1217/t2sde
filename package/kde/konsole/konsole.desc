@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/konsole/konsole.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] KDE Terminal emulator
 
-[T] Konsole is a terminal to run a command shell. It provides a command line
+[T] Konsole is a terminal to run a command shell. It provides a command line 
 [T] interface for directly controlling your computer.
 
 [U] https://apps.kde.org/konsole/
@@ -16,15 +16,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 518d3d282bebc954399dd40c597bd4be49f7b6fec3fa7a7914ef2c42 konsole-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 200.300
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] c9e449cc51d608cba348de23186cf983be37a59e0a669a92d6d1bbc9 konsole-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

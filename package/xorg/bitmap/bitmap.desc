@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/bitmap/bitmap.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,8 +18,8 @@
 
 [L] OpenSource
 [S] Stable
-[V] 1.1.2
-
-[D] 57d3ac9ffabcb6da63c9654a082cdca0d9914596b01214d54a8a1145 bitmap-1.1.2.tar.xz http://xorg.freedesktop.org/releases/individual/app/
+[V] 1.1.1
 
 . package/*/*/modular-x-conf.in
+
+[D] 942c33defb2f3d5ee896c06355fb6ae8fe899743efa4be4f5bd58ac9 bitmap-1.1.1.tar.xz http://xorg.freedesktop.org/releases/individual/app/

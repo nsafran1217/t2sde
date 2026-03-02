@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/mlt/mlt.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -26,14 +26,14 @@
 
 [L] LGPL
 [S] Stable
-[V] 7.36.1
-[P] X -----5---9 500.000
-
-[D] d044c3f877d617311e74da7815c11b38726a554781e4f0ee970f3dba mlt-7.36.1.tar.gz http://dl.sourceforge.net/sourceforge/mlt/
+[V] 7.32.0
+[P] X -----5---9 799.000
 
 var_append cmakeopt ' ' -DMOD_AVFORMAT=OFF # TODO: broken
 var_append cmakeopt ' ' -DMOD_SDL1=OFF # TODO: broken
-pkginstalled qt5base qt5svg || var_append cmakeopt ' ' -DMOD_QT=OFF
-pkginstalled qt6base qt65compat qt6svg && var_append cmakeopt ' ' -DMOD_QT6=ON
+pkginstalled qt5base || var_append cmakeopt ' ' -DMOD_QT=OFF
+pkginstalled qt6base && var_append cmakeopt ' ' -DMOD_QT6=ON
 pkginstalled python && var_append cmakeopt ' ' -DSWIG_PYTHON=ON
 var_insert GCC_WRAPPER_INSERT ' ' "-L$root$(pkgprefix libdir xorg-server)"
+
+[D] 37443731e3c9d686a7bb8cc0cfc6a2383433f467745942a5de10d1da mlt-7.32.0.tar.gz http://dl.sourceforge.net/sourceforge/mlt/

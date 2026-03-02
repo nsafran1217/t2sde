@@ -1,8 +1,9 @@
-[TIMESTAMP] 1768854157 Mon Jan 19 21:22:37 2026
-[BUILDTIME] 8 (9)
-[SIZE] 0.19 MB, 17 files
 
-[DEP] automake
+[TIMESTAMP] 1703620173 Tue Dec 26 19:49:33 2023
+[BUILDTIME] 3 (9)
+[SIZE] 0.16 MB, 17 files
+
+[DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
 [DEP] coreutils
@@ -15,4 +16,3 @@
 [DEP] make
 [DEP] sed
 [DEP] tar
-[DEP] util-linux

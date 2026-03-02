@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/plasma-activities/plasma-activities.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,14 +14,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
-[P] X -----5---9 200.016
+[V] 6.4.5
+[P] X -----5---9 200.200
 
 [CV-GROUP] kde-plasma
-[D] 0e53e84c1f0599a96423e6e3d4694d423f5638d655e44f9186d88d90 plasma-activities-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] 1fc32b07abf662a20cb35587fd5424c338ae1ddec78ea25dc4dfb31d plasma-activities-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

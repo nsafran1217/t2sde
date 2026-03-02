@@ -8,7 +8,7 @@
 
 [T] TypeScript is a language for application-scale JavaScript. TypeScript
 [T] adds optional types to JavaScript that support tools for large-scale
-[T] JavaScript applications for any browser, for any host, on any OS.
+[T] JavaScript applications for any browser, for any host, on any OS. 
 
 [U] https://github.com/microsoft/TypeScript
 
@@ -20,6 +20,6 @@
 
 [L] APL
 [S] Stable
-[V] 5.9.3
+[V] 5.9.2
 
-[D] f52e25ca7cef8f93b3b0ce2ec7a840cf312252bc84aab5ed0a536daf TypeScript-5.9.3.tar.gz https://github.com/microsoft/TypeScript/archive/v5.9.3/
+[D] b8d1ae1e8a66f42e01673d497c64b8107e04b92d7382e03a4c02a7ae TypeScript-5.9.2.tar.gz https://github.com/microsoft/TypeScript/archive/v5.9.2/

@@ -23,9 +23,9 @@
 
 [L] APL
 [S] Beta
-[V] 0.16.1
+[V] 0.15.1
 
-[D] 2902cdc372d09fd3314b3adc68ab0dbc3eb51891a8b7ebd64ee3ac31 alacritty-0.16.1.tar.gz !https://github.com/alacritty/alacritty/archive/refs/tags/v0.16.1.tar.gz
+[D] cc45260847cb577ea5aabb89112f4517622ae7417fccd131661e9b43 alacritty-0.15.1.tar.gz !https://github.com/alacritty/alacritty/archive/refs/tags/v0.15.1.tar.gz
 
 cargoinstopt=
 [ "$arch" = arm ] && hook_add prepatch 5 cargo_vendor

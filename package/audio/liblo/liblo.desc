@@ -20,7 +20,7 @@
 
 [L] GPL
 [S] Stable
-[V] 0.34
+[V] 0.32
 [P] X -----5---9 182.300
 
-[D] 12376dcef797aed5bf9f98f1219d60815a5165ff13d89d7df748613b liblo-0.34.tar.gz http://dl.sourceforge.net/sourceforge/liblo/
+[D] 45832a7c0598aa4c3ccba6343c63ea7ccf4a7e4e2eb2cf074d2ec424 liblo-0.32.tar.gz http://dl.sourceforge.net/sourceforge/liblo/

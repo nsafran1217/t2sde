@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/python-trove-classifiers/python-trove-classifiers.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,7 +19,7 @@
 
 [L] APL
 [S] Stable
-[V] 2026.1.14.14
+[V] 2025.9.11.17
 [P] X -----5---9 109.007
 
-[D] 0c56ba0b6f8e07fa72f2b0c4ddf07c93c23ec4021012841af803b007 python-trove-classifiers-2026.1.14.14.tar.gz https://github.com/pypa/trove-classifiers/archive/2026.1.14.14/
+[D] 86f1173af464c709985dc7d5712e90a7762f85e6ea2a79a301590d63 python-trove-classifiers-2025.9.11.17.tar.gz https://github.com/pypa/trove-classifiers/archive/2025.9.11.17/

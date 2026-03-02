@@ -17,4 +17,5 @@
 [DEP] man
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] util-linux

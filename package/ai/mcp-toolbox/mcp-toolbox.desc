@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/mcp-toolbox/mcp-toolbox.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -20,9 +20,9 @@
 
 [L] APL
 [S] Stable
-[V] 0.27.0
+[V] 0.16.0
 
-[D] ffd1815de53d7f5b759ee88ee6e7e77870c32f3fe91a8c4a1cea9168 genai-toolbox-0.27.0.tar.gz https://github.com/googleapis/genai-toolbox/archive/v0.27.0/
+[D] c7d673235ee80f3af97b1ed879b44497d8d2b4cd7dd47f47c42cb59a genai-toolbox-0.16.0.tar.gz https://github.com/googleapis/genai-toolbox/archive/v0.16.0/
 
 . $base/package/*/*/go-conf.in
 hook_add postmake 5 'cp -vf genai-toolbox $root$bindir/toolbox'

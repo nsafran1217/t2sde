@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/chromium/chromium.desc
-[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2023 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,22 +14,23 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/office
-[F] CUSTOM-LTO
+[F] NO-LTO.gcc
 
 [E] add lld nodejs
 
 [L] BSD
 [S] Stable
-[V] 145.0.7632.116
+[V] 140.0.7339.207
 
 [CV-URL] https://chromium.googlesource.com/chromium/src/+refs
-[D] 2a0f232abe7c9b1f06f7a4d91732cb0cd93acdcbf9e9e5209cf35c88 chromium-145.0.7632.116-linux.tar.xz https://github.com/chromium-linux-tarballs/chromium-tarballs/releases/download/145.0.7632.116/
+[D] 55d4dc2c08bb6e1275f5f66b429e811e0c36725147e2cb76d5fe6475 chromium-140.0.7339.207-linux.tar.xz https://github.com/chromium-linux-tarballs/chromium-tarballs/releases/download/140.0.7339.207/
+[D] 8efc053042054c65bbe918aa0aed4d5d05b1468a8508f9e189f61eeb chromium-140.0.7339.207-linux-testdata.tar.xz https://github.com/chromium-linux-tarballs/chromium-tarballs/releases/download/140.0.7339.207/
+[D] b28a9b58a6011ca0f82b8f78026f74c9c408b5037852a6c97899d81b test_fonts-336e775eec536b2d785cc80eff6ac39051931286.tar.gz !https://chromium-fonts.storage.googleapis.com/f26f29c9d3bfae588207bbc9762de8d142e58935c62a86f67332819b15203b35
 
 runmake=0
 prefix=opt/chromium
 
-[ "$SDECFG_DEFAULT_CC" == "gcc" ] && CC=${CC/gcc/clang}
-[ "$SDECFG_DEFAULT_CXX" == "gcc" ] && CXX=${CXX/g++/clang++}
+CC=${CC/gcc/clang} CXX=${CXX/g++/clang++}
 CLANG_VERSION=$($CC --version | sed -n 's/.*version \([0-9]\+\)\..*/\1/p')
 CLANG_INCLUDE_PATH="-I$(pkgprefix libdir clang)/clang/${CLANG_VERSION}/include"
 
@@ -49,8 +50,10 @@ chromium_flags="
 	custom_toolchain=\"//build/toolchain/linux/unbundle:default\"
 	disable_fieldtrial_testing_config=true
 	enable_freetype=true
+	enable_nacl=false
 	enable_nocompile_tests=false
 	enable_pseudolocales=false
+	enable_reading_list=false
 	enable_remoting=false
 	enable_reporting=false
 	enable_vr=false
@@ -59,7 +62,6 @@ chromium_flags="
 	host_toolchain=\"//build/toolchain/linux/unbundle:default\"
 	icu_use_data_file=false
 	is_asan=false
-	is_component_build=false
 	is_cfi=false
 	is_debug=false
 	is_official_build=true
@@ -82,7 +84,6 @@ chromium_flags="
 	safe_browsing_use_unrar=false
 	symbol_level=0
 	treat_warnings_as_errors=false
-	use_clang_modules=false
 	use_custom_libcxx=true
 	use_official_google_api_keys=false
 	use_pulseaudio=true
@@ -94,18 +95,12 @@ chromium_flags="
 	use_vaapi=true
 "
 
-pkginstalled qt6base && var_append chromium_flags ' ' "use_qt6=true"
-pkginstalled qt6base && var_append chromium_flags ' ' "moc_qt6_path=\"$root/$(pkgprefix qt6base)/libexec/qt6\""
-
-[ "$SDECFG_LTO" = 1 ] && var_append chromium_flags ' ' "use_thin_lto=true thin_lto_enable_optimizations=true"
-
 system_libs=""
 pkginstalled brotli && var_append system_libs ' ' brotli
 pkginstalled dav1d && var_append system_libs ' ' dav1d
 pkginstalled flac && var_append system_libs ' ' flac
 pkginstalled fontconfig && var_append system_libs ' ' fontconfig
 pkginstalled freetype && var_append system_libs ' ' freetype
-#pkginstalled highway && var_append system_libs ' ' highway
 pkginstalled libdrm && var_append system_libs ' ' libdrm
 pkginstalled libjpeg && var_append system_libs ' ' libjpeg
 pkginstalled libopus && var_append system_libs ' ' opus
@@ -121,6 +116,10 @@ pkginstalled unrar && var_append system_libs ' ' unrar
 pkginstalled zstd && var_append system_libs ' ' zstd
 
 chromium_premake() {
+	echo "Unpacking test data"
+	tar xJf $archdir/chromium-*testdata.tar.xz -C ..
+	tar xzf $archdir/test_fonts*.tar.gz -C third_party/test_fonts/test_fonts
+
 	for x in $system_libs; do
 		echo "Removing buildscripts for system provided $x"
 		x="${x/swiftshader-/swiftshader/third_party/}"
@@ -142,10 +141,6 @@ chromium_premake() {
 
 	mkdir -p third_party/node/linux/node-linux-x64/bin
 	ln -sf /usr/bin/node third_party/node/linux/node-linux-x64/bin/
-	(
-		cd third_party/devtools-frontend/src
-		npm ci --ignore-scripts
-	)
 	
 	# allow system libs in official build
 	sed -i 's/OFFICIAL_BUILD/GOOGLE_CHROME_BUILD/' \
@@ -156,7 +151,7 @@ chromium_premake() {
 	# hack to force using the shim header files of tensorflow-text
 	rm -Rf ./third_party/tflite/src/tensorflow/core/lib/core
 
-	echo $arch_target >> build/rust/known-target-triples.txt
+	rustc -vV | sed -n 's|host: ||p' >> build/rust/known-target-triples.txt
 
 	gn gen out/bld --args="$(echo $chromium_flags)"
 }
@@ -180,28 +175,9 @@ chromium_postmake() {
 	install libvulkan.so.1 -t $root/$prefix/lib
 	install libEGL.so -t $root/$prefix/lib
 	install libGLESv2.so -t $root/$prefix/lib
-	pkginstalled qt6base && install libqt6_shim.so -t $root/$prefix/lib
-
-	for size in 24 48 64 128 256; do
-		install ../../chrome/app/theme/chromium/product_logo_$size.png -t $root/usr/share/icons/hicolor/${size}x$size/apps/chromium.png
-	done
-
-	for size in 16 32; do
-		install ../../chrome/app/theme/default_100_percent/chromium/product_logo_$size.png -t $root/usr/share/icons/hicolor/${size}x$size/apps/chromium.png
-	done
-
-	sed -i \
-		-e 's/@@MENUNAME/Chromium/g' \
-		-e 's/@@PACKAGE/chromium/g' \
-		-e 's/@@usr_bin_symlink_name/chromium-browser/g' \
-		../../chrome/app/resources/manpage.1.in \
-		../../chrome/installer/linux/common/desktop.template
-
-	install ../../chrome/installer/linux/common/desktop.template -t $root/usr/share/applications/chromium.desktop
-	install ../../chrome/app/resources/manpage.1.in -t $root/usr/share/man/man1/chromium.1
-
+	
 	ln -sfv ../lib/chrome $root/$prefix/bin/chromium-browser
-	ln -sfv $root/$prefix/bin/chromium-browser $root/usr/bin/chromium-browser
+	ln -sfv $root/$prefix/bin/chromium-browser $root/usr/bin/chromium
 
 	for pak in *.pak; do
 		install "$pak" -t $root/$prefix/lib

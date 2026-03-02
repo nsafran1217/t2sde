@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/htmldoc/htmldoc.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -22,7 +22,7 @@
 
 [L] GPL
 [S] Stable
-[V] 1.9.23
+[V] 1.9.21
 [P] X -----5---9 150.000
 
-[D] 3d911cd8ada0d17f733f2e6bacd6017019dd109d56effb2a9abe1fae htmldoc-1.9.23-source.tar.gz https://github.com/michaelrsweet/htmldoc/releases/download/v1.9.23/
+[D] 0bad0d2c755a3aec11c369a13fd72fad9640a1f523ae5c03f75421ea htmldoc-1.9.21-source.tar.gz https://github.com/michaelrsweet/htmldoc/releases/download/v1.9.21/

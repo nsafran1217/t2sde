@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/opensips/opensips.desc
-[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2010 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -25,9 +25,10 @@
 
 [L] GPL
 [S] Stable
-[V] 3.6.4
+[V] 3.6.1
+[P] X -----5---9 201.300
 
-[D] a0a140bfae6624d7a7e2869a31ba129511f2e7b1bbf02b20adcf0d12 opensips-3.6.4.tar.gz http://opensips.org/pub/opensips/3.6.x/
+[D] 5ca73d60a6eead9ccb6cb607fddaa81df571f6f30843280bdd17b17e opensips-3.6.1.tar.gz http://opensips.org/pub/opensips/3.6.x/
 
 if [ $prefix_auto = 1 ]; then
 	if [ "$SDECFG_PKG_SER_PREFIX" ]; then

@@ -1,11 +1,11 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kwallet/kwallet.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] KDE Frameworks solution for password management
+[I] KDE Frameworks 5 Tier 3 solution for password management
 
 [T] KDE Wallet Manager is an application to manage passwords and secrets on the
 [T] KDE Plasma environment. Using the KWallet system allows a user to manage
@@ -18,16 +18,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
-[P] X -----5---9 182.910
+[V] 6.18.0
+[P] X -----5---9 162.910
 
 [CV-GROUP] kde-frameworks
-[D] 9087cc81cdf966fb6852c310144d77df7245a6fa0a4401615f921c4e kwallet-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] c542c1b443afaa1f9fb0112a6158c83201432f2530bbedae7ddc66b2 kwallet-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

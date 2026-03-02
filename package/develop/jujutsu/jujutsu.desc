@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/jujutsu/jujutsu.desc
-[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -20,9 +20,9 @@
 
 [L] APL
 [S] Stable
-[V] 0.38.0
+[V] 0.33.0
 
-[D] 80200de65e587c3258dfffb48f702ac39a20d1415c8f2e946fe2f655 jj-0.38.0.tar.gz https://github.com/jj-vcs/jj/archive/v0.38.0/
+[D] 5d34be66edcb83e1e2c1290cc3afb23d8ca668a42acb6d7590fc1548 jj-0.33.0.tar.gz https://github.com/jj-vcs/jj/archive/v0.33.0/
 
 rungpepinstall=0 cargoinstopt=
 atstage cross && hook_add postmake 5 "cp -vf target/${arch_target}/*/jj $root$bindir/"

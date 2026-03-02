@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kuserfeedback/kuserfeedback.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,17 +14,17 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/desktop/kde
-[F] CROSS OBJDIR
+[F] CROSS
 
 [E] opt cups
 
 [L] GPL
 [S] Beta
-[V] 6.23.0
-[P] X -----5---9 300.000
+[V] 6.18.0
+[P] X -----5---9 400.000
 
 [CV-GROUP] kde-frameworks
-[D] a33f919c8a6cd1e0c3c6b1923c7c7cb0af1eac4ff599acd647722dad kuserfeedback-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] b155f4f8e4b88a4a7c04fb7f15f147333a72409ff91c8889e77c4751 kuserfeedback-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in
 

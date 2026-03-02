@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/less/less.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -22,11 +22,11 @@
 
 [L] GPL
 [S] Stable
-[V] 692
+[V] 679
 [P] X --2--5---9 108.800
 
 [CV-URL] http://www.greenwoodsoftware.com/less/download.html
-[D] e28812df6dcd222f8578ecc12c8a36990e7fc430bc4d86fb60ebceee less-692.tar.gz https://www.greenwoodsoftware.com/less/
+[D] c713ae78dc4e47cd73d8c2ebad34ca8fc0b534d74c2548ac987487f3 less-679.tar.gz https://www.greenwoodsoftware.com/less/
 
 less_postmake() {
 	cp $confdir/lesspipe.sh $root$bindir/lesspipe
@@ -45,4 +45,4 @@ fi
 EOP
 }
 
-hook_add postmake 3 less_postmake
+hook_add postmake 3 "less_postmake"

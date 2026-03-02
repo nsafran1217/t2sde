@@ -1,0 +1,30 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/upower/upower.desc
+[COPY] Copyright (C) 2010 - 2025 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] An abstraction for enumerating power devices
+
+[T] Upower is an abstraction for enumerating power devices,
+[T] listening to device events and querying history and statistics.
+[T] Any application or service on the system can access the
+[T] org.freedesktop.DeviceKit.Power service via the system message bus.
+
+[U] https://upower.freedesktop.org/
+
+[A] David Zeuthen <davidz@redhat.com>
+[M] Aldas Nabazas <baldzius@gmail.com>
+
+[C] extra/development
+[F] CROSS NO-LTO.clang
+
+[L] GPL
+[S] Stable
+[V] 1.90.10
+[P] X -----5---9 142.500
+
+[D] 3f8f07c530b3db9bdf3103669a3cb300ba063bebf2aef840fd083c9b upower-v1.90.10.tar.bz2 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.10/
+
+. $base/package/*/*/gnome-conf.in
+var_append mesonopt ' ' '-Dsystemdsystemunitdir=no -Dudevrulesdir=/etc/udev/rules.d/ -Dudevhwdbdir=/etc/udev/hwdb.d/'

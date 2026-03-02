@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/glib/glib.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -18,16 +18,16 @@
 [C] base/system
 [F] CROSS LATOMIC.sparc
 
+[E] add packaging
 [E] opt systemtap
 
 [L] LGPL
 [S] Stable
-[V] 2.86.4
+[V] 2.86.0
 [P] X 0-2--5---9 110.900
 
-[CV-FLAGS] ODD-UNSTABLE
 [CV-URL] https://download.gnome.org/sources/glib/cache.json
-[D] a3a94f6014d757d4ffa64316c6c6f105236c94b08f1fd9218eee8f90 glib-2.86.4.tar.xz https://download.gnome.org/sources/glib/2.86/
+[D] f69cb6ec72e3bc0dc3f1d0588bcbcbc8006db0c75c29c72d4fb3dc06 glib-2.86.0.tar.xz https://download.gnome.org/sources/glib/2.86/
 
 if atstage toolchain; then
 	var_append SYSGCC_WRAPPER_APPEND ' ' -I$root/include
@@ -35,8 +35,6 @@ if atstage toolchain; then
 else
 	. $base/package/*/*/gnome-conf.in NO_SANITY_CHECK
 fi
-
-var_append GCC_WRAPPER_APPEND ' ' -std=gnu23
 
 var_append mesonopt ' ' -Dtests=false
 var_append mesonopt ' ' -Druntime_dir=/var/run

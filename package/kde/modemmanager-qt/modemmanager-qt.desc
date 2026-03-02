@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/modemmanager-qt/modemmanager-qt.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,13 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
+[V] 6.18.0
+[P] X -----5---9 162.420
 
 [CV-GROUP] kde-frameworks
-[D] 3b51ac4edd8068892d66672ec9cdc6494f9980b534218d41925aefc7 modemmanager-qt-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] 4663e9dda82f0324493bd93a18caa08bcea7a4c916702142dc42fcad modemmanager-qt-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

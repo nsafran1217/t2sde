@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/pytorch-vision/pytorch-vision.desc
-[COPY] Copyright (C) 2009 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2009 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,10 +19,8 @@
 
 [L] BSD
 [S] Stable
-[V] 0.25.0
+[V] 0.22.1
 [P] X -----5---9 310.000
-
-[D] 4248bab2c1ac39007909aa74a6558d11c51cc3840af7f58a64a837ab pytorch-vision-v0.25.0.tar.gz https://github.com/pytorch/vision/archive/refs/tags/v0.25.0/
 
 var_append cmakeopt ' ' -DCMAKE_PREFIX_PATH=$libdir/python3.12/site-packages/torch/share/cmake/Torch/
 (pkginstalled libjpeg || pkginstalled libjpeg-turbo) || var_append cmakeopt ' ' -DWITH_JPEG=OFF
@@ -30,3 +28,5 @@ pkginstalled libpng || var_append cmakeopt ' ' -DWITH_PNG=OFF
 #pkginstalled libavif && var_append cmakeopt ' ' -DWITH_AVIF=ON
 #pkginstalled libwebp && var_append cmakeopt ' ' -DWITH_WEBP=ON
 hook_add postdoc 3 "cd ..; ${pyscript:-python} setup.py build install --prefix $root/$prefix"
+
+[D] a18e0bd2b8d6fa839fd9f446c5c96205dd46538190bb5d0eddbaf21e pytorch-vision-v0.22.1.tar.gz https://github.com/pytorch/vision/archive/refs/tags/v0.22.1/

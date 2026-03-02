@@ -24,11 +24,11 @@
 
 [L] GPL
 [S] Stable
-[V] 49.2
+[V] 49.0.1
 [P] X -----5---9 152.200
 
 [CV-URL] https://download.gnome.org/sources/gdm/cache.json
-[D] f37759ac1e8c46ec947836db5adbb1043dca8cd305581e110779ca2e gdm-49.2.tar.xz https://download.gnome.org/sources/gdm/49/
+[D] e877c7ca1aa1ca2ed5da0af5bf41f4fb6c378dccf997cc5fe5dea19a gdm-49.0.1.tar.xz https://download.gnome.org/sources/gdm/49/
 
 . $base/package/*/*/gnome-conf.in
 

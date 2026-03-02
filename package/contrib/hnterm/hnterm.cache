@@ -9,6 +9,7 @@
 [DEP] curl
 [DEP] diffutils
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] gzip
 [DEP] linux-header
@@ -17,3 +18,4 @@
 [DEP] pkgconfig
 [DEP] sed
 [DEP] tar
+[DEP] tbb

@@ -16,8 +16,8 @@
 [C] extra/base
 [F] CROSS
 
-[V] 3.6.3
+[V] 3.5.1
 [L] GPL3
 [S] Stable
 
-[D] 47671dab998cb7eac82fb7b9ef3e27d4f6cd2aea166e100a87836a4f qutebrowser-3.6.3.tar.gz https://github.com/qutebrowser/qutebrowser/releases/download/v3.6.3/
+[D] 3b71551de1e01ea21461c0dabda41e7803d8da5d7d17528420cb7e52 qutebrowser-3.5.1.tar.gz https://github.com/qutebrowser/qutebrowser/releases/download/v3.5.1/

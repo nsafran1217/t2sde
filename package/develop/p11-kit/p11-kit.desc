@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/p11-kit/p11-kit.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,9 +19,9 @@
 
 [L] OpenSource
 [S] Stable
-[V] 0.26.2
+[V] 0.25.10
 [P] X -----5---9 150.000
 
-[D] e29a58c8c4fcc9e9543a29482092634179f1e2d724f0902bb0fb1fda p11-kit-0.26.2.tar.xz https://github.com/p11-glue/p11-kit/releases/download/0.26.2/
+[D] babaf7f7f64e9fdef88ff3c0762623b237e147d0335cef68733155ce p11-kit-0.25.10.tar.xz https://github.com/p11-glue/p11-kit/releases/download/0.25.10/
 
 var_append confopt ' ' --with-trust-paths=/etc/ssl/certs/ca-certificates.crt

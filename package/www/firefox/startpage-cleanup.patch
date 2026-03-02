@@ -1,12 +1,12 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/firefox/startpage-cleanup.patch
-# Copyright (C) 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0 or patched project license
 # --- T2-COPYRIGHT-END ---
 
---- firefox-148.0/browser/app/profile/firefox.js.vanilla	2026-02-23 23:34:31.907569584 +0100
-+++ firefox-148.0/browser/app/profile/firefox.js	2026-02-23 23:34:45.297700410 +0100
-@@ -238,11 +238,11 @@
+--- firefox-136.0.4/browser/app/profile/firefox.js.vanilla	2025-03-28 00:20:04.692960207 +0100
++++ firefox-136.0.4/browser/app/profile/firefox.js	2025-03-28 00:20:11.527164568 +0100
+@@ -246,11 +246,11 @@
  #endif
  
  // UI tour experience.
@@ -19,33 +19,16 @@
 -pref("browser.uitour.surveyDuration", 7200);
 +pref("browser.uitour.surveyDuration", 0);
  
- #ifdef UNIX_BUT_NOT_MAC
-   pref("general.autoScroll", false);
-@@ -1372,6 +1372,13 @@
- // Whether we show the "AI Controls" pane.
- pref("browser.preferences.aiControls", true);
+ pref("keyword.enabled", true);
  
-+pref("browser.ai.control.default", "blocked");
-+pref("browser.ai.control.linkPreviewKeyPoints", "blocked");
-+pref("browser.ai.control.pdfjsAltText", "blocked");
-+pref("browser.ai.control.sidebarChatbot", "blocked");
-+pref("browser.ai.control.smartTabGroups", "blocked");
-+pref("browser.ai.control.translations", "blocked");
-+
- // Used by settings to track whether the user customized advanced
- // performance settings. Not used directly elsewhere.
- // If set to false, we show advanced performance settings.
-@@ -1679,7 +1686,7 @@
- pref("services.sync.prefs.sync.browser.crashReports.unsubmittedCheck.autoSubmit2", true);
- pref("services.sync.prefs.sync.browser.ctrlTab.sortByRecentlyUsed", true);
+@@ -1624,5 +1624,5 @@
+ pref("services.sync.prefs.sync.browser.discovery.enabled", true);
  pref("services.sync.prefs.sync.browser.download.useDownloadDir", true);
 -pref("services.sync.prefs.sync.browser.firefox-view.feature-tour", true);
 +pref("services.sync.prefs.sync.browser.firefox-view.feature-tour", false);
  pref("services.sync.prefs.sync.browser.formfill.enable", true);
  pref("services.sync.prefs.sync.browser.ipProtection.enabled", true);
- pref("services.sync.prefs.sync.browser.link.open_newwindow", true);
-@@ -1687,8 +1694,8 @@
- pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", true);
+@@ -1632,6 +1632,6 @@
  pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", true);
  pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.showSearch", true);
 -pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.showSponsored", true);
@@ -54,8 +37,7 @@
 +pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.showSponsoredTopSites", false);
  pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.feeds.topsites", true);
  pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.topSitesRows", true);
- pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.feeds.section.topstories", true);
-@@ -1702,7 +1709,7 @@
+@@ -1665,7 +1665,7 @@
  pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.section.highlights.rows", true);
  pref("services.sync.prefs.sync.browser.newtabpage.enabled", true);
  pref("services.sync.prefs.sync.browser.newtabpage.pinned", true);
@@ -64,7 +46,7 @@
  pref("services.sync.prefs.sync.browser.safebrowsing.downloads.enabled", true);
  pref("services.sync.prefs.sync.browser.safebrowsing.downloads.remote.block_potentially_unwanted", true);
  pref("services.sync.prefs.sync.browser.safebrowsing.malware.enabled", true);
-@@ -1815,10 +1822,10 @@
+@@ -1780,13 +1780,13 @@
  // Whether to use the discrete Top Sites component.
  pref("browser.topsites.component.enabled", false);
  
@@ -76,9 +58,13 @@
 +pref("browser.topsites.contile.enabled", false);
 +pref("browser.topsites.contile.endpoint", "");
  
+ // Whether to enable the Share-of-Voice feature for Sponsored Topsites via Contile.
+-pref("browser.topsites.contile.sov.enabled", true);
++pref("browser.topsites.contile.sov.enabled", false);
+ 
  // The base URL for the Quick Suggest anonymizing proxy. To make a request to
  // the proxy, include a campaign ID in the path.
-@@ -1898,6 +1905,7 @@
+@@ -1815,6 +1815,7 @@
  
  // enable location search for newtab weather widget
  pref("browser.newtabpage.activity-stream.weather.locationSearchEnabled", true);
@@ -86,29 +72,19 @@
  
  // List of regions that get weather by default.
  pref("browser.newtabpage.activity-stream.discoverystream.region-weather-config", "US,CA");
-@@ -1919,6 +1927,11 @@
- pref("browser.newtabpage.activity-stream.newtabWallpapers.customWallpaper.fileSize.enabled", false);
- pref("browser.newtabpage.activity-stream.newtabWallpapers.customWallpaper.theme", "");
+@@ -1842,6 +1842,10 @@
+ pref("browser.newtabpage.activity-stream.newtabWallpapers.customColor.enabled", false);
+ pref("browser.newtabpage.activity-stream.newtabWallpapers.customWallpaper.enabled", false);
  
 +pref("browser.newtabpage.activity-stream.showSponsored", false);
 +pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
 +pref("browser.newtabpage.activity-stream.system.showSponsored", false);
-+pref("browser.newtabpage.activity-stream.showSponsoredCheckboxes", false);
 +
  // Current new tab page background images.
  pref("browser.newtabpage.activity-stream.newtabWallpapers.wallpaper", "");
  
-@@ -2101,7 +2114,7 @@
- pref("browser.newtabpage.activity-stream.discoverystream.publisherFavicon.enabled", true);
- 
- // User pref to show stories on newtab (feeds.system.topstories has to be set to true as well)
--pref("browser.newtabpage.activity-stream.feeds.section.topstories", true);
-+pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
- 
- pref("browser.newtabpage.activity-stream.logowordmark.alwaysVisible", true);
- 
-@@ -2122,9 +2135,10 @@
- pref("browser.newtabpage.sponsor-protection.enabled", true);
+@@ -2024,9 +2028,10 @@
+ pref("browser.newtabpage.activity-stream.hideTopSitesWithSearchParam", "mfadid=adm");
  
  // Separate about welcome
 -pref("browser.aboutwelcome.enabled", true);
@@ -117,43 +93,9 @@
  pref("browser.aboutwelcome.screens", "");
 +pref("trailhead.firstrun.didSeeAboutWelcome", true);
  
- // Disable singleProfile messaging mitigation (Bug 1963213) for multiProfile feature users
- pref("messaging-system.profile.singleProfileMessaging.disable", true);
-@@ -2229,8 +2243,8 @@
- pref("browser.ml.chat.enabled", true);
- pref("browser.ml.chat.hideLocalhost", true);
- pref("browser.ml.chat.maxLength", 7000);
--pref("browser.ml.chat.menu", true);
--pref("browser.ml.chat.page", true);
-+pref("browser.ml.chat.menu", false);
-+pref("browser.ml.chat.page", false);
- pref("browser.ml.chat.page.footerBadge", true);
- pref("browser.ml.chat.page.menuBadge", true);
- pref("browser.ml.chat.prompt.prefix", '{"l10nId":"genai-prompt-prefix-selection"}');
-@@ -2243,12 +2257,12 @@
- pref("browser.ml.chat.shortcuts.custom", true);
- pref("browser.ml.chat.shortcuts.longPress", 60000);
- pref("browser.ml.chat.shortcut.onboardingMouseoverCount", 0);
--pref("browser.ml.chat.sidebar", true);
-+pref("browser.ml.chat.sidebar", false);
- 
- pref("browser.ml.linkPreview.allowedLanguages", "en");
- pref("browser.ml.linkPreview.blockListEnabled", true);
- pref("browser.ml.linkPreview.collapsed", false);
--pref("browser.ml.linkPreview.enabled", true);
-+pref("browser.ml.linkPreview.enabled", false);
- pref("browser.ml.linkPreview.ignoreMs", 2000);
- pref("browser.ml.linkPreview.longPress", true);
- pref("browser.ml.linkPreview.longPressMs", 1000);
-@@ -2396,6 +2410,7 @@
- // Enable Firefox translations powered by the Bergamot translations
- // engine https://browser.mt/.
- pref("browser.translations.enable", true);
-+pref("browser.translations.automaticallyPopup", false);
- 
- // Enable Firefox Select translations powered by Bergamot translations
- // engine https://browser.mt/.
-@@ -3402,9 +3417,9 @@
+ // Experiment Manager
+ // See Console.sys.mjs LOG_LEVELS for all possible values
+@@ -3210,9 +3215,9 @@
  
  // If the user has seen the Firefox View feature tour this value reflects
  // the id of the last screen they saw and whether they completed the tour
@@ -165,7 +107,7 @@
  // Maximum number of rows to show on the "History" page (0 = unlimited).
  pref("browser.firefox-view.max-history-rows", 0);
  // Enables virtual list functionality in Firefox View.
-@@ -3412,7 +3427,7 @@
+@@ -3220,7 +3225,7 @@
  
  // If the user has seen the pdf.js feature tour this value reflects the tour
  // message id, the id of the last screen they saw, and whether they completed the tour

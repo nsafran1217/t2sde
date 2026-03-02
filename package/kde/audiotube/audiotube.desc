@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/audiotube/audiotube.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -16,13 +16,14 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/desktop/kde extra/audio
-[F] CROSS OBJDIR
+[F] CROSS
 
 [L] GPL
 [S] Beta
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 4bf5d91f30b1777c39d8983ed7b866543924b0fa0d0bbdf26cc94e7a audiotube-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 400.000
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] c1e82ed94eb46f0ba05761d2a46b34ad486762d4b9bec6139331520c audiotube-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

@@ -33,5 +33,6 @@
 [DEP] python
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xorgproto
 [DEP] xz

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/nano/nano.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -20,10 +20,9 @@
 
 [L] GPL
 [S] Stable
-[V] 8.7.1
-
-[CV-URL] http://www.nano-editor.org/download.php
-[D] bd80869d1e49e50e8ccec33a2f43086d310fa3b18e970375c7978bca nano-8.7.1.tar.xz https://www.nano-editor.org/dist/v8/
+[V] 8.6
 
 var_append confopt ' ' '--enable-extra --enable-nanorc --enable-color --enable-multibuffer'
-var_append GCC_WRAPPER_APPEND ' ' -std=c11
+
+[CV-URL] http://www.nano-editor.org/download.php
+[D] 64b1d80381541efa3a62307dd5d8d660b32702138f43c4b70af24b89 nano-8.6.tar.xz https://www.nano-editor.org/dist/v8/

@@ -1,12 +1,12 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/cosmic-greeter/cosmic-greeter.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] COSMIC greeter for greetd, which can be run inside cosmic-comp
+[I] cosmic-greeter
 
-[T] libcosmic greeter for greetd, which can be run inside cosmic-comp.
+[T] cosmic-greeter.
 
 [U] https://github.com/pop-os/cosmic-greeter/
 
@@ -17,10 +17,10 @@
 [F] CROSS
 
 [L] GPL3
-[S] Stable
-[V] 1.0.8
+[S] Beta
+[V] 1.0.0-beta.1.1
 
 [CV-GROUP] cosmic-desktop
-[D] 7afce8303017905019f43f039e680052274960bd6f3aeb2fd911ffe0 cosmic-greeter-epoch-1.0.8.tar.gz https://github.com/pop-os/cosmic-greeter/archive/epoch-1.0.8/
+[D] 926804d6aaf8b067836b959bc91ef29b1b66a746d308bb256191864d cosmic-greeter-epoch-1.0.0-beta.1.1.tar.gz https://github.com/pop-os/cosmic-greeter/archive/epoch-1.0.0-beta.1.1/
 
 . $base/package/cosmic/*/cosmic-conf.in

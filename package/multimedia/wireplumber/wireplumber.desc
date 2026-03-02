@@ -17,15 +17,14 @@
 [F] CROSS
 
 [E] opt doxygen
-[E] opt systemd
 
-[V] 0.5.13
+[V] 0.5.11
 [L] LGPL
 [S] Stable
 [P] X -----5---9 700.000
 
-[D] bf9ca48c716c8bf2f0d6aa857884bef8136fb119212acf870eed7511 wireplumber-0.5.13.tar.gz https://gitlab.freedesktop.org/PipeWire/wireplumber/-/archive/0.5.13/
+[D] a1b34e3433100f39f73c4db62807d19fbde683e2a4f56637b2458f95 wireplumber-0.5.11.tar.gz https://gitlab.freedesktop.org/PipeWire/wireplumber/-/archive/0.5.11/
 
-pkginstalled lua &&
-	var_append mesonopt ' ' -Dsystem-lua=true && var_append GCC_WRAPPER_APPEND ' ' -c?:-llua
+pkginstalled lua && var_append mesonopt ' ' -Dsystem-lua=true
+pkginstalled lua && var_append GCC_WRAPPER_APPEND ' ' -c?:-llua
 pkginstalled gobject-introspection || var_append mesonopt ' ' -Dintrospection=disabled

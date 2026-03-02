@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/one-dnn/one-dnn.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,7 +19,7 @@
 [E] opt doxygen
 
 [L] APL
-[V] 3.11
+[V] 3.9.1
 [S] Stable
 
-[D] eb02ce15ac780e7199cc0aa41b7f116d8162dbe4ce57c1e543516d7c oneDNN-3.11.tar.gz https://github.com/oneapi-src/oneDNN/archive/v3.11/
+[D] 9816f8124d0b72fd00eb0f544edecc56470cf02a92f322e3039ccd85 oneDNN-3.9.1.tar.gz https://github.com/oneapi-src/oneDNN/archive/v3.9.1/

@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/marble/marble.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Virtual globe and world atlas
 
-[T] Marble is a virtual globe and world atlasi -your swiss army knife for maps
+[T] Marble is a virtual globe and world atlasi -your swiss army knife for maps 
 [T] that you can use to learn more about the Earth and other planets.
 
 [U] https://apps.kde.org/marble/
@@ -16,13 +16,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 947a199cccb81ef6955dbcd7f4a0645cd4ba57b24d008b695b3f3867 marble-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 200.300
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 16a977a09e079fd6836113ede07e71ec6ef0e28f9144d0ca032a5e1b marble-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

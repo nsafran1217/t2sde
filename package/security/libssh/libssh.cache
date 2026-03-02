@@ -1,14 +1,14 @@
-[TIMESTAMP] 1768853353 Mon Jan 19 21:09:13 2026
-[BUILDTIME] 20 (9)
-[SIZE] 0.69 MB, 24 files
+[TIMESTAMP] 1757935396 Mon Sep 15 13:23:16 2025
+[BUILDTIME] 18 (9)
+[SIZE] 0.66 MB, 23 files
 
+[DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
 [DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
 [OPT] doxygen
-[DEP] findutils
 [DEP] gawk
 [OPT] graphviz
 [DEP] grep
@@ -19,6 +19,5 @@
 [DEP] python
 [DEP] sed
 [DEP] tar
-[DEP] util-linux
 [DEP] xz
 [DEP] zlib

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kquickcharts/kquickcharts.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -16,14 +16,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
+[V] 6.18.0
 [P] X -----5---9 162.900
 
 [CV-GROUP] kde-frameworks
-[D] e9b053daa6d23147ad4698851005864254aa58cdaac5f845d3cfb884 kquickcharts-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] a4b0ba4da79224ec11f3fb41f6e3052c9deeff2dc850b86a1a89af8f kquickcharts-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

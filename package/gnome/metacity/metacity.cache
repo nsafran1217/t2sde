@@ -1,44 +1,54 @@
-[TIMESTAMP] 1759137133 Mon Sep 29 11:12:13 2025
-[BUILDTIME] 25 (9)
-[SIZE] 2.30 MB, 130 files
+
+[TIMESTAMP] 1134065854 Thu Dec  8 19:17:34 2005
+[BUILDTIME] 60 (9)
+[SIZE] 9.03 MB, 212 files
 
 [DEP] at-spi2-core
-[DEP] bash
+[DEP] binutils
 [DEP] cairo
+[DEP] xorgproto
 [DEP] coreutils
 [DEP] diffutils
+[DEP] expat
 [DEP] findutils
+[DEP] xorgproto
+[DEP] fontconfig
+[DEP] freetype
 [DEP] gawk
-[DEP] gdk-pixbuf
+[DEP] gconf
 [DEP] gettext
-[OPT] glib
+[DEP] glib
+[DEP] glitz
 [DEP] grep
-[DEP] gsettings-desktop-schemas
 [DEP] gtk+
-[DEP] harfbuzz
-[DEP] libcanberra
-[DEP] libgtop
+[DEP] xorgproto
 [DEP] libice
+[DEP] libpng
 [DEP] libsm
 [DEP] libx11
-[DEP] libxcb
+[DEP] libxau
 [DEP] libxcomposite
 [DEP] libxcursor
-[DEP] libxdamage
+[DEP] libxdmcp
 [DEP] libxext
 [DEP] libxfixes
+[DEP] libxi
 [DEP] libxinerama
-[DEP] libxpresent
 [DEP] libxrandr
 [DEP] libxrender
-[DEP] libxres
 [DEP] linux-header
 [DEP] make
+[DEP] orbit2
 [DEP] pango
-[DEP] python
+[DEP] perl
+[DEP] perl-xml-parser
+[DEP] pkgconfig
+[DEP] popt
+[DEP] xorgproto
 [DEP] sed
 [DEP] startup-notification
+[DEP] sysfiles
 [DEP] tar
-[DEP] vulkan-headers
+[DEP] util-linux
 [DEP] xorgproto
-[DEP] xz
+[DEP] zlib

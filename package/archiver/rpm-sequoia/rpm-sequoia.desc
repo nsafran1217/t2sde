@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/rpm-sequoia/rpm-sequoia.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -19,10 +19,10 @@
 
 [L] GPL
 [S] Stable
-[V] 1.10.1
+[V] 1.9.0
 [P] X -----5---9 138.000
 
-[D] b667cfb164994b49878c3d7aaba97ba2448dd521dfe5ee85ec8db9b1 rpm-sequoia-1.10.1.tar.gz https://github.com/rpm-software-management/rpm-sequoia/archive/v1.10.1/
+[D] b5911ba39df2a8c19c74e6d95bd18c40cfeb0bf93be3fe8ace9cbd01 rpm-sequoia-1.9.0.tar.gz https://github.com/rpm-software-management/rpm-sequoia/archive/v1.9.0/
 
 cargoinstopt=
 hook_add postmake 5 'cp -vf target/*/librpm* $root$libdir/'

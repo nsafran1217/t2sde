@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/libtorrent/libtorrent.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -21,9 +21,9 @@
 
 [L] GPL
 [S] Beta
-[V] 0.16.6
+[V] 0.16.0
 
-[D] e0dbc6e0935fe83919aaaf69703d27b25685f3f76baa4781c683ddad libtorrent-v0.16.6.tar.gz https://github.com/rakshasa/libtorrent/archive/refs/tags/v0.16.6/
+[D] 40d0b4a875cd658659f9d2744d268af63e7b4c01b6ac1baf9c3fdc5b libtorrent-v0.16.0.tar.gz https://github.com/rakshasa/libtorrent/archive/refs/tags/v0.16.0/
 
 export CONFIG_SHELL=/bin/bash
 autogen=2

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/rtorrent/rtorrent.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -17,6 +17,6 @@
 
 [L] GPL
 [S] Beta
-[V] 0.16.6
+[V] 0.16.0
 
-[D] a55de6bce21aee6c692f190d3a923289b6b466eb00e543ac0475af68 rtorrent-0.16.6.tar.gz https://github.com/rakshasa/rtorrent/releases/download/v0.16.6/
+[D] e012247dbff75e80d45967e8c6464cb4908fe77eafc8ba6d18bef662 rtorrent-0.16.0.tar.gz https://github.com/rakshasa/rtorrent/releases/download/v0.16.0/

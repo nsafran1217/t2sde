@@ -15,13 +15,14 @@
 [A] Lennert Buytenhek <buytenh@gnu.org>
 [M] Rene Rebe <rene@t2-project.org>
 
-[C] base/network
+[C] extra/network
 [F] CROSS
 
 [L] GPL
 [S] Stable
 [V] 1.7.1
-
-[D] c17cdbbbb262f1b23f0fc150fb27f7072ac807f42b5033c3bf46c3b6 bridge-utils-1.7.1.tar.gz https://git.kernel.org/pub/scm/network/bridge/bridge-utils.git/snapshot/
+[P] X -----5---9 163.400
 
 autogen=1
+
+[D] c17cdbbbb262f1b23f0fc150fb27f7072ac807f42b5033c3bf46c3b6 bridge-utils-1.7.1.tar.gz https://git.kernel.org/pub/scm/network/bridge/bridge-utils.git/snapshot/

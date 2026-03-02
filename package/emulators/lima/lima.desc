@@ -21,9 +21,9 @@
 
 [L] APL
 [S] Stable
-[V] 2.0.3
+[V] 1.2.1
 
-[D] 15beb3ccc7c3a10458023b19fc62ec5df52a81108be5a5ae66152871 lima-2.0.3.tar.gz https://github.com/lima-vm/lima/archive/v2.0.3/
+[D] 7ce26ffb2083c53060e321782d50f2d9024cbcd1aa08b508a8c563e6 lima-1.2.1.tar.gz https://github.com/lima-vm/lima/archive/v1.2.1/
 
 rungo=0
 hook_add premake 5 "sed -i 's/VERSION :=.*/VERSION := v'$ver'/' Makefile"

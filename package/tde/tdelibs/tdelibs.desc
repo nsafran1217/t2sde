@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/tdelibs/tdelibs.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -22,11 +22,13 @@
 
 [L] GPL
 [S] Stable
-[V] 14.1.5
+[V] 14.1.4
 [P] X -----5---9 200.800
 
-[CV-GROUP] tde
-[D] f34a9b6afb2d2e1d1651952e122c6e8ce2af031bcdb64f2b4053b97c tdelibs-trinity-14.1.5.tar.xz https://mirror.ppa.trinitydesktop.org/trinity/releases/R14.1.5/main/core/
-
 . $base/package/*/*/tde-conf.in
+
 var_append cmakeopt ' ' -DCMAKE_SKIP_RPATH=OFF
+
+[CV-GROUP] tde
+[D] 1b8bf88bd52f826b16e91906336998e2511f022798ebc5865f5aebbc tdelibs-trinity-14.1.4.tar.xz https://mirror.ppa.trinitydesktop.org/trinity/releases/R14.1.4/main/core/
+

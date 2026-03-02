@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/rustfs/rustfs.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -15,15 +15,12 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/filesystem
-[F] CROSS NO-LTO
 
 [L] APL
 [S] Alpha
-[V] 1.0.0-alpha.82
+[V] 1.0.0-alpha.2
 
-[D] 35c0e83cee70710acf46860ebc6cd6465880c0aab3bc5eae3b6adeae rustfs-1.0.0-alpha.82.tar.gz https://github.com/rustfs/rustfs/archive/1.0.0-alpha.82/
+[D] d0a48a89a5138c93ad12184bb5f024e218441155b99a33291e8eea9e rustfs-1.0.0-alpha.2.tar.gz https://github.com/rustfs/rustfs/archive/1.0.0-alpha.2/
 
 cargoinstopt=
-var_append GCC_WRAPPER_APPEND ' ' "*jitterentropy*?-O0"
-atstage cross && hook_add postmake 5 "install -v target/${arch_target}/*/{rustfs-mcp,rustfs,gproto} $root$bindir"
-atstage native && hook_add postmake 5 "install -v target/*/{rustfs-mcp,rustfs,gproto} $root$bindir"
+hook_add postmake 5 'cp -vf target/release/{rustfs-gui,rustfs,gproto} $root$bindir/'

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/orca/orca.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -17,9 +17,9 @@
 
 [L] LGPL
 [S] Stable
-[V] 49.5
-
-[CV-URL] https://download.gnome.org/sources/orca/cache.json
-[D] cdfb66c81e2e3a4b7faefad8cf2b4ab3a552269c5c11e1ed568cef7c orca-49.5.tar.xz https://download.gnome.org/sources/orca/49/
+[V] 49.1
 
 . $base/package/*/*/gnome-conf.in
+
+[CV-URL] https://download.gnome.org/sources/orca/cache.json
+[D] 8dd29859eea8d099af8576448322f58e3b4bed75b04d3937fae04901 orca-49.1.tar.xz https://download.gnome.org/sources/orca/49/

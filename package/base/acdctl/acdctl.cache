@@ -1,15 +1,17 @@
-[TIMESTAMP] 1760006359 Thu Oct  9 12:39:19 2025
-[BUILDTIME] 3 (9)
+
+[TIMESTAMP] 1279567919 Mon Jul 19 21:31:59 2010
+[BUILDTIME] 5 (5)
 [SIZE] 0.02 MB, 6 files
 
-[DEP] bash
-[DEP] bzip2
+[DEP] 00-dirtree
+[DEP] binutils
 [DEP] coreutils
 [DEP] diffutils
-[DEP] gawk
+[DEP] findutils
 [DEP] grep
-[DEP] libusb-compat
+[DEP] libusb
 [DEP] linux-header
 [DEP] make
 [DEP] sed
+[DEP] sysfiles
 [DEP] tar

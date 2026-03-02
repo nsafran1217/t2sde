@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/doxygen/doxygen.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -37,12 +37,13 @@
 
 [L] GPL
 [S] Stable
-[V] 1.16.1
-[P] X -----5---9 102.390
+[V] 1.14.0
+[P] X -----5---9 127.100
 
 [CV-URL] http://www.doxygen.nl/download.html
-[D] b130352738310257171fa16bc38982f648244029a976c3011ae2b351 doxygen-1.16.1.src.tar.gz https://doxygen.nl/files/
+[D] 21142ce589ba88a9b7f2a25e8b8f0f21145e70b227e12673050ec686 doxygen-1.14.0.src.tar.gz https://doxygen.nl/files/
 
 confopt= cleanconfopt=0
 var_append confopt ' ' "--prefix $root/$prefix"
 [[ $libdir = *lib64 ]] && var_append GCC_WRAPPER_INSERT ' ' "-L/opt/qt4/lib64 -L/usr/X11/lib64"
+

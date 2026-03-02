@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/hwdata/hwdata.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,9 +19,9 @@
 
 [L] GPL
 [S] Beta
-[V] 0.404
+[V] 0.399
 [P] X -----5---9 125.000
 
-[D] 8d7f675edd1c74d0af3a05bc869a9b977e97ae14ce8d8b0cd656c5db hwdata-0.404.tar.gz https://github.com/vcrhonek/hwdata/archive/v0.404/
+[D] b3922c1d8eb5e846e154dc73c09d29fb43b1b9d48efe8811b43096db hwdata-0.399.tar.gz https://github.com/vcrhonek/hwdata/archive/v0.399/
 
 var_append confopt ' ' --disable-blacklist

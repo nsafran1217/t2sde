@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/boehm-gc/boehm-gc.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -19,13 +19,13 @@
 
 [C] extra/development
 [F] CROSS
-[R] - avr32 blackfin cris riscv
+[R] - avr32 blackfin cris riscv riscv64
 
 [L] GPL
 [S] Stable
-[V] 8.2.12
+[V] 8.2.8
 [P] X --2--5---9 101.800
 
-[D] 31e2bb41d03ff3c839892a7960abc9f7f70c7ddb01200ba590a347e8 gc-8.2.12.tar.gz https://github.com/bdwgc/bdwgc/releases/download/v8.2.12/
+[D] d663d339e9e5cc61fa2517dc1f40999609df6ea5d070764480c6357c gc-8.2.8.tar.gz http://www.hboehm.info/gc/gc_source/
 
 var_append GCC_WRAPPER_INSERT ' ' -D_GNU_SOURCE=1

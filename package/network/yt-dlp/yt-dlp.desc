@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/yt-dlp/yt-dlp.desc
-[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2021 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -25,8 +25,8 @@
 
 [L] PublicDomain
 [S] Stable
-[V] 2026.02.21
+[V] 2025.09.26
 
-[D] 381255b6ba1a1eee21e36f6722019055828c843cee7529c8c9e671ee yt-dlp-2026.02.21.tar.gz https://github.com/yt-dlp/yt-dlp/archive/2026.02.21/
+[D] c22acbbb9058d014cdb189c2d5d105e191c05d3f0e06ca1aac864a0d yt-dlp-2025.09.26.tar.gz https://github.com/yt-dlp/yt-dlp/archive/2025.09.26/
 
 hook_add postmake 5 "ln -svf $root$bindir/{yt-dlp,youtube-dl}"

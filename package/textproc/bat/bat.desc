@@ -17,8 +17,8 @@
 
 [C] extra/tool
 
+[V] 0.25.0
 [L] APL MIT
 [S] Stable
-[V] 0.26.1
 
-[D] a1217ce2885119cb18efa8a201a444bd9428c201910e9ff5ea9b245e bat-0.26.1.tar.gz https://github.com/sharkdp/bat/archive/refs/tags/v0.26.1/
+[D] 5dd1d15a0678fc265127299915596f5c383efcd3445d490c9b7d69f6 bat-0.25.0.tar.gz https://github.com/sharkdp/bat/archive/refs/tags/v0.25.0/

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/rubygems/rubygems.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -20,8 +20,7 @@
 
 [L] OpenSource
 [S] Beta
-[V] 4.0.6
+[V] 3.7.2
 
-[D] a9e2e134db8b6a4fbc7fe12054063bb384446d1e5708997ac2e2683a rubygems-4.0.6.tgz http://production.cf.rubygems.org/rubygems/
-
+[D] f875121ab91adc34dbcbcd88945a8ef425988894462599e1e7441928 rubygems-3.7.2.tgz http://production.cf.rubygems.org/rubygems/
 custmain="ruby setup.rb"

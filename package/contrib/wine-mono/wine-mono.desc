@@ -19,9 +19,9 @@
 
 [L] OpenSource
 [S] Stable
-[V] 10.4.1
+[V] 10.2.0
 
-[D] 91157afd95a31b87a72cde2fac9f96247ed014f85e82e91036db656f wine-mono-10.4.1-x86.msi https://github.com/madewokherd/wine-mono/releases/download/wine-mono-10.4.1/
+[D] 4a45b3f4fe71e38b3a2ba54561603d28ecb5dfa8c28c8a998549b465 wine-mono-10.2.0-x86.msi https://github.com/madewokherd/wine-mono/releases/download/wine-mono-10.2.0/
 
 srctar= runmake=0
 hook_add inmake 4 "mkdir -v $root/$prefix/share/wine/mono/"

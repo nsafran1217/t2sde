@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/docker-buildx/docker-buildx.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -21,9 +21,9 @@
 
 [L] APL
 [S] Stable
-[V] 0.31.1
+[V] 0.28.0
 
-[D] 6c0dd028855e821da88175070e1d75646a242245b7dfc943f3bf37cb buildx-0.31.1.tar.gz https://github.com/docker/buildx/archive/v0.31.1/
+[D] 177681b851b58e4658d0a1c5f50b7269304a1d9d1f206d20fa556a6b buildx-0.28.0.tar.gz https://github.com/docker/buildx/archive/v0.28.0/
 
 . $base/package/*/*/go-conf.in
 var_remove GCC_WRAPPER_REMOVE ' ' '-gdwarf*'

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/cava/cava.desc
-[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2023 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -13,15 +13,14 @@
 [U] https://github.com/karlstav/cava/
 
 [A] Karl Stavestrand <karl@stavestrand.no>
-[M] The T2 Project <t2@t2-project.org>
+[M] T2 Project <t2@t2-project.org>
 
 [C] extra/multimedia
-[F] CROSS
 
-[S] Gamma
-[V] 0.10.7
 [L] MIT
-
-[D] 04804066d67920f7b4c1adab6fd9f0f2849e2a12a2dd6511b0d8002f cava-0.10.7.tar.gz https://github.com/karlstav/cava/archive/0.10.7/
+[S] Gamma
+[V] 0.10.6
 
 autogen=1
+
+[D] ff904a169aac57b5add6e419eb1bc5b2630f41405bdc7f2fc1410bbc cava-0.10.6.tar.gz https://github.com/karlstav/cava/archive/0.10.6/

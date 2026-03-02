@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kmime/kmime.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,14 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
+[V] 25.08.1
 [P] X -----5---9 162.800
 
-[CV-GROUP] kde-gear
-[D] 88cefcc4a2c25bf3442b59b84e2be8605a9d1f36f87c018565c8cea1 kmime-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
-
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] cc73239aa28171846c5b1cb5c1034698a011d7b6b337b664570a372d kmime-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/alsa-tools/alsa-tools.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -20,10 +20,10 @@
 
 [L] GPL
 [S] Stable
-[V] 1.2.15
+[V] 1.2.14
 
 [CV-GROUP] alsa
-[D] d09f17dbdc5ad7879744869be31443e27a2afbeb263586e7600935d1 alsa-tools-1.2.15.tar.bz2 https://www.alsa-project.org/files/pub/tools/
+[D] 6808e0e627304920f553ad46adcccef23d6dec9e625b7984d4f0b514 alsa-tools-1.2.14.tar.bz2 https://www.alsa-project.org/files/pub/tools/
 
 runmake=0
 alsa_pc() {
@@ -58,4 +58,4 @@ alsa_pc() {
 		popd
 	done
 }
-hook_add inmake 5 alsa_pc
+hook_add inmake 5 "alsa_pc"

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/feedbackd-device-themes/feedbackd-device-themes.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -16,8 +16,8 @@
 [C] extra/base
 [F] CROSS
 
-[V] 0.8.8
+[V] 0.8.5
 [L] GPL3
 [S] Stable
 
-[D] a980c5a1324243d807b97f7d6c201ff713837247e659d6c976852f7a feedbackd-device-themes-v0.8.8.tar.gz https://gitlab.freedesktop.org/agx/feedbackd-device-themes/-/archive/v0.8.8/
+[D] ae9b6f1a09084984ba0e5f405b875fc36b2990ca9714d5a371ee24ea feedbackd-device-themes-v0.8.5.tar.gz https://gitlab.freedesktop.org/agx/feedbackd-device-themes/-/archive/v0.8.5/

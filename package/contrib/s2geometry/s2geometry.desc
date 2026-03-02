@@ -4,25 +4,23 @@
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---.
 
-[I] Computational geometry and spatial indexing on the sphere
+[I] Computational geometry and spatial indexing on the sphere 
 
-[T] S2 is a library for spherical geometry that aims to have the same
-[T] robustness, flexibility, and performance as the very best planar geometry
-[T] libraries.
+[T] Computational geometry and spatial indexing on the sphere .
 
 [U] https://s2geometry.io/
 
 [A] S2geometry Authors
-[M] The T2 Project <t2@t2-project.org>
+[M] T2 Project <t2@t2-project.org>
 
 [C] extra/base
 [F] CROSS
 
+[V] 0.12.0
 [L] APL
 [S] Stable
-[V] 0.13.1
 
-[D] 5dc9d0c062c4264c31d5ed35c168d361511b34441dd93352ed323d51 s2geometry-v0.13.1.tar.gz https://github.com/google/s2geometry/archive/v0.13.1/
+[D] ad57cbdfd2f39c040d767eb53c5116b8d56104b3630674898148e8a7 s2geometry-v0.12.0.tar.gz https://github.com/google/s2geometry/archive/v0.12.0/
 
 runpysetup=0 rungpepinstall=0
 var_append cmakeopt ' ' -DBUILD_TESTS=OFF

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/konversation/konversation.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -15,16 +15,17 @@
 [M] Nagy Karoly Gabriel <karasz@x5.ro>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
+[V] 25.08.1
+[P] X -----5---9 210.000
+
+. $base/package/*/*/kde-conf.in
 
 [CV-URL] http://konversation.kde.org/
 [CV-GROUP] kde-gear
-[D] 43a2e1d939c7982f917e015d26ffca1c6a53fe4216cf93090b086377 konversation-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
-
-. $base/package/*/*/kde-conf.in
+[D] 692b7108740933687c3dcbb30871b5b31c4cec6fb182f41254e82d75 konversation-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

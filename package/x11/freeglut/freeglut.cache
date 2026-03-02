@@ -1,13 +1,12 @@
-[TIMESTAMP] 1768851742 Mon Jan 19 20:42:22 2026
-[BUILDTIME] 18 (9)
-[SIZE] 1.23 MB, 111 files
+[TIMESTAMP] 1739045695 Sat Feb  8 21:14:55 2025
+[BUILDTIME] 10 (5)
+[SIZE] 1.00 MB, 22 files
 
 [DEP] bash
 [DEP] binutils
 [DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
-[DEP] findutils
 [DEP] freetype
 [DEP] gawk
 [DEP] glu
@@ -15,8 +14,6 @@
 [DEP] gzip
 [DEP] libglvnd
 [DEP] libx11
-[DEP] libxext
-[DEP] libxfixes
 [DEP] libxi
 [DEP] libxrandr
 [DEP] libxrender
@@ -26,5 +23,4 @@
 [DEP] pkgconfig
 [DEP] sed
 [DEP] tar
-[DEP] util-linux
 [DEP] xorgproto

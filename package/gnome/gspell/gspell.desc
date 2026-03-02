@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/gspell/gspell.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -15,13 +15,16 @@
 
 [C] extra/shell extra/desktop/gnome
 
+[E] opt gtk-doc docbook-xml docbook-xsl
+
 [L] LGPL
 [S] Stable
-[V] 1.14.2
+[V] 1.14.0
 [P] X -----5---9 177.200
 
-[D] 5fdbf7992e143274c3b12afdaec9451a1043ff90ebd07785ab2223fb gspell-1.14.2.tar.gz https://gitlab.gnome.org/GNOME/gspell/-/archive/1.14.2/
+[CV-URL] https://download.gnome.org/sources/gspell/cache.json
+[D] 893bd11a2e19ae0c7e3c5e687c3fd4a49a24eda7273dafa35dde4f4a gspell-1.14.0.tar.xz https://download.gnome.org/sources/gspell/1.14/
 
 . $base/package/*/*/gnome-conf.in
 pkginstalled vala || var_append mesonopt ' ' -Dvapi=false
-pkginstalled gtk-doc docbook-xml docbook-xsl && var_append mesonopt ' ' -Dgtk_doc=false
+(pkginstalled gtk-doc && pkginstalled docbook-xml && pkginstalled docbook-xsl) || var_append mesonopt ' ' -Dgtk_doc=false

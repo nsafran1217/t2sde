@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/minikube/minikube.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -20,9 +20,9 @@
 
 [L] APL
 [S] Stable
-[V] 1.38.1
+[V] 1.37.0
 
-[D] 020c7fd8713c8b303922a72c6f74b95b06b9d092f6f41885b1f5e983 minikube-1.38.1.tar.gz https://github.com/kubernetes/minikube/archive/v1.38.1/
+[D] 3c44f10202acffe757b2842cc5d239281cae2d05149c85208110d213 minikube-1.37.0.tar.gz https://github.com/kubernetes/minikube/archive/v1.37.0/
 
 . $base/package/*/*/go-conf.in
 var_append goconfopt ' ' "-o build/ ./cmd/{auto-pause,extract,gvisor,minikube,storage-provisioner}"

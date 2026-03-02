@@ -1,29 +1,30 @@
-[TIMESTAMP] 1768991236 Wed Jan 21 11:27:16 2026
-[BUILDTIME] 150 (9)
-[SIZE] 8.58 MB, 83 files
+[TIMESTAMP] 1758577701 Mon Sep 22 23:48:21 2025
+[BUILDTIME] 85 (5)
+[SIZE] 23.97 MB, 110 files
 
 [DEP] bash
 [DEP] binutils
-[OPT] cairo
+[DEP] cairo
 [OPT] chafa
-[DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
-[OPT] fontconfig
+[DEP] findutils
+[DEP] fontconfig
 [DEP] freetype
 [DEP] gawk
 [DEP] glib
 [DEP] gobject-introspection
 [OPT] graphite2
 [DEP] grep
-[OPT] icu4c
+[DEP] icu4c
 [DEP] linux-header
 [DEP] meson
 [DEP] ninja
 [DEP] openssl
+[DEP] pkgconfig
 [DEP] python
+[DEP] ragel
 [DEP] sed
 [DEP] setuptools
 [DEP] tar
-[DEP] util-linux
 [DEP] xz

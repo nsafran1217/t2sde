@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/live/live.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -18,14 +18,14 @@
 [A] Developers at live.com
 [M] Rene Rebe <rene@t2-project.org>
 
-[C] extra/multimedia
 [F] NOPARALLEL FPIC
+[C] extra/multimedia
 
 [L] LGPL
 [S] Stable
-[V] 2026.02.13
+[V] 2025.09.17
 
-[D] 342fab0e014b1532ea56d7d71b24f2298eb5a783385757cd6f870b78 live.2026.02.13.tar.gz https://download.live555.com/
+[D] 0087e57a3127c566f809d77281de179f15cd51c1bd11f0a3118ea869 live.2025.09.17.tar.gz http://www.live555.com/liveMedia/public/
 
 rtsp_pm() {
 	echo "Manually installing files ..."
@@ -43,4 +43,4 @@ runconf=0
 makeinstopt=
 
 hook_add premake 3 "./genMakefiles linux"
-hook_add postmake 3 rtsp_pm
+hook_add postmake 3 "rtsp_pm"

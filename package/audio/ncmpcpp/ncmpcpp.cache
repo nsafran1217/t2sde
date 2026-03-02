@@ -26,3 +26,4 @@
 [DEP] sed
 [OPT] taglib
 [DEP] tar
+[DEP] tbb

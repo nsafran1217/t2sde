@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/xkbcommon/xkbcommon.desc
-[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -20,12 +20,13 @@
 
 [L] OpenSource
 [S] Stable
-[V] 1.13.1
+[V] 1.11.0
 [P] X -----5---9 112.600
 
-[D] 1bfbd589cfd85aa11b53c3845b75dcf06ee9b195d31570cb19284758 libxkbcommon-1.13.1.tar.gz https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.13.1/
+[CV-URL] http://xkbcommon.org
+[D] 040febdc9fb1e3dafb82c165bddbbd852c3d95406e8ae902369b90e2 libxkbcommon-1.11.0.tar.gz https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.11.0/
 
 . package/*/*/modular-x-conf.in
 pkginstalled wayland || var_append mesonopt ' ' -Denable-wayland=false
 pkginstalled doxygen || var_append mesonopt ' ' -Denable-docs=false
-pkginstalled libxcb || var_append mesonopt ' ' -Denable-x11=false
+pkginstalled xorg-server || var_append mesonopt ' ' -Denable-x11=false

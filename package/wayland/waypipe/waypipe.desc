@@ -18,10 +18,10 @@
 
 [E] opt ffmpeg scdoc
 
-[V] 0.11.0
+[V] 0.10.4
 [L] MIT
 [S] Stable
 
-[D] b639e1016afbef270f926d3ec7ab027ee1cdf093cc69ae7433f5819c waypipe-v0.11.0.tar.gz https://gitlab.freedesktop.org/mstoeckl/waypipe/-/archive/v0.11.0/
+[D] b925a389c15a83e2fddd0c77d055a0acb967ab414fc4629ce4c04801 waypipe-v0.10.4.tar.gz https://gitlab.freedesktop.org/mstoeckl/waypipe/-/archive/v0.10.4/
 
 hook_add premake 5 'cargo fetch --locked'

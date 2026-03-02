@@ -30,19 +30,20 @@
 
 [L] OpenSource
 [S] Stable
-[V] 10.2p1
+[V] 10.0p2
 [P] X -----5---9 191.100
 
-[D] 7c7997bfb927eb52c22313a3d0835490ee9c8efcfeeb3de04b070b98 openssh-10.2p1.tar.gz http://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/
+#var_append GCC_WRAPPER_APPEND ' ' -DSANDBOX_SECCOMP_FILTER_DEBUG=1
+
+[D] fd8ccc744cc2873c6a0184cd4006569b59fe13bbed1eeb6fd0d93481 openssh-10.0p2.tar.gz http://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/
 
 LD=$CC
 
-[ "$sysconfdir" == "/etc" ] && sysconfdir=/etc/ssh
-#var_append GCC_WRAPPER_APPEND ' ' -DSANDBOX_SECCOMP_FILTER_DEBUG=1
-
-# officially broken for gcc/mips and powerpc
-[[ "$arch" = mips* || "$arch" = powerpc* ]] &&
+# officially broken for gcc/mips
+[[ "$arch" = mips* ]] &&
 	var_append GCC_WRAPPER_REMOVE ' ' -fzero-call-used-regs=used
+
+[ "$sysconfdir" == "/etc" ] && sysconfdir=/etc/ssh
 
 var_append confopt ' ' "--sysconfdir=\$sysconfdir \
 	--with-md5-passwords \
@@ -50,10 +51,6 @@ var_append confopt ' ' "--sysconfdir=\$sysconfdir \
 	--with-xauth=/usr/X11/bin/xauth"
 	#--with-sandbox=no"
 
-pkginstalled pam && var_append confopt ' ' --with-pam
 pkginstalled tcp_wrappers && var_append confopt ' ' --with-tcp-wrappers
-pkginstalled systemd &&
-	var_append GCC_WRAPPER_APPEND ' ' -DSYSTEMD_NOTIFY=1 &&
-	pkg_systemd_install_service $confdir/sshd.service
 
 makeinstopt="DESTDIR=$root install-nokeys"

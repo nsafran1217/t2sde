@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/haruna/haruna.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -18,15 +18,14 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
-[E] add qqc2-desktop-style
-[E] opt kdoctools docbook-xml
+[E] opt kdoctools
+[E] opt docbook-xml
 
 [L] GPL
 [S] Stable
-[V] 1.7.1
+[V] 1.4.0
 
-[D] 9627bde4c03d07e228bc758c632c85b41518a1ecb21f12c420d44ffb haruna-1.7.1.tar.xz https://download.kde.org/stable/haruna/1.7.1/
+[D] a42a6c4b8a0856e528ac513822f209ffdf35e23d6741dd10d792f2d5 haruna-1.4.0.tar.xz https://download.kde.org/stable/haruna/1.4.0/
 
 . $base/package/*/*/kde-conf.in

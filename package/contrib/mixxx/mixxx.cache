@@ -51,6 +51,7 @@
 [DEP] sqlite
 [DEP] taglib
 [DEP] tar
+[DEP] tbb
 [DEP] udev
 [OPT] upower
 [DEP] vulkan-headers

@@ -1,13 +1,14 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/gedit/gedit.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] The GNOME text editor
 
-[T] gEdit is a small but powerful text editor designed expressly for GNOME.
+[T] gEdit is a small but powerful text editor designed expressly
+[T] for GNOME.
 
 [U] https://gedit.sourceforge.net/
 
@@ -18,8 +19,9 @@
 
 [L] GPL
 [S] Stable
-[V] 49.0
+[V] 48.2
+[P] X -----5---9 300.200
 
-[D] f81471a9a4b2249e92ba85752cab6894db3c17f376719fb4d3b52add gedit-49.0.tar.xz git+https://gitlab.gnome.org/World/gedit/gedit 49.0
+[D] 7c84d8da507cd22c55b12a8495c48039a36a98cef954459985c33292 gedit-48.2.tar.bz2 https://gitlab.gnome.org/World/gedit/gedit/-/archive/48.2/
 
 . $base/package/*/*/gnome-conf.in

@@ -21,7 +21,7 @@
 
 [L] GPL
 [S] Stable
-[V] 3.6.1
+[V] 3.5
 [P] X -----5---9 400.000
 
-[D] bec91d9d5f4521fb16af61f17f461f703a972ab959c46a56562903e7 networkx-3.6.1.tar.gz https://files.pythonhosted.org/packages/source/n/networkx/
+[D] ec54d2190f1320470288285ba86c469cf9a1ef467761baf3e3053b3c networkx-3.5.tar.gz https://files.pythonhosted.org/packages/source/n/networkx/

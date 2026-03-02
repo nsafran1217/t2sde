@@ -1,13 +1,13 @@
-[TIMESTAMP] 1765827955 Mon Dec 15 20:45:55 2025
-[BUILDTIME] 95 (9)
-[SIZE] 4.45 MB, 163 files
+[TIMESTAMP] 1737753128 Fri Jan 24 22:12:08 2025
+[BUILDTIME] 150 (9)
+[SIZE] 6.25 MB, 238 files
 
 [DEP] bash
 [DEP] binutils
 [DEP] boost
 [DEP] cmake
 [DEP] coreutils
-[OPT] cups
+[DEP] cups
 [DEP] diffutils
 [OPT] docbook-xml
 [OPT] docbook-xsl
@@ -27,6 +27,7 @@
 [DEP] kjobwidgets
 [DEP] kwidgetsaddons
 [DEP] kxmlgui
+[DEP] libxml
 [DEP] linux-header
 [DEP] make
 [DEP] pkgconfig
@@ -34,5 +35,6 @@
 [DEP] qt6base
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] vulkan-headers
 [DEP] xz

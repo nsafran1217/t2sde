@@ -1,6 +1,6 @@
-[TIMESTAMP] 1767289759 Thu Jan  1 18:49:19 2026
-[BUILDTIME] 65 (9)
-[SIZE] 0.33 MB, 49 files
+[TIMESTAMP] 1739209445 Mon Feb 10 18:44:05 2025
+[BUILDTIME] 55 (5)
+[SIZE] 0.19 MB, 31 files
 
 [DEP] bash
 [DEP] binutils
@@ -13,11 +13,11 @@
 [DEP] libqrencode
 [DEP] linux-header
 [DEP] make
+[DEP] pkgconfig
 [DEP] qt6base
 [DEP] qt6declarative
-[DEP] qt6multimedia
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] vulkan-headers
 [DEP] xz
-[OPT] zxing-cpp

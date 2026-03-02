@@ -1,6 +1,6 @@
-[TIMESTAMP] 1768323018 Tue Jan 13 17:50:18 2026
-[BUILDTIME] 1600 (9)
-[SIZE] 25.89 MB, 157 files
+[TIMESTAMP] 1751057707 Fri Jun 27 22:55:07 2025
+[BUILDTIME] 1300 (9)
+[SIZE] 26.53 MB, 70 files
 
 [DEP] alsa-lib
 [DEP] bash
@@ -9,16 +9,15 @@
 [DEP] coreutils
 [DEP] curl
 [DEP] diffutils
-[OPT] doxygen
 [DEP] ffmpeg
 [DEP] flatbuffers
 [DEP] freetype
 [DEP] gawk
+[DEP] git
 [DEP] glew
 [DEP] glu
 [DEP] grep
 [DEP] gzip
-[OPT] jack
 [DEP] libedit
 [DEP] libevdev
 [DEP] libglvnd
@@ -30,8 +29,6 @@
 [DEP] linux-header
 [DEP] llvm
 [DEP] make
-[DEP] openal
-[OPT] opencv
 [DEP] pkgconfig
 [DEP] pugixml
 [DEP] pulseaudio
@@ -40,6 +37,7 @@
 [DEP] qt6svg
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] udev
 [DEP] vulkan-headers
 [DEP] wayland

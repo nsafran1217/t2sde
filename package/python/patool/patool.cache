@@ -13,5 +13,4 @@
 [DEP] python-gpep517
 [DEP] sed
 [DEP] setuptools
-[DEP] setuptools-reproducible
 [DEP] tar

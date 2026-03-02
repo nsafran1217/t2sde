@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/libksieve/libksieve.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,16 +15,14 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
 [E] opt kdoctools
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-[P] X -----5---9 300.020
-
-[CV-GROUP] kde-gear
-[D] e166554c838e471aadf990b3269b40aa258beb71bf81ab41343ef26c libksieve-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.420
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] ab9d725fddeb4b48208041b7f3108eba3f9ce101a96868a03793c5db libksieve-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

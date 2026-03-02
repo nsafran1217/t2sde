@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/librsvg/librsvg.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -20,30 +20,20 @@
 
 [C] extra/multimedia
 [F] CROSS LATOMIC.sparc LATOMIC.x86
-[R] - alpha arc avr32 blackfin cris hppa hppa64 m68k microblaze nios2 openrisc superh
+[R] - alpha arc avr32 blackfin cris hppa hppa64 ia64 m68k microblaze nios2 openrisc superh
 
-[E] add smartypants
 [E] opt docutils
 [E] opt gobject-introspection vala
 
 [L] LGPL
 [S] Stable
-[V] 2.61.4
+[V] 2.61.1
 [P] X -----5---9 150.100
 
 [CV-URL] https://download.gnome.org/sources/librsvg/cache.json
-[D] 89ff643eeb84463caa24cd4e4862ff5931ae00e2d395d51fe9cafaae librsvg-2.61.4.tar.xz https://download.gnome.org/sources/librsvg/2.61/
+[D] 8761c7b508e0120088fab94dc1c121368ddf3928a2079fb59af12030 librsvg-2.61.1.tar.xz https://download.gnome.org/sources/librsvg/2.61/
 
 . $base/package/*/*/gnome-conf.in
-if [ "$arch" != "ia64" ]
-then
-	runcargo=0
-	hook_add prepatch 5 cargo_vendor
-	atstage cross && var_append mesonopt ' ' -Dtriplet=$arch_target
-	[ "$SDECFG_DEBUG" = 1 ] || var_append mesonopt ' ' -Ddebug=false
-	[ "$SDECFG_LTO" = 0 ] || var_append mesonopt ' ' -Db_lto=true
-else
-	# on ia64, librsvg 2.40.23, the last non-Rust version, is used
-	runmeson=0 # meson.build is very rudimentary in this version, disable it
-	autogen=1
-fi
+runcargo=0
+hook_add prepatch 5 cargo_vendor
+atstage cross && var_append mesonopt ' ' -Dtriplet=$arch_target

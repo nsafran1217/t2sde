@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---.
 [COPY] t2/package/*/repo/repo.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---.
 
@@ -16,11 +16,11 @@
 [C] extra/base
 [F] CROSS
 
-[V] 2.61.1
+[V] 2.56
 [L] APL
 [S] Stable
 
-[D] 95e8c4e8371e604de48b8a5f0e65d8199c5db78b0f6626f7069c8fec repo-2.61.1.tar.gz https://github.com/GerritCodeReview/git-repo/archive/refs/tags/v2.61.1/
+[D] 039375bf7e60a00efeb3a193b62b70c522e75638b8765f08714bf82d repo-2.56.tar.gz https://github.com/GerritCodeReview/git-repo/archive/refs/tags/v2.56/
 
 runmake=0 runpysetup=0 rungpepinstall=0
 hook_add postmake 5 "install repo $root$bindir/"

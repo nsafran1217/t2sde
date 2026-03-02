@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/webmin/webmin.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -25,13 +25,10 @@
 
 [L] BSD
 [S] Stable
-[V] 2.621
+[V] 2.510
+[P] X -----5---9 163.300
 
-[D] 109021e5127c9a01d0a874f849d9190ecada0c6e1a8e2041e534413e webmin-2.621.tar.gz http://dl.sourceforge.net/sourceforge/webadmin/
-
-runmake=0
-sysconfdir=$root/etc/webmin
-prefix=opt/webmin; set_confopt
+[D] 2c0eca8a58b68d412780f1b43073049b48b9e9b11da24407037022e4 webmin-2.510.tar.gz http://dl.sourceforge.net/sourceforge/webadmin/
 
 pkg_webmin_main() {
 	#cd $root/$prefix
@@ -58,4 +55,9 @@ pkg_webmin_main() {
 
 	./setup.sh /opt/webmin
 }
-hook_add postmake 5 pkg_webmin_main
+
+runmake=0
+hook_add postmake 5 "pkg_webmin_main"
+sysconfdir=$root/etc/webmin
+prefix=opt/webmin
+set_confopt

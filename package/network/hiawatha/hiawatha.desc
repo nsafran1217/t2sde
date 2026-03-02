@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/hiawatha/hiawatha.desc
-[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2014 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -20,6 +20,7 @@
 [L] GPL
 [S] Stable
 [V] 11.8
+[P] X -----5---9 150.000
 
 #[D] 126706424 hiawatha-9.9.tar.gz https://www.hiawatha-webserver.org/files/
 #...no, has changed to polarssl, and cmake. use this (still very secure!):
@@ -36,4 +37,4 @@ hiawatha_post_fix() {
     #set uid bit:
     chmod u+s $root/usr/sbin/hiawatha
 }
-hook_add postmake 5 hiawatha_post_fix
+hook_add postmake 5 "hiawatha_post_fix"

@@ -17,8 +17,8 @@
 
 [C] extra/base
 
-[V] 1.6.1
+[V] 1.5.3
 [L] MIT
 [S] Stable
 
-[D] 949a7f814910b22af95a48212131759015c0c7bfc6a01755761ea8ff fennel-1.6.1.tar.gz !https://git.sr.ht/~technomancy/fennel/archive/1.6.1.tar.gz
+[D] 19a6b5bb2b663cb8493e8083d536992fe9f9756336ccab4ae576fb69 fennel-1.5.3.tar.gz !https://git.sr.ht/~technomancy/fennel/archive/1.5.3.tar.gz

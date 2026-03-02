@@ -22,4 +22,5 @@
 [DEP] perl
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] tdb

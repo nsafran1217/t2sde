@@ -16,9 +16,9 @@
 [C] extra/base
 [F] CROSS
 
-[V] 1.24.2
+[V] 1.24.0
 [L] BSD
 [S] Stable
 [P] X -----5---9 700.000
 
-[D] d92832ffa1b86c36791c7b233c0189af34ef5aab98bfd22072a44ac6 unbound-1.24.2.tar.gz https://unbound.net/downloads/
+[D] 6299d22d1be13f28a7a1454da1cf308aee73f54260d2ea89cba64fb5 unbound-1.24.0.tar.gz https://unbound.net/downloads/

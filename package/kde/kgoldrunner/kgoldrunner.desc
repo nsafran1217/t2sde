@@ -1,14 +1,14 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kgoldrunner/kgoldrunner.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] A game of action and puzzle solving
 
-[T] KGoldrunner is an action game where the hero runs through a maze, climbs
-[T] stairs, dig holes and dodges enemies in order to collect all the gold
+[T] KGoldrunner is an action game where the hero runs through a maze, climbs 
+[T] stairs, dig holes and dodges enemies in order to collect all the gold 
 [T] nuggets and escape to the next level.
 
 [U] https://apps.kde.org/kgoldrunner/
@@ -17,15 +17,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] cd65b98c71c60084ffecc159d0dd0f9fa535df407722ea1537e58e97 kgoldrunner-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 179.300
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] c910852248c4180a46f6c592ec7cfeb61ebb84dbd337722268b440bf kgoldrunner-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

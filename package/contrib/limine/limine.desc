@@ -1,14 +1,12 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/limine/limine.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Advanced multiprotocol x86/x86_64 BIOS/UEFI Bootloader
 
-[T] Limine is a modern, advanced, portable, multiprotocol bootloader and boot
-[T] manager, also used as the reference implementation for the Limine boot
-[T] protocol.
+[T] Advanced multiprotocol x86/x86_64 BIOS/UEFI Bootloader.
 
 [U] https://limine-bootloader.org
 
@@ -20,6 +18,6 @@
 
 [L] BSD
 [S] Stable
-[V] 10.8.2
+[V] 10.0.1
 
-[D] 7bbca365c82e5a189b7dcebbb2cc8676f8a5b19a1821ef7b66604454 limine-10.8.2.tar.xz https://codeberg.org/Limine/Limine/releases/download/v10.8.2/
+[D] 23bb06e9cd19e43a193d36326c1d402db736368c8cecb5ac69377e01 limine-10.0.1.tar.xz https://codeberg.org/Limine/Limine/releases/download/v10.0.1/

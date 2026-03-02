@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/linux/linux.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -22,12 +22,11 @@
 
 [L] GPL
 [S] Stable
-[V] 6.19.4
+[V] 6.16.9
 
 [CV-FLAGS] NO-MAJOR
-[D] 05673fcc425378a4ab7ad1a5686eaadbd705ece0c1003bdea205709e linux-6.19.tar.xz http://www.kernel.org/pub/linux/kernel/v6.x/
-[D] 5c006dade3502293d50a3ff904eacfc303ffc1b0b2901b08c00024ac linux-patch-6.19.4.xz !https://www.kernel.org/pub/linux/kernel/v6.x/patch-6.19.4.xz
-#[D] 0 linux-tip-6f85aad74a7.tar.gz git+https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git 6f85aad74a7
+[D] 2248a315226541dc7b359ed69ac89254c51d082dd767edd655f41624 linux-6.16.tar.xz http://www.kernel.org/pub/linux/kernel/v6.x/
+[D] 0c29667490b048827b3834d1b7239ff5341282c78f45144520b3e517 patch-6.16.9.xz https://www.kernel.org/pub/linux/kernel/v6.x/
 
 . $base/package/*/linux*/linux-conf.in
 
@@ -180,7 +179,7 @@ linux_install() {
 		  error=$?
 		  set -e
 		  if [ $error -ne 0 ]; then
-			echo "Failed building $x"
+			echo_warning "Failed building $x"
 			module_error=1
 		  fi
 		  echo "Done building $x"
@@ -212,9 +211,6 @@ linux_install() {
 	if [ -e $root/sbin/mkinitrd ]; then
 		$root/sbin/mkinitrd $initrdopts ${lx_kernelrelease}
 		ln -sfv initrd-${lx_kernelrelease} $root/boot/initrd
-		$root/sbin/mkinitrd $initrdopts --minimal \
-			-o $root/boot/netrd-${lx_kernelrelease} ${lx_kernelrelease}
-		ln -sfv netrd-${lx_kernelrelease} $root/boot/netrd
 		$root/sbin/mkinitrd $initrdopts --minimal --network \
 			-o $root/boot/minird-${lx_kernelrelease} ${lx_kernelrelease}
 		ln -sfv minird-${lx_kernelrelease} $root/boot/minird

@@ -17,11 +17,10 @@
 
 [L] LGPL
 [S] Stable
-[V] 49.1
+[V] 49.0
 [P] X -----5---9 185.400
 
-[CV-URL] https://download.gnome.org/sources/gnome-settings-daemon/cache.json
-[D] 24e121956823d1b94943b65295da3b05c8a8addb79348dad16e2dae1 gnome-settings-daemon-49.1.tar.xz https://download.gnome.org/sources/gnome-settings-daemon/49/
-
 . $base/package/*/*/gnome-conf.in
-pkginstalled systemd || var_append mesonopt ' ' -Dsystemd=false
+
+[CV-URL] https://download.gnome.org/sources/gnome-settings-daemon/cache.json
+[D] bb499a72ad52c7bee6ba1ff76700eafdc6c39ff8f06b07bed11af1f5 gnome-settings-daemon-49.0.tar.xz https://download.gnome.org/sources/gnome-settings-daemon/49/

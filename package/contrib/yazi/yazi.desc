@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/yazi/yazi.desc
-[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -16,16 +16,14 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/tool
-[F] CROSS
 
 [E] opt hack-nerd-fonts
 
 [L] MIT
 [S] Beta
-[V] 26.1.22
-
-[D] fe173c26bc55de276d0f16a20f846eaa7afeb1e5425806cf7fc4e806 yazi-26.1.22.tar.gz https://github.com/sxyazi/yazi/archive/refs/tags/v26.1.22/
+[V] 25.5.31
 
 cargoinstopt=
-atstage cross && hook_add postmake 5 "cp -vf target/${arch_target}/*/{ya,yazi} $root$bindir"
-atstage native && hook_add postmake 5 "cp -vf target/*/{ya,yazi} $root$bindir"
+hook_add postmake 5 "cp {target/release/ya,target/release/yazi} $root$bindir"
+
+[D] bfc6b4572a2ab4e15e49fd752292386200cfa34cb562dd7bdee41cf5 yazi-25.5.31.tar.gz https://github.com/sxyazi/yazi/archive/refs/tags/v25.5.31/

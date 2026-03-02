@@ -11,6 +11,7 @@
 [DEP] diffutils
 [DEP] gawk
 [DEP] gdb
+[DEP] git
 [DEP] grep
 [DEP] gzip
 [DEP] linux-header
@@ -24,5 +25,6 @@
 [DEP] qt6declarative
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] vulkan-headers
 [DEP] xxhash

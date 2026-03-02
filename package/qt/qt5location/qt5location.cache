@@ -21,4 +21,5 @@
 [DEP] qt5serialport
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xz

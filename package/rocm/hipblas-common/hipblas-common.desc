@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/hipblas-common/hipblas-common.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,10 +18,10 @@
 
 [L] MIT
 [S] Stable
-[V] 7.2.0
+[V] 7.0.1
 [P] X -----5---9 300.180
 
 [CV-GROUP] rocm
-[D] b8cfd0017f90e469319d1e52e87505edc5380d26fd0b358fb53a84ac hipBLAS-common-rocm-7.2.0.tar.gz https://github.com/ROCm/hipBLAS-common/archive/rocm-7.2.0/
+[D] 4897c8efaa30033a5b5f10f53343ade11275f4f0e1a9249345e090b7 hipBLAS-common-rocm-7.0.1.tar.gz https://github.com/ROCm/hipBLAS-common/archive/rocm-7.0.1/
 
 . $base/package/*/*/rocm-conf.in

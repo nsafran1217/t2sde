@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/libsdl3/libsdl3.desc
-[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -29,19 +29,17 @@
 [E] opt libdecor
 [E] opt libsamplerate
 [E] opt esound
-[E] opt ffmpeg
 [E] opt libx11 libxcb libxcursor libxext libxfixes libxi libxrandr libxrender libxscrnsaver xkbcommon
 [E] opt wayland
 [E] opt jack
 [E] opt pipewire
 [E] opt pulseaudio
-[E] opt python
 
 [L] ZLIB
 [S] Stable
-[V] 3.4.2
+[V] 3.2.22
 [P] X -----5---9 130.000
 
-[D] 452c94b5b402c60cbd975ded2e2f025686cfa433373511cf915fa4e7 SDL3-3.4.2.tar.gz http://www.libsdl.org/release/
+[D] 16b4f5124f1472428a7642293219946bd99898a30d0f67f22c8ac189 SDL3-3.2.22.tar.gz http://www.libsdl.org/release/
 
 pkginstalled libx11 && var_append GCC_WRAPPER_INSERT ' ' "-L$root$(pkgprefix libdir libx11)"

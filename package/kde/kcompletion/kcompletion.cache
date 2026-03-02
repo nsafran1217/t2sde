@@ -1,14 +1,14 @@
-[TIMESTAMP] 1768848682 Mon Jan 19 19:51:22 2026
-[BUILDTIME] 30 (9)
-[SIZE] 0.54 MB, 139 files
+[TIMESTAMP] 1757930715 Mon Sep 15 12:05:15 2025
+[BUILDTIME] 40 (9)
+[SIZE] 0.43 MB, 138 files
 
+[DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
 [DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
 [DEP] extra-cmake-modules
-[DEP] findutils
 [DEP] gawk
 [DEP] grep
 [DEP] kcodecs
@@ -16,11 +16,11 @@
 [DEP] kwidgetsaddons
 [DEP] linux-header
 [DEP] make
+[DEP] pkgconfig
 [DEP] qt6base
 [DEP] qt6tools
-[DEP] qt6translations
 [DEP] sed
 [DEP] tar
-[DEP] util-linux
 [DEP] vulkan-headers
+[DEP] xorgproto
 [DEP] xz

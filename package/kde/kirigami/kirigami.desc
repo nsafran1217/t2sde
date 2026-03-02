@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kirigami/kirigami.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -17,14 +17,14 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR NO-LTO
+[F] OBJDIR NO-LTO
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
-[P] X -----5---9 200.005
+[V] 6.18.0
+[P] X -----5---9 200.100
 
 [CV-GROUP] kde-frameworks
-[D] 636703baa34497717fe37824b6d728c527668e9b22e60923747896bb kirigami-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] 82fae3b6efdb0110031a3484e28de4d12a11712e322d3f7f91b23a28 kirigami-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

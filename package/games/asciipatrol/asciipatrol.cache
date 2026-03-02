@@ -17,4 +17,5 @@
 [DEP] pulseaudio
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xorgproto

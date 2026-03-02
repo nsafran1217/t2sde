@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/yosys/yosys.desc
-[COPY] Copyright (C) 2018 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2018 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,9 +19,9 @@
 
 [L] ISC
 [S] Beta
-[V] 0.62
+[V] 0.57
 
-[D] 67334587d58ce50e4ba5b92ba349e787b423a56260aea1aaa470e8be yosys-0.62.tar.gz !https://github.com/YosysHQ/yosys/releases/download/v0.62/yosys.tar.gz
+[D] 0b2b94619537cd3769d4c20238d19b726939a7022aa9a6da2f943286 yosys-0.57.tar.gz !https://github.com/YosysHQ/yosys/releases/download/v0.57/yosys.tar.gz
 
 runpysetup=0 srcdir=.
 var_append makeopt ' ' CONFIG=gcc

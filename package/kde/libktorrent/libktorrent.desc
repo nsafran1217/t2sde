@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/libktorrent/libktorrent.desc
-[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2010 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -16,16 +16,15 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/network
-[F] CROSS OBJDIR
 
 [E] opt doxygen
 
 [L] GPL
 [S] Beta
-[V] 25.12.2
+[V] 25.08.1
 [P] X -----5---9 780.000
 
-[CV-GROUP] kde-gear
-[D] 00f675b688ecd6edb39687b561fef06db6a22e8075781bf21f44e85e libktorrent-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
-
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] a9a5d3e47b4b86a58d00c083b2baf12889a592c131cca12bb62a190d libktorrent-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

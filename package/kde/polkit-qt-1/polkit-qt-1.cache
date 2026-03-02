@@ -7,7 +7,6 @@
 [DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
-[DEP] kconfig
 [DEP] gawk
 [DEP] glib
 [DEP] grep
@@ -18,5 +17,6 @@
 [DEP] qt6base
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] vulkan-headers
 [DEP] xz

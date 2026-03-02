@@ -1,14 +1,14 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kcron/kcron.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Configure and schedule tasks
 
-[T] Task Scheduler is a graphical front end to the standard "cron" utility.
-[T] With it, commands (or "tasks") can be run at specific times, on a certain
+[T] Task Scheduler is a graphical front end to the standard "cron" utility. 
+[T] With it, commands (or "tasks") can be run at specific times, on a certain 
 [T] day or date, or at specific intervals (time between execution).
 
 [U] https://apps.kde.org/kcron/
@@ -17,17 +17,18 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [E] add kconfigwidgets kirigami-addons
-[E] opt kdoctools docbook-xml docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
+[V] 25.08.1
 [P] X -----5---9 179.300
 
-[CV-GROUP] kde-gear
-[D] 90589e1f31d2295c6bf0e3d2cf7aa036405cba182dc0059e666c9f78 kcron-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
-
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 379eac277bdf71ff0978fb70ce18ab230dd074a87f5296d07036de8c kcron-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

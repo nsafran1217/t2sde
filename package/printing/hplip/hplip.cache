@@ -23,4 +23,5 @@
 [DEP] sane-backends
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] zlib

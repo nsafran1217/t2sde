@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kubectl/kubectl.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,10 +18,10 @@
 [F] CROSS
 
 [L] GPL
-[S] Stable
-[V] 1.35.1
+[S] Beta
+[V] 1.34.1
 
-[D] 64132147db2f62b9a81ff44bf7d6efcaee44b24ff67be0bf196e9565 kubernetes-v1.35.1.tar.gz !https://cdn.dl.k8s.io/release/v1.35.1/kubernetes-src.tar.gz
+[D] ee1b05e34ae552d5e190893355d4a10cff5cc11defe24c38c0e20e72 kubernetes-v1.34.1.tar.gz !https://cdn.dl.k8s.io/release/v1.34.1/kubernetes-src.tar.gz
 
 rungo=0
 makeinstopt=
@@ -44,10 +44,10 @@ kubectl_docs() {
 	./_output/bin/genman "docs/man/man1/" "kubectl"
 	./_output/bin/genyaml "docs/yaml/kubectl/"
 }
-hook_add inmake 5 kubectl_docs
+hook_add inmake 5 'kubectl_docs'
 
 kubectl_install() {
 	install -Dm 755 _output/bin/kubectl $root$bindir/
 	install -Dm 644 docs/man/man1/kubectl* -t $root$mandir/man1/
 }
-hook_add postmake 5 kubectl_install
+hook_add postmake 5 'kubectl_install'

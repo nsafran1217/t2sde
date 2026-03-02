@@ -34,5 +34,6 @@
 [DEP] qt6webengine
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] vulkan-headers
 [DEP] xz

@@ -19,8 +19,8 @@
 
 [L] MIT
 [S] Stable
-[V] 9.2.2
+[V] 9.2.0
 [P] X ?----5---9 109.040
 
 [CV-URL] https://pypi.org/project/setuptools-scm/#history
-[D] 2483b310c7a286669f066899ff10fa444001a086d9909be6da1cfbe6 setuptools_scm-9.2.2.tar.gz https://pypi.io/packages/source/s/setuptools_scm/
+[D] 6612174033e9a278c90ac0920e0fcac4727a0f3703257cee50a71ae6 setuptools_scm-9.2.0.tar.gz https://pypi.io/packages/source/s/setuptools_scm/

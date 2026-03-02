@@ -21,7 +21,7 @@
 
 [L] BSD
 [S] Stable
-[V] 1.19.1
+[V] 1.18.2
 [P] X -----5---9 210.000
 
-[D] 16a4c1ce3503f02bf46a0f8bb2f2b92612c539e51870662a773a1fad pyqt_builder-1.19.1.tar.gz https://pypi.python.org/packages/source/P/PyQt-builder/
+[D] f88656f73e129524c5c53d72669519ba1aa1051040594bc67e5cc2d4 pyqt_builder-1.18.2.tar.gz https://pypi.python.org/packages/source/P/PyQt-builder/

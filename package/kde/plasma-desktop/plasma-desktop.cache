@@ -1,6 +1,6 @@
-[TIMESTAMP] 1770545494 Sun Feb  8 11:11:34 2026
-[BUILDTIME] 600 (9)
-[SIZE] 31.29 MB, 3594 files
+[TIMESTAMP] 1739293632 Tue Feb 11 18:07:12 2025
+[BUILDTIME] 490 (9)
+[SIZE] 36.73 MB, 4748 files
 
 [DEP] baloo
 [DEP] bash
@@ -15,11 +15,13 @@
 [DEP] gawk
 [DEP] gettext
 [DEP] grep
+[DEP] icu4c
 [DEP] kactivitymanagerd
 [DEP] kauth
 [DEP] kbookmarks
 [DEP] kcmutils
 [DEP] kcodecs
+[DEP] kcolorscheme
 [DEP] kcompletion
 [DEP] kconfig
 [DEP] kconfigwidgets
@@ -47,15 +49,12 @@
 [DEP] kwin
 [DEP] kwindowsystem
 [DEP] kxmlgui
-[DEP] libcanberra
-[DEP] libglvnd
 [DEP] libksysguard
 [DEP] libplasma
 [DEP] libsdl2
-[DEP] libwacom
+[OPT] libwacom
 [DEP] libx11
 [DEP] libxcb
-[DEP] libxcursor
 [DEP] libxext
 [DEP] libxfixes
 [DEP] libxi
@@ -69,18 +68,14 @@
 [DEP] procps
 [DEP] qt6base
 [DEP] qt6declarative
-[DEP] qt6shadertools
+[DEP] qt6translations
 [DEP] sed
 [DEP] solid
 [DEP] sonnet
-[DEP] spirv-tools
 [DEP] systemsettings
 [DEP] tar
-[DEP] udev
-[DEP] util-linux
+[DEP] tbb
 [DEP] vulkan-headers
-[DEP] wayland
-[DEP] wayland-protocols
 [DEP] xf86-input-libinput
 [DEP] xkbcommon
 [DEP] xorg-server

@@ -22,9 +22,9 @@
 
 [L] GPL
 [S] Stable
-[V] 1.16.7
+[V] 1.16.5
 [P] X -----5---9 197.300
 
-[D] 41dcae808b4c53a8782714b76e7d5b65256ba18bfe385df23f7d147b liferea-1.16.7.tar.bz2 https://github.com/lwindolf/liferea/releases/download/v1.16.7/
+[D] eb3723c7375dc36a0c7b60466907c48f09dbae98e5c6887628fb6ac2 liferea-1.16.5.tar.bz2 https://github.com/lwindolf/liferea/releases/download/v1.16.5/
 
 . $base/package/*/*/gnome-conf.in

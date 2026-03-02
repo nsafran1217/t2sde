@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/zathura-cb/zathura-cb.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,6 +18,6 @@
 
 [L] ZLIB
 [S] Stable
-[V] 2026.02.03
+[V] 0.1.11
 
-[D] 093e3de79a4712f88341e6643ada7f0f9a52bcb87a1a612d74515deb zathura-cb-2026.02.03.tar.xz https://pwmt.org/projects/zathura-cb/download/
+[D] f4ba38b5eadffeb9718eabcaa68384308cd8f6bb036fcfe7e33cce32 zathura-cb-0.1.11.tar.xz https://pwmt.org/projects/zathura-cb/download/

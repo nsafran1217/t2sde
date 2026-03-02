@@ -1,13 +1,12 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/cosmic-notifications/cosmic-notifications.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] Notifications for the COSMIC desktop environment
+[I] cosmic-notifications
 
-[T] Layer Shell notifications daemon which integrates with COSMIC Launcher for
-[T] the COSMIC desktop environment.
+[T] cosmic-notifications.
 
 [U] https://github.com/pop-os/cosmic-notifications/
 
@@ -19,9 +18,9 @@
 
 [L] GPL3
 [S] Beta
-[V] 1.0.8
+[V] 1.0.0-beta.1.1
 
 [CV-GROUP] cosmic-desktop
-[D] 7c93f5867dc2b282c9f989ebb1c9c673905617929eb446dbf09c69f8 cosmic-notifications-epoch-1.0.8.tar.gz https://github.com/pop-os/cosmic-notifications/archive/epoch-1.0.8/
+[D] 334849a0e09771852bd07ea1b17e055194358f1d38482b6c73164427 cosmic-notifications-epoch-1.0.0-beta.1.1.tar.gz https://github.com/pop-os/cosmic-notifications/archive/epoch-1.0.0-beta.1.1/
 
 . $base/package/cosmic/*/cosmic-conf.in

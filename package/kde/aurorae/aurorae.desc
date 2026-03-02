@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/aurorae/aurorae.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -17,14 +17,12 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
-[P] X -----5---9 220.000
+[V] 6.4.5
 
 [CV-GROUP] kde-plasma
-[D] cfed7f3f28bdddb6b1aeb8733579908c6b02b8b0c730bd56036501f8 aurorae-6.6.1.tar.xz http://download.kde.org/stable/plasma/6.6.1/
+[D] 1be199be3f79da3474a4e491d858cd047c06697440e7bcf948591ffd aurorae-6.4.5.tar.xz http://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

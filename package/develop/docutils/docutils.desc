@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/docutils/docutils.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,11 +19,10 @@
 [C] extra/development
 [F] CROSS
 
-[E] add python-flit-core
-
 [L] OpenSource
+
 [S] Stable
-[V] 0.22.4
+[V] 0.22.2
 [P] X -----5---9 150.000
 
-[D] 8048dc666ad629a94baf5565af8c04662de75cb5b97bccf41a029d65 docutils-0.22.4.tar.gz https://files.pythonhosted.org/packages/source/d/docutils/
+[D] c6905e3287aba4318ca3901c44602421a5ff6c7157c0dd51262dd067 docutils-0.22.2.tar.gz https://files.pythonhosted.org/packages/source/d/docutils/

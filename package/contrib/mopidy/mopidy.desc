@@ -1,27 +1,23 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/mopidy/mopidy.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] Extensible music server
+[I] Mopidy is an extensible music server
 
-[T] Mopidy plays music from local disk, Spotify, SoundCloud, Google Play Music,
-[T] and more. You edit the playlist from any phone, tablet, or computer using a
-[T] variety of MPD and web clients.
+[T] Mopidy is an extensible music server.
 
 [U] https://www.mopidy.com/
 
 [A] Mopidy Authors
-[M] The T2 Project <t2@t2-project.org>
+[M] T2 Project <t2@t2-project.org>
 
-[C] extra/audio
+[C] extra/base
 [F] CROSS
 
+[V] 4.0.0a4
 [L] APL
 [S] Stable
-[V] 4.0.0a14
 
-[D] ad1d53673a524967d88c809a3c1e91cc892211ed32c1192d97ea0aaa mopidy-v4.0.0a14.tar.gz https://github.com/mopidy/mopidy/archive/v4.0.0a14/
-
-export SETUPTOOLS_SCM_PRETEND_VERSION=$ver
+[D] a2043c4388750c5db7eea4a307724f46f92e34afe142f103a237592b mopidy-v4.0.0a4.tar.gz https://github.com/mopidy/mopidy/archive/v4.0.0a4/

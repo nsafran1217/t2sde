@@ -11,16 +11,17 @@
 [U] https://www.zdoom.org/
 
 [A] Lzdoom Authors
-[M] The T2 Project <t2@t2-project.org>
+[M] T2 Project <t2@t2-project.org>
 
-[C] extra/game
+[C] extra/base
+
+[V] 4.11.4
 
 [E] opt libwebp
 
 [L] GPL3
 [S] Stable
-[V] 4.14.3a
 
-[D] 4b7890badead561e26bb5fdba6011d2de8a1f2f44f5c27d45b52f452 lzdoom-4.14.3a.tar.gz https://github.com/drfrag666/gzdoom/archive/refs/tags/l4.14.3a/
+[D] e52a37d6f06409d45ca658ff514031ab8fb16826450b36a6f5a89bff lzdoom-4.11.4.tar.gz https://github.com/drfrag666/gzdoom/archive/refs/tags/l4.11.4/
 
 var_append CC_WRAPPER_APPEND ' ' -std=gnu17

@@ -9,11 +9,11 @@
 [DEP] bzip2
 [DEP] coreutils
 [DEP] diffutils
-[OPT] esound
+[DEP] esound
 [DEP] findutils
 [DEP] gawk
 [DEP] grep
-[OPT] jack
+[DEP] jack
 [DEP] libsdl2
 [DEP] linux-header
 [DEP] make

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/libpanel/libpanel.desc
-[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -21,10 +21,10 @@
 
 [L] LGPL
 [S] Beta
-[V] 1.10.4
+[V] 1.10.2
 [P] X -----5---9 799.999
 
-[D] 89c541ddae089d8f803e1f9ce4823916c5cea120d4e8bc70a1c2187e libpanel-1.10.4.tar.xz https://download.gnome.org/sources/libpanel/1.10/
+[D] c60b846e5c2f38038dcdc13453cbc0ed27ef8e8345ce4f3cad595eed libpanel-1.10.2.tar.xz https://download.gnome.org/sources/libpanel/1.10/
 
 var_append mesonopt ' ' -Ddocs=disabled
 pkginstalled gobject-introspection || var_append mesonopt ' ' -Dintrospection=disabled

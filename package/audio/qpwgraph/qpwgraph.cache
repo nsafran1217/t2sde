@@ -1,7 +1,8 @@
-[TIMESTAMP] 1770892660 Thu Feb 12 11:37:40 2026
-[BUILDTIME] 45 (9)
-[SIZE] 0.79 MB, 15 files
+[TIMESTAMP] 1755376812 Sat Aug 16 22:40:12 2025
+[BUILDTIME] 30 (9)
+[SIZE] 0.71 MB, 14 files
 
+[DEP] 00-dirtree
 [DEP] alsa-lib
 [DEP] bash
 [DEP] binutils
@@ -9,7 +10,6 @@
 [DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
-[DEP] findutils
 [DEP] gawk
 [DEP] git
 [DEP] grep
@@ -20,5 +20,6 @@
 [DEP] qt6base
 [DEP] sed
 [DEP] tar
-[DEP] util-linux
+[DEP] tbb
 [DEP] vulkan-headers
+[DEP] xorgproto

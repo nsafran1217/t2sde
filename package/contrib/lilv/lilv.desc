@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/lilv/lilv.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -21,7 +21,7 @@
 
 [L] ISC
 [S] Stable
-[V] 0.26.4
+[V] 0.24.26
 [P] X -----5---9 179.500
 
-[D] 6b463d4de3c075ec8a07ef2bcbd20d9c130618b1a6ba0b26e06e49f3 lilv-0.26.4.tar.xz https://download.drobilla.net/
+[D] aef9fc25cf04cd4cb4fa18ef0c8a761b717c7f7c4ac0d07d69a5e3e5 lilv-0.24.26.tar.xz https://download.drobilla.net/

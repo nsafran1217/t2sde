@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/noia-icons-gnome/noia-icons-gnome.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -27,10 +27,11 @@
 [L] LGPL
 [S] Stable
 [V] 1.0
-
-[D] 062bef1fbb12a44f2a30fa588f342ed94abf8c2a8680dade12fe2a87 ICON-Noia-full-1.0.tar.bz2 http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/icon/
+[P] X -----5---9 168.600
 
 . $base/package/*/*/gnome-conf.in
 
 runmake=0 autoextract=0
 hook_add postmake 5 "tar $taropt `match_source_file -p ICON-Noia-full` -C $root/$prefix/share/icons"
+
+[D] 062bef1fbb12a44f2a30fa588f342ed94abf8c2a8680dade12fe2a87 ICON-Noia-full-1.0.tar.bz2 http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/icon/

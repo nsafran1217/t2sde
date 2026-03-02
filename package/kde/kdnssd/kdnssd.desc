@@ -1,11 +1,11 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kdnssd/kdnssd.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] KDE Frameworks integration module for DNS-SD services (Zeroconf)
+[I] KDE Frameworks 5 Tier 1 integration module for DNS-SD services (Zeroconf)
 
 [T] KDNSSD is a library for handling the DNS-based Service Discovery Protocol
 [T] (DNS-SD), the layer of Zeroconf that allows network services, such as
@@ -18,14 +18,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
+[V] 6.18.0
 [P] X -----5---9 162.900
 
 [CV-GROUP] kde-frameworks
-[D] 5c8dbaefbbb966f4fd0674990869dd9ce849ca8d692073380da8eb51 kdnssd-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] dadfa860521a6725162d102a1f886781dd6cd15903a2f12517418879 kdnssd-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

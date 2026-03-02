@@ -11,6 +11,7 @@
 [DEP] diffutils
 [DEP] findutils
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] gzip
 [DEP] libmaxminddb
@@ -24,4 +25,5 @@
 [DEP] perl
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] yajl

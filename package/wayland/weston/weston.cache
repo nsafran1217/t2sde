@@ -41,6 +41,7 @@
 [DEP] python
 [OPT] seatd
 [DEP] sed
+[DEP] subversion
 [OPT] systemd
 [DEP] tar
 [DEP] udev

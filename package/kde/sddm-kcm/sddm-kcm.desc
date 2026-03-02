@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/sddm-kcm/sddm-kcm.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,13 +14,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 200.300
 
 [CV-GROUP] kde-plasma
-[D] a766ecd315531f908e354d19cdc91123af94a6dee99f93d969cc6dce sddm-kcm-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] c7a3da564f6e1679f59d060205e67caed4bc0eeaef3e39d56cbd1a79 sddm-kcm-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

@@ -41,6 +41,7 @@
 [DEP] setuptools
 [DEP] sysfiles
 [DEP] tar
+[DEP] tbb
 [DEP] util-linux
 [DEP] wxwidgets
 [DEP] xorgproto

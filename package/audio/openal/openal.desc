@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/openal/openal.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -29,10 +29,10 @@
 
 [L] LGPL
 [S] Stable
-[V] 1.25.1
+[V] 1.24.3
 [P] X -----5---9 166.750
 
-[D] 0867f18f0bd57d61fd7e138c9ff42d598283dfe1b5c919b73ade1b16 openal-soft-1.25.1.tar.gz https://github.com/kcat/openal-soft/archive/1.25.1/
+[D] 9f263bb3c048c490c605d2da70e089536b3c847f72b7429c449b4f8b openal-soft-1.24.3.tar.gz https://github.com/kcat/openal-soft/archive/1.24.3/
 
 var_append cmakeopt ' ' -DALSOFT_EXAMPLES=FALSE
 pkginstalled pipewire || var_append cmakeopt ' ' -DALSOFT_BACKEND_PIPEWIRE=FALSE

@@ -22,10 +22,10 @@
 
 [L] MPL
 [S] Stable
-[V] 4.38.2
+[V] 4.37
 [P] X -----5---9 111.051
 
-[D] 6a9cc5951dc0aae9af7e1cf80a3608ff8226c829021017ad35014d35 nspr-4.38.2.tar.gz http://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v4.38.2/src/
+[D] 3bd963c79057c09c663910b5a81da5d1e035411ba9cc5062d6423098 nspr-4.37.tar.gz http://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v4.37/src/
 
 srcdir="nspr*/nspr"
 

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/aqbanking/aqbanking.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,6 +19,6 @@
 
 [L] GPL
 [S] Stable
-[V] 6.9.1
+[V] 6.6.1
 
-[D] f7c97bad88eafb2e5153d14204eff7d58b72d3dd995852613410a0a1 aqbanking-6.9.1.tar.gz https://www.aquamaniac.de/rdm/attachments/download/652/
+[D] 34baa4187d04efc49045011ea8cc7a9f0189225b2a1334e7b33b00d9 aqbanking-6.6.1.tar.gz https://www.aquamaniac.de/rdm/attachments/download/535/

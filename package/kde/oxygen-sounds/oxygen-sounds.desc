@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/oxygen-sounds/oxygen-sounds.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,13 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 200.300
 
 [CV-GROUP] kde-plasma
-[D] cbb7f17abecf2c8494ca4fe6c77bf671033317b6c19f20e446626a7b oxygen-sounds-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] 40c0c6a5c5d16435ef3bc889b00c9b68b4b3f7396c88a90348bc0ec3 oxygen-sounds-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

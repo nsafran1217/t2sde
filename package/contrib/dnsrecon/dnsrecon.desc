@@ -15,8 +15,8 @@
 
 [C] extra/base
 
-[V] 1.5.3
+[V] 1.5.1
 [L] GPL
 [S] Stable
 
-[D] 2e2a67e0425e0f0b3e28f7aab1cd8233a2f32ab1412159f09f69c6e3 dnsrecon-1.5.3.tar.gz https://github.com/darkoperator/dnsrecon/archive/1.5.3/
+[D] db9401c147a528b5472ba626e65aa991d95a88b76adcc629b484d923 dnsrecon-1.5.1.tar.gz https://github.com/darkoperator/dnsrecon/archive/1.5.1/

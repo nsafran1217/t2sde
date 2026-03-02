@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/xlockmore/xlockmore.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -24,11 +24,12 @@
 
 [L] BSD
 [S] Stable
-[V] 5.88
-
-[D] cdf9acc3d976b08ce89766f3e57da3470411cf75fb7a586e11405e9a xlockmore-5.88.tar.xz http://sillycycle.com/xlock/
+[V] 5.84
+[P] X -----5---9 131.800
 
 . package/*/*/modular-x-conf.in
 var_append CC_WRAPPER_APPEND ' ' -std=gnu17
 var_append confopt ' ' '--enable-bad-pam --without-magick' # our pam considered broken?
 pkginstalled pam && hook_add postmake 5 "cp -v etc/xlock.pamd $root/etc/pam.d/xlock"
+
+[D] 626b2ff6228f7279370654fa58ddbe906638b28fb2262a6d10e72428 xlockmore-5.84.tar.xz http://sillycycle.com/xlock/

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/gnome-music/gnome-music.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -17,9 +17,10 @@
 
 [L] LGPL
 [S] Stable
-[V] 49.1
-
-[CV-URL] https://download.gnome.org/sources/gnome-music/cache.json
-[D] d530a2464b52748879ffb7e3d664e67273f3651bcaa4ff5b3ba02ca5 gnome-music-49.1.tar.xz https://download.gnome.org/sources/gnome-music/49/
+[V] 49.0.2
+[P] X -----5---9 177.200
 
 . $base/package/*/*/gnome-conf.in
+
+[CV-URL] https://download.gnome.org/sources/gnome-music/cache.json
+[D] e29894fa0ef5ee007a94b8a50cdad9aae889747c476311e5febb2aa5 gnome-music-49.0.2.tar.xz https://download.gnome.org/sources/gnome-music/49/

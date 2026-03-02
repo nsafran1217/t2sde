@@ -1,12 +1,12 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/keysmith/keysmith.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Keysmith generates tokens for your two-factor logins
 
-[T] Keysmith is an application to generate two-factor authentication (2FA)
+[T] Keysmith is an application to generate two-factor authentication (2FA) 
 [T] tokens when logging in to your (online) accounts.
 
 [U] https://apps.kde.org/keysmith/
@@ -19,9 +19,10 @@
 
 [L] GPL
 [S] Beta
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 7e97359ff55696cf89dbb2e6c95a643f971e6afdd056100fca4b615e keysmith-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 400.000
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 2bcfedcbf4ff0a7abfa22ca0236a1a0b6e95e69ad45f8c44a1bad55e keysmith-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

@@ -10,6 +10,7 @@
 [DEP] diffutils
 [DEP] findutils
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] openssl
 [DEP] sed

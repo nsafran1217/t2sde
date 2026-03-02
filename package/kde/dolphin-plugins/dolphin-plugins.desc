@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/dolphin-plugins/dolphin-plugins.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -16,13 +16,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 96adf787643ebc73aa039627b522218979f332a155e44ccbc7a03edb dolphin-plugins-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 180.200
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] f5f8b64ac6f5d818dde803cca8367800efffa57c4d324f50c3e1fa97 dolphin-plugins-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/gst-plugins-bad/gst-plugins-bad.desc
-[COPY] Copyright (C) 2010 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2010 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -30,9 +30,6 @@
 [E] opt orc
 [E] opt speex
 [E] opt libdc1394
-[E] opt libde265
-[E] opt lilv
-[E] opt lv2
 [E] opt abseil-cpp
 [E] opt faac
 [E] opt gsm
@@ -45,7 +42,7 @@
 [E] opt libldac
 [E] opt liblrdf
 [E] opt libmodplug
-[E] opt librsvg
+[E] opt libqrencode
 [E] opt libtiff
 [E] opt libzvbi
 [E] opt openal
@@ -54,19 +51,17 @@
 [E] opt shaderc
 [E] opt soundtouch
 [E] opt spandsp
-[E] opt svt-av1
 [E] opt webrtc-audio-processing-1
 
 [L] LGPL
 [S] Stable
-[V] 1.28.1
-[P] X -----5---9 179.800
+[V] 1.26.6
+[P] X -----5---9 200.800
 
 [CV-GROUP] gst
 [CV-FLAGS] ODD-UNSTABLE
-[D] 4dbae7aa6fcd43fd1fd2242f2f2e5285cb115c367402fba32e7c7397 gst-plugins-bad-1.28.1.tar.xz https://gstreamer.freedesktop.org/src/gst-plugins-bad/
+[D] 4080e948fdb13f8b67b39ed61a478a3c08a20f3a4dcda6d3a98fda70 gst-plugins-bad-1.26.6.tar.xz https://gstreamer.freedesktop.org/src/gst-plugins-bad/
 
 var_append mesonopt ' ' '-Dsctp=enabled -Dtests=disabled -Dexamples=disabled'
 var_append mesonopt ' ' '-Dpackage-name="GStreamer base plug-ins (T2 SDE)" -Dpackage-origin="t2sde.org.org"'
 pkginstalled gobject-introspection && var_append mesonopt ' ' -Dintrospection=enabled
-pkginstalled libqrencode || var_append mesonopt ' ' -Dqroverlay=disabled

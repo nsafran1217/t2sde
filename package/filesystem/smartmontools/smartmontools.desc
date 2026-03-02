@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/smartmontools/smartmontools.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -25,7 +25,8 @@
 [L] GPL
 [S] Stable
 [V] 7.5
-
-[D] 7b4e91f54123b3a260ef29649f692260e2e4311b94b9b94f99247614 smartmontools-7.5.tar.gz https://sourceforge.net/projects/smartmontools/files/smartmontools/7.5/
+[P] X -----5---9 184.700
 
 var_append confopt ' ' --with-initscriptdir=no
+
+[D] 7b4e91f54123b3a260ef29649f692260e2e4311b94b9b94f99247614 smartmontools-7.5.tar.gz https://sourceforge.net/projects/smartmontools/files/smartmontools/7.5/

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/binaryen/binaryen.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,10 +18,10 @@
 [C] extra/base
 [F] CROSS
 
-[V] 126
+[V] 124
 [L] APL
 [S] Stable
 
-[D] b40cbf940938e6926b3f9d9ba6756d4dbb887bc82714076ff1374ec6 binaryen-126.tar.gz https://github.com/WebAssembly/binaryen/archive/version_126/
+[D] ce4668acd2a6ddc39d3760ea00313dfe3e98a10729c0d4c1d0b17bc1 binaryen-124.tar.gz https://github.com/WebAssembly/binaryen/archive/version_124/
 
 var_append cmakeopt ' ' -DBUILD_TESTS=OFF

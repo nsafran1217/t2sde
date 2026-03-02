@@ -1,11 +1,11 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kauth/kauth.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] KDE Frameworks integration module to perform actions as privileged user
+[I] KDE Frameworks 5 integration module to perform actions as privileged user
 
 [T] KAuth provides a convenient, system-integrated way to offload actions that
 [T] need to be performed as a privileged user (root, for example) to small
@@ -17,14 +17,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
-[P] X -----5---9 162.905
+[V] 6.18.0
+[P] X -----5---9 162.900
 
 [CV-GROUP] kde-frameworks
-[D] dcb334820659f8787426d1d5d73a2fba6588c934656870089b26b095 kauth-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] af412023f5441953975df2a8745ea9e5a7d94bad9e8ccdd77e600354 kauth-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

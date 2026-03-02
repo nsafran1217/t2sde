@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/qt6webengine/qt6webengine.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,24 +14,19 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/development
-[F] CROSS OBJDIR NO-LTO
+[F] CROSS NOPARALLEL OBJDIR NO-LTO.gcc
 
 [E] add html5lib
-[E] opt abseil-cpp
-[E] opt cups
 [E] opt libwebp
 [E] opt libopus
-[E] opt re2
 
 [L] LGPL
 [S] Stable
-[V] 6.10.2
-[P] X -----5---9 201.000
+[V] 6.9.2
+[P] X -----5---9 153.000
 
-[CV-GROUP] qt6
-[D] ecc96f605644031f593dd4bb9834d680cf8847b38333b7d89209d9ff qtwebengine-everywhere-src-6.10.2.tar.xz http://download.qt.io/official_releases/qt/6.10/6.10.2/submodules/
-
-. $base/package/*/*/qt6-conf.in
+[ $prefix_auto = 1 ] && prefix=$(pkgprefix qt6base) && set_confopt
+atstage cross && var_append cmakeopt ' ' "-DQT_HOST_PATH=$root/$(pkgprefix qt6base)"
 
 var_append cmakeopt ' ' -GNinja
 var_append cmakeopt ' ' -DQT_BUILD_EXAMPLES_BY_DEFAULT=OFF
@@ -41,3 +36,6 @@ var_append cmakeopt ' ' -DQT_FEATURE_qtwebengine_widgets_build=ON
 pkginstalled libevent && var_append cmakeopt ' ' -DQT_FEATURE_webengine_system_libevent=ON
 var_append GCC_WRAPPER_INSERT ' ' "-I$root`pkgprefix includedir libxcb`"
 var_append GCC_WRAPPER_INSERT ' ' "-c?:-L$root`pkgprefix libdir libxcb`"
+
+[CV-GROUP] qt6
+[D] 8ec00e4b1507f046cb2b01e1c68ba5bae7d3092d791143eb2ec50c1c qtwebengine-everywhere-src-6.9.2.tar.xz http://download.qt.io/official_releases/qt/6.9/6.9.2/submodules/

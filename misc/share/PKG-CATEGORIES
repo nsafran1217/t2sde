@@ -20,7 +20,6 @@ base/editor
 base/firmware
 base/kernel
 base/library
-base/network
 base/setup
 base/system
 base/tool

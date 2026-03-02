@@ -1,27 +1,23 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/exoscale/exoscale.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Command-line tool for everything at Exoscale
 
-[T] exoscale is a tool to manage your Exoscale infrastructure easily from the
-[T] command-line with exo.
+[T] Command-line tool for everything at Exoscale.
 
 [U] https://github.com/exoscale/cli
 
 [A] Exoscale Authors
-[M] The T2 Project <t2@t2-project.org>
+[M] T2 Project <t2@t2-project.org>
 
 [C] extra/base
-[F] CROSS
 
+[V] 1.85.4
 [L] APL
 [S] Stable
-[V] 1.93.0
 
-[D] 180dda07527a8516b580732dfdf8573a5f5aefa9807d1105cbddf2a8 exoscale-1.93.0.tar.gz https://github.com/exoscale/cli/archive/refs/tags/v1.93.0/
-
-. $base/package/*/*/go-conf.in
-hook_add postmake 5 "install -v cli $root$bindir/exo"
+[D] 6280bae266344e12c067eb13594cecaa4fec53802570622b9fd1eb3a exoscale-1.85.4.tar.gz https://github.com/exoscale/cli/archive/refs/tags/v1.85.4/
+[D] 2dcf3227e78e72a065fb8fbda829d0709ca5a83cc9ef8adf6854c14b go.mk-29048924e7010732530539de67407bb2715e181b.tar.gz https://github.com/exoscale/go.mk/archive/29048924e7010732530539de67407bb2715e181b/

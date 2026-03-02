@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/glm/glm.desc
-[COPY] Copyright (C) 2016 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2016 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,11 +19,11 @@
 
 [L] MIT
 [S] Beta
-[V] 1.0.3
+[V] 1.0.1
 [P] X -----5---9 144.600
-
-[D] 4ec541ad0c95317dbe9e0eeab0b9ff2c46f14f1bede1c6d0226f5cba glm-1.0.3.tar.gz https://github.com/g-truc/glm/archive/1.0.3/
 
 makeinstopt=
 var_append cmakeopt ' ' '-G Ninja -W no-dev'
 hook_add postmake 5 "cp -arv glm $root$includedir/"
+
+[D] 7cce0a87307d085be4032b7319027408c0e96d6e93208ba335d17714 glm-1.0.1.tar.gz https://github.com/g-truc/glm/archive/1.0.1/

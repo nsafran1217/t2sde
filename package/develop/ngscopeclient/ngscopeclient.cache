@@ -12,6 +12,7 @@
 [DEP] findutils
 [DEP] gawk
 [DEP] gdk-pixbuf
+[DEP] git
 [DEP] glfw
 [DEP] glib
 [DEP] glslang

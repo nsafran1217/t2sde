@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/syncthing/syncthing.desc
-[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2021 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,17 +19,17 @@
 
 [L] MPL
 [S] Stable
-[V] 2.0.14
+[V] 2.0.10
 
-[D] b35c1b035612e407f352245ae48779418ebdf62502b08ac26e85686e syncthing-2.0.14.tar.gz https://github.com/syncthing/syncthing/archive/v2.0.14/
+[D] 64de924f4dfc6889db71c85fb511977268d5363ba9fcd2975b8972e2 syncthing-2.0.10.tar.gz https://github.com/syncthing/syncthing/archive/v2.0.10/
 
 . $base/package/*/*/go-conf.in
 
 rungo=0
 runmake=0
 
-hook_add inmake 5 syncthing_inmake
-hook_add postmake 5 syncthing_postmake
+hook_add inmake 5 "syncthing_inmake"
+hook_add postmake 5 "syncthing_postmake"
 
 syncthing_inmake() {
 	go run build.go -version="v$ver" -no-upgrade

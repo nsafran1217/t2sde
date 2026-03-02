@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kasts/kasts.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -15,14 +15,15 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/desktop/kde
-[F] CROSS OBJDIR
+[F] CROSS
 
 [L] GPL
 [S] Beta
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] e3cef16203922187c318cc56d44481b072339f3b7683a188fbc27e4f kasts-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 400.000
 
 . $base/package/*/*/kde-conf.in
 var_append GCC_WRAPPER_APPEND ' ' "$(pkg-config --libs zlib)"
+
+[CV-GROUP] kde-gear
+[D] ccc3d18c31101a9b0616721c321a129a25ac910a812e9dc23488e183 kasts-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

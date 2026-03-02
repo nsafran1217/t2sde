@@ -1,6 +1,6 @@
-[TIMESTAMP] 1765304800 Tue Dec  9 19:26:40 2025
-[BUILDTIME] 90 (9)
-[SIZE] 13.11 MB, 379 files
+[TIMESTAMP] 1748590241 Fri May 30 09:30:41 2025
+[BUILDTIME] 60 (5)
+[SIZE] 27.70 MB, 441 files
 
 [OPT] alsa-lib
 [DEP] bash
@@ -10,6 +10,7 @@
 [DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
+[DEP] findutils
 [DEP] gawk
 [DEP] gettext
 [DEP] glib
@@ -38,6 +39,7 @@
 [DEP] openssl
 [OPT] orc
 [DEP] pango
+[DEP] pkgconfig
 [DEP] python
 [DEP] sed
 [DEP] setuptools

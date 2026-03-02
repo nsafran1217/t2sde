@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/qt6wayland/qt6wayland.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -17,14 +17,15 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/development
-[F] CROSS OBJDIR
+[F] CROSS NO-LTO.gcc
 
 [L] LGPL
 [S] Stable
-[V] 6.10.2
-[P] X -----5---9 140.000
+[V] 6.9.2
+[P] X -----5---9 127.000
+
+[ $prefix_auto = 1 ] && prefix=$(pkgprefix qt6base) && set_confopt
+atstage cross && var_append cmakeopt ' ' "-DQT_HOST_PATH=$root/$(pkgprefix qt6base)"
 
 [CV-GROUP] qt6
-[D] 40620c91098b93bd3b4508eaf65a7cc0d1ea8b8cc8bfc47a4d1ed561 qtwayland-everywhere-src-6.10.2.tar.xz http://download.qt.io/official_releases/qt/6.10/6.10.2/submodules/
-
-. $base/package/*/*/qt6-conf.in
+[D] e8a4a30ec1345556ddfa7f27a8271944ca0593c2719c5b3162d7ba09 qtwayland-everywhere-src-6.9.2.tar.xz http://download.qt.io/official_releases/qt/6.9/6.9.2/submodules/

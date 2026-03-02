@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/cosmic-initial-setup/cosmic-initial-setup.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -18,10 +18,8 @@
 
 [L] GPL3
 [S] Stable
-[V] 1.0.8
+[V] 1.0.0-beta.1.1
+[P] X -----5---9 400.000
 
 [CV-GROUP] cosmic-desktop
-[D] be00029e1718a2e8971312e99e9f534517c3f68c23ba5b5ed7890bda cosmic-initial-setup-epoch-1.0.8.tar.gz https://github.com/pop-os/cosmic-initial-setup/archive/epoch-1.0.8/
-
-. $base/package/cosmic/*/cosmic-conf.in
-var_append GCC_WRAPPER_APPEND ' ' '*jitterentropy*?-O0'
+[D] 78837f238395b0e131befff9ac9d20321e3f5066b1202b0b5df78607 cosmic-initial-setup-epoch-1.0.0-beta.1.1.tar.gz https://github.com/pop-os/cosmic-initial-setup/archive/epoch-1.0.0-beta.1.1/

@@ -25,12 +25,12 @@
 
 [L] BSD
 [S] Stable
-[V] 21.1.8
+[V] 20.1.8
 [P] X ?----5---9 102.620
 
 [CV-GROUP] llvmorg
-[D] abd878fa1e72be0f544b6ac5bf436da08b0747b541bbd0ba383d4089 lld-21.1.8.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/
-[D] 912d431ae9201ba0609a667bbf82f7a4137a50076c007737f7fe5da9 llvm-cmake-21.1.8.src.tar.xz !https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/cmake-21.1.8.src.tar.xz
+[D] 24d94f7fc01a9e9a2463fdc13b610e305cad8a390f39de911da6a11c lld-20.1.8.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/
+[D] 7281100b5460140aac62efdf92ff82bb5542adcf69806d73bfcb35b9 llvm-cmake-20.1.8.src.tar.xz !https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/cmake-20.1.8.src.tar.xz
 
 var_append cmakeopt ' ' "-DBUILD_SHARED_LIBS=ON -DLLVM_BUILD_LLVM_DYLIB=ON -DLLVM_LINK_LLVM_DYLIB=ON"
 

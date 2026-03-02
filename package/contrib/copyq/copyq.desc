@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/copyq/copyq.desc
-[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -16,10 +16,10 @@
 
 [C] extra/tool
 
-[V] 13.0.0
+[V] 11.0.0
 [L] GPL3
 [S] Stable
 
-[D] f0ada8ef7e6f63ca3467a357799a08ea5229975c4316177dbf808533 copyq-13.0.0.tar.gz https://github.com/hluk/CopyQ/archive/refs/tags/v13.0.0/
-
 var_append cmakeopt ' ' -DWITH_QT6=ON
+
+[D] cb4929bd9f57e1d718a1e5835ec987d52c9725049bec706f92673b1a copyq-11.0.0.tar.gz https://github.com/hluk/CopyQ/archive/refs/tags/v11.0.0/

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/alsa-lib/alsa-lib.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -27,10 +27,12 @@
 
 [L] GPL
 [S] Stable
-[V] 1.2.15.3
+[V] 1.2.14
 [P] X -----5---9 110.800
 
-[CV-GROUP] alsa
-[D] 8e41f7cc3dd8c92475e98f1fd96e37356a9ed1f6c0e262c926c703c5 alsa-lib-1.2.15.3.tar.bz2 https://www.alsa-project.org/files/pub/lib/
-
+# guide for cross compiling
 pkginstalled python || var_append confopt ' ' --disable-python
+atstage "cross" && var_append confopt ' ' --disable-python
+
+[CV-GROUP] alsa
+[D] a5c21dd75ab839117a3c70bf034665e288300dafc5f8275072100961 alsa-lib-1.2.14.tar.bz2 https://www.alsa-project.org/files/pub/lib/

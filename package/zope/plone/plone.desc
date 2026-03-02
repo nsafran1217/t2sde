@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/plone/plone.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -24,9 +24,9 @@
 [L] OpenSource
 
 [S] Beta
-[V] 6.2.0a1
+[V] 2.1.4
 [P] X -----5---9 300.200
 
-[D] bfe5bbb4de5745e8b27d28f00599757cd3be4a2c688a5dee209d6ec0 Plone-6.2.0a1.tar.gz https://github.com/plone/Plone/archive/6.2.0a1/
-
 . $base/package/*/zope/zope-conf.in
+
+[D] db20df218fe6abbb658fe470a58385b7810eb530305323a690b1e28f Plone-2.1.4.tar.gz http://dl.sourceforge.net/sourceforge/plone/

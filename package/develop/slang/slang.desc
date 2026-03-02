@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/slang/slang.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -21,12 +21,8 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] base/development
-[F] CROSS
 
-[E] opt libpng
-[E] opt libx11 xorgproto imake cf
-[E] opt onig
-[E] opt pcre
+[F] CROSS NOPARALLEL
 
 [L] OpenSource
 [S] Stable
@@ -36,5 +32,6 @@
 [CV-URL] http://www.s-lang.org/download.html
 [D] ef45a982c2840b0fa0d0d6b89898ac7ff6ce3e87ae3cb57e8ef428da slang-2.3.3.tar.bz2 http://www.jedsoft.org/releases/slang/
 
-var_append makeopt ' ' 'all elf'
+var_append makeopt ' ' all elf
 var_append makeinstopt ' ' 'install install-elf'
+

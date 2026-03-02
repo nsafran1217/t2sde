@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/ddnet/ddnet.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -24,9 +24,9 @@
 
 [L] ZLIB
 [S] Stable
-[V] 19.7
+[V] 19.4
 
-[D] 8c91f44adbcf56a6bfe3f900c54074cc7c58c9ad4cd95fca889c213d ddnet-19.7.tar.gz https://github.com/ddnet/ddnet/archive/refs/tags/19.7/
+[D] 9044850cd9d392e1ffae76a9e19204176bd575dd4c021c62a9cf68ae ddnet-19.4.tar.gz https://github.com/ddnet/ddnet/archive/refs/tags/19.4/
 
 runcargo=0
 var_append CXX_WRAPPER_INSERT ' ' "-I$root$(pkgprefix includedir libx11)"

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/vulkan-headers/vulkan-headers.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,11 +19,11 @@
 
 [L] OpenSource
 [S] Stable
-[V] 1.4.340
+[V] 1.4.321.0
 [P] X -----5---9 127.400
 
 [CV-FLAGS] NO-PREFIX
 [CV-GROUP] vulkan
-[D] 952b968071933633ecfe474e0da2cab9ab75b374d46be07489201edf Vulkan-Headers-1.4.340.tar.gz https://github.com/KhronosGroup/Vulkan-Headers/archive/v1.4.340/
+[D] d0f484bbbec00fcf957d836b4de29ad3f9c282f3c4cc5b013e9f92c0 Vulkan-Headers-1.4.321.0.tar.gz https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/vulkan-sdk-1.4.321.0/
 
 var_append cmakeopt ' ' -GNinja

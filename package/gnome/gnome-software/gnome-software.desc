@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/gnome-software/gnome-software.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -17,9 +17,10 @@
 
 [L] LGPL
 [S] Stable
-[V] 49.3
+[V] 49.0
+[P] X -----5---9 177.200
 
 [CV-URL] https://download.gnome.org/sources/gnome-software/cache.json
-[D] 1b9d6342ccf80b8cdb2c10ebd5a086121af6e8b494d4ae1a5c5eac01 gnome-software-49.3.tar.xz https://download.gnome.org/sources/gnome-software/49/
+[D] 27de3ee080226eeaca4bcefb492705d6f886f3342ba3824999770314 gnome-software-49.0.tar.xz https://download.gnome.org/sources/gnome-software/49/
 
 . $base/package/*/*/gnome-conf.in

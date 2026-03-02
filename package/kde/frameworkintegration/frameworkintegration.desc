@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/frameworkintegration/frameworkintegration.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] KDE Frameworks workspace and cross-framework integration plugins
+[I] KDE Frameworks 5 Tier 4 workspace and cross-framework integration plugins
 
-[T] Framework Integration is a set of plugins responsible for better
+[T] Framework Integration is a set of plugins responsible for better 
 [T] integration of Qt applications when running on a KDE Plasma workspace.
 
 [U] https://www.kde.org
@@ -16,14 +16,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
-[P] X -----5---9 200.205
+[V] 6.18.0
+[P] X -----5---9 162.900
 
 [CV-GROUP] kde-frameworks
-[D] 48560ec79efaa4752db738de6abd4d4d5aada469288b7e8858cc7a8a frameworkintegration-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] 88905c35893f1cb2e48d98bd941cb5fa7cc8424c3027642c3016fa51 frameworkintegration-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

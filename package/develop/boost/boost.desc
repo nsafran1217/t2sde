@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/boost/boost.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -30,14 +30,15 @@
 
 [L] OpenSource
 [S] Stable
-[V] 1.90.0
+[V] 1.89.0
 [P] X -----5---9 126.400
 
 [CV-TR] s/\./_/g
 [CV-URL] https://www.boost.org/users/download/
-[D] ee1d2fb03f47b914f5fe3822ad913d55601ca90f2b3105eb79c6196d boost_1_90_0.tar.bz2 https://archives.boost.io/release/1.90.0/source/
+[D] 7e19cf30f3f46089a345b33469eeac1d0c1bdb445e5a4d70410a6392 boost_1_89_0.tar.bz2 https://archives.boost.io/release/1.89.0/source/
 
-runconf=0 runmake=0
+runconf=0
+runmake=0
 
 # otherwise rebuilding boost does not reinstall static files
 var_insert taropt ' ' -m
@@ -56,7 +57,7 @@ cross_boost_config() {
 
 if atstage cross; then
 	b2opt="toolset=gcc-xxx $b2opt"
-	hook_add premake 5 cross_boost_config
+	hook_add premake 5 "cross_boost_config"
 else
 	b2opt="toolset=gcc $b2opt"
 fi

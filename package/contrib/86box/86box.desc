@@ -1,0 +1,31 @@
+# --- T2-COPYRIGHT-BEGIN ---
+# t2/package/*/86box/86box.desc
+# Copyright (C) 2025 The T2 SDE Project
+# SPDX-License-Identifier: GPL-2.0
+# --- T2-COPYRIGHT-END ---
+
+[I] Emulator of x86-based machines
+
+[T] 86Box is a low level x86 emulator that runs older operating systems and
+[T] software designed for IBM PC systems and compatibles from 1981 through
+[T] fairly recent system designs based on the PCI bus.
+
+[U] https://86box.net/
+
+[A] 86Box
+[M] The T2 Project <t2@t2-project.org>
+
+[C] extra/emulator
+[F] CROSS
+
+[E] opt qt6base qt6tools qt6translations
+[E] opt qt5base qt5tools qt5translations
+
+[L] GPL
+[S] Stable
+[V] 5.1
+
+[D] 3b5f453a26bebc101c985d016f8747326a9c1a5bf6635f7af1af3a0c 86Box-v5.1.tar.gz https://github.com/86Box/86Box/archive/v5.1/
+
+pkginstalled qt6base && var_append cmakeopt ' ' -DUSE_QT6=ON
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5

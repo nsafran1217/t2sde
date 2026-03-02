@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/qt6declarative/qt6declarative.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,16 +14,17 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/development
-[F] CROSS OBJDIR
+[F] CROSS NO-LTO.gcc
 
 #[E] opt qt6shadertools
 
 [L] LGPL
 [S] Stable
-[V] 6.10.2
-[P] X -----5---9 140.100
+[V] 6.9.2
+[P] X -----5---9 127.100
+
+[ $prefix_auto = 1 ] && prefix=$(pkgprefix qt6base) && set_confopt
+atstage cross && var_append cmakeopt ' ' "-DQT_HOST_PATH=$root/$(pkgprefix qt6base)"
 
 [CV-GROUP] qt6
-[D] ad0508b94acddd8df7977725f02972edb2fbc7b802f2c1a1defdb948 qtdeclarative-everywhere-src-6.10.2.tar.xz http://download.qt.io/official_releases/qt/6.10/6.10.2/submodules/
-
-. $base/package/*/*/qt6-conf.in
+[D] bd143bb5546fb8724b296c1fc04dfbf36c35ac0f0b38dc0c6799c740 qtdeclarative-everywhere-src-6.9.2.tar.xz http://download.qt.io/official_releases/qt/6.9/6.9.2/submodules/

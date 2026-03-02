@@ -16,11 +16,11 @@
 [C] extra/development
 [L] MIT
 
+[S] Stable
+[V] 1.13.1
+[P] X -----5---9 149.000
+
 [E] add python-lsp-docstring-to-markdown
 [E] add python-lsp-jsonrpc
 
-[S] Stable
-[V] 1.14.0
-[P] X -----5---9 149.000
-
-[D] fd24b7da1f517e4264f52654a48577404c75a09a49e2bb438c55bc12 python_lsp_server-1.14.0.tar.gz https://files.pythonhosted.org/packages/source/p/python-lsp-server/
+[D] 48c7472f83ea43148d81a4408704d8d99019b80e9f2afadd93681438 python_lsp_server-1.13.1.tar.gz https://files.pythonhosted.org/packages/source/p/python-lsp-server/

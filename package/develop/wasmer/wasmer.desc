@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/wasmer/wasmer.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -15,16 +15,14 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] base/development
-[F] CROSS NO-LTO
+[F] CROSS
 
 [L] APL
-[S] Stable
-[V] 7.0.1
-
-[D] c761e10ffc3c95eb185be1659996e609abf7c0d22ef7d0898696f3ba wasmer-7.0.1.tar.gz https://github.com/wasmerio/wasmer/archive/v7.0.1/
+[S] Beta
+[V] 6.0.1
 
 var_append makeopt ' ' build-wasmer
-makeinstopt= runcargo=0
-atstage cross && var_append makeopt ' ' CARGO_TARGET=${arch_target}
-atstage cross && hook_add postmake 5 "install target/${arch_target}/*/wasmer $root$bindir"
-atstage native && hook_add postmake 5 "install target/*/wasmer $root$bindir"
+makeinstopt=
+hook_add postmake 5 "install target/*/wasmer $root$bindir/"
+
+[D] bfa937682faf331efac064d3f80ff47a07f98e981f3db54eb5d89ebd wasmer-6.0.1.tar.gz https://github.com/wasmerio/wasmer/archive/v6.0.1/

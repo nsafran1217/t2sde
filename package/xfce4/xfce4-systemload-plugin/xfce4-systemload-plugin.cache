@@ -25,6 +25,7 @@
 [DEP] pango
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] upower
 [DEP] xfce4-panel
 [DEP] xfconf

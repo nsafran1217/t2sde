@@ -21,6 +21,7 @@
 [DEP] pkgconfig
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] vulkan-headers
 [DEP] xorgproto
 [DEP] zlib

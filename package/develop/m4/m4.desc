@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/m4/m4.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -22,12 +22,17 @@
 
 [L] GPL
 [S] Stable
-[V] 1.4.21
+[V] 1.4.20
 [P] X 01---5---9 102.400
 
-[D] f6c7c3711ca653e978afcf407b2f3da5dcc1d5640798e716badd1a12 m4-1.4.21.tar.xz http://ftp.gnu.org/pub/gnu/m4/
+[D] e5a92561297ecea7b077ff98d583848940a66d7d31b824c375d96ae0 m4-1.4.20.tar.xz http://ftp.gnu.org/pub/gnu/m4/
 
-atstage native || hook_add preconf 5 "echo 'gl_cv_func_mbrtowc_incomplete_state=yes
+var_append CC_WRAPPER_APPEND ' ' -std=gnu17
+var_append SYSCC_WRAPPER_APPEND ' ' -std=gnu17
+hook_add preconf 3 "sed -i -e '/gets is a/d' lib/stdio.in.h"
+
+atstage native ||
+	hook_add preconf 5 "echo 'gl_cv_func_mbrtowc_incomplete_state=yes
 gl_cv_func_mbrtowc_sanitycheck=yes
 gl_cv_func_mbrtowc_null_arg=yes
 gl_cv_func_mbrtowc_retval=yes
@@ -35,6 +40,3 @@ gl_cv_func_mbrtowc_nul_retval=yes
 gl_cv_func_btowc_eof=yes
 gl_cv_func_wcrtomb_retval=yes
 gl_cv_func_wctob_works=yes' > config.cache"
-
-var_append SYSGCC_WRAPPER_APPEND ' ' -std=gnu11
-var_append GCC_WRAPPER_APPEND ' ' -std=gnu11

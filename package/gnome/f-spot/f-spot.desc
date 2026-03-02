@@ -1,0 +1,29 @@
+[COPY] --- T2-COPYRIGHT-BEGIN ---
+[COPY] t2/package/*/f-spot/f-spot.desc
+[COPY] Copyright (C) 2007 - 2025 The T2 SDE Project
+[COPY] SPDX-License-Identifier: GPL-2.0
+[COPY] --- T2-COPYRIGHT-END ---
+
+[I] Personal photo management application for the GNOME desktop
+
+[T] F-Spot is a full-featured personal photo management application for the
+[T] GNOME desktop.
+
+[U] http://f-spot.org/
+
+[A] Larry Ewing <lewing@gnome.org>
+[A] Ettore Perazzoli <ettore@perazzoli.org>
+[M] Rene Rebe <rene@t2-project.org>
+
+[C] extra/multimedia extra/desktop/kde
+[F] NOPARALLEL
+
+[L] GPL
+[S] Beta
+[V] 0.8.2
+[P] X -----5---9 300.200
+
+. $base/package/*/*/gnome-conf.in
+
+[CV-URL] https://download.gnome.org/sources/f-spot/cache.json
+[D] 5de4c06e352a42db6d80075c7f64e21946e3bb3c5875236a8cb5f34b f-spot-0.8.2.tar.bz2 https://download.gnome.org/sources/f-spot/0.8/

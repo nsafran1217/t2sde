@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/fox/fox.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -29,10 +29,10 @@
 
 [L] LGPL
 [S] Stable
-[V] 1.7.89
+[V] 1.7.86
 [P] X -----5---9 130.100
 
-[D] 2ce283a30cf9cd34e56936157749bab948d618929a541ef7548fd737 fox-1.7.89.tar.gz http://fox-toolkit.org/ftp/
+[D] 14a64c84316be71aab90a95cd38e7be0d45a13cb0cbfb64b41295690 fox-1.7.86.tar.gz http://fox-toolkit.org/ftp/
 
 [ "$SDECFG_DEBUG" = 1 ] || var_append confopt ' ' --enable-release
 pkginstalled glu && var_append GCC_WRAPPER_INSERT ' ' "-I$root`pkgprefix includedir glu`"
@@ -47,4 +47,4 @@ fox_disable_examples() {
 	makeinstopt="$makeopt install"
 }
 
-[ "$SDECFG_PKG_FOX_EXAMPLES" != "1" ] && hook_add preconf 3 fox_disable_examples
+[ "$SDECFG_PKG_FOX_EXAMPLES" != "1" ] && hook_add preconf 3 "fox_disable_examples"

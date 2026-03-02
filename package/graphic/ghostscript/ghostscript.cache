@@ -1,11 +1,9 @@
-[TIMESTAMP] 1768866260 Tue Jan 20 00:44:20 2026
-[BUILDTIME] 410 (9)
-[SIZE] 87.77 MB, 228 files
+[TIMESTAMP] 1745933171 Tue Apr 29 16:26:11 2025
+[BUILDTIME] 230 (9)
+[SIZE] 85.38 MB, 225 files
 
 [DEP] at-spi2-core
-[DEP] automake
 [DEP] bash
-[DEP] binutils
 [DEP] cairo
 [DEP] coreutils
 [DEP] cups
@@ -15,25 +13,19 @@
 [DEP] gawk
 [DEP] gdk-pixbuf
 [DEP] glib
-[OPT] glu
 [DEP] grep
 [DEP] gtk+
 [DEP] harfbuzz
-[OPT] libglvnd
-[OPT] libice
+[DEP] libice
 [DEP] libidn
-[DEP] libjpeg
-[OPT] libsm
-[OPT] libx11
-[OPT] libxt
+[DEP] libsm
+[DEP] libx11
+[DEP] libxt
 [DEP] linux-header
 [DEP] make
 [DEP] pango
-[DEP] pkgconfig
-[DEP] python
 [DEP] sed
 [DEP] tar
-[DEP] util-linux
-[OPT] xorgproto
+[DEP] tbb
+[DEP] xorgproto
 [DEP] xz
-[DEP] zlib

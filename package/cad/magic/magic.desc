@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/magic/magic.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -8,7 +8,7 @@
 
 [T] Magic is a venerable VLSI layout tool.
 
-[U] http://opencircuitdesign.com/magic/
+[U] https://github.com/RTimothyEdwards/magic
 
 [A] R. Timothy Edwards <tim@opencircuitdesign.com>
 [M] Alexander Nutz <alexandernutz68@gmail.com>
@@ -18,8 +18,9 @@
 
 [L] OpenSource
 [S] Stable
-[V] 8.3.608
+[V] 8.3.552
+[P] X -----5---9 200.000
 
-[D] df11b7c9f07f478eaf2e9090b469c246ed5e72bc66a7e57e700dc882 magic-8.3.608.tar.gz https://github.com/RTimothyEdwards/magic/archive/8.3.608/
+[D] 9195a8b68132ece0fa0ad8fc92f4a96df9eb8f74abaa6779c5d110e8 magic-8.3.552.tar.gz https://github.com/RTimothyEdwards/magic/archive/8.3.552/
 
 var_append GCC_WRAPPER_APPEND ' ' -std=gnu11

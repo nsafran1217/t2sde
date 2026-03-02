@@ -1,6 +1,6 @@
-[TIMESTAMP] 1770493692 Sat Feb  7 20:48:12 2026
-[BUILDTIME] 65 (9)
-[SIZE] 0.59 MB, 44 files
+[TIMESTAMP] 1737678320 Fri Jan 24 01:25:20 2025
+[BUILDTIME] 110 (9)
+[SIZE] 0.60 MB, 43 files
 
 [DEP] bash
 [DEP] binutils
@@ -12,9 +12,11 @@
 [DEP] grep
 [DEP] linux-header
 [DEP] make
+[DEP] pkgconfig
 [DEP] qt6base
 [DEP] qt6declarative
 [DEP] sed
 [DEP] tar
-[DEP] util-linux
+[DEP] tbb
+[DEP] vulkan-headers
 [DEP] xz

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/libkexiv2/libkexiv2.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,15 +15,14 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
+[V] 25.08.1
 [P] X -----5---9 162.800
 
 [CV-GROUP] kde-gear
-[D] a472e89ece13bbed7ff3972a17e8fcef9e1f5ea99012b1c5ca530ac6 libkexiv2-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[D] 6953afa0fab60f37f92d3b5a6de4bfb7cb777538d9cc2b77558ce8cb libkexiv2-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/
 
 . $base/package/*/*/kde-conf.in
 var_append cmakeopt ' ' -DQT_MAJOR_VERSION=6

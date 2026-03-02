@@ -23,9 +23,8 @@
 
 [L] OpenSource
 [S] Stable
-[V] 2.49
+[V] 2.48
 
-[D] 94e55d9bb8032dd1599a083c7bd67c8209634a6954f8e105c401d547 xdaliclock-2.49.tar.gz http://www.jwz.org/xdaliclock/
+hook_add premake 5 "cd X11/; eval ./configure $confopt"
 
-srcdir=xdaliclock*/X11
-var_remove confopt ' ' --disable-debug
+[D] cb74deeb05444d614068ba8e125cef58ae8efd18109240bf02c76244 xdaliclock-2.48.tar.gz http://www.jwz.org/xdaliclock/

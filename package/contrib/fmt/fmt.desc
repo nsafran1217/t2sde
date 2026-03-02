@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/fmt/fmt.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -15,12 +15,11 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/development
-# NO-LTO due to .a, TODO: shared
-[F] CROSS NO-LTO
+[F] CROSS
 
 [L] OpenSource
 [S] Stable
-[V] 12.1.0
+[V] 12.0.0
 [P] X -----5---9 194.000
 
-[D] 467d0c61f491670f0da31e2aa15284365df7148d4a606a0c6385d04e fmt-12.1.0.zip https://github.com/fmtlib/fmt/releases/download/12.1.0/
+[D] 9a1c6bae5dd1fcf7fac6c192a643f3593f65fde6e4a0749acb42c075 fmt-12.0.0.zip https://github.com/fmtlib/fmt/releases/download/12.0.0/

@@ -1,11 +1,11 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/knotifications/knotifications.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] KDE Frameworks solution with abstraction for system notifications
+[I] KDE Frameworks 5 Tier 2 solution with abstraction for system notifications
 
 [T] KNotification is used to notify the user of an event. It covers feedback and persistent events.
 
@@ -15,14 +15,14 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
+[V] 6.18.0
 [P] X -----5---9 162.900
 
 [CV-GROUP] kde-frameworks
-[D] 973a6ec448daec5c79f3dd60f59c3818ef01bf50002ce55172aa353d knotifications-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] 24c779bf1a4df6b3350342d20d603b6e070d5e12eb7964c9f206c164 knotifications-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
+
 
 . $base/package/*/*/kde-conf.in

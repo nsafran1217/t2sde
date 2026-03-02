@@ -1,12 +1,10 @@
-[TIMESTAMP] 1771936600 Tue Feb 24 13:36:40 2026
-[BUILDTIME] 6 (9)
-[SIZE] 10.38 MB, 516 files
+[TIMESTAMP] 1739044599 Sat Feb  8 20:56:39 2025
+[BUILDTIME] 2 (5)
+[SIZE] 6.86 MB, 461 files
 
 [DEP] bash
-[DEP] bzip2
 [DEP] coreutils
 [DEP] diffutils
-[DEP] findutils
 [DEP] gawk
 [DEP] gettext
 [DEP] grep
@@ -17,4 +15,4 @@
 [DEP] python
 [DEP] sed
 [DEP] tar
-[DEP] util-linux
+[DEP] xz

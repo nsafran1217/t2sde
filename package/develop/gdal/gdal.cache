@@ -11,6 +11,7 @@
 [DEP] coreutils
 [DEP] crypto++
 [DEP] curl
+[DEP] cython
 [DEP] diffutils
 [DEP] expat
 [DEP] fast_float
@@ -50,6 +51,7 @@
 [DEP] swig
 [DEP] sysfiles
 [DEP] tar
+[DEP] tbb
 [DEP] unixodbc
 [DEP] xerces-c
 [DEP] xorgproto

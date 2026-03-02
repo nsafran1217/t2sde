@@ -22,3 +22,4 @@
 [DEP] sed
 [DEP] spdlog
 [DEP] tar
+[DEP] tbb

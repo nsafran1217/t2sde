@@ -1,6 +1,6 @@
-[TIMESTAMP] 1765900208 Tue Dec 16 16:50:08 2025
-[BUILDTIME] 150 (9)
-[SIZE] 22.45 MB, 333 files
+[TIMESTAMP] 1740780900 Fri Feb 28 23:15:00 2025
+[BUILDTIME] 165 (9)
+[SIZE] 22.82 MB, 324 files
 
 [OPT] audit
 [DEP] bash
@@ -16,17 +16,15 @@
 [DEP] gettext
 [DEP] glib
 [DEP] gnutls
-[OPT] gobject-introspection
+[DEP] gobject-introspection
 [DEP] grep
-[OPT] jansson
+[DEP] jansson
 [DEP] libelf
 [DEP] libndp
-[DEP] libnvme
 [DEP] libpsl
 [OPT] libselinux
 [DEP] linux-header
 [DEP] meson
-[DEP] mobile-broadband-provider-info
 [OPT] modemmanager
 [OPT] newt
 [DEP] ninja

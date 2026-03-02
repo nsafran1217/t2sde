@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/luma/luma.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -24,6 +24,7 @@
 
 [S] Stable
 [V] 2.4
+[P] X -----5---9 310.000
 
 [D] ff84a4f64dcaf8d39c9670b8ed257414c3131a1253f65e41fd0240bd luma-2.4.tar.bz2 http://dl.sourceforge.net/sourceforge/luma/
 
@@ -36,4 +37,4 @@ luma_main() {
 	eval python install.py --prefix=/$prefix
 }
 runmake=0
-hook_add postmake 5 luma_main
+hook_add postmake 5 "luma_main"

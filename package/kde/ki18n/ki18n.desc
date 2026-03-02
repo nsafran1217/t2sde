@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/ki18n/ki18n.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] KDE Frameworks addon for localization
+[I] KDE Frameworks 5 Tier 1 addon for localization
 
-[T] KDE Frameworks addon for localization.
+[T] KDE Frameworks 5 Tier 1 addon for localization.
 
 [U] https://www.kde.org
 
@@ -15,14 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
+[V] 6.18.0
 [P] X -----5---9 162.800
 
 [CV-GROUP] kde-frameworks
-[D] 5ce4b53aecbaae625aa72281004e7b1b34e2e230085ef1286037aed6 ki18n-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] bb7c0ecebbe424ed110b45dee76d9ec5aa87d325ad47f0d366f226d4 ki18n-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

@@ -1,8 +1,7 @@
-[TIMESTAMP] 1759925403 Wed Oct  8 14:10:03 2025
-[BUILDTIME] 800 (9)
-[SIZE] 33.23 MB, 190 files
+[TIMESTAMP] 1745876832 Tue Apr 29 00:47:12 2025
+[BUILDTIME] 240 (9)
+[SIZE] 33.11 MB, 197 files
 
-[DEP] 00-dirtree
 [DEP] at-spi2-core
 [DEP] bash
 [DEP] binutils
@@ -12,7 +11,6 @@
 [DEP] diffutils
 [DEP] expat
 [DEP] flac
-[DEP] fontconfig
 [DEP] gawk
 [DEP] gdk-pixbuf
 [DEP] gettext
@@ -32,7 +30,6 @@
 [DEP] linux-header
 [DEP] make
 [DEP] nasm
-[DEP] openimageio
 [DEP] pango
 [DEP] pkgconfig
 [DEP] portaudio
@@ -42,6 +39,7 @@
 [DEP] soxr
 [DEP] sqlite
 [DEP] tar
+[DEP] tbb
 [OPT] twolame
 [OPT] vamp-sdk
 [DEP] wxwidgets

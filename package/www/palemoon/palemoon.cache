@@ -42,5 +42,6 @@
 [DEP] python2
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xorgproto
 [DEP] yasm

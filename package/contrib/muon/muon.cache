@@ -9,6 +9,7 @@
 [DEP] curl
 [DEP] diffutils
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] gzip
 [DEP] libarchive

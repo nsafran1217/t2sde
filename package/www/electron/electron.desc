@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/electron/electron.desc
-[COPY] Copyright (C) 2023 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2023 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Build cross-platform desktop apps with JavaScript, HTML, and CSS
 
 [T] Electron is an open-source framework that enables developers to build
-[T] cross-platform desktop applications using web technologies like JavaScript, HTML, and CSS.
+[T] cross-platform desktop applications using web technologies like JavaScript, HTML, and CSS. 
 
 [U] https://electronjs.org/
 
@@ -21,9 +21,9 @@
 
 [L] BSD
 [S] Stable
-[V] 40.6.1
+[V] 38.1.2
 
-[D] 9c7289d8d59bd4e0443871056838e5596526c0560921f17167a56921 electron-40.6.1.tar.gz https://github.com/electron/electron/archive/refs/tags/v40.6.1/
+[D] 83085cf55f20b7a746e26adeb59bcb02574798f0f55049ce7ff9de5b electron-38.1.2.tar.gz https://github.com/electron/electron/archive/refs/tags/v38.1.2/
 
 runmake=0
 prefix=opt/electron

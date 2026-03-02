@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/ncurses/ncurses.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -25,10 +25,10 @@
 
 [L] MIT
 [S] Stable
-[V] 6.6
+[V] 6.5
 [P] X -1---5---9 102.400
 
-[D] ec9a052ba19678277802c9d8e7813f5df304597307c932d9cdc98f69 ncurses-6.6.tar.gz http://ftp.gnu.org/pub/gnu/ncurses/
+[D] 11e329d7a02b616d295e523a88611043dc5f0dddb474def7eabf9ecf ncurses-6.5.tar.gz http://ftp.gnu.org/pub/gnu/ncurses/
 
 if [ $prefix_auto = 1 ]; then
 	prefix=
@@ -53,8 +53,20 @@ var_append confopt ' ' "--with-normal --disable-widec"
 [ "$SDECFG_STATIC" != 1 ] && var_append confopt ' ' --with-shared
 var_append confopt ' ' "--enable-sigwinch --enable-hard-tabs --enable-colorfgbg"
 
-hook_add postmake 6 "ln -svf libncurses.a $root$libdir/libtermcap.a; \
-	ln -svf libncurses.so $root$libdir/libtermcap.so"
+remove_include_termcap() {
+	echo "Removing 'termcap.h' from include/Makefile for 'make install'."
+	sed -i 's,termcap.h,,g' include/Makefile
+}
+
+if pkginstalled termcap; then
+	echo_status "Found termcap package -> disabling ncurses internal termcap library."
+	var_append confopt ' ' --disable-termcap
+	hook_add inmake 5 "remove_include_termcap"
+else
+	hook_add postmake 6 "\
+		ln -svf libncurses.a $root$libdir/libtermcap.a; \
+		ln -svf libncurses.so $root$libdir/libtermcap.so"
+fi
 
 var_append confopt ' ' "--enable-pc-files --with-pkg-config-libdir=$libdir/pkgconfig"
 

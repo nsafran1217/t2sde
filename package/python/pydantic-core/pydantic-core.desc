@@ -20,8 +20,8 @@
 [E] add python-typing-extensions
 
 [L] MIT
-[S] Stable
-[V] 2.41.5
+[S] Alpha
+[V] 2.37.2
 [P] X -----5---9 110.265
 
-[D] afcee38f723d2285d7f4f4741a67dcefa05d1b56c0cefa85b9d42b43 pydantic_core-2.41.5.tar.gz https://files.pythonhosted.org/packages/source/p/pydantic-core/
+[D] 6e8a44c8e2f23ecfdfb301317fea06d8b924911fce05e3007a900b87 pydantic_core-2.37.2.tar.gz https://files.pythonhosted.org/packages/source/p/pydantic-core/

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/rocm-cmake/rocm-cmake.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -20,10 +20,10 @@
 
 [L] MIT
 [S] Stable
-[V] 7.2.0
+[V] 7.0.1
 [P] X -----5---9 300.020
 
 [CV-GROUP] rocm
-[D] 25d734cfe1436546df10e1b733fce2ae8cb7bf5c7086cb99be556bb5 rocm-cmake-rocm-7.2.0.tar.gz https://github.com/ROCm/rocm-cmake/archive/rocm-7.2.0/
+[D] 749c9a7b0d05010faf4a32004945f35344dc1a263334f214769d47f6 rocm-cmake-rocm-7.0.1.tar.gz https://github.com/ROCm/rocm-cmake/archive/rocm-7.0.1/
 
 . $base/package/*/*/rocm-conf.in

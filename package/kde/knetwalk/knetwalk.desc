@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/knetwalk/knetwalk.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Network construction game
 
-[T] KNetWalk is a single player logic game. Construct the network, connecting
+[T] KNetWalk is a single player logic game. Construct the network, connecting 
 [T] all the terminals to the server in the fewest turns possible.
 
 [U] https://apps.kde.org/knetwalk/
@@ -16,15 +16,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] a42cdbd620ca905a68902a03da30d9653c31740d4004c1fb41dd4dd0 knetwalk-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 179.300
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 0f0301b382ced16a830b8f15e64030c5476a0cec9138a6e6d4ef20af knetwalk-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

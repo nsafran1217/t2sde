@@ -1,10 +1,10 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kde-cli-tools/kde-cli-tools.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] Tools based on KDE Frameworks to better interact with the system
+[I] Tools based on KDE Frameworks 5 to better interact with the system
 
 [T] KDE CLI Tools is a package that provides a set of command-line utilities
 [T] for managing and interacting with KDE Plasma.
@@ -15,16 +15,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
 [P] X -----5---9 162.420
 
 [CV-GROUP] kde-plasma
-[D] 6ff2ccc47949e97c162a4b004570ad184655ab6f06f6de66c5acd0f3 kde-cli-tools-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] cd7cc8758fe43aa996b44643d60a0cadf63ab8bb311d2af9818940d1 kde-cli-tools-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

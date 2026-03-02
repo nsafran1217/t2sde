@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/xorg-server/xorg-server.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -26,13 +26,12 @@
 
 [L] OpenSource
 [S] Stable
-[V] 21.1.21
+[V] 21.1.18
 [P] X -----5---9 127.447
 
-[D] 6eff43e5072d0ce1776d8cdaa817e442f210578401ecaf684d451175 xorg-server-21.1.21.tar.xz https://xorg.freedesktop.org/archive/individual/xserver/
+[D] 926170900fb4d104805849e4d075c91220f94f6329bfcf78bf3abf55 xorg-server-21.1.18.tar.xz https://xorg.freedesktop.org/archive/individual/xserver/
 
 . package/*/*/modular-x-conf.in
-autogen=2
 runmeson=0 #runconf=0
 
 x_postmake() {
@@ -46,7 +45,7 @@ x_postmake() {
 	install -m 755 $confdir/startxdm.sh $root$sbindir/startxdm
 	install -m 755 $confdir/xcfgt2.sh $root$sbindir/xcfgt2
 }
-hook_add postmake 5 x_postmake
+hook_add postmake 5 'x_postmake'
 
 var_append confopt ' ' --enable-unit-tests=no
 

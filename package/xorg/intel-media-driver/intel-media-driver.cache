@@ -1,14 +1,18 @@
-[TIMESTAMP] 1768921000 Tue Jan 20 15:56:40 2026
-[BUILDTIME] 1650 (9)
-[SIZE] 43.71 MB, 24 files
+[TIMESTAMP] 1758619341 Tue Sep 23 11:22:21 2025
+[BUILDTIME] 1600 (5)
+[SIZE] 43.07 MB, 23 files
 
+[DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
 [DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
+[DEP] findutils
 [DEP] freetype
 [DEP] gawk
+[DEP] git
+[DEP] graphviz
 [DEP] grep
 [DEP] gzip
 [DEP] intel-gmmlib
@@ -20,5 +24,4 @@
 [DEP] sed
 [DEP] sysfiles
 [DEP] tar
-[DEP] util-linux
 [DEP] xorgproto

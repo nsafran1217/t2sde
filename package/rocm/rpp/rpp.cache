@@ -1,10 +1,9 @@
-[TIMESTAMP] 1759924383 Wed Oct  8 13:53:03 2025
-[BUILDTIME] 145 (9)
-[SIZE] 175.38 MB, 421 files
+[TIMESTAMP] 1742408783 Wed Mar 19 20:26:23 2025
+[BUILDTIME] 30 (9)
+[SIZE] 111.50 MB, 366 files
 
 [DEP] bash
 [DEP] binutils
-[DEP] clang
 [DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
@@ -13,9 +12,10 @@
 [DEP] gzip
 [DEP] half
 [DEP] linux-header
-[DEP] lld
 [DEP] make
-[DEP] openmp
+[DEP] python
+[DEP] rocm-llvm
 [DEP] sed
 [DEP] sysfiles
 [DEP] tar
+[DEP] tbb

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/doctl/doctl.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -16,11 +16,11 @@
 [C] extra/base
 [F] CROSS
 
+[V] 1.145.0
 [L] APL
 [S] Stable
-[V] 1.151.0
 
-[D] 347ae89f87ff18c333b8db17a00e58c9796fb86f8016607dfadc5915 doctl-1.151.0.tar.gz https://github.com/digitalocean/doctl/archive/v1.151.0/
+[D] 81fa323cf7b1d110ed1e1f7effbf70f93b662399161dde030046b451 doctl-1.145.0.tar.gz https://github.com/digitalocean/doctl/archive/v1.145.0/
 
 . $base/package/*/*/go-conf.in
 var_append goconfopt ' ' '-o doctl ./cmd/doctl'

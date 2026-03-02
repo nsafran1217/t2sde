@@ -11,3 +11,4 @@
 [DEP] linux-header
 [DEP] sed
 [DEP] tar
+[DEP] tbb

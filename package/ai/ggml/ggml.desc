@@ -19,6 +19,7 @@
 [L] MIT
 [V] 4190f23
 [S] Alpha
+[P] X -----5---9 700.000
 
 #[ $prefix_auto = 1 ] && prefix=opt/ggml && set_confopt
 #var_append cmakeopt ' ' -DGGML_VULKAN=ON

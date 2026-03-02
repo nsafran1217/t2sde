@@ -1,24 +1,25 @@
-[TIMESTAMP] 1760531245 Wed Oct 15 14:27:25 2025
-[BUILDTIME] 8 (9)
-[SIZE] 1.88 MB, 10 files
 
-[DEP] autoconf
-[DEP] automake
-[DEP] avahi
-[DEP] bash
-[DEP] cairo
+[TIMESTAMP] 1279623302 Tue Jul 20 12:55:02 2010
+[BUILDTIME] 20 (5)
+[SIZE] 2.24 MB, 23 files
+
+[DEP] 00-dirtree
+[DEP] binutils
 [DEP] coreutils
-[DEP] cyrus-sasl2
+[DEP] xorgproto
 [DEP] diffutils
 [DEP] findutils
+[DEP] xorgproto
 [DEP] gawk
 [DEP] grep
-[DEP] gzip
-[DEP] libdrm
+[DEP] xorgproto
+[DEP] libice
+[DEP] libjpeg
+[DEP] libsdl
 [DEP] libvncserver
 [DEP] libx11
-[DEP] libxcomposite
-[DEP] libxcursor
+[DEP] libxau
+[DEP] libxcb
 [DEP] libxdamage
 [DEP] libxext
 [DEP] libxfixes
@@ -28,11 +29,12 @@
 [DEP] libxrender
 [DEP] libxtst
 [DEP] linux-header
-[DEP] m4
 [DEP] make
 [DEP] openssl
-[DEP] perl
+[DEP] pkgconfig
+[DEP] xorgproto
 [DEP] sed
+[DEP] sysfiles
 [DEP] tar
 [DEP] xorgproto
 [DEP] zlib

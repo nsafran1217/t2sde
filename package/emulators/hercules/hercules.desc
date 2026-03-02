@@ -26,6 +26,6 @@
 
 [L] OpenSource
 [S] Stable
-[V] 4.9.1
+[V] 4.8
 
-[D] 1ead2d0b3bb3376a775109cc33056cf65f17447e215f32720dcd1f35 hercules-4.9.1.tar.gz https://github.com/SDL-Hercules-390/hyperion/archive/Release_4.9.1/
+[D] 3d0aae4a028c9500a09bd7fcea706d0f65c8bb021db88bb49d354346 hercules-4.8.tar.gz https://github.com/SDL-Hercules-390/hyperion/archive/Release_4.8/

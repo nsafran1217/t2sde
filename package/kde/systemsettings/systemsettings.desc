@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/systemsettings/systemsettings.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,16 +14,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
-[P] X -----5---9 200.515
+[V] 6.4.5
+[P] X -----5---9 162.420
 
 [CV-GROUP] kde-plasma
-[D] 0924d13426558378d6284b9dddaaa44e2c499c8d885bbd2bc4a4a082 systemsettings-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] 4225740debbca9092fd0ff9463a0bc5087d23083f603155286be9f2c systemsettings-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

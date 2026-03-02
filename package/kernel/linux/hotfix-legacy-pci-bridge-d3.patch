@@ -37,10 +37,6 @@ Call Trace:
 [<0000000000825508>] bus_add_driver+0xdc/0x1f8
 [<0000000000827110>] driver_register+0x70/0x120
 
-hppa64 - 9000/785/C8000 - Crestone Peak Mako+ Slow
-BT Port failed to come ready!
-BT_TRANSFER_INIT: B_BUSY failed to clear!
-
 a5fb3ff632876d63ee1fc5ed3af2464240145a00 is the first bad commit
 commit a5fb3ff632876d63ee1fc5ed3af2464240145a00 (HEAD)
 Author: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
@@ -52,16 +48,17 @@ diff --git a/drivers/pci/pci.c b/drivers/pci/pci.c
 index 2b53219fda3b..869d204a70a3 100644
 --- a/drivers/pci/pci.c
 +++ b/drivers/pci/pci.c
-@@ -3067,10 +3067,9 @@ bool pci_bridge_d3_possible(struct pci_dev *bridge)
+@@ -3067,10 +3067,10 @@ bool pci_bridge_d3_possible(struct pci_dev *bridge)
  			return false;
  
  		/*
 -		 * Out of caution, we only allow PCIe ports from 2015 or newer
 -		 * into D3 on x86.
-+		 * It should be safe to put PCIe ports to D3.
++		 * It should be safe to put PCIe ports from 2015 or newer
++		 * to D3.
  		 */
 -		if (!IS_ENABLED(CONFIG_X86) || dmi_get_bios_year() >= 2015)
-+		if (!IS_ENABLED(CONFIG_PARISC) && !IS_ENABLED(CONFIG_SPARC64))
++		if (IS_ENABLED(CONFIG_ARM64) || IS_ENABLED(CONFIG_PPC64) || IS_ENABLED(CONFIG_RISCV) || dmi_get_bios_year() >= 2015)
  			return true;
  		break;
  	}

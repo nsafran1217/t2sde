@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/plasma-desktop/plasma-desktop.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,17 +15,18 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [E] add kactivitymanagerd systemsettings
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 200.300
 
 [CV-GROUP] kde-plasma
-[D] 365be0063a0f4a7ccebac3645a0997c19a304c989e6cc34898afb98f plasma-desktop-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] 09b756a03b93a3c0cb4e43c6a5db41e5b9b972f1f57b8bb3ddbfa151 plasma-desktop-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in
-
+var_append cmakeopt ' ' -DBUILD_KCM_MOUSE_X11=OFF
+pkginstalled libwacom || var_append cmakeopt ' ' -DBUILD_KCM_TABLET=OFF
 if ! pkginstalled docbook-xml || ! pkginstalled docbook-xsl || ! pkginstalled kdoctools; then var_append cmakeopt ' ' -DBUILD_DOC=OFF; fi

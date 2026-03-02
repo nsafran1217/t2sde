@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/vdr-streamdev/vdr-streamdev.desc
-[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2007 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,9 +19,12 @@
 
 [L] GPL
 [S] Beta
-[V] 0.6.4
+[V] cvs-220409
 
-[D] e8e65b9f2eb7692309f59c668ae9715fc98c1566781714335ad34b47 vdr-streamdev-0.6.4.tar.gz https://github.com/vdr-projects/vdr-plugin-streamdev/archive/0.6.4/
+#[D] 1657589467 vdr-streamdev-0.3.4.tgz http://streamdev.vdr-developer.org/releases/
+
+[D] X streamdev-cvs220409.tar.bz2 cvs://:pserver:anoncvs@vdr-developer.org:/var/cvsroot streamdev -D 04/22/09
+[D] 3722220645 streamdev-cvs220409_xbmc-v6.patch http://xbmc.org/trac/attachment/ticket/5595/
 
 . $base/package/vdr/*/vdr-plugin-conf.in
 
@@ -29,4 +32,4 @@ vdr_plugin_pm() {
 	plugin_register "streamdev-server"
 	cp -p streamdev/streamdevhosts.conf $PLUGINDIR/streamdevhosts.conf
 }
-hook_add postmake 5 vdr_plugin_pm
+hook_add postmake 5 'vdr_plugin_pm'

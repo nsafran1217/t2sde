@@ -1,6 +1,6 @@
-[TIMESTAMP] 1759855879 Tue Oct  7 18:51:19 2025
-[BUILDTIME] 270 (9)
-[SIZE] 19.71 MB, 865 files
+[TIMESTAMP] 1747173078 Tue May 13 23:51:18 2025
+[BUILDTIME] 170 (9)
+[SIZE] 19.67 MB, 820 files
 
 [DEP] bash
 [DEP] binutils
@@ -13,6 +13,7 @@
 [DEP] gawk
 [DEP] grep
 [DEP] lcms2
+[DEP] libart-lgpl
 [DEP] libgphoto
 [DEP] libjpeg
 [DEP] libx11
@@ -28,10 +29,10 @@
 [DEP] sane-backends
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] tde-cmake
-[DEP] tde-libart-lgpl
+[DEP] tdebase
 [DEP] tdelibs
-[DEP] tdemultimedia
 [DEP] tqt
 [DEP] tqtinterface
 [DEP] xorgproto

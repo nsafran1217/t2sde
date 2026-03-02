@@ -22,14 +22,249 @@ index 243f1f1b554a..e4be1378ba26 100644
 --- a/Documentation/userspace-api/ioctl/ioctl-number.rst
 +++ b/Documentation/userspace-api/ioctl/ioctl-number.rst
 @@ -375,7 +375,7 @@ Code  Seq#    Include File                                           Comments
- 0xCB  00-1F                                                            CBM serial IEC bus in development:
-                                                                        <mailto:michael.klein@puffin.lb.shuttle.de>
- 0xCC  00-0F  drivers/misc/ibmvmc.h                                     pseries VMC driver
--0xCD  01     linux/reiserfs_fs.h                                       Dead since 6.13
+ 0xCB  00-1F                                                          CBM serial IEC bus in development:
+                                                                      <mailto:michael.klein@puffin.lb.shuttle.de>
+ 0xCC  00-0F  drivers/misc/ibmvmc.h                                   pseries VMC driver
+-0xCD  01     linux/reiserfs_fs.h                                     Dead since 6.13
 +0xCD  01     linux/reiserfs_fs.h
- 0xCE  01-02  uapi/linux/cxl_mem.h                                      Compute Express Link Memory Devices
+ 0xCE  01-02  uapi/linux/cxl_mem.h                                    Compute Express Link Memory Devices
  0xCF  02     fs/smb/client/cifs_ioctl.h
  0xDB  00-0F  drivers/char/mwave/mwavepub.h
+diff --git a/MAINTAINERS b/MAINTAINERS
+index f90a5a415218..2b3797676c9e 100644
+--- a/MAINTAINERS
++++ b/MAINTAINERS
+@@ -19605,6 +19605,11 @@ F:	Documentation/devicetree/bindings/regmap/
+ F:	drivers/base/regmap/
+ F:	include/linux/regmap.h
+ 
++REISERFS FILE SYSTEM
++L:	reiserfs-devel@vger.kernel.org
++S:	Obsolete
++F:	fs/reiserfs/
++
+ REMOTE PROCESSOR (REMOTEPROC) SUBSYSTEM
+ M:	Bjorn Andersson <andersson@kernel.org>
+ M:	Mathieu Poirier <mathieu.poirier@linaro.org>
+diff --git a/arch/alpha/configs/defconfig b/arch/alpha/configs/defconfig
+index 3280bd9e6578..1816c1dc22b1 100644
+--- a/arch/alpha/configs/defconfig
++++ b/arch/alpha/configs/defconfig
+@@ -51,6 +51,7 @@ CONFIG_SERIAL_8250_CONSOLE=y
+ CONFIG_RTC_CLASS=y
+ CONFIG_RTC_DRV_CMOS=y
+ CONFIG_EXT2_FS=y
++CONFIG_REISERFS_FS=m
+ CONFIG_ISO9660_FS=y
+ CONFIG_MSDOS_FS=y
+ CONFIG_VFAT_FS=y
+diff --git a/arch/arm/configs/pxa_defconfig b/arch/arm/configs/pxa_defconfig
+index 38916ac4bce4..e1cb170c2bf0 100644
+--- a/arch/arm/configs/pxa_defconfig
++++ b/arch/arm/configs/pxa_defconfig
+@@ -583,6 +583,10 @@ CONFIG_EXT2_FS_SECURITY=y
+ CONFIG_EXT3_FS=y
+ CONFIG_EXT3_FS_POSIX_ACL=y
+ CONFIG_EXT3_FS_SECURITY=y
++CONFIG_REISERFS_FS=m
++CONFIG_REISERFS_FS_XATTR=y
++CONFIG_REISERFS_FS_POSIX_ACL=y
++CONFIG_REISERFS_FS_SECURITY=y
+ CONFIG_XFS_FS=m
+ CONFIG_AUTOFS_FS=m
+ CONFIG_FUSE_FS=m
+diff --git a/arch/m68k/configs/amiga_defconfig b/arch/m68k/configs/amiga_defconfig
+index c705247e7b5b..a70aec9a05c4 100644
+--- a/arch/m68k/configs/amiga_defconfig
++++ b/arch/m68k/configs/amiga_defconfig
+@@ -449,6 +449,7 @@ CONFIG_RTC_DRV_RP5C01=m
+ # CONFIG_IOMMU_SUPPORT is not set
+ CONFIG_DAX=m
+ CONFIG_EXT4_FS=y
++CONFIG_REISERFS_FS=m
+ CONFIG_JFS_FS=m
+ CONFIG_OCFS2_FS=m
+ # CONFIG_OCFS2_DEBUG_MASKLOG is not set
+diff --git a/arch/m68k/configs/apollo_defconfig b/arch/m68k/configs/apollo_defconfig
+index 6d62b9187a58..312853f3d26a 100644
+--- a/arch/m68k/configs/apollo_defconfig
++++ b/arch/m68k/configs/apollo_defconfig
+@@ -406,6 +406,7 @@ CONFIG_RTC_DRV_GENERIC=m
+ # CONFIG_IOMMU_SUPPORT is not set
+ CONFIG_DAX=m
+ CONFIG_EXT4_FS=y
++CONFIG_REISERFS_FS=m
+ CONFIG_JFS_FS=m
+ CONFIG_OCFS2_FS=m
+ # CONFIG_OCFS2_DEBUG_MASKLOG is not set
+diff --git a/arch/m68k/configs/atari_defconfig b/arch/m68k/configs/atari_defconfig
+index c3c644df852d..0853e4358de9 100644
+--- a/arch/m68k/configs/atari_defconfig
++++ b/arch/m68k/configs/atari_defconfig
+@@ -426,6 +426,7 @@ CONFIG_RTC_DRV_GENERIC=m
+ # CONFIG_IOMMU_SUPPORT is not set
+ CONFIG_DAX=m
+ CONFIG_EXT4_FS=y
++CONFIG_REISERFS_FS=m
+ CONFIG_JFS_FS=m
+ CONFIG_OCFS2_FS=m
+ # CONFIG_OCFS2_DEBUG_MASKLOG is not set
+diff --git a/arch/m68k/configs/bvme6000_defconfig b/arch/m68k/configs/bvme6000_defconfig
+index 20261f819691..f738202d1f36 100644
+--- a/arch/m68k/configs/bvme6000_defconfig
++++ b/arch/m68k/configs/bvme6000_defconfig
+@@ -398,6 +398,7 @@ CONFIG_RTC_DRV_GENERIC=m
+ # CONFIG_IOMMU_SUPPORT is not set
+ CONFIG_DAX=m
+ CONFIG_EXT4_FS=y
++CONFIG_REISERFS_FS=m
+ CONFIG_JFS_FS=m
+ CONFIG_OCFS2_FS=m
+ # CONFIG_OCFS2_DEBUG_MASKLOG is not set
+diff --git a/arch/m68k/configs/hp300_defconfig b/arch/m68k/configs/hp300_defconfig
+index ce4fe93a0f70..74f74e03ccc9 100644
+--- a/arch/m68k/configs/hp300_defconfig
++++ b/arch/m68k/configs/hp300_defconfig
+@@ -408,6 +408,7 @@ CONFIG_RTC_DRV_GENERIC=m
+ # CONFIG_IOMMU_SUPPORT is not set
+ CONFIG_DAX=m
+ CONFIG_EXT4_FS=y
++CONFIG_REISERFS_FS=m
+ CONFIG_JFS_FS=m
+ CONFIG_OCFS2_FS=m
+ # CONFIG_OCFS2_DEBUG_MASKLOG is not set
+diff --git a/arch/m68k/configs/mac_defconfig b/arch/m68k/configs/mac_defconfig
+index 040ae75f47c3..14c8f1b374aa 100644
+--- a/arch/m68k/configs/mac_defconfig
++++ b/arch/m68k/configs/mac_defconfig
+@@ -425,6 +425,7 @@ CONFIG_RTC_DRV_GENERIC=m
+ # CONFIG_IOMMU_SUPPORT is not set
+ CONFIG_DAX=m
+ CONFIG_EXT4_FS=y
++CONFIG_REISERFS_FS=m
+ CONFIG_JFS_FS=m
+ CONFIG_OCFS2_FS=m
+ # CONFIG_OCFS2_DEBUG_MASKLOG is not set
+diff --git a/arch/m68k/configs/multi_defconfig b/arch/m68k/configs/multi_defconfig
+index f8edc9082724..41c8112c6d0d 100644
+--- a/arch/m68k/configs/multi_defconfig
++++ b/arch/m68k/configs/multi_defconfig
+@@ -511,6 +511,7 @@ CONFIG_RTC_DRV_GENERIC=m
+ # CONFIG_IOMMU_SUPPORT is not set
+ CONFIG_DAX=m
+ CONFIG_EXT4_FS=y
++CONFIG_REISERFS_FS=m
+ CONFIG_JFS_FS=m
+ CONFIG_OCFS2_FS=m
+ # CONFIG_OCFS2_DEBUG_MASKLOG is not set
+diff --git a/arch/m68k/configs/mvme147_defconfig b/arch/m68k/configs/mvme147_defconfig
+index 71fc71bb660e..e72d37ee90a7 100644
+--- a/arch/m68k/configs/mvme147_defconfig
++++ b/arch/m68k/configs/mvme147_defconfig
+@@ -397,6 +397,7 @@ CONFIG_RTC_DRV_GENERIC=m
+ # CONFIG_IOMMU_SUPPORT is not set
+ CONFIG_DAX=m
+ CONFIG_EXT4_FS=y
++CONFIG_REISERFS_FS=m
+ CONFIG_JFS_FS=m
+ CONFIG_OCFS2_FS=m
+ # CONFIG_OCFS2_DEBUG_MASKLOG is not set
+diff --git a/arch/m68k/configs/mvme16x_defconfig b/arch/m68k/configs/mvme16x_defconfig
+index 41072e68028e..733f1fc9a50a 100644
+--- a/arch/m68k/configs/mvme16x_defconfig
++++ b/arch/m68k/configs/mvme16x_defconfig
+@@ -398,6 +398,7 @@ CONFIG_RTC_DRV_GENERIC=m
+ # CONFIG_IOMMU_SUPPORT is not set
+ CONFIG_DAX=m
+ CONFIG_EXT4_FS=y
++CONFIG_REISERFS_FS=m
+ CONFIG_JFS_FS=m
+ CONFIG_OCFS2_FS=m
+ # CONFIG_OCFS2_DEBUG_MASKLOG is not set
+diff --git a/arch/m68k/configs/q40_defconfig b/arch/m68k/configs/q40_defconfig
+index e4c30e2b9bbb..3efe25435561 100644
+--- a/arch/m68k/configs/q40_defconfig
++++ b/arch/m68k/configs/q40_defconfig
+@@ -415,6 +415,7 @@ CONFIG_RTC_DRV_GENERIC=m
+ # CONFIG_IOMMU_SUPPORT is not set
+ CONFIG_DAX=m
+ CONFIG_EXT4_FS=y
++CONFIG_REISERFS_FS=m
+ CONFIG_JFS_FS=m
+ CONFIG_OCFS2_FS=m
+ # CONFIG_OCFS2_DEBUG_MASKLOG is not set
+diff --git a/arch/m68k/configs/sun3_defconfig b/arch/m68k/configs/sun3_defconfig
+index 980843a9ea1e..1b8ea0e7acb4 100644
+--- a/arch/m68k/configs/sun3_defconfig
++++ b/arch/m68k/configs/sun3_defconfig
+@@ -396,6 +396,7 @@ CONFIG_RTC_DRV_GENERIC=m
+ # CONFIG_IOMMU_SUPPORT is not set
+ CONFIG_DAX=m
+ CONFIG_EXT4_FS=y
++CONFIG_REISERFS_FS=m
+ CONFIG_JFS_FS=m
+ CONFIG_OCFS2_FS=m
+ # CONFIG_OCFS2_DEBUG_MASKLOG is not set
+diff --git a/arch/m68k/configs/sun3x_defconfig b/arch/m68k/configs/sun3x_defconfig
+index 38681cc6b598..5bda93f6a200 100644
+--- a/arch/m68k/configs/sun3x_defconfig
++++ b/arch/m68k/configs/sun3x_defconfig
+@@ -396,6 +396,7 @@ CONFIG_RTC_DRV_GENERIC=m
+ # CONFIG_IOMMU_SUPPORT is not set
+ CONFIG_DAX=m
+ CONFIG_EXT4_FS=y
++CONFIG_REISERFS_FS=m
+ CONFIG_JFS_FS=m
+ CONFIG_OCFS2_FS=m
+ # CONFIG_OCFS2_DEBUG_MASKLOG is not set
+diff --git a/arch/sh/configs/landisk_defconfig b/arch/sh/configs/landisk_defconfig
+index d871623955c5..0311380160f4 100644
+--- a/arch/sh/configs/landisk_defconfig
++++ b/arch/sh/configs/landisk_defconfig
+@@ -95,6 +95,7 @@ CONFIG_USB_SISUSBVGA=m
+ CONFIG_EXT2_FS=y
+ CONFIG_EXT3_FS=y
+ # CONFIG_EXT3_DEFAULTS_TO_ORDERED is not set
++CONFIG_REISERFS_FS=y
+ CONFIG_ISO9660_FS=m
+ CONFIG_MSDOS_FS=y
+ CONFIG_VFAT_FS=y
+diff --git a/arch/sh/configs/titan_defconfig b/arch/sh/configs/titan_defconfig
+index 99bc0e889287..c1032559ecd4 100644
+--- a/arch/sh/configs/titan_defconfig
++++ b/arch/sh/configs/titan_defconfig
+@@ -220,6 +220,7 @@ CONFIG_EXT2_FS=y
+ CONFIG_EXT3_FS=y
+ # CONFIG_EXT3_DEFAULTS_TO_ORDERED is not set
+ # CONFIG_EXT3_FS_XATTR is not set
++CONFIG_REISERFS_FS=m
+ CONFIG_XFS_FS=m
+ CONFIG_FUSE_FS=m
+ CONFIG_ISO9660_FS=m
+diff --git a/arch/um/configs/i386_defconfig b/arch/um/configs/i386_defconfig
+index 9c9c77f1255a..e543cbac8792 100644
+--- a/arch/um/configs/i386_defconfig
++++ b/arch/um/configs/i386_defconfig
+@@ -61,6 +61,7 @@ CONFIG_UML_NET_DAEMON=y
+ CONFIG_UML_NET_MCAST=y
+ CONFIG_UML_NET_SLIRP=y
+ CONFIG_EXT4_FS=y
++CONFIG_REISERFS_FS=y
+ CONFIG_QUOTA=y
+ CONFIG_AUTOFS_FS=m
+ CONFIG_ISO9660_FS=m
+diff --git a/arch/um/configs/x86_64_defconfig b/arch/um/configs/x86_64_defconfig
+index 03b10d3f6816..939cb12318ca 100644
+--- a/arch/um/configs/x86_64_defconfig
++++ b/arch/um/configs/x86_64_defconfig
+@@ -59,6 +59,7 @@ CONFIG_UML_NET_DAEMON=y
+ CONFIG_UML_NET_MCAST=y
+ CONFIG_UML_NET_SLIRP=y
+ CONFIG_EXT4_FS=y
++CONFIG_REISERFS_FS=y
+ CONFIG_QUOTA=y
+ CONFIG_AUTOFS_FS=m
+ CONFIG_ISO9660_FS=m
 diff --git a/drivers/block/Kconfig b/drivers/block/Kconfig
 index a97f2c40c640..ed209f4f2798 100644
 --- a/drivers/block/Kconfig
@@ -12117,7 +12352,7 @@ index 000000000000..dd33f8cc6eda
 +#include <linux/compat.h>
 +#include <linux/fileattr.h>
 +
-+int reiserfs_fileattr_get(struct dentry *dentry, struct file_kattr *fa)
++int reiserfs_fileattr_get(struct dentry *dentry, struct fileattr *fa)
 +{
 +	struct inode *inode = d_inode(dentry);
 +
@@ -12130,7 +12365,7 @@ index 000000000000..dd33f8cc6eda
 +}
 +
 +int reiserfs_fileattr_set(struct mnt_idmap *idmap,
-+			  struct dentry *dentry, struct file_kattr *fa)
++			  struct dentry *dentry, struct fileattr *fa)
 +{
 +	struct inode *inode = d_inode(dentry);
 +	unsigned int flags = fa->flags;
@@ -25681,9 +25916,9 @@ index 000000000000..12fc20af8e17
 +#define SPARE_SPACE 500
 +
 +/* prototypes from ioctl.c */
-+int reiserfs_fileattr_get(struct dentry *dentry, struct file_kattr *fa);
++int reiserfs_fileattr_get(struct dentry *dentry, struct fileattr *fa);
 +int reiserfs_fileattr_set(struct mnt_idmap *idmap,
-+			  struct dentry *dentry, struct file_kattr *fa);
++			  struct dentry *dentry, struct fileattr *fa);
 +long reiserfs_ioctl(struct file *filp, unsigned int cmd, unsigned long arg);
 +long reiserfs_compat_ioctl(struct file *filp,
 +		   unsigned int cmd, unsigned long arg);
@@ -33068,73 +33303,3 @@ index 000000000000..503ad018ce5b
 +};
 +
 +#endif  /*  _LINUX_REISERFS_XATTR_H  */
---- linux-6.17/fs/reiserfs/inode.c.vanilla	2025-10-05 19:57:56.454018155 +0200
-+++ linux-6.17/fs/reiserfs/inode.c	2025-10-05 20:45:43.273329102 +0200
-@@ -589,7 +589,7 @@
- 	 * that we cannot get here if we write with O_DIRECT into tail page
- 	 */
- 	if (!hole_page || index != hole_page->__folio_index) {
--		tail_page = grab_cache_page(inode->i_mapping, index);
-+		tail_page = find_or_create_page(inode->i_mapping, index, mapping_gfp_mask(inode->i_mapping));
- 		retval = -ENOMEM;
- 		if (!tail_page) {
- 			goto out;
-@@ -2320,7 +2320,7 @@
- 		/* if we are not on a block boundary */
- 		if (length) {
- 			length = blocksize - length;
--			zero_user(page, offset, length);
-+			memzero_page(page, offset, length);
- 			if (buffer_mapped(bh) && bh->b_blocknr != 0) {
- 				mark_buffer_dirty(bh);
- 			}
-@@ -2732,7 +2732,7 @@
- 	reiserfs_truncate_file(inode, 0);
- }
- 
--static int reiserfs_write_begin(struct file *file,
-+static int reiserfs_write_begin(const struct kiocb *iocb,
- 				struct address_space *mapping,
- 				loff_t pos, unsigned len,
- 				struct folio **foliop, void **fsdata)
-@@ -2860,7 +2860,7 @@
- 	return generic_block_bmap(as, block, reiserfs_bmap);
- }
- 
--static int reiserfs_write_end(struct file *file, struct address_space *mapping,
-+static int reiserfs_write_end(const struct kiocb *iocb, struct address_space *mapping,
- 			      loff_t pos, unsigned len, unsigned copied,
- 			      struct folio *folio, void *fsdata)
- {
---- linux-6.17/fs/reiserfs/ioctl.c.vanilla	2025-10-05 20:16:54.865849735 +0200
-+++ linux-6.17/fs/reiserfs/ioctl.c	2025-10-05 20:17:29.580863031 +0200
-@@ -196,7 +196,7 @@
- 	 */
- 	index = inode->i_size >> PAGE_SHIFT;
- 	mapping = inode->i_mapping;
--	page = grab_cache_page(mapping, index);
-+	page = find_or_create_page(mapping, index, mapping_gfp_mask(mapping));
- 	retval = -ENOMEM;
- 	if (!page) {
- 		goto out;
---- linux-6.17/fs/reiserfs/xattr.c.vanilla	2025-10-05 20:50:28.339430678 +0200
-+++ linux-6.17/fs/reiserfs/xattr.c	2025-10-05 21:07:15.199372655 +0200
-@@ -978,7 +978,7 @@
- 	dentry = lookup_noperm(&QSTR(PRIVROOT_NAME), s->s_root);
- 	if (!IS_ERR(dentry)) {
- 		REISERFS_SB(s)->priv_root = dentry;
--		d_set_d_op(dentry, &xattr_lookup_poison_ops);
-+		d_splice_alias_ops(d_inode(dentry), dentry, &xattr_lookup_poison_ops);
- 		if (d_really_is_positive(dentry))
- 			reiserfs_init_priv_inode(d_inode(dentry));
- 	} else
---- linux-6.17/fs/dcache.c.vanilla	2025-10-05 21:09:55.503992824 +0200
-+++ linux-6.17/fs/dcache.c	2025-10-05 21:10:14.516209613 +0200
-@@ -3034,6 +3034,7 @@
- 	__d_add(dentry, inode, ops);
- 	return NULL;
- }
-+EXPORT_SYMBOL(d_splice_alias_ops);
- 
- /**
-  * d_splice_alias - splice a disconnected dentry into the tree if one exists

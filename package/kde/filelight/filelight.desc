@@ -1,14 +1,14 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/filelight/filelight.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Graphical disk usage statistics
 
-[T] Filelight allows you to understand exactly where your diskspace is being
-[T] used by graphically representating your filesystem as a set of concentric
+[T] Filelight allows you to understand exactly where your diskspace is being 
+[T] used by graphically representating your filesystem as a set of concentric 
 [T] segmented-rings.
 
 [U] https://apps.kde.org/filelight/
@@ -17,15 +17,17 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
+[F] OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 3218e0849f6499b5e8878b9240586ea0d1c12119fe591971de9b1819 filelight-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.900
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] b23bdbc1cb5a77f7ed1a0e8e1c73798e13cfe9b425e07271b1331a76 filelight-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

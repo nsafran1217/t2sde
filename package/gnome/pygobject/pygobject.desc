@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/pygobject/pygobject.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -22,11 +22,11 @@
 
 [L] LGPL
 [S] Stable
-[V] 3.56.0
+[V] 3.54.2
 [P] X -----5---9 141.199
 
 [CV-URL] https://download.gnome.org/sources/pygobject/cache.json
-[D] b862c78fdabd318a0c4787a7752dfffbb6e94516ee838bcbb40c2521 pygobject-3.56.0.tar.gz https://download.gnome.org/sources/pygobject/3.56/
+[D] a55fa534b4ce84abdc7fc6024bb64ea3dd8d2b87a840e66cc42efaa0 pygobject-3.54.2.tar.gz https://download.gnome.org/sources/pygobject/3.54/
 
 runpysetup=0 runpipinstall=0 rungpepinstall=0
 var_append mesonopt ' ' -Dtests=false
@@ -36,8 +36,7 @@ hook_add preconf 5 'rm -rf subprojects'
 pygobject_pi() {
 	PYVER="`python -V 2>&1 | sed 's/Python \([0-9]\.[0-9]\+\).*/\1/'`"
 	cat > $root/etc/profile.d/python3-pygobject <<-EOF
-		export PYTHONPATH=\$PYTHONPATH\${PYTHONPATH:+:}$libdir/python$PYVER/site-packages:$libdir/python/site-packages
-		export GI_TYPELIB_PATH=$(pkgprefix libdir glib)/girepository-1.0:$libdir/girepository-1.0
+		export PYTHONPATH=\$PYTHONPATH\${PYTHONPATH:+:}/$prefix/$libdir/python$PYVER/site-packages
 	EOF
 }
 hook_add postinstall 3 pygobject_pi

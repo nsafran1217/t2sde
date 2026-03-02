@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/libinput/libinput.desc
-[COPY] Copyright (C) 2014 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2014 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -22,12 +22,11 @@
 
 [L] GPL
 [S] Stable
-[V] 1.31.0
+[V] 1.29.1
 [P] X -----5---9 127.600
 
-[D] 6d6d52703a68047307909c7e7f2a4375a1165fe1d25f10339978a61b libinput-1.31.0.tar.gz https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.31.0/
+[D] b284b75054e66dfe41ec811047d953bb7510705ce8649fb36363913e libinput-1.29.1.tar.gz https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.29.1/
 
 pkginstalled sphinx || var_append mesonopt ' ' -Ddocumentation=false
 pkginstalled libwacom || var_append mesonopt ' ' -Dlibwacom=false
 var_append mesonopt ' ' '-Dtests=false -Ddebug-gui=false'
-var_append mesonopt ' ' -Dlua-plugins=disabled # TODO fix linking

@@ -1,14 +1,14 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kontact/kontact.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Personal Information Manager
 
-[T] Handle your email, calendar, contacts and other personal data with Kontact.
-[T] Kontact groups everything together in one place and helps you manage your
+[T] Handle your email, calendar, contacts and other personal data with Kontact. 
+[T] Kontact groups everything together in one place and helps you manage your 
 [T] communications, organize your day and work with your colleagues.
 
 [U] https://apps.kde.org/kontact/
@@ -17,15 +17,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 9f471eaac1dd9afa0833382445fa575d9763ac7722499f8625c1c4b1 kontact-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.420
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] dc9034426205f2e6f632b9651e5a6b822deef89f1f710a7e8da70ae6 kontact-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

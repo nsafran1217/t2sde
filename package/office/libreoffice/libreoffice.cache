@@ -1,6 +1,6 @@
-[TIMESTAMP] 1770207376 Wed Feb  4 13:16:16 2026
-[BUILDTIME] 15000 (9)
-[SIZE] 508.93 MB, 4392 files
+[TIMESTAMP] 1751366134 Tue Jul  1 12:35:34 2025
+[BUILDTIME] 10250 (9)
+[SIZE] 504.60 MB, 4337 files
 
 [OPT] apr
 [DEP] at-spi2-core
@@ -18,10 +18,10 @@
 [DEP] cups
 [OPT] curl
 [DEP] dbus
+[DEP] dconf
 [DEP] diffutils
 [OPT] epoxy
 [OPT] expat
-[DEP] file
 [DEP] findutils
 [DEP] flex
 [DEP] fontconfig
@@ -29,7 +29,6 @@
 [DEP] gawk
 [DEP] gdk-pixbuf
 [DEP] glib
-[DEP] gmp
 [DEP] gperf
 [OPT] graphite2
 [DEP] grep
@@ -42,21 +41,15 @@
 [OPT] lcms2
 [OPT] libatomic_ops
 [OPT] libcdr
-[OPT] libeot
 [OPT] libfreehand
-[DEP] libgcrypt
-[DEP] libgpg-error
 [DEP] libice
 [DEP] libjpeg
 [OPT] libmspub
-[OPT] liborcus
 [OPT] libpng
 [OPT] librevenge
 [DEP] libsm
 [OPT] libsndfile
 [OPT] libtiff
-[DEP] libtool
-[OPT] libwebp
 [OPT] libwpd
 [DEP] libx11
 [DEP] libxcb
@@ -70,30 +63,23 @@
 [DEP] linux-header
 [DEP] m4
 [DEP] make
-[OPT] mdds
-[DEP] meson
-[DEP] mpfr
 [OPT] neon
-[DEP] ninja
 [DEP] nspr
 [OPT] nss
 [OPT] openldap
 [OPT] openssl
 [DEP] pango
 [DEP] patch
-[DEP] pcre
 [DEP] perl
 [DEP] pixman
-[DEP] pkgconfig
 [DEP] python
 [OPT] sane-backends
 [DEP] sed
 [OPT] serf
-[DEP] setuptools
 [OPT] startup-notification
 [DEP] tar
+[DEP] tbb
 [DEP] unzip
-[DEP] util-linux
 [DEP] wayland
 [OPT] xmlsec
 [DEP] xorgproto

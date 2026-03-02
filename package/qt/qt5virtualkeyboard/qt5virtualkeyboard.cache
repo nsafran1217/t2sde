@@ -21,4 +21,5 @@
 [DEP] qt5svg
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xz

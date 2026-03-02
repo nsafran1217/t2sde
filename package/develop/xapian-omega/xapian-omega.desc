@@ -19,7 +19,8 @@
 
 [L] GPL
 [S] Stable
-[V] 1.4.30
+[V] 1.4.29
+[P] X -----5---9 700.000
 
 [CV-URL] https://xapian.org/download
-[D] f7b6c1dda76cf4c3accaa6ffbd4607bb40a2a05cfeccbc464e553693 xapian-omega-1.4.30.tar.xz http://www.oligarchy.co.uk/xapian/1.4.30/
+[D] 0b40a44fadd7da59d773c365fd4f680eedd8d771833a61f184673578 xapian-omega-1.4.29.tar.xz http://www.oligarchy.co.uk/xapian/1.4.29/

@@ -71,7 +71,7 @@ if [ ! -d config/$config -a -e /etc/SDE-CONFIG/config -a $config = default ]; th
 	echo "Using /etc/SDE-CONFIG/ as default config"
 	mkdir -p config/$config
 	cp -vf /etc/SDE-CONFIG/* config/$config/
-	sed -i -E '/SDECFG_(CROSSBUILD|OPT|LTO|PARALLEL|TARGET|PKGSEL_TMPL|TMPFS|C_FLAGS|DEBUG|XTRACE)/d' \
+	sed -i -E '/SDECFG_(CROSSBUILD|OPT|LTO|PARALLE|PKGSEL_TMPL|TMPFS|C_FLAGS|XTRACE)/d' \
 		config/$config/config
 fi
 
@@ -131,7 +131,7 @@ fi
 if [ ! -f src/bash/luabash.??* ]; then
 	echo "Building src/bash/luabash"
 	j="$(nproc 2>/dev/null)"
-	make -j${j:-1} --no-print-directory SILENT=1 -C misc/luabash \
+	make -j${j:-1} --no-print-directory -C misc/luabash \
 		X_OUTARCH=$PWD/src ${HOSTCC:+CC=$HOSTCC} ${HOSTCC:+LD=ld}
 	unset j
 fi

@@ -24,3 +24,4 @@
 [OPT] spirv-llvm-translator
 [OPT] spirv-tools
 [DEP] tar
+[DEP] tbb

@@ -1,6 +1,6 @@
-[TIMESTAMP] 1770547178 Sun Feb  8 11:39:38 2026
-[BUILDTIME] 520 (9)
-[SIZE] 11.04 MB, 2234 files
+[TIMESTAMP] 1739234308 Tue Feb 11 01:38:28 2025
+[BUILDTIME] 520 (5)
+[SIZE] 7.72 MB, 2211 files
 
 [DEP] bash
 [DEP] binutils
@@ -30,7 +30,6 @@
 [DEP] kpackage
 [DEP] krunner
 [DEP] kservice
-[DEP] ksvg
 [DEP] kunitconversion
 [DEP] kwidgetsaddons
 [DEP] kxmlgui
@@ -38,15 +37,15 @@
 [DEP] linux-header
 [DEP] make
 [DEP] pkgconfig
+[DEP] plasma5support
 [DEP] procps
 [DEP] qt6base
 [DEP] qt6declarative
-[DEP] qt6positioning
-[DEP] qt6webchannel
-[DEP] qt6webengine
+[DEP] qt6translations
 [DEP] sed
+[DEP] skanlite
 [DEP] sonnet
 [DEP] tar
-[DEP] util-linux
+[DEP] tbb
 [DEP] vulkan-headers
 [DEP] xz

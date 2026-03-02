@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/i3/i3.desc
-[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2008 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -17,8 +17,8 @@
 
 [L] BSD
 [S] Stable
-[V] 4.25.1
-
-[D] ee4d48c42b77f6ebd402de4f183c8ae844225c7d8355d83deb0d9ba4 i3-4.25.1.tar.xz https://i3wm.org/downloads/
+[V] 4.24
 
 hook_add postmake 5 "register_wm i3 i3 $bindir/i3"
+
+[D] 5a0b94add2bdec1325178cfd3df0e32c5d553ec95684ecf5ebbbecf1 i3-4.24.tar.xz https://i3wm.org/downloads/

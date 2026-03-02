@@ -9,7 +9,7 @@
 # configuration file config/$config/config
 #
 # [BEGIN] of version section
-sdever=25-svn
+sdever=25.10
 # [END] of version section
 
 crossnative=native arch=any stagelevel=${stagelevel:-1} arch_target=any-unknown-linux
@@ -83,7 +83,7 @@ unset new_path
 
 export PATH="$base/build/$SDECFG_ID/TOOLCHAIN/$toolsdir/bin:$PATH"
 export PATH="$base/build/$SDECFG_ID/TOOLCHAIN/$toolsdir/wrapper:$PATH"
-export LC_ALL= LANG=C.UTF-8; umask 022
+export LC_ALL=C; unset LANG; umask 022
 
 export BUILDCC="cc"   BUILD_CC="cc"   HOSTCC="cc"   HOST_CC="cc"
 export BUILDCXX="c++" BUILD_CXX="c++" HOSTCXX="c++" HOST_CXX="c++"
@@ -110,23 +110,6 @@ export LDCONFIG=$base/build/$SDECFG_ID/TOOLCHAIN/$toolsdir/wrapper/ldconfig
 
 if [ -f $base/build/$SDECFG_ID/TOOLCHAIN/$toolsdir/lib/wrapper-config ]
 then . $base/build/$SDECFG_ID/TOOLCHAIN/$toolsdir/lib/wrapper-config; fi
-
-if [ "$SDECFG_HOMEBREW" = 1 ]
-then
-	# Building under another distribution, set prefix and paths appropriately
-	[ "$prefix_auto" = 1 ] && prefix=$SDECFG_HOMEBREW_PREFIX
-	# We assume user does not want pkg-specific prefixes (/opt/gnome etc.), disable them
-	prefix_auto=0
-
-	PATH=$SDECFG_HOMEBREW_PREFIX/bin:$PATH
-	LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$SDECFG_HOMEBREW_PREFIX/lib:$SDECFG_HOMEBREW_PREFIX/lib64
-	export LD_LIBRARY_PATH
-
-	for p in $SDECFG_HOMEBREW_PREFIX/lib{,64}/python*/site-packages; do
-		PYTHONPATH=$PYTHONPATH:$p
-	done
-	export PYTHONPATH
-fi
 
 if [ "$stagelevel" -gt 2 -o "$SDECFG_USE_CROSSCC" = 0 ]
 then

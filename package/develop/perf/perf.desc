@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/perf/perf.desc
-[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2021 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -25,10 +25,11 @@
 
 [L] GPL
 [S] Stable
-[V] 6.19.4
-
-# https://cdn.kernel.org/pub/linux/kernel/tools/perf/
-[D] a57d69e9f150c29612f96c36688aaf3e8017c5609ff0fad504a51f64 linux-6.19.4.tar.xz http://www.kernel.org/pub/linux/kernel/v6.x/
+[V] 6.16.9
+[P] X -----5---9 990.500
 
 srcdir="linux-*/tools/perf"
 makeopt=
+
+# https://cdn.kernel.org/pub/linux/kernel/tools/perf/
+[D] 171f6dbdbb15d976f5696d543ee729e9647a67d53765a5df823dc076 linux-6.16.9.tar.xz http://www.kernel.org/pub/linux/kernel/v6.x/

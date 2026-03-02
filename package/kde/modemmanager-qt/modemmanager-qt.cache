@@ -10,7 +10,6 @@
 [DEP] extra-cmake-modules
 [DEP] gawk
 [DEP] grep
-[DEP] kconfig
 [DEP] linux-header
 [DEP] make
 [DEP] modemmanager
@@ -18,4 +17,5 @@
 [DEP] qt6base
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xz

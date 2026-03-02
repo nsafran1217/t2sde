@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/parley/parley.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Vocabulary Trainer
 
-[T] Parley is a vocabulary trainer. It helps you to memorize your vocabulary,
+[T] Parley is a vocabulary trainer. It helps you to memorize your vocabulary, 
 [T] for example when you are trying to learn a foreign language.
 
 [U] https://apps.kde.org/parley/
@@ -16,15 +16,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 3aa990ec5639fad8534bb6d0c395cb3fd41bfa047b255c40fac12477 parley-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.420
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] f70dd962afb455405d16ab5b2a60ec893e69f054f510dea37d9ac68a parley-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

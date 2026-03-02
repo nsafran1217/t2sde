@@ -4,8 +4,10 @@
 
 [DEP] bash
 [DEP] coreutils
+[DEP] cython
 [DEP] diffutils
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] gzip
 [DEP] markupsafe

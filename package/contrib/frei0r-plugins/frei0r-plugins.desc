@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/frei0r-plugins/frei0r-plugins.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -20,9 +20,9 @@
 
 [L] GPL
 [S] Stable
-[V] 2.5.4
+[V] 2.4.0
 
-[D] af522de1fe1e088851c57520bab8e85331cdac9aaebcc7e94fc8af4d frei0r-2.5.4.tar.gz https://github.com/dyne/frei0r/archive/v2.5.4/
+[D] e8aad49df8e5b50f7f60a82bd3b0d00679084938aae8eb3d8f102d00 frei0r-2.4.0.tar.gz https://github.com/dyne/frei0r/archive/v2.4.0/
 
 var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 var_append GCC_WRAPPER_APPEND ' ' -I$root/usr/include/opencv4

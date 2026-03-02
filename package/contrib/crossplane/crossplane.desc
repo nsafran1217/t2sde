@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/crossplane/crossplane.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -21,7 +21,7 @@
 [F] CROSS
 
 [L] APL
-[V] 2.2.0
+[V] 2.0.2
 [S] Stable
 
-[D] d7ae6b5dbe7f79ea3cabeb3e63e3ca31639becacaa7eaeb03a1fc609 crossplane-2.2.0.tar.gz https://github.com/crossplane/crossplane/archive/v2.2.0/
+[D] 7e07f41ebfd87cb58bae5595114409fd1dac83fb307b5255fb9c8e3c crossplane-2.0.2.tar.gz https://github.com/crossplane/crossplane/archive/v2.0.2/

@@ -1,14 +1,12 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/cosmic-workspaces-epoch/cosmic-workspaces-epoch.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] COSMIC workspace is a modern, Rust-based desktop environment
+[I] cosmic-workspaces-epoch
 
-[T] COSMIC workspace is a modern, Rust-based desktop environment focused on
-[T] productivity, featuring dynamic workspaces, intuitive tiling/floating
-[T] window management, extensive customization, multi-monitor support.
+[T] cosmic-workspaces-epoch.
 
 [U] https://github.com/pop-os/cosmic-workspaces-epoch/
 
@@ -19,10 +17,10 @@
 [F] CROSS
 
 [L] GPL3
-[S] Stable
-[V] 1.0.8
+[S] Beta
+[V] 1.0.0-beta.1.1
 
 [CV-GROUP] cosmic-desktop
-[D] dd50f471b70d1c5c8b181c694b715a427d3e557e4fe217f732619e5a cosmic-workspaces-epoch-1.0.8.tar.gz https://github.com/pop-os/cosmic-workspaces-epoch/archive/epoch-1.0.8/
+[D] ffba8fd527ece7e45f427d5c35c7acaaf79eef5d7b30e1cf7e7c4ebd cosmic-workspaces-epoch-1.0.0-beta.1.1.tar.gz https://github.com/pop-os/cosmic-workspaces-epoch/archive/epoch-1.0.0-beta.1.1/
 
 . $base/package/cosmic/*/cosmic-conf.in

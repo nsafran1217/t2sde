@@ -1,7 +1,8 @@
-[TIMESTAMP] 1770493942 Sat Feb  7 20:52:22 2026
-[BUILDTIME] 410 (9)
-[SIZE] 11.20 MB, 202 files
+[TIMESTAMP] 1752708579 Thu Jul 17 02:29:39 2025
+[BUILDTIME] 350 (9)
+[SIZE] 10.53 MB, 210 files
 
+[DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
 [DEP] cmake
@@ -43,7 +44,7 @@
 [DEP] libxcb
 [DEP] linux-header
 [DEP] make
-[OPT] phonon
+[DEP] phonon
 [DEP] pkgconfig
 [DEP] procps
 [DEP] qt6base
@@ -51,6 +52,7 @@
 [DEP] solid
 [DEP] sonnet
 [DEP] tar
-[DEP] util-linux
+[DEP] tbb
 [DEP] vulkan-headers
+[DEP] xorgproto
 [DEP] xz

@@ -1,31 +1,27 @@
-[TIMESTAMP] 1760196532 Sat Oct 11 17:28:52 2025
-[BUILDTIME] 40 (9)
-[SIZE] 3.97 MB, 124 files
 
-[DEP] bash
+[TIMESTAMP] 1663503410 Sun Sep 18 14:16:50 2022
+[BUILDTIME] 100 (9) ERROR
+[SIZE] 0.02 MB, 6 files
+
+[DEP] 00-dirtree
+[DEP] automake
 [DEP] binutils
-[DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
-[DEP] docbook-xml
-[DEP] docbook-xsl
+[DEP] file
+[DEP] findutils
 [DEP] gawk
-[DEP] gcr3
 [DEP] gettext
-[OPT] glib
+[DEP] glib
+[DEP] gobject-introspection
 [DEP] grep
-[DEP] libcap-ng
-[DEP] libgcrypt
-[DEP] libgpg-error
-[DEP] libxslt
+[DEP] gtk+
+[DEP] libffi
 [DEP] linux-header
-[DEP] meson
-[DEP] ninja
-[DEP] openssl
-[DEP] p11-kit
-[DEP] pam
-[DEP] python
+[DEP] make
+[DEP] pcre2
+[DEP] pkgconfig
 [DEP] sed
-[OPT] systemd
 [DEP] tar
-[DEP] xz
+[DEP] util-linux
+[DEP] zlib

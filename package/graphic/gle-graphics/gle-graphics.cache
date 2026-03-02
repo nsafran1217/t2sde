@@ -1,30 +1,42 @@
-[TIMESTAMP] 1760739894 Sat Oct 18 00:24:54 2025
-[BUILDTIME] 300 (9)
-[SIZE] 5.88 MB, 129 files
 
-[DEP] bash
+[TIMESTAMP] 1280262622 Tue Jul 27 20:30:22 2010
+[BUILDTIME] 35 (5)
+[SIZE] 2.65 MB, 97 files
+
+[DEP] 00-dirtree
 [DEP] binutils
-[DEP] boost
 [DEP] cairo
-[DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
-[DEP] extra-cmake-modules
+[DEP] expat
+[DEP] findutils
+[DEP] fontconfig
+[DEP] freetype
 [DEP] gawk
-[DEP] ghostscript
-[DEP] glu
+[DEP] glitz
 [DEP] grep
-[DEP] gzip
-[DEP] libglvnd
+[DEP] xorgproto
+[DEP] libice
 [DEP] libjpeg
 [DEP] libpng
+[DEP] libpthread-stubs
+[DEP] libsm
 [DEP] libtiff
+[DEP] libx11
+[DEP] libxau
+[DEP] libxcb
+[DEP] libxrender
+[DEP] libxt
 [DEP] linux-header
 [DEP] make
+[DEP] ncurses
+[DEP] pixman
 [DEP] pkgconfig
-[DEP] qt65compat
-[DEP] qt6base
+[DEP] xorgproto
 [DEP] sed
+[DEP] sysfiles
 [DEP] tar
-[DEP] vulkan-headers
+[DEP] util-linux
+[DEP] xcb-util
+[DEP] xorgproto
 [DEP] zlib

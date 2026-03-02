@@ -21,15 +21,14 @@
 [F] OBJDIR CROSS NO-LTO.gcc LATOMIC.sparc
 [R] - avr32 microblaze
 
-[E] opt guile
 [E] opt python
 
 [L] GPL
 [S] Stable
-[V] 17.1
+[V] 16.3
 [P] X ?----5---9 500.500
 
-[D] 1dff07ab1468a6ce2ff45c33489545b85cde999b9ee8c508c2542741 gdb-17.1.tar.xz http://ftp.gnu.org/gnu/gdb/
+[D] 2c00d3d6f243d17ff436291fb51e62b21aff1fb101d1d21eccdfe108 gdb-16.3.tar.xz http://ftp.gnu.org/gnu/gdb/
 
 export CONFIG_SHELL=/bin/bash
 

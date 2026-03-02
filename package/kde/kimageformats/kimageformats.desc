@@ -1,11 +1,11 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kimageformats/kimageformats.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] KDE Frameworks addon with additional image plugins for QtGui
+[I] KDE Frameworks 5 Tier 1 addon with additional image plugins for QtGui
 
 [T] This framework provides additional image format plugins for QtGui.
 
@@ -15,19 +15,15 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
-[E] opt ilmbase
 [E] opt libjxl
-[E] opt libraw
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
-[P] X -----5---9 200.015
+[V] 6.18.0
+[P] X -----5---9 162.800
 
 [CV-GROUP] kde-frameworks
-[D] d76fe4f60471950eb42341747ac75528469575167b5c310673da7887 kimageformats-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] c4845db4106d5dce4b626067d453c6e5e81eebb3755c939b66fc35ff kimageformats-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in
-pkginstalled openjpeg || var_append cmakeopt ' ' -DKIMAGEFORMATS_JP2=OFF

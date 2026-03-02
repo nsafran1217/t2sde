@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kbackup/kbackup.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Back up your data in a simple
 
-[T] KBackup is an application which lets you back up your data in a simple,
+[T] KBackup is an application which lets you back up your data in a simple, 
 [T] user friendly way.
 
 [U] https://apps.kde.org/kbackup/
@@ -16,16 +16,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
+[V] 25.08.1
 [P] X -----5---9 162.900
 
-[CV-GROUP] kde-gear
-[D] f0804666ae835cb7bef53a9d53d2dc11032a3fe54e4fa8d7392479e1 kbackup-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
-
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 787777c216c7f9a09d36fc31e23831d6483faadad175371a15f59f28 kbackup-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

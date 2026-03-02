@@ -1,12 +1,11 @@
-[TIMESTAMP] 1766944158 Sun 28 Dec 2025 17:49:18 GMT
+[TIMESTAMP] 1738852503 Thu Feb  6 15:35:03 2025
 [BUILDTIME] 1 (9)
-[SIZE] 0.20 MB, 31 files
+[SIZE] 0.22 MB, 30 files
 
 [DEP] bash
 [DEP] charset_normalizer
 [DEP] coreutils
 [DEP] diffutils
-[DEP] findutils
 [DEP] gawk
 [DEP] grep
 [DEP] gzip

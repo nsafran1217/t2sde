@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/signon-kwallet-extension/signon-kwallet-extension.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,13 +15,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 3b0726a5adb94018bf4c6ebdb82b7a128cba0cc044c71c286aca9069 signon-kwallet-extension-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.800
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] fd3012d47b655bb7fb4a22ff40146b7c2303680086a173d6b3cc8265 signon-kwallet-extension-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

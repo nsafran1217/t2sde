@@ -17,6 +17,7 @@
 [DEP] gawk
 [DEP] gdk-pixbuf
 [DEP] gettext
+[DEP] git
 [OPT] glib
 [DEP] glib-networking
 [DEP] grep
@@ -40,6 +41,7 @@
 [DEP] sed
 [DEP] shared-mime-info
 [DEP] tar
+[DEP] tbb
 [OPT] vte
 [DEP] wayland
 [OPT] webkitgtk

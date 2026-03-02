@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/redis/redis.desc
-[COPY] Copyright (C) 2020 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2020 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,13 +19,11 @@
 [C] extra/database
 [F] CROSS
 
-[E] opt systemd
-
 [L] BSD
 [S] Stable
-[V] 8.6.1
+[V] 8.2.1
 
-[D] d291c0426b5d8a8b9da26f7fed2149b94b7ad124b5c1ec4a446bacf2 redis-8.6.1.tar.gz https://download.redis.io/releases/
+[D] 9a6cf9bf004ad866e8dec422654270786aa645c2222a375e97a8930e redis-8.2.1.tar.gz https://download.redis.io/releases/
 
 runconf=0
 var_append makeopt ' ' BUILD_TLS=yes

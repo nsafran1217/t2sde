@@ -1,7 +1,8 @@
-[TIMESTAMP] 1765364087 Wed Dec 10 11:54:47 2025
-[BUILDTIME] 320 (9)
-[SIZE] 65.41 MB, 630 files
+[TIMESTAMP] 1757782865 Sat Sep 13 18:01:05 2025
+[BUILDTIME] 370 (9)
+[SIZE] 63.42 MB, 637 files
 
+[DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
 [DEP] cairo
@@ -23,7 +24,6 @@
 [OPT] gst-plugins-bad
 [OPT] gst-plugins-base
 [OPT] gstreamer
-[OPT] gstreamer-vaapi
 [DEP] harfbuzz
 [DEP] libdrm
 [DEP] libglvnd
@@ -32,7 +32,6 @@
 [DEP] librsvg
 [DEP] libtiff
 [DEP] libx11
-[DEP] libxcb
 [DEP] libxcursor
 [DEP] libxdamage
 [DEP] libxext
@@ -50,7 +49,6 @@
 [DEP] python
 [DEP] sed
 [DEP] setuptools
-[DEP] shaderc
 [DEP] tar
 [OPT] vulkan-headers
 [DEP] wayland

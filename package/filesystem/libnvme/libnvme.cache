@@ -17,7 +17,7 @@
 [DEP] meson
 [DEP] ninja
 [DEP] openssl
-[OPT] python
+[DEP] python
 [DEP] sed
-[OPT] swig
+[DEP] swig
 [DEP] tar

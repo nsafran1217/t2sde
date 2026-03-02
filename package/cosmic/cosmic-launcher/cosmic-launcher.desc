@@ -1,12 +1,12 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/cosmic-launcher/cosmic-launcher.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] Launcher for the COSMIC desktop environment
+[I] cosmic-launcher
 
-[T] Launcher for the COSMIC desktop environment.
+[T] cosmic-launcher.
 
 [U] https://github.com/pop-os/cosmic-launcher/
 
@@ -17,10 +17,10 @@
 [F] CROSS
 
 [L] GPL3
-[S] Stable
-[V] 1.0.8
+[S] Beta
+[V] 1.0.0-beta.1.1
 
 [CV-GROUP] cosmic-desktop
-[D] 57d5bca1057ba087b7097af3b9ebb14bbc7fa351d73390d995b91d30 cosmic-launcher-epoch-1.0.8.tar.gz https://github.com/pop-os/cosmic-launcher/archive/epoch-1.0.8/
+[D] 2080cd5565d917d14888cdfb5370f529b45de4e25e356e07e5e8bb64 cosmic-launcher-epoch-1.0.0-beta.1.1.tar.gz https://github.com/pop-os/cosmic-launcher/archive/epoch-1.0.0-beta.1.1/
 
 . $base/package/cosmic/*/cosmic-conf.in

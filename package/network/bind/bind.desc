@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/bind/bind.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -26,9 +26,9 @@
 
 [L] Free-to-use
 [S] Stable
-[V] 9.21.18
+[V] 9.20.13
 
 [CV-URL] https://ftp.isc.org/isc/bind9/
-[D] 584eaa445da86d0361196bf10b9fbf1aa944413ff280f784dbedc41b bind-9.21.18.tar.xz https://ftp.isc.org/isc/bind9/9.21.18/
+[D] 845d61d8b28983364afaace56ff1ee6dea086614fd0f027cb373be45 bind-9.20.13.tar.xz https://ftp.isc.org/isc/bind9/9.20.13/
 
 pkginstalled nghttp2 || var_append confopt ' ' --disable-doh

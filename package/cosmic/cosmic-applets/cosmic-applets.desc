@@ -1,12 +1,12 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/cosmic-applets/cosmic-applets.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] Applets for the COSMIC desktop environment
+[I] cosmic-applets
 
-[T] Applets for the COSMIC desktop environment.
+[T] cosmic-applets.
 
 [U] https://github.com/pop-os/cosmic-applets/
 
@@ -14,13 +14,13 @@
 [M] NoTag <notag@t2sde.org>
 
 [C] extra/tool
-[F] CROSS NO-LTO
+[F] CROSS
 
 [L] GPL3
-[S] Stable
-[V] 1.0.8
+[S] Beta
+[V] 1.0.0-beta.1.1
 
 [CV-GROUP] cosmic-desktop
-[D] 861e6f52045e894fa3f00c9db7dfd967bd799d812785faf141928f11 cosmic-applets-epoch-1.0.8.tar.gz https://github.com/pop-os/cosmic-applets/archive/epoch-1.0.8/
+[D] 1122eb83723622544f32f874ed8df668ffd9a26d0846e65e02161c66 cosmic-applets-epoch-1.0.0-beta.1.1.tar.gz https://github.com/pop-os/cosmic-applets/archive/epoch-1.0.0-beta.1.1/
 
 . $base/package/cosmic/*/cosmic-conf.in

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/0install/0install.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -21,6 +21,6 @@
 
 [L] GPL
 [S] Stable
-[V] 2.18
+[V] 2.3.16
 
-[D] 0a0c2c0bbebb31c849aa6e187d3cb5b368dbd3e51edcac5476d3331d 0install-2.18.tbz https://github.com/0install/0install/releases/download/v2.18/
+[D] a16696fdc9dc14262b6e445080674997cad0a8925f4554be57a2e1c6 0install-2.3.16.tar.bz2 https://github.com/0install/0install/releases/download/v2.3.16/

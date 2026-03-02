@@ -21,7 +21,7 @@
 [DEP] glitz
 [DEP] gpm
 [DEP] grep
-[OPT] gtk+
+[DEP] gtk+
 [DEP] xorgproto
 [DEP] libpng
 [DEP] libpthread-stubs

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/gn/gn.desc
-[COPY] Copyright (C) 2021 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2021 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,18 +18,17 @@
 
 [L] OpenSource
 [S] Stable
-[V] 2324
+[V] 97b68a0
 [P] X -1---5---9 109.500
 
 # Remember to update last_commit_position.h on update, sigh
-# version number is derived from "git describe HEAD --abbrev=12"
-[D] 3b9e4e78fa39d3188943a33b1bfee5b01271ff7b20dbf67b61bec22c gn-2324.tar.gz git+https://gn.googlesource.com/gn 304bbef
+[D] a52445f0a3805c90a534c6c97f110b180149e45a9cc8be734fc850f4 gn-97b68a0.tar.gz git+https://gn.googlesource.com/gn 97b68a0
 
 runmake=0
 
-hook_add premake 5 gn_premake
-hook_add inmake 5 gn_inmake
-hook_add postmake 5 gn_postmake
+hook_add premake 5 'gn_premake'
+hook_add inmake 5 'gn_inmake'
+hook_add postmake 5 'gn_postmake'
 
 gn_premake() {
 	mkdir $builddir/$pkg/out/

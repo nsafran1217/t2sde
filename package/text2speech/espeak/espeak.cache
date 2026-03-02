@@ -10,9 +10,11 @@
 [DEP] diffutils
 [DEP] gawk
 [DEP] gettext
+[DEP] git
 [DEP] grep
 [DEP] linux-header
 [DEP] make
 [DEP] openssl
 [DEP] sed
+[DEP] tbb
 [DEP] unzip

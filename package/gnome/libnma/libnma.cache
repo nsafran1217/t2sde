@@ -1,40 +1,22 @@
-[TIMESTAMP] 1760525702 Wed Oct 15 12:55:02 2025
-[BUILDTIME] 12 (9)
-[SIZE] 1.57 MB, 140 files
 
-[DEP] at-spi2-core
-[DEP] bash
+[TIMESTAMP] 1616622668 Wed Mar 24 22:51:08 2021
+[BUILDTIME] 100 (9) ERROR
+[SIZE] 0.01 MB, 6 files
+
+[DEP] 00-dirtree
 [DEP] binutils
-[DEP] cairo
 [DEP] coreutils
 [DEP] diffutils
-[DEP] docbook-xml
-[DEP] docbook-xsl
+[DEP] file
 [DEP] findutils
 [DEP] gawk
-[DEP] gcr
-[DEP] gdk-pixbuf
 [DEP] gettext
-[OPT] glib
-[DEP] gobject-introspection
+[DEP] glib
 [DEP] grep
 [DEP] gtk+
-[DEP] gtk-doc
-[DEP] harfbuzz
-[DEP] libx11
-[DEP] libxml
+[DEP] iso-codes
 [DEP] linux-header
-[DEP] meson
-[DEP] networkmanager
-[DEP] ninja
-[DEP] openssl
-[DEP] p11-kit
-[DEP] pango
+[DEP] make
 [DEP] pkgconfig
-[DEP] python
 [DEP] sed
-[DEP] setuptools
 [DEP] tar
-[DEP] vala
-[DEP] xorgproto
-[DEP] xz

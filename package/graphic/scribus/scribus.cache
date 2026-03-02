@@ -42,6 +42,7 @@
 [DEP] qt6tools
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xorgproto
 [DEP] xz
 [DEP] zlib

@@ -1,12 +1,12 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/angelfish/angelfish.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Angelfish is a modern mobile webbrowser
 
-[T] Angelfish is a modern mobile webbrowser. It supports typical browser
+[T] Angelfish is a modern mobile webbrowser. It supports typical browser 
 [T] features, such as bookmarks, history, tabs.
 
 [U] https://apps.kde.org/angelfish/
@@ -19,9 +19,10 @@
 
 [L] GPL
 [S] Beta
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 7cfda75158d912c9fb121b8c5c6b40e3e899a9deaddb7595656c18ed angelfish-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 400.000
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 0781a94e9ec93624fd5ce77fb5bcc72bb66e13e6d52fd86efb9c3756 angelfish-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

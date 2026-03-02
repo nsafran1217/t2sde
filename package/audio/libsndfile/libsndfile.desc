@@ -21,12 +21,6 @@
 [C] extra/multimedia
 [F] CROSS
 
-[E] opt flac
-[E] opt lame mpg123
-[E] opt libogg
-[E] opt libopus
-[E] opt libvorbis
-
 [L] LGPL
 [S] Stable
 [V] 1.2.2

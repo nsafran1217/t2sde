@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kicad-library/kicad-library.desc
-[COPY] Copyright (C) 2015 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2015 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -22,12 +22,12 @@
 
 [L] OpenSource
 [S] Stable
-[V] 9.0.7
+[V] 9.0.4
 
-[D] 42f8cfd62eeafafdbb05b39ff2a37d3154f23166981b73669516ea01 kicad-footprints-9.0.7.tar.bz2 https://gitlab.com/kicad/libraries/kicad-footprints/-/archive/9.0.7/
-[D] b79e8f9175c0db2df8d4ed759a6e4cbe1aba5b7d034579cae7b9f154 kicad-packages3D-9.0.7.tar.bz2 https://gitlab.com/kicad/libraries/kicad-packages3D/-/archive/9.0.7/
-[D] d88ed540b23e0eebef2176d263c712c9a7c15db6d25c3bb2bda46579 kicad-symbols-9.0.7.tar.bz2 https://gitlab.com/kicad/libraries/kicad-symbols/-/archive/9.0.7/
-[D] ade9e89a01438ecdf2df71ce46ec57634c17c7ef6b2e5ebb0f875783 kicad-templates-9.0.7.tar.bz2 https://gitlab.com/kicad/libraries/kicad-templates/-/archive/9.0.7/
+[D] adf2421850dc2c2667b2b372235c8b16eb4a7051cde91fdd5f4201a9 kicad-footprints-9.0.4.tar.bz2 https://gitlab.com/kicad/libraries/kicad-footprints/-/archive/9.0.4/
+[D] 4af2f27bf3e43ddcac002a31bbcf66b8e8389ec26e7bba93ebd8de01 kicad-packages3D-9.0.4.tar.bz2 https://gitlab.com/kicad/libraries/kicad-packages3D/-/archive/9.0.4/
+[D] 52d5aa21e2bf0870f68a1f5ed64d22530bd66303ff670a2d4f622a9a kicad-symbols-9.0.4.tar.bz2 https://gitlab.com/kicad/libraries/kicad-symbols/-/archive/9.0.4/
+[D] a97bff4283d4f19f0d762ffe7e1e13195d81ea7a22fe47cef5c71ca1 kicad-templates-9.0.4.tar.bz2 https://gitlab.com/kicad/libraries/kicad-templates/-/archive/9.0.4/
 
 packages3D() {
 	tar -xf ../archdir/kicad-packages3D*.tar.*

@@ -1,12 +1,12 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/qt6speech/qt6speech.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] Provides support for text-to-speech and speech recognition in Qt
+[I] Qt6 Speech
 
-[T] Qt6Speech provides support for text-to-speech and speech recognition in Qt.
+[T] Qt6 Speech.
 
 [U] https://qt.io
 
@@ -14,14 +14,15 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/development
-[F] CROSS OBJDIR
+[F] CROSS NO-LTO.gcc
 
 [L] LGPL
 [S] Stable
-[V] 6.10.2
-[P] X -----5---9 180.120
+[V] 6.9.2
+[P] X -----5---9 127.120
+
+[ $prefix_auto = 1 ] && prefix=$(pkgprefix qt6base) && set_confopt
+atstage cross && var_append cmakeopt ' ' "-DQT_HOST_PATH=$root/$(pkgprefix qt6base)"
 
 [CV-GROUP] qt6
-[D] 04c40d7f17b47932cc7264f87d4c4f6b16d9e90829a0475c0d79a50e qtspeech-everywhere-src-6.10.2.tar.xz http://download.qt.io/official_releases/qt/6.10/6.10.2/submodules/
-
-. $base/package/*/*/qt6-conf.in
+[D] 1202a9bca7ed082584d586a6bbf2d1fd380fac356dd511304c4eba86 qtspeech-everywhere-src-6.9.2.tar.xz http://download.qt.io/official_releases/qt/6.9/6.9.2/submodules/

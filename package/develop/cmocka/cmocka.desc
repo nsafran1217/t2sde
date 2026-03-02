@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/cmocka/cmocka.desc
-[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2007 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -23,6 +23,6 @@
 
 [L] APL
 [S] Stable
-[V] 2.0.2
+[V] 1.1.8
 
-[D] f128d05454870af68defc25acf705cfb6bdd094beceb91bcf805e96f cmocka-2.0.2.tar.xz https://cmocka.org/files/2.0/
+[D] 47e7d90ac6e0938c3010b5464f28b5972fb917c5f706900e65f9e531 cmocka-1.1.8.tar.xz https://cmocka.org/files/1.1/

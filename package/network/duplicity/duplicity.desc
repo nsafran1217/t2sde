@@ -23,6 +23,6 @@
 
 [L] GPL
 [S] Beta
-[V] 3.0.7
+[V] 3.0.5.1
 
-[D] 17700150359f7e2e906af6e18b52f730fac92d194d8c324c61d98df0 duplicity-rel.3.0.7.tar.gz https://gitlab.com/duplicity/duplicity/-/archive/rel.3.0.7/
+[D] dd071d7e50f85e52eff2341129b41d043cbd97802507b136c48fdd86 duplicity-rel.3.0.5.1.tar.gz https://gitlab.com/duplicity/duplicity/-/archive/rel.3.0.5.1/

@@ -1,11 +1,9 @@
-[TIMESTAMP] 1769206339 Fri Jan 23 23:12:19 2026
-[BUILDTIME] 1650 (9)
-[SIZE] 1570.24 MB, 3682 files
+[TIMESTAMP] 1745188308 Mon Apr 21 00:31:48 2025
+[BUILDTIME] 1500 (9)
+[SIZE] 1060.54 MB, 3900 files
 
 [DEP] alsa-lib
-[DEP] automake
 [DEP] bash
-[DEP] binutils
 [DEP] bison
 [DEP] bluez
 [DEP] clang
@@ -26,6 +24,7 @@
 [DEP] gst-plugins-base
 [DEP] gstreamer
 [OPT] krb5
+[DEP] libglvnd
 [DEP] libgphoto
 [DEP] libpcap
 [OPT] libsdl2
@@ -44,13 +43,12 @@
 [DEP] m4
 [DEP] make
 [DEP] opencl-headers
-[DEP] pkgconfig
 [DEP] pulseaudio
 [DEP] sane-backends
 [DEP] sed
 [DEP] tar
 [DEP] udev
-[DEP] util-linux
+[DEP] unwind
 [DEP] wayland
 [DEP] xkbcommon
 [DEP] xorgproto

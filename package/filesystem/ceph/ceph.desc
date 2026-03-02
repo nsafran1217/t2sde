@@ -20,6 +20,6 @@
 
 [L] LGPL
 [S] Stable
-[V] 20.2.0
+[V] 20.1.0
 
-[D] 54ca96d54236d4a8d719852fd339ea48689df4650252586696cd5efa ceph-20.2.0.tar.gz http://download.ceph.com/tarballs/
+[D] bcd36cac7c6933dda311b3a1029e84f2868f20c50c5be532927aefb3 ceph-20.1.0.tar.gz http://download.ceph.com/tarballs/

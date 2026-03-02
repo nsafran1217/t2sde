@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/oils-for-unix/oils-for-unix.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,12 +19,11 @@
 
 [L] APL
 [S] Stable
-[V] 0.37.0
+[V] 0.35.0
 
-[D] ec09f1a7ac780cf3fc6eed630f826f9fb48be547649d95b03efbb148 oils-for-unix-0.37.0.tar.gz https://oils.pub/download/
-
+[D] 2a3504b999486b0bc5337db6357560f844057c5c9f2dcabdab65483a oils-for-unix-0.35.0.tar.gz https://oils.pub/download/
 runmake=0
 var_remove_regex confopt ' ' '.*'
 var_append confopt ' ' --prefix=$root/$prefix
-hook_add inmake 5 _build/oils.sh
-hook_add postmake 5 ./install
+hook_add inmake 5 '_build/oils.sh'
+hook_add postmake 5 './install'

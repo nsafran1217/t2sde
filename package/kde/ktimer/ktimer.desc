@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/ktimer/ktimer.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Task Scheduler
 
-[T] KTimer is a little tool to execute programs after some time. It allows you
-[T] to enter several tasks and to set a timer for each of them. The timers for
+[T] KTimer is a little tool to execute programs after some time. It allows you 
+[T] to enter several tasks and to set a timer for each of them. The timers for 
 [T] each task can be started, stopped, changed, or looped.
 
 [U] https://apps.kde.org/ktimer/
@@ -16,15 +16,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] 1a022fbefe0f257aeeb9646c09287c4c3ca5b185d85a118e5eb07eaa ktimer-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.420
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] e1ed5fa8d7bbe91c2c9b9e6f216130a6fdd7b24d8ea59b82a5927293 ktimer-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

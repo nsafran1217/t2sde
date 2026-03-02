@@ -12,6 +12,7 @@
 [DEP] diffutils
 [DEP] findutils
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] gzip
 [DEP] libbluray

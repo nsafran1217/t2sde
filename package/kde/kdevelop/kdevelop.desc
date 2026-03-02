@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kdevelop/kdevelop.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -15,15 +15,14 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/development extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
+[V] 25.08.1
 [P] X -----5---9 290.000
-
-[CV-GROUP] kde-gear
-[D] 94856d6bee324a7e577b4bfbbcc4efaebe65c66170bfbf4adde26fd5 kdevelop-v25.12.2.tar.bz2 https://invent.kde.org/kdevelop/kdevelop/-/archive/v25.12.2/
 
 . $base/package/*/*/kde-conf.in
 var_append cmakeopt ' ' -DQT_MAJOR_VERSION=6
+
+[CV-GROUP] kde-gear
+[D] 756aabc219f6a37ec02aad85321ca5974ecb482fbcff26d07b0a2a4c kdevelop-v25.08.1.tar.bz2 https://invent.kde.org/kdevelop/kdevelop/-/archive/v25.08.1/

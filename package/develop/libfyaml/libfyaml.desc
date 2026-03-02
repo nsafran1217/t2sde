@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/libfyaml/libfyaml.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -21,10 +21,9 @@
 
 [L] MIT
 [S] Stable
-[V] 0.9.5
-[P] X -----5---9 161.640
+[V] 0.9
 
-[D] d03311fa2d83eab382f130284651e34d39e834167b26969c6e37d763 libfyaml-0.9.5.tar.gz https://github.com/pantoniou/libfyaml/archive/v0.9.5/
+[D] 029227a88b6668de47f0ecbd5cdfee5ae7b067625801f7f69f888613 libfyaml-0.9.tar.gz https://github.com/pantoniou/libfyaml/archive/v0.9/
 
-runcmake=0 autogen=2
-var_append confopt ' ' --disable-shave
+var_append cmakeopt ' ' -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+var_append cmakeopt ' ' -DBUILD_SHARED_LIBS=ON

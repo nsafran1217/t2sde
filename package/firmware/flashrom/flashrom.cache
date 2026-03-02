@@ -9,6 +9,7 @@
 [DEP] coreutils
 [DEP] diffutils
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] libftdi1
 [DEP] libusb

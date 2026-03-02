@@ -27,5 +27,6 @@
 [DEP] qt5declarative
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xorgproto
 [DEP] xz

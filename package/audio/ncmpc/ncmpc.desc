@@ -18,8 +18,6 @@
 [C] extra/multimedia
 [F] CROSS
 
-[E] opt lirc
-
 [L] GPL
 [S] Stable
 [V] 0.52

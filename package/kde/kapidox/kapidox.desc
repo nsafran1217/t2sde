@@ -1,11 +1,11 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kapidox/kapidox.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
-[I] KDE Frameworks scripts and data for building API documentation
+[I] KDE Frameworks 5 Tier 4 scripts and data for building API documentation
 
 [T] This framework contains scripts and data for building API documentation
 [T] (dox) in a standard format and style. The Doxygen tool performs the actual
@@ -17,13 +17,14 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
+[F] CROSS
 
 [L] GPL
 [S] Stable
-[V] 6.23.0
+[V] 6.18.0
+[P] X -----5---9 162.900
 
 [CV-GROUP] kde-frameworks
-[D] 60e118589fe9ce36b23190a1a65f6bb80f5a6e450b63187bb3f243e3 kapidox-6.23.0.tar.xz https://download.kde.org/stable/frameworks/6.23/
+[D] a7424db9d542501ec05305190c705fb22673e55c8ac73719b3341732 kapidox-6.18.0.tar.xz https://download.kde.org/stable/frameworks/6.18/
 
 . $base/package/*/*/kde-conf.in

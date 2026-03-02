@@ -12,4 +12,5 @@
 [DEP] linux-header
 [DEP] make
 [DEP] sed
+[DEP] tbb
 [DEP] unzip

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/php/php.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -18,14 +18,12 @@
 [C] extra/development
 [F] CROSS NO-LTO.gcc
 
-[E] opt apache apr apr-util
-
 [L] OpenSource
 [S] Stable
-[V] 8.5.3
+[V] 8.4.13
 [P] X -----5---9 178.100
 
-[D] 09bff3419716524d47475088d5a3782b7403de75dbd0715138167a4f php-8.5.3.tar.xz http://static.php.net/www.php.net/distributions/
+[D] d8fa59d30b2b64939e7b204ba976d2c16e1707340eaa97d64a5db05b php-8.4.13.tar.xz http://static.php.net/www.php.net/distributions/
 #[D] 2cc0762ee729950ff24f50c5d370f4f0d476d8ecdccfe390c96a0624 install-pear-nozlib-0.8.0-1.phar !http://pear.php.net/install-pear-nozlib.phar
 
 # seems not to handle --libdir...
@@ -134,7 +132,7 @@ fix_configure() {
 		sed -i "s,$i/lib,$i/${libdir##*/}," configure
 	done
 }
-[[ $libdir != *lib ]] && hook_add preconf 5 fix_configure
+[[ $libdir != *lib ]] && hook_add preconf 5 "fix_configure"
 
 # install into sysroot
 atstage cross && var_append makeinstopt ' ' INSTALL_ROOT=$root

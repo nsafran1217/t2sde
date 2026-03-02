@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/vdr/vdr.desc
-[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2007 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -23,10 +23,11 @@
 
 [L] GPL
 [S] Stable
-[V] 2.7.9
+[V] 1.7.5
 [P] X -----5---9 610.000
 
-[D] 115ccf365104cd8c98db15fc9df93885cb6a95b21bb5ab6f6a8fe2b1 vdr-2.7.9.tar.gz https://github.com/vdr-projects/vdr/archive/2.7.9/
+[D] 2341518463 vdr-1.7.5.tar.bz2 ftp://ftp.cadsoft.de/vdr/Developer/
+#[D] 3171113022 vdr-1.5.13-liemikuutio-1.17.diff.gz http://www.saunalahti.fi/~rahrenbe/vdr/patches/old/
 
 . $base/package/vdr/*/vdr-conf.in
 
@@ -169,6 +170,6 @@ vdr_extract_patches() {
 makeinstopt=
 var_append makeopt ' ' all
 
-hook_add prepatch  3 vdr_extract_patches
-hook_add premake  3 vdr_setup
-hook_add postmake 3 vdr_install
+hook_add prepatch  3 'vdr_extract_patches'
+hook_add premake  3 'vdr_setup'
+hook_add postmake 3 'vdr_install'

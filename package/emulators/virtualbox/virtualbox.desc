@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/virtualbox/virtualbox.desc
-[COPY] Copyright (C) 2007 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2007 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -21,10 +21,10 @@
 
 [L] GPL
 [S] Stable
-[V] 7.2.6
+[V] 7.2.2
 
 [CV-URL] http://www.virtualbox.org/wiki/Downloads
-[D] b66169d4fb1ba30db2fa13b046a729287f67552ff858cc936c5e1bcb VirtualBox-7.2.6.tar.bz2 http://download.virtualbox.org/virtualbox/7.2.6/
+[D] e86926150a077c2fd3b7263aee4b2bffc4b84290a3a73c1ff915ba43 VirtualBox-7.2.2.tar.bz2 http://download.virtualbox.org/virtualbox/7.2.2/
 
 # most regular ones (--prefix et al.) are not support, ...
 confopt="--disable-hardening"

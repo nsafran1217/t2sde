@@ -1,7 +1,9 @@
-[TIMESTAMP] 1770549370 Sun Feb  8 12:16:10 2026
-[BUILDTIME] 50 (9)
-[SIZE] 1.69 MB, 176 files
 
+[TIMESTAMP] 1718822794 Wed Jun 19 20:46:34 2024
+[BUILDTIME] 12 (9)
+[SIZE] 1.69 MB, 169 files
+
+[DEP] 00-dirtree
 [DEP] akonadi
 [DEP] akonadi-calendar
 [DEP] bash
@@ -9,7 +11,6 @@
 [DEP] calendarsupport
 [DEP] cmake
 [DEP] coreutils
-[DEP] cups
 [DEP] diffutils
 [OPT] docbook-xml
 [OPT] docbook-xsl
@@ -20,16 +21,18 @@
 [DEP] kcalendarcore
 [DEP] kconfig
 [DEP] kcoreaddons
+[DEP] kde-cli-tools
 [OPT] kdoctools
 [DEP] ki18n
 [DEP] kwidgetsaddons
 [DEP] libxml
 [DEP] linux-header
 [DEP] make
+[DEP] pkgconfig
 [DEP] procps
 [DEP] qt6base
 [DEP] sed
 [DEP] tar
-[DEP] util-linux
+[DEP] tbb
 [DEP] vulkan-headers
 [DEP] xz

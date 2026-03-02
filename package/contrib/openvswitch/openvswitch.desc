@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/openvswitch/openvswitch.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,8 +19,8 @@
 [C] extra/base
 [F] CROSS
 
+[V] 3.6.0
 [L] APL
 [S] Stable
-[V] 3.7.0
 
-[D] 0d38c6406e14cee627a7fa38b3440cad0fe52018c61b1b2f14d18465 openvswitch-3.7.0.tar.gz https://www.openvswitch.org/releases/
+[D] 4471e971ca47480ce87a68b4faa330c17c1946e8fa9b2f33d2e7c391 openvswitch-3.6.0.tar.gz https://www.openvswitch.org/releases/

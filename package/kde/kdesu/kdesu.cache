@@ -24,5 +24,6 @@
 [DEP] qt6base
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xorgproto
 [DEP] xz

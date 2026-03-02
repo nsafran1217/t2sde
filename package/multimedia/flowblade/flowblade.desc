@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/flowblade/flowblade.desc
-[COPY] Copyright (C) 2025 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -22,8 +22,8 @@
 
 [L] GPL
 [S] Stable
-[V] 2.24
-
-[D] d0a49552d5c9566b8c5ee26e1b22f27f60ab334071633c5ab5a03101 flowblade-2.24.tar.gz https://github.com/jliljebl/flowblade/archive/refs/tags/v2.24/
+[V] 2.22.1.1
 
 srcdir=flow*/flow*
+
+[D] e79ed71ba6ca15c27dc59823d6fe6a99989a18c72ddd6377e0d50b99 flowblade-2.22.1.1.tar.gz https://github.com/jliljebl/flowblade/archive/refs/tags/v2.22.1.1/

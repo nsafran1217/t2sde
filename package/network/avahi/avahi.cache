@@ -1,12 +1,9 @@
-[TIMESTAMP] 1768847043 Mon Jan 19 19:24:03 2026
-[BUILDTIME] 35 (9)
-[SIZE] 3.25 MB, 203 files
+[TIMESTAMP] 1747300336 Thu May 15 11:12:16 2025
+[BUILDTIME] 14 (9)
+[SIZE] 2.41 MB, 182 files
 
-[DEP] at-spi2-core
-[DEP] automake
 [DEP] bash
 [DEP] binutils
-[DEP] cairo
 [DEP] coreutils
 [DEP] dbus
 [DEP] diffutils
@@ -14,15 +11,12 @@
 [DEP] findutils
 [DEP] gawk
 [DEP] gdbm
-[DEP] gdk-pixbuf
-[DEP] gettext
 [DEP] glib
-[OPT] gobject-introspection
+[DEP] gobject-introspection
 [DEP] grep
 [OPT] gtk+
 [OPT] gtk+2
 [DEP] gzip
-[DEP] harfbuzz
 [DEP] libcap
 [DEP] libdaemon
 [OPT] libevent
@@ -31,7 +25,6 @@
 [DEP] make
 [OPT] mono
 [DEP] openssl
-[DEP] pango
 [DEP] pkgconfig
 [OPT] pydbus
 [OPT] pygobject
@@ -42,4 +35,3 @@
 [DEP] sed
 [DEP] setuptools
 [DEP] tar
-[DEP] util-linux

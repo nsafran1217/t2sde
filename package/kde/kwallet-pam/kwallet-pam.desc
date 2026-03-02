@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/kwallet-pam/kwallet-pam.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,13 +14,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 6.6.1
+[V] 6.4.5
+[P] X -----5---9 162.800
 
 [CV-GROUP] kde-plasma
-[D] d068bd33edab4ddef31ad7d588d502a2688acc17defda4b6d6b0dbe0 kwallet-pam-6.6.1.tar.xz https://download.kde.org/stable/plasma/6.6.1/
+[D] e8d7f799993302a23c60ce1f603ee7528295b59ff5a572ec323bf998 kwallet-pam-6.4.5.tar.xz https://download.kde.org/stable/plasma/6.4.5/
 
 . $base/package/*/*/kde-conf.in

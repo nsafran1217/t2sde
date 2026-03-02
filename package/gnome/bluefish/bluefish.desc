@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/bluefish/bluefish.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -23,12 +23,14 @@
 
 [L] GPL
 [S] Stable
-[V] 2.4.0
+[V] 2.2.17
 [P] X -----5---9 220.200
 
-[D] 5b94bd0df12a4bc7b7065ac7f7650992313c966c91a359d53b936d8d bluefish-2.4.0.tar.bz2 http://www.bennewitz.com/bluefish/stable/source/
+[CV-URL] https://download.gnome.org/sources/bluefish/cache.json
+[D] ae8e9311b2ee0d6f95a96a061dda5a567442ce9ea7b661811da311ba bluefish-2.2.17.tar.bz2 http://www.bennewitz.com/bluefish/stable/source/
 
 . $base/package/*/*/gnome-conf.in
+
 var_append confopt ' ' --disable-update-databases
 var_append confopt ' ' --with-gnome2-menu=/$prefix/share/applications
 var_append confopt ' ' --with-icon-path=/$prefix/share/pixmaps

@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/phosh-mobile-settings/phosh-mobile-settings.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -19,6 +19,7 @@
 
 [L] GPL3
 [S] Beta
-[V] 0.53.0
+[V] 0.49.0
+[P] X -----5---9 300.000
 
-[D] b038df364b814bf26c2dc28311834522ef77874e8b8b9579e1cabab5 phosh-mobile-settings-v0.53.0.tar.gz https://gitlab.gnome.org/World/Phosh/phosh-mobile-settings/-/archive/v0.53.0/
+[D] ed210c7999ec151465913d6c68fcf11a28f0855ceebcbfbaf1c30320 phosh-mobile-settings-v0.49.0.tar.gz https://gitlab.gnome.org/World/Phosh/phosh-mobile-settings/-/archive/v0.49.0/

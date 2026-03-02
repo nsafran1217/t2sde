@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/aacskeys/aacskeys.desc
-[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2013 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,6 +19,7 @@
 [L] PublicDomain
 [S] Beta
 [V] 0.4.0f-dmo7
+[P] X -----5---9 142.200
 
 [CV-FLAGS] NO-AUTO
 [D] f86e6e27fb0c3900eac63942e351ef00ba1b5b01f569fbfbaee84750 aacskeys-0.4.0e.tar.gz http://cyberside.net.ee/ripping/BD_DeviceKeys/
@@ -39,4 +40,4 @@ ak_install() {
   install debian/HostKeyCertificate_PS3.txt $root$datadir/$pkg/HostKeyCertificate.txt
   install debian/ProcessingDeviceKeysSimple.txt $root$datadir/$pkg/
 }
-hook_add postmake 5 ak_install
+hook_add postmake 5 "ak_install"

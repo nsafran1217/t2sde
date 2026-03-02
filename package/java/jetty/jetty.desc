@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/jetty/jetty.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -27,9 +27,10 @@
 
 [L] APL
 [S] Stable
-[V] 12.1.6
+[V] 12.1.1
+[P] X -----5---9 800.050
 
-[D] c83356da127c1aea380f6c8d96a8c0448670814d26dbad4899ed9893 jetty-home-12.1.6.tar.gz https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.6/
+[D] b011e2292ad9de8d2c1c22a8ddd812f2b7e9749de9c417981f6e4d86 jetty-home-12.1.1.tar.gz https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.1/
 
 runmake=0
 [ $prefix_auto = 1 ] && prefix=opt/jetty && set_confopt
@@ -37,4 +38,4 @@ runmake=0
 jetty_install() {
 	tar -xf $(match_source_file -p jetty) --strip-components=1 -C $root/$prefix
 }
-hook_add postmake 5 jetty_install
+hook_add postmake 5 'jetty_install'

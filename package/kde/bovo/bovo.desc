@@ -1,14 +1,14 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/bovo/bovo.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] Five-in-a-row Board Game
 
-[T] Bovo is a Gomoku like game for two players, where the opponents alternate
-[T] in placing their respective pictogram on the game board. (Also known as:
+[T] Bovo is a Gomoku like game for two players, where the opponents alternate 
+[T] in placing their respective pictogram on the game board. (Also known as: 
 [T] Connect Five, Five in a row, X and O, Naughts and Crosses)
 
 [U] https://apps.kde.org/bovo/
@@ -17,15 +17,16 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
-
-[E] opt kdoctools docbook-xml docbook-xsl
+[E] opt kdoctools
+[E] opt docbook-xml
+[E] opt docbook-xsl
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] b7f6b03c92cb29a498850d87af654269e47316998beaa38f150a6e24 bovo-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.900
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] 63bdf6e32b702396e00942988ff8ff4a2e58729725b636ff616e5a6f bovo-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

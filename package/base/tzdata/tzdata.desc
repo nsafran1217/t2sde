@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/tzdata/tzdata.desc
-[COPY] Copyright (C) 2013 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2013 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -20,15 +20,19 @@
 
 [L] PublicDomain
 [S] Stable
-[V] 2025c
+[V] 2025b
 [P] X -----5---9 200.000
 
 [CV-URL] http://www.iana.org/time-zones
-[D] 92a257d20386711ea9a645fbbe4d260a4523bf863261b2756a78947d tzcode2025c.tar.gz http://www.iana.org/time-zones/repository/releases/
-[D] 6bf9bb128099c9b62491c1b1b34f15671f0b7031a4ccd594779d9f5b tzdata2025c.tar.gz http://www.iana.org/time-zones/repository/releases/
+
+[D] 2c1ab2cd19493fc8f6f6452c82f1115607466d70808c7a20afca2855 tzcode2025b.tar.gz http://www.iana.org/time-zones/repository/releases/
+[D] f4eba2c8b4caa77d349d697f2145012f06c393c11abdcdd84b347cdc tzdata2025b.tar.gz http://www.iana.org/time-zones/repository/releases/
 
 runmake=0
 runconf=0
+
+custextract='tzcode_extract'
+hook_add prepatch 5 'tzdata_extract'
 
 tzcode_extract() {
 	local taropt_orig="$taropt"
@@ -37,12 +41,10 @@ tzcode_extract() {
 	autoextract_tar "$@"
 	taropt="$taropt_orig"
 }
-custextract='tzcode_extract'
 
 tzdata_extract() {
 	tar -v $taropt $(match_source_file -p tzdata)
 }
-hook_add prepatch 5 tzdata_extract
 
 tzdata_install() {
 	TIMEZONES="africa antarctica asia australasia europe northamerica southamerica etcetera backward"
@@ -52,7 +54,7 @@ tzdata_install() {
 	zic -y ./yearistype -d $root/usr/share/zoneinfo/posix -L /dev/null $TIMEZONES
 	zic -y ./yearistype -d $root/usr/share/zoneinfo/right -L leapseconds $TIMEZONES
 	zic -y ./yearistype -d $root/usr/share/zoneinfo -L/dev/null -p America/New_York
-	install -p -m 644 *.tab $root/usr/share/zoneinfo/
+	install -p -m 644 zone.tab iso3166.tab $root/usr/share/zoneinfo/
 	install -m644 leap-seconds.list $root/usr/share/zoneinfo/
 }
 hook_add inmake 5 tzdata_install

@@ -14,7 +14,7 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/development
-[F] CROSS
+[F] CROSS NO-LTO.gcc
 
 [E] opt jasper
 [E] opt libwebp
@@ -22,8 +22,11 @@
 [L] LGPL
 [S] Stable
 [V] 5.15.14
+[P] X -----5---9 130.000
+
+hook_add preconf 5 qmake
+var_append GCC_WRAPPER_APPEND ' ' "-I$root/$(pkgprefix includedir libxcb)"
+var_append GCC_WRAPPER_APPEND ' ' "-L$root/$(pkgprefix libdir libxcb)"
 
 [CV-GROUP] qt5
 [D] a073b09b5e4c279bb3e824b22b68b2344de361225b0ece2a43e09f2a qtimageformats-everywhere-opensource-src-5.15.14.tar.xz http://download.qt.io/official_releases/qt/5.15/5.15.14/submodules/
-
-. $base/package/*/*/qt5-conf.in

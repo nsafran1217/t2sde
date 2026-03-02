@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/rocm-core/rocm-core.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -19,10 +19,10 @@
 
 [L] MIT
 [S] Stable
-[V] 7.2.0
+[V] 7.0.1
 [P] X -----5---9 300.540
 
 [CV-GROUP] rocm
-[D] 973d2b85c1cedd27f1f100ef312953eaa74b4de8947dbb7fd4d57731 rocm-core-rocm-7.2.0.tar.gz https://github.com/ROCm/rocm-core/archive/rocm-7.2.0/
+[D] e79a00b8141b55357b5ebfb96d0b756b7790fe0461c2f57ab14d2961 rocm-core-rocm-7.0.1.tar.gz https://github.com/ROCm/rocm-core/archive/rocm-7.0.1/
 
 . $base/package/*/*/rocm-conf.in

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/flightgear-data/flightgear-data.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -23,9 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 2024.1.4
+[V] 2024.1.2
 
-[D] a563b651c4805405111b3d624ab9e5ca7e56c443b8f0b18c79539dff FlightGear-2024.1.4-data.txz http://dl.sourceforge.net/sourceforge/flightgear/release-2024.1/
+[D] c0575040c2cdfe014aa7ce76d852684a56695684e96b3bb34472e21c FlightGear-2024.1.2-data.txz http://dl.sourceforge.net/sourceforge/flightgear/release-2024.1/
 
 runmake=0
 
@@ -33,4 +33,4 @@ fgfs_pm() {
 	mkdir -p $root$datadir/../lib/FlightGear
 	cp -rfv * $root$datadir/../lib/FlightGear
 }
-hook_add postmake 5 fgfs_pm
+hook_add postmake 5 'fgfs_pm'

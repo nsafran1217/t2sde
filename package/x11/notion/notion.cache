@@ -12,6 +12,7 @@
 [DEP] freetype
 [DEP] gawk
 [DEP] gettext
+[DEP] git
 [DEP] grep
 [DEP] groff
 [DEP] gzip

@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/mrab-regex/mrab-regex.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,7 +18,7 @@
 
 [L] APL
 [S] Stable
-[V] 2026.2.26
+[V] 2025.9.20
 [P] X -----5---9 109.800
 
-[D] 4f8d34e119b4b111cc6329372c0c780073d0a93c2150b13d5b472bbf mrab-regex-2026.2.26.tar.gz https://github.com/mrabarnett/mrab-regex/archive/refs/tags/2026.2.26/
+[D] 0467863a82fead2cf71d089445171e4e64ef64be1c950eb8e7b3d75f mrab-regex-2025.9.20.tar.gz https://github.com/mrabarnett/mrab-regex/archive/refs/tags/2025.9.20/

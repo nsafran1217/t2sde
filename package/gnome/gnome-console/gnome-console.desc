@@ -6,20 +6,18 @@
 
 [I] A simple user-friendly terminal emulator for GNOME
 
-[T] A simple user-friendly terminal emulator for the GNOME desktop. Console
-[T] aims to be a simple terminal emulator for the average user to carry out
-[T] casual cli tasks.
+[T] A simple user-friendly terminal emulator for the GNOME desktop.
 
 [U] https://gitlab.gnome.org/GNOME/console
 
-[A] The GNOME Project <gnome-devel-list@gnome.org>
+[A] The GNOME Project
 [M] The T2 Project <t2@t2-project.org>
 
-[C] extra/tool extra/desktop/gnome
+[C] extra/tool
 [F] CROSS
 
 [L] GPL3
 [S] Stable
-[V] 49.2
+[V] 49.0
 
-[D] 68a1c40d4c26d7100045d2e382a5bb1805f0c7efedc9aa804da4e3f5 console-49.2.tar.gz https://gitlab.gnome.org/GNOME/console/-/archive/49.2/
+[D] bee2b33d87d1394c925e5db613fc637ffdcf5ac7624db8e7a1e7559d console-49.0.tar.gz https://gitlab.gnome.org/GNOME/console/-/archive/49.0/

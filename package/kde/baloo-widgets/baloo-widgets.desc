@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/baloo-widgets/baloo-widgets.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -16,14 +16,14 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-
-[CV-GROUP] kde-gear
-[D] b12e0737ac6aa8ea3f373ac24a1d2116c885c80751c59aa12f430dc1 baloo-widgets-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.900
 
 . $base/package/*/*/kde-conf.in
 var_append cmakeopt ' ' -DBUILD_WITH_QT6=ON
+
+[CV-GROUP] kde-gear
+[D] 5a9900ae04919f86926cffa283d67c9b9aa092c8dd50da6b83d1f82f baloo-widgets-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

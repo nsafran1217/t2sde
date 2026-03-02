@@ -9,6 +9,7 @@
 [DEP] curl
 [DEP] diffutils
 [DEP] gawk
+[DEP] git
 [OPT] glib
 [DEP] grep
 [DEP] meson

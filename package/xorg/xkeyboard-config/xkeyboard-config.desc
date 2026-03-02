@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/xkeyboard-config/xkeyboard-config.desc
-[COPY] Copyright (C) 2008 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2008 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,10 +18,10 @@
 
 [L] OpenSource
 [S] Stable
-[V] 2.47
+[V] 2.45
 [P] X -----5---9 120.500
 
-[D] 5090f7a8a782842f78bdf26d3831bf67644420c4a4f661b28a4a6762 xkeyboard-config-2.47.tar.bz2 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.47/
+[D] f34cd5d5583cc7075e8d4c640d093c32b4d9ab19165142988f811d9d xkeyboard-config-2.45.tar.xz http://www.x.org/releases/individual/data/xkeyboard-config/
 
 . package/*/*/modular-x-conf.in
 var_append mesonopt ' ' -Dcompat-rules=true

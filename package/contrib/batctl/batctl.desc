@@ -1,23 +1,22 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/batctl/batctl.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] B.A.T.M.A.N. advanced control and management tool
 
-[T] B.A.T.M.A.N. (better approach to mobile ad-hoc networking) is a routing
-[T] protocol for multi-hop ad-hoc mesh networks.
+[T] B.A.T.M.A.N. advanced control and management tool.
 
 [U] https://www.open-mesh.org/
 
 [A] Batctl Authors
-[M] The T2 Project <t2@t2-project.org>
+[M] T2 Project <t2@t2-project.org>
 
-[C] extra/network
+[C] extra/base
 
+[V] 2025.3
 [L] GPL MIT
 [S] Stable
-[V] 2026.0
 
-[D] a06a4ed4080c80a1e42c998369d9b88ed27d3d51b83cf32ea85ca97c batctl-2026.0.tar.gz https://downloads.open-mesh.org/batman/releases/batman-adv-2026.0/
+[D] c1377b31c31ae104abc1671181211b8f9407e0ffdb4656873caacdc4 batctl-2025.3.tar.gz https://downloads.open-mesh.org/batman/releases/batman-adv-2025.3/

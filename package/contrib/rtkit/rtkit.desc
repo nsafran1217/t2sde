@@ -6,20 +6,18 @@
 
 [I] D-Bus system service that enables real time scheduling on request
 
-[T] RealtimeKit is a D-Bus system service that changes the scheduling policy of
-[T] user processes/threads to SCHED_RR (i.e. realtime scheduling mode) on
-[T] request.
+[T] D-Bus system service that enables real time scheduling on request.
 
-[U] https://gitlab.freedesktop.org/pipewire/rtkit/
+[U] https://github.com/heftig/rtkit
 
 [A] Rtkit Authors
-[M] The T2 Project <t2@t2-project.org>
+[M] T2 Project <t2@t2-project.org>
 
 [C] extra/base
 [F] CROSS
 
+[V] 0.13
 [L] GPL3 MIT
-[S] Beta
-[V] 0.14
+[S] Stable
 
-[D] a3e54ead2671abd9d80d9e336fb0d26c798c62c6a05ab6449370ec39 rtkit-v0.14.tar.gz https://gitlab.freedesktop.org/pipewire/rtkit/-/archive/v0.14/
+[D] a45ca8b265707979def2ad55c368c7ffea6e68ed4f9ad54337a00159 rtkit-0.13.tar.xz https://github.com/heftig/rtkit/releases/download/v0.13/

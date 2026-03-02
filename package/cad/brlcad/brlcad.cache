@@ -63,6 +63,7 @@
 [DEP] sqlite
 [DEP] swig
 [DEP] tar
+[DEP] tbb
 [DEP] tcl
 [DEP] tk
 [DEP] unixodbc

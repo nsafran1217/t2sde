@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/klevernotes/klevernotes.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -15,14 +15,14 @@
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
-[E] opt kdoctools docbook-xml
+[E] opt kdoctools
+[E] opt docbook-xml
 
 [L] GPL
 [S] Stable
-[V] 1.2.5
+[V] 1.2.4
 
-[D] 21c946071f1db793f9ebf89bba7d092e94a00ee104e5db0225e22ed4 klevernotes-1.2.5.tar.xz https://download.kde.org/stable/klevernotes/1.2.5/
+[D] e8be4d4f81ff9a9a8d6dd176ad4314648bcd14ed231b309316d8a570 klevernotes-1.2.4.tar.xz https://download.kde.org/stable/klevernotes/1.2.4/
 
 . $base/package/*/*/kde-conf.in

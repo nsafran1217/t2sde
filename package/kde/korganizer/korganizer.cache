@@ -1,30 +1,36 @@
-[TIMESTAMP] 1770549543 Sun Feb  8 12:19:03 2026
-[BUILDTIME] 340 (9)
-[SIZE] 11.93 MB, 313 files
 
+[TIMESTAMP] 1714258747 Sun Apr 28 00:59:07 2024
+[BUILDTIME] 150 (9) ERROR
+[SIZE] 10.50 MB, 222 files
+
+[DEP] 00-dirtree
 [DEP] akonadi
 [DEP] akonadi-calendar
 [DEP] akonadi-contacts
 [DEP] akonadi-mime
+[DEP] akonadi-notes
+[DEP] attica
 [DEP] bash
 [DEP] binutils
 [DEP] calendarsupport
 [DEP] cmake
 [DEP] coreutils
-[DEP] cups
 [DEP] diffutils
 [OPT] docbook-xml
-[DEP] docbook-xsl
 [DEP] eventviews
-[DEP] extra-cmake-modules
+[DEP] findutils
 [DEP] freetype
 [DEP] gawk
 [DEP] gettext
+[DEP] grantleetheme
 [DEP] grep
 [DEP] incidenceeditor
+[DEP] kaddressbook
+[DEP] kbookmarks
 [DEP] kcalendarcore
 [DEP] kcalutils
 [DEP] kcmutils
+[DEP] kcodecs
 [DEP] kcolorscheme
 [DEP] kcompletion
 [DEP] kconfig
@@ -32,6 +38,7 @@
 [DEP] kcontacts
 [DEP] kcoreaddons
 [DEP] kcrash
+[DEP] extra-cmake-modules
 [OPT] kdoctools
 [DEP] kholidays
 [DEP] ki18n
@@ -42,12 +49,16 @@
 [DEP] kitemmodels
 [DEP] kitemviews
 [DEP] kjobwidgets
+[DEP] kldap
 [DEP] kmailtransport
 [DEP] kmime
+[DEP] knewstuff
+[DEP] kompare
 [DEP] kontactinterface
 [DEP] kparts
+[DEP] kservice
 [DEP] ktextaddons
-[DEP] kuserfeedback
+[DEP] ktexttemplate
 [DEP] kwidgetsaddons
 [DEP] kwindowsystem
 [DEP] kxmlgui
@@ -58,10 +69,25 @@
 [DEP] pimcommon
 [DEP] pkgconfig
 [DEP] procps
-[DEP] python
+[DEP] qt63d
+[DEP] qt65compat
 [DEP] qt6base
+[DEP] qt6declarative
+[DEP] qt6imageformats
+[DEP] qt6multimedia
+[DEP] qt6quick3d
+[DEP] qt6quick3dphysics
+[DEP] qt6quicktimeline
+[DEP] qt6speech
+[DEP] qt6svg
+[DEP] qt6tools
+[DEP] qt6virtualkeyboard
+[DEP] qt6wayland
+[DEP] qt6webchannel
+[DEP] qt6webengine
 [DEP] sed
+[DEP] solid
 [DEP] tar
-[DEP] util-linux
+[DEP] tbb
 [DEP] vulkan-headers
 [DEP] xz

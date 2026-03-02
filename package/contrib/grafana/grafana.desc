@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/grafana/grafana.desc
-[COPY] Copyright (C) 2022 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2022 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -15,8 +15,8 @@
 
 [C] extra/base
 
-[V] 12.4.0
+[V] 12.2.0
 [L] AGPL3
 [S] Stable
 
-[D] 322f1368821a2263a76f720f024f2cf78d111e1647a1e758ad7d5494 grafana-12.4.0.tar.gz https://github.com/grafana/grafana/archive/v12.4.0/
+[D] fac2e3785d16bf67102f84b8fd68ca523b9c15f314cafa51b3e50a1e grafana-12.2.0.tar.gz https://github.com/grafana/grafana/archive/v12.2.0/

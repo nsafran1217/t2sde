@@ -1,13 +1,13 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/grantleetheme/grantleetheme.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2004 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
 [I] KDE PIM library for Grantlee template system
 
-[T] GrantleeTheme library provides a class for loading theme packages
+[T] GrantleeTheme library provides a class for loading theme packages 
 [T] containing set of templates.
 
 [U] https://www.kde.org
@@ -16,14 +16,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office extra/desktop/kde
-[F] CROSS OBJDIR
 
 [L] GPL
 [S] Stable
-[V] 25.12.2
-[P] X -----5---9 200.050
-
-[CV-GROUP] kde-gear
-[D] e1e4f93da5df0d144512ba6a1437ce7658da88df6bc92de927f104a3 grantleetheme-25.12.2.tar.xz https://download.kde.org/stable/release-service/25.12.2/src/
+[V] 25.08.1
+[P] X -----5---9 162.900
 
 . $base/package/*/*/kde-conf.in
+
+[CV-GROUP] kde-gear
+[D] fdf8ee4c0324676d5c8832a37fc90f66c006925dd78f7d86701d2612 grantleetheme-25.08.1.tar.xz https://download.kde.org/stable/release-service/25.08.1/src/

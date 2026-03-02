@@ -25,8 +25,5 @@
 
 [D] 87110d3f83b17ead7595a682e3d5fb0b59faa5538e91922b433bc439 ConsoleKit2-1.2.6.tar.gz https://github.com/ConsoleKit2/ConsoleKit2/archive/1.2.6/
 
-autogen=1
+autogen=2
 var_append confopt ' ' --enable-pam-module
-
-var_append GCC_WRAPPER_INSERT ' ' "-I$root$(pkgprefix includedir libx11)"
-var_append GCC_WRAPPER_INSERT ' ' "-L$root$(pkgprefix libdir libx11)"

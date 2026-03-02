@@ -1,6 +1,6 @@
 # --- T2-COPYRIGHT-BEGIN ---
 # t2/package/*/rustdesk/rustdesk.desc
-# Copyright (C) 2025 - 2026 The T2 SDE Project
+# Copyright (C) 2025 The T2 SDE Project
 # SPDX-License-Identifier: GPL-2.0
 # --- T2-COPYRIGHT-END ---
 
@@ -9,7 +9,7 @@
 [T] RustDesk is an open-source remote desktop application designed for
 [T] self-hosting, as an alternative to TeamViewer.
 
-[U] https://github.com/rustdesk/rustdesk/
+[U] https://github.com/rustdesk/rustdesk/archive/nightly/rustdesk-nightly.tar.gz
 
 [A] rustdesk <info@rustdesk.com>
 [M] NoTag <notag@t2sde.org>
@@ -19,6 +19,6 @@
 
 [L] AGPL3
 [S] Stable
-[V] 1.4.5
+[V] 1.4.2
 
-[D] aba20397b13ec37482c4e222e9147ef9c62eab0a0a721f481f3b9a7f rustdesk-1.4.5.tar.gz git+https://github.com/rustdesk/rustdesk.git 1.4.5
+[D] 42f7311f54329c057822e1ec37fe38abdb8e6c565b0e427989ebfc4e rustdesk-1.4.2.tar.gz git+https://github.com/rustdesk/rustdesk.git 1.4.2

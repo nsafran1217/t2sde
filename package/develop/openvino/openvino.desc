@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/openvino/openvino.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -20,9 +20,9 @@
 
 [L] APL
 [S] Stable
-[V] 2025.4.2
+[V] 2025.3.0
 
-[D] bc3f36a8f13d1bf57df8846785c80c6a34bf78addcf0846e06a18fb7 openvino-2025.4.2.tar.gz git+https://github.com/openvinotoolkit/openvino.git 2025.4.2
+[D] 3741fdf092882f7d2240643abc50c525fc4cb3b6b7373483d31dd23e openvino-2025.3.0.tar.gz git+https://github.com/openvinotoolkit/openvino.git 2025.3.0
 
 prefix=opt/openvino
 var_append cmakeopt ' ' "-DENABLE_CPPLINT=OFF -DENABLE_INTEL_NPU_PROTOPIPE=OFF"

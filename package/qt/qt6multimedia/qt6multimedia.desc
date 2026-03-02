@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/qt6multimedia/qt6multimedia.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -14,28 +14,18 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/development
-[F] CROSS OBJDIR
+[F] CROSS NO-LTO.gcc
 
 [L] LGPL
 [S] Stable
-[V] 6.10.2
-[P] X -----5---9 180.100
+[V] 6.9.2
+[P] X -----5---9 127.100
 
-[CV-GROUP] qt6
-[D] 9719ef58e9a260843fb1ab4b74c6d9da7992596a9bf6b76d46726a63 qtmultimedia-everywhere-src-6.10.2.tar.xz http://download.qt.io/official_releases/qt/6.10/6.10.2/submodules/
-
-. $base/package/*/*/qt6-conf.in
-
-# Force gstreamer plugin for the time being, since ffmpeg plugin is bad,
-# e.g. doesn't work with Jabra Evolve2 65 Bluetooth headset:
-#
-# qt.multimedia.pipewire.devicemonitor: Could not resolve audio format for 54
-# qt.multimedia.pipewire.devicemonitor: Could not resolve audio format for 57
-#
-# TODO: Remove once ffmpeg backend is mature enough.
-var_append cmakeopt ' ' -DFEATURE_ffmpeg=OFF
-var_append cmakeopt ' ' -DFEATURE_gstreamer=ON
+[ $prefix_auto = 1 ] && prefix=$(pkgprefix qt6base) && set_confopt
+atstage cross && var_append cmakeopt ' ' "-DQT_HOST_PATH=$root/$(pkgprefix qt6base)"
 
 pkginstalled libxext && var_append GCC_WRAPPER_APPEND ' ' "`pkg-config x11 --libs-only-L`"
 var_remove_regex GCC_WRAPPER_REMOVE ' ' '-march.*' # for x86-64 avx2, TODO: more fine grained
-[ $arch = powerpc64 ] && var_append GCC_WRAPPER_APPEND ' ' -mvsx # hotfix
+
+[CV-GROUP] qt6
+[D] a0ca8ea2a8f0cf103d40893685640888604b5d40be5784752d1f089a qtmultimedia-everywhere-src-6.9.2.tar.xz http://download.qt.io/official_releases/qt/6.9/6.9.2/submodules/

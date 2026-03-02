@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/gom/gom.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -17,9 +17,10 @@
 
 [L] LGPL
 [S] Stable
-[V] 0.5.6
+[V] 0.5.4
+[P] X -----5---9 179.200
 
 [CV-URL] https://download.gnome.org/sources/gom/cache.json
-[D] 4fbe3e4686ab54c7ca2f06eb0b4352edd23b64546076678d81cd675e gom-0.5.6.tar.xz https://download.gnome.org/sources/gom/0.5/
+[D] bf9a1cf4322bc5bc0562d2c3ea355334f3ef38a037e6edfd3357f708 gom-0.5.4.tar.xz https://download.gnome.org/sources/gom/0.5/
 
 . $base/package/*/*/gnome-conf.in

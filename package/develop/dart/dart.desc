@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/dart/dart.desc
-[COPY] Copyright (C) 2024 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2024 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -18,19 +18,19 @@
 
 [L] OpenSource
 [S] Stable
-[V] 3.11.0
+[V] 3.9.3
 
-[D] eae031f1fe50d1ebc2327534f12d7266fef1790a08d09c6b6d9c357d dart-3.11.0.tar.gz git+https://github.com/dart-lang/sdk 3.11.0
+[D] c3e9fe2a2df00842f1cb54180ee0d91ed0fe740d9b0575b1b371c7a0 dart-3.9.3.tar.gz git+https://github.com/dart-lang/sdk 3.9.3
 [D] 173c30818f1fe68bd12cbad222fa62411f4b420dfe7ed5802395042e depot-tools-1d1f17a.tar.gz git+https://chromium.googlesource.com/chromium/tools/depot_tools 1d1f17a
 
 runmake=0
 
 var_insert GCC_WRAPPER_REMOVE ' ' -s
 
-hook_add prepatch 4 depot_tools_extract
-hook_add prepatch 5 gn_gclient_sync
-hook_add inmake 5 gn_build
-hook_add postmake 5 gn_install
+hook_add prepatch 4 "depot_tools_extract"
+hook_add prepatch 5 "gn_gclient_sync"
+hook_add inmake 5 "gn_build"
+hook_add postmake 5 "gn_install"
 
 depot_tools_extract() {
 	tar -C $builddir/ $taropt $(match_source_file -p depot)

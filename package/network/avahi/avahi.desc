@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/avahi/avahi.desc
-[COPY] Copyright (C) 2006 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2006 - 2025 The T2 SDE Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
 
@@ -15,13 +15,11 @@
 
 [U] https://avahi.org/
 
-[A] Mezcalero <mzserfuzrng@0pointer.de>
+[A] Mezcalero <mzserfuzrng [at] 0pointer [dot] de>
 [M] The T2 Project <t2@t2-project.org>
 
 [C] extra/network
 [F] CROSS
-
-[E] opt gobject-intropsection
 
 [L] GPL
 [S] Beta
@@ -37,6 +35,6 @@ pkginstalled qt3 || var_append confopt ' ' --disable-qt3
 pkginstalled qt4 || var_append confopt ' ' --disable-qt4
 pkginstalled qt5base || var_append confopt ' ' --disable-qt5
 pkginstalled libevent || var_append confopt ' ' --disable-libevent
-pkginstalled pygobject || var_append confopt ' ' --disable-pygobject
+pkginstalled pygobject || var_append confopt ' ' --disable-pygobject 
 pkginstalled pydbus || var_append confopt ' ' --disable-python-dbus
 pkginstalled mono || var_append confopt ' ' --disable-mono

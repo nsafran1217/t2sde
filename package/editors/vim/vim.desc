@@ -1,6 +1,6 @@
 [COPY] --- T2-COPYRIGHT-BEGIN ---
 [COPY] t2/package/*/vim/vim.desc
-[COPY] Copyright (C) 2004 - 2026 The T2 SDE Project
+[COPY] Copyright (C) 2004 - 2025 The T2 SDE Project
 [COPY] Copyright (C) 1998 - 2003 ROCK Linux Project
 [COPY] SPDX-License-Identifier: GPL-2.0
 [COPY] --- T2-COPYRIGHT-END ---
@@ -35,19 +35,11 @@
 [C] base/editor
 [F] CROSS DIETLIBC
 
-[E] opt acl
-[E] opt gpm
-[E] opt gtk+
-[E] opt libsodium
-[E] opt wayland
-[E] opt libx11
-
 [L] OpenSource
 [S] Stable
-[V] 9.2.0
+[V] 9.1.1775
 
-[CV-FLAGS] NO-MINOR NO-AUTO
-[D] 8fe3f4211648cb32273ebc43430b84f43a4936c5a0f02eeab314d68d vim-9.2.0.tar.gz https://github.com/vim/vim/archive/refs/tags/v9.2.0/
+[D] 5e0287b68f82643199a1bfbb52e19f23e9043024f7ab2cf6f487b19f vim-9.1.1775.tar.gz https://github.com/vim/vim/archive/refs/tags/v9.1.1775/
 
 vim_postmake() {
 	if [ "$SDECFG_PKG_VIM_TWO_BINARIES" = 1 ]; then
@@ -77,7 +69,7 @@ vim_postmake() {
 	cp -fv $confdir/vimrc* $root/$prefix/share/vim/
 	mkdir -pv $root/$prefix/share/vim/vimfiles/plugin
 }
-hook_add postmake 5 vim_postmake
+hook_add postmake 5 "vim_postmake"
 
 vim_cache() {
 	cat >> config.cache <<-EOT
@@ -93,15 +85,14 @@ vim_cache() {
 		ac_cv_small_wchar_t=yes
 EOT
 }
-atstage cross && hook_add preconf 5 vim_cache
+atstage cross && hook_add preconf 5 "vim_cache"
 
 hook_add preconf 2 "cd src"
 configscript="auto/configure"
 hook_add premake 5 "cd .."
 
-var_append confopt ' ' "--srcdir ."
+var_append confopt ' ' "--with-tlib=ncurses --srcdir ."
 var_append confopt ' ' --with-features=$SDECFG_PKG_VIM_FEATURES
-pkginstalled ncurses && var_append confopt ' ' --with-tlib=ncursesw
 
 [ "$SDECFG_PKG_VIM_PERLINTERP" = 1 ] &&
 	var_append confopt ' ' --enable-perlinterp
