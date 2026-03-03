@@ -10,39 +10,36 @@
 [T] This package contains the T2 SDE source code: the build scripts and
 [T] package descriptions (also knows as repositories) - installed in /usr/src.
 
-[U] https://www.t2-project.org
+[U] https://github.com/nsafran1217/t2sde/tree/25.10-altix
 
 [A] The T2 Project <t2@exactcode.de>
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] base/development
+
 [F] CROSS
 
 [L] GPL
+
 [S] Stable
-[V] 25.9
+
+[V] 25.10
 
 srctar= runmake=0
 
 src_main() {
-    local svndir=$root/usr/src/$pkg/.svn
+    local gitdir=$root/usr/src/$pkg/.git
     ln -srfv $root/usr/src/$pkg/t2 $root$sbindir/t2
     [ -e $root/usr/src/$pkg ] && return
-    mkdir -pv $svndir
-    cp -fv $base/.svn/* $svndir/ || true # not recursive
-    mkdir -p $svndir/tmp # template pristine
-
-    local t2cksum=$(sqlite3 $svndir/wc.db "select checksum from NODES where local_relpath = 't2'")
-    local t2="${t2cksum#\$*\$}.svn-base" # remove hash algo
-
-    mkdir -pv $svndir/pristine/${t2:0:2}
-    cp -fv $base/.svn/pristine/${t2:0:2}/$t2 $svndir/pristine/${t2:0:2}/
+    mkdir -pv $root/usr/src/$pkg
+    cp -rfv $base/.git $root/usr/src/$pkg/ 2>/dev/null || true
     cp -fv $base/t2 $root/usr/src/$pkg/
-
-    sqlite3 $svndir/wc.db "delete from NODES where local_relpath != '' and local_relpath != 't2'"
-    sqlite3 $svndir/wc.db "update NODES set presence = 'incomplete' where local_relpath != 't2'"
-    sqlite3 $svndir/wc.db "delete from PRISTINE where checksum != '$t2cksum'"
-    sqlite3 $svndir/wc.db "delete from WORK_QUEUE"
-    sqlite3 $svndir/wc.db "vacuum"
+    if [ -d "$gitdir" ]; then
+        git -C $root/usr/src/$pkg remote set-url origin \
+            https://github.com/nsafran1217/t2sde
+        git -C $root/usr/src/$pkg symbolic-ref HEAD \
+            refs/heads/25.10-altix 2>/dev/null || true
+    fi
 }
+
 hook_add postmake 5 "src_main"

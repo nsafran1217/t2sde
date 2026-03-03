@@ -3,3 +3,6 @@ config
 src.*
 build
 download
+*.iso
+/*.sha256
+/*_index.txt
